@@ -1,0 +1,1409 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Releases &mdash; OSATE 2.2.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="OSATE 2.2.1 documentation" href="index.html"/>
+        <link rel="prev" title="Download and Installation" href="download-and-install.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OSATE
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.2.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="download-and-install.html">Download and Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Releases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#current-stable">Current Stable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-version">Testing version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stable-releases">Stable Releases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-2-1">Version 2.2.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#notable-changes">Notable Changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fixed-issues">Fixed Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-2-0">Version 2.2.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#notable-changes">Notable changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fixed-issues">Fixed Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-1-2">Version 2.1.2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#major-changes">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fixed-issues">Fixed Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-1-1">Version 2.1.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#major-changes">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fixed-issues">Fixed Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-1-0">Version 2.1.0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#major-changes">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fixed-issues">Fixed Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-9">Version 2.0.9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#major-changes">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fixed-issues">Fixed Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-8">Version 2.0.8</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#major-changes">Major changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-7">Version 2.0.7</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#major-changes">Major changes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-6">Version 2.0.6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#major-changes">Major changes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-5">Version 2.0.5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#changes-and-new-features">Changes and new features</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-4">Version 2.0.4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#changes-and-new-features">Changes and new features</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-3">Version 2.0.3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#changes-and-new-features">Changes and new features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#issues-closed">Issues closed</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-2">Version 2.0.2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#changes-and-new-features">Changes and new features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#issues-closed">Issues closed</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-0-1">Version 2.0.1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#changes-and-new-features">Changes and new features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bugfixes">Bugfixes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">OSATE</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Releases</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="releases">
+<span id="releases"></span><h1>Releases<a class="headerlink" href="#releases" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="current-stable">
+<span id="current-stable"></span><h2>Current Stable<a class="headerlink" href="#current-stable" title="Permalink to this headline">¶</a></h2>
+<p>This corresponds to the latest stable version of OSATE. It includes the
+latest version that has been tested. All information can be found <a class="reference external" href="release_notes_of_OSATE2_2.1.2">on
+this page</a>.</p>
+</div>
+<div class="section" id="testing-version">
+<span id="testing-version"></span><h2>Testing version<a class="headerlink" href="#testing-version" title="Permalink to this headline">¶</a></h2>
+<p>This is the testing version, always up-to-date with the latest release
+of Eclipse. You can read more about the current status in the <a class="reference external" href="Testing_Version">specific
+page related to this version</a>.</p>
+</div>
+<div class="section" id="stable-releases">
+<span id="stable-releases"></span><h2>Stable Releases<a class="headerlink" href="#stable-releases" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="version-2-2-1">
+<span id="version-2-2-1"></span><h3>Version 2.2.1<a class="headerlink" href="#version-2-2-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="release">
+<span id="release"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.2.1-RELEASE-20160418</li>
+<li><strong>Release date</strong>: April 18, 2016</li>
+<li><strong>Eclipse base version</strong>: Mars.2</li>
+<li><strong>Java version</strong>: Java 8</li>
+<li><strong>Eclipse Update-Site</strong>: <a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.2.1/update-site">http://www.aadl.info/aadl/osate/stable/2.2.1/update-site</a></li>
+<li><strong>Download URL</strong>: <a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.2.1/products">http://www.aadl.info/aadl/osate/stable/2.2.1/products</a></li>
+</ul>
+</div>
+<div class="section" id="notable-changes">
+<span id="notable-changes"></span><h4>Notable Changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<ol>
+<li><p class="first">We have included the EMFTA tool for fault tree analysis (see Help text).
+The existing export to OpenFTA has been removed</p>
+</li>
+<li><p class="first">OSATE now includes requirements specification language (ReqSpec) from
+our ALISA project (see Help text)</p>
+</li>
+<li><p class="first">Implemented approved language errata:</p>
+<ol>
+<li><p class="first">Abstract features are allowed as mode transition triggers</p>
+</li>
+<li><p class="first">Added property Reference_Time</p>
+</li>
+<li><p class="first">Abstract features can reference classifiers in addition to prototypes:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">prototypes</span>
+  <span class="n">fp</span><span class="p">:</span> <span class="n">feature</span><span class="p">;</span>
+  <span class="n">dt</span><span class="p">:</span> <span class="n">data</span><span class="p">;</span>
+<span class="n">features</span>
+  <span class="o">--</span> <span class="n">feature</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">prototype</span> <span class="n">actual</span>
+  <span class="n">f1</span><span class="p">:</span> <span class="n">prototype</span> <span class="n">fp</span><span class="p">;</span>
+  <span class="o">--</span> <span class="n">abstract</span> <span class="n">feature</span> <span class="n">referencing</span> <span class="n">a</span> <span class="n">data</span> <span class="n">classifier</span>
+  <span class="n">f2</span><span class="p">:</span> <span class="n">feature</span> <span class="n">SomeDataType</span><span class="p">;</span>
+  <span class="o">--</span> <span class="n">abstract</span> <span class="n">feature</span> <span class="n">referencing</span> <span class="n">a</span> <span class="n">data</span> <span class="n">prototype</span>
+  <span class="n">f3</span><span class="p">:</span> <span class="n">feature</span> <span class="n">dt</span><span class="p">;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Added textual representation of instance models. Convert AADL instance model
+file to text via action &#8220;Generate Textual Instance&#8221; in AADL Navigator context
+menu</p>
+</li>
+<li><p class="first">Added BIRT for report generation. An example report for requirements
+traceability is included: Action &#8220;Requirements Tracing&#8221; in context menu in
+the AADL Navigatior view, active for AADL packages, instance models, system
+requirements and system goals.
+The report sources are in plugin org.osate.reqtrace</p>
+</li>
+<li><p class="first">Unnecessary plugins were removed to reduce download size</p>
+</li>
+<li><p class="first">Updated Agree to version 2.1.3</p>
+</li>
+<li><p class="first">The underlying Eclipse version has been updated to Mars.2</p>
+</li>
+</ol>
+</div>
+<div class="section" id="known-issues">
+<span id="known-issues"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the AADL Property View to edit property values results in bad
+formatting</li>
+</ol>
+</div>
+<div class="section" id="fixed-issues">
+<span id="fixed-issues"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<p>The full lists of closed issues for this release are available at</p>
+<p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed">https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed">https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed</a></p>
+</div>
+</div>
+<div class="section" id="version-2-2-0">
+<span id="version-2-2-0"></span><h3>Version 2.2.0<a class="headerlink" href="#version-2-2-0" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="release">
+<span id="id1"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.2.0-RELEASE-20151223</li>
+<li><strong>Release date</strong>: January 5, 2016</li>
+<li><strong>Eclipse base version</strong>: Mars.1</li>
+<li><strong>Java version</strong>: Java 8</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.2.0/update-site">http://www.aadl.info/aadl/osate/stable/2.2.0/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.2.0/products">http://www.aadl.info/aadl/osate/stable/2.2.0/products</a></li>
+</ul>
+</div>
+<div class="section" id="notable-changes">
+<span id="id2"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>OSATE is now based on Eclipse Mars which requires a new full
+installation</li>
+<li>Implemented approved errata for properties:<ol>
+<li>Process_Swap_Execution_time now applies to virtual processor.</li>
+<li>Add processor, virtual processor in applies to of
+Activate_Entry_Point. They are included in the other
+entry_point properties.</li>
+<li>Code_Size, Heap_Size, Data_Size, and Stack_Size now apply to
+virtual processors.</li>
+<li>Mark Byte_Count as deprecated.</li>
+<li>Add Source_xx_Size back in and mark as deprecated. These are
+used in the standard, the book, and in the course. Backward
+compatibility.</li>
+<li>Memory_Binding properties now apply to system and processor.
+Also to virtual processor to model partitions with memory
+budgets.</li>
+<li>Property values are no longer allowed as array index value.</li>
+</ol>
+</li>
+<li>Performance improvements in graphical editor</li>
+<li>Outline view can now handle annexes</li>
+</ol>
+</div>
+<div class="section" id="known-issues">
+<span id="id3"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the AADL Property View to edit property values results in bad
+formatting</li>
+</ol>
+</div>
+<div class="section" id="fixed-issues">
+<span id="id4"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<p>The full lists of closed issues for this release are available at</p>
+<p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed">https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed">https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed</a></p>
+</div>
+</div>
+<div class="section" id="version-2-1-2">
+<span id="version-2-1-2"></span><h3>Version 2.1.2<a class="headerlink" href="#version-2-1-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="release">
+<span id="id5"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.1.2-RELEASE-20150904</li>
+<li><strong>Release date</strong>: September 14, 2015</li>
+<li><strong>Eclipse base version</strong>: Luna SR2</li>
+<li><strong>Java version</strong>: Java 8</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.1.2/update-site">http://www.aadl.info/aadl/osate/stable/2.1.2/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.1.2/products">http://www.aadl.info/aadl/osate/stable/2.1.2/products</a></li>
+</ul>
+</div>
+<div class="section" id="major-changes">
+<span id="major-changes"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Flows can now be created in the graphical editor by clicking on
+components and connections</li>
+<li>The AADL Properties view can be used with the instance model</li>
+<li>The text editor automatically un-indents section keywords (features,
+subcomponents, etc.), see preference Window -&gt; Preferences -&gt;
+OSATE Preferences -&gt; Aadl2 Text Editor to control this behavior</li>
+</ol>
+</div>
+<div class="section" id="known-issues">
+<span id="id6"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the AADL Property View to edit property values results in bad
+formatting</li>
+</ol>
+</div>
+<div class="section" id="fixed-issues">
+<span id="id7"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<p>The full lists of closed issues for this release are available
+at</p>
+<p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed">https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed">https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed</a></p>
+</div>
+</div>
+<div class="section" id="version-2-1-1">
+<span id="version-2-1-1"></span><h3>Version 2.1.1<a class="headerlink" href="#version-2-1-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="release">
+<span id="id8"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.1.1-RELEASE-20150702</li>
+<li><strong>Release date</strong>: July 6, 2015</li>
+<li><strong>Eclipse base version</strong>: Luna SR2</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.1.1/update-site">http://www.aadl.info/aadl/osate/stable/2.1.1/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.1.1/products">http://www.aadl.info/aadl/osate/stable/2.1.1/products</a></li>
+</ul>
+</div>
+<div class="section" id="major-changes">
+<span id="id9"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>OSATE now requires Java 8</li>
+<li>Automatically add &#8220;end&#8221; when typing in the text editor, see
+preference Window -&gt; Preferences -&gt; OSATE Preferences -&gt; Aadl2
+Text Editor to control this behavior</li>
+<li>New text editor command to organize with clauses</li>
+<li>The Plugin_Resources project has subdirectories to organize
+property sets - existing workspaces should be updated automatically
+(If there is a problem, try to re-create the project using the
+context menu in the AADL Navigator: &#8220;Reset/create all Predeclared
+and Annex Properties&#8221;)</li>
+<li>The AADL Property View supports editing of property associations
+declared in the classifier&#8217;s properties section if the applies to
+contains a single name (&#8220;local contained&#8221;)</li>
+<li>The AADL Property View works properly when the instance model editor
+is open</li>
+<li>Default values can be hidden in the AADL Property View</li>
+<li>It is now possible to navigate from the instance model property to
+the corresponding property Association in the declarative model</li>
+<li>The instance model editor now properly reloads the model if it is
+instantiated again</li>
+<li>The instance model editor shows error markers</li>
+<li>Updated to Agree version 2.0.0</li>
+<li>Removed obsolete Lute and ARINC653 plugins from the distribution</li>
+</ol>
+</div>
+<div class="section" id="known-issues">
+<span id="id10"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the AADL Property View to edit property values results in bad
+formatting</li>
+</ol>
+</div>
+<div class="section" id="fixed-issues">
+<span id="id11"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<p>The full lists of closed issues for this release are available
+at</p>
+<p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed">https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed">https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed</a></p>
+</div>
+</div>
+<div class="section" id="version-2-1-0">
+<span id="version-2-1-0"></span><h3>Version 2.1.0<a class="headerlink" href="#version-2-1-0" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="release">
+<span id="id12"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.1.0-RELEASE-20150501</li>
+<li><strong>Release date</strong>: May 2, 2015</li>
+<li><strong>Eclipse base version</strong>: Luna SR2</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.1.0/update-site">http://www.aadl.info/aadl/osate/stable/2.1.0/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.1.0/products">http://www.aadl.info/aadl/osate/stable/2.1.0/products</a></li>
+</ul>
+</div>
+<div class="section" id="major-changes">
+<span id="id13"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Additional validations for textual AADL models</li>
+<li>Added quick fixes in the AADL text editor</li>
+<li>Added Resolute language reference</li>
+<li>Performance improvements in the graphical editor</li>
+<li>Flow latency analysis handles periodic buses</li>
+<li>Various bug fixes related to connection and flow instantiation</li>
+</ol>
+</div>
+<div class="section" id="known-issues">
+<span id="id14"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Running Agree requires Java 8</li>
+</ol>
+</div>
+<div class="section" id="fixed-issues">
+<span id="id15"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<p>The full lists of closed issues for this release are available
+at</p>
+<p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed">https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed">https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed</a></p>
+</div>
+</div>
+<div class="section" id="version-2-0-9">
+<span id="version-2-0-9"></span><h3>Version 2.0.9<a class="headerlink" href="#version-2-0-9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="release">
+<span id="id16"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.9-RELEASE-20150301</li>
+<li><strong>Release date</strong>: March 2, 2015</li>
+<li><strong>Eclipse base version</strong>: Luna</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.9/update-site">http://www.aadl.info/aadl/osate/stable/2.0.9/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.9/products">http://www.aadl.info/aadl/osate/stable/2.0.9/products</a></li>
+</ul>
+</div>
+<div class="section" id="major-changes">
+<span id="id17"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>The AADL Property View has been rewritten to support expansion of
+list and record values. In addition, property values can be edited
+directly in the view.</li>
+<li>Instance models can be created from any component <strong>Note:</strong> The
+SystemInstance object now references a ComponentImplementation
+instead of a SystemImplementation. Plugins may need to be adapted.</li>
+<li>We have integrated the Resolute and Agree plugins created at
+Rockwell Collins (see <a class="reference external" href="https://github.com/smaccm/smaccm">https://github.com/smaccm/smaccm</a>). <strong>Note:</strong>
+Agree depends on an program (JKind 2.1) which requires Java 8 to
+run.</li>
+<li>We have integrated the Ocarina plugin for OSATE 2 (see
+<a class="reference external" href="https://github.com/OpenAADL/osate2-ocarina">https://github.com/OpenAADL/osate2-ocarina</a>).</li>
+</ol>
+</div>
+<div class="section" id="known-issues">
+<span id="id18"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="fixed-issues">
+<span id="id19"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<p>The full list of closed issues for this release are available
+at</p>
+<p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed">https://github.com/osate/osate-ge/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed</a></p>
+<p><a class="reference external" href="https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed">https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed</a></p>
+</div>
+</div>
+<div class="section" id="version-2-0-8">
+<span id="version-2-0-8"></span><h3>Version 2.0.8<a class="headerlink" href="#version-2-0-8" title="Permalink to this headline">¶</a></h3>
+<p>A special page is dedicated to the <a class="reference external" href="release_notes_of_OSATE2_2.0.8">release notes of OSATE2
+2.0.8</a></p>
+<div class="section" id="release">
+<span id="id20"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.8-RELEASE</li>
+<li><strong>Release date</strong>: September, 5 2014</li>
+<li><strong>Eclipse base version</strong>: Luna</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.8/update-site">http://www.aadl.info/aadl/osate/stable/2.0.8/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.8/products">http://www.aadl.info/aadl/osate/stable/2.0.8/products</a></li>
+</ul>
+</div>
+<div class="section" id="major-changes">
+<span id="id21"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Switched to Eclipse Luna</li>
+<li>Refactored many analysis plugins</li>
+<li>Excel report for latency analysis</li>
+<li>Examples built-in in OSATE</li>
+</ol>
+</div>
+<div class="section" id="known-issues">
+<span id="id22"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>After the first start with a new workspace the project
+<strong>Plugin_Resources</strong> may shown three times in the AADL navigator.
+Restarting OSATE fixes the issue.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="version-2-0-7">
+<span id="version-2-0-7"></span><h3>Version 2.0.7<a class="headerlink" href="#version-2-0-7" title="Permalink to this headline">¶</a></h3>
+<p>This release was published after the 2014 July AADL meeting hold in
+Orlando, Florida, USA.</p>
+<div class="section" id="release">
+<span id="id23"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.7-RELEASE</li>
+<li><strong>Release date</strong>: July, 14 2014</li>
+<li><strong>Eclipse base version</strong>: Kepler</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.7/update-site">http://www.aadl.info/aadl/osate/stable/2.0.7/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.7/products">http://www.aadl.info/aadl/osate/stable/2.0.7/products</a></li>
+</ul>
+</div>
+<div class="section" id="major-changes">
+<span id="id24"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Automatically compute reliability values from sub-components in the
+Reliability Block Diagram plugin</li>
+<li>Graphical tool now works with Java 6</li>
+<li>Update of EMV2 annex, compliant with the document under ballot</li>
+<li>Update of ARINC653 properties, compliant with the version being
+under ballot for the coming September meeting.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="version-2-0-6">
+<span id="version-2-0-6"></span><h3>Version 2.0.6<a class="headerlink" href="#version-2-0-6" title="Permalink to this headline">¶</a></h3>
+<p>This release was published after the 2014 April AADL meeting hold in
+Santa Barbara, USA.</p>
+<div class="section" id="release">
+<span id="id25"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.6-RELEASE</li>
+<li><strong>Release date</strong>: Apr, 28 2014</li>
+<li><strong>Eclipse base version</strong>: Kepler</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.6/update-site">http://www.aadl.info/aadl/osate/stable/2.0.6/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.6/products">http://www.aadl.info/aadl/osate/stable/2.0.6/products</a></li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<span id="id26"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the update site, under Windows7 you may have a file protection
+issue for your installation. Eclipse update is just silently failing
+to update rather than reporting &#8220;permission denied.&#8221; Please check
+the date of the installed OSATE feature (Open Source AADL Tool
+Environment) under Help-&gt;About and then Installation Details. If it
+did not get updated to the most recent date, please change your
+permissions.</li>
+<li>Using the update site, when you are in OSATE (Eclipse) and just
+checked an update site for updates, Eclipse caches that information.
+If someone tells you about a new release on the update site, please
+exit and reenter OSATE so it will actually find the new release.</li>
+</ol>
+</div>
+<div class="section" id="major-changes">
+<span id="id27"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Integration of the Graphical Editor</li>
+<li>New safety analysis tools</li>
+</ol>
+</div>
+</div>
+<div class="section" id="version-2-0-5">
+<span id="version-2-0-5"></span><h3>Version 2.0.5<a class="headerlink" href="#version-2-0-5" title="Permalink to this headline">¶</a></h3>
+<p>This release was published after the 2014 February AADL meeting hold in
+Toulouse, France.</p>
+<div class="section" id="release">
+<span id="id28"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.5-RELEASE-201402040847</li>
+<li><strong>Release date</strong>: February 4, 2014.</li>
+<li><strong>Eclipse base version</strong>: Kepler</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.5/update-site">http://www.aadl.info/aadl/osate/stable/2.0.5/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.5/products">http://www.aadl.info/aadl/osate/stable/2.0.5/products</a></li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<span id="id29"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the update site, under Windows7 you may have a file protection
+issue for your installation. Eclipse update is just silently failing
+to update rather than reporting &#8220;permission denied.&#8221; Please check
+the date of the installed OSATE feature (Open Source AADL Tool
+Environment) under Help-&gt;About and then Installation Details. If it
+did not get updated to the most recent date, please change your
+permissions.</li>
+<li>Using the update site, when you are in OSATE (Eclipse) and just
+checked an update site for updates, Eclipse caches that information.
+If someone tells you about a new release on the update site, please
+exit and reenter OSATE so it will actually find the new release.</li>
+</ol>
+</div>
+<div class="section" id="changes-and-new-features">
+<span id="changes-and-new-features"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>ResolvePrototypeUtil - FeatureGroupPrototypeActual support -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/285">https://github.com/osate/osate2-core/issues/285</a></li>
+<li>Constant property declaration using user-defined property set is not
+working - <a class="reference external" href="https://github.com/osate/osate2-core/issues/286">https://github.com/osate/osate2-core/issues/286</a></li>
+<li>Data_Volume property not defined in AADL_Project.aadl -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/287">https://github.com/osate/osate2-core/issues/287</a></li>
+<li>standard properties are no longer parsed -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/302">https://github.com/osate/osate2-core/issues/302</a></li>
+<li>Instantiated subcomponent has a component type only&#8221; error message -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/301">https://github.com/osate/osate2-core/issues/301</a></li>
+<li>Concrete Syntax Validation Error -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/299">https://github.com/osate/osate2-core/issues/299</a></li>
+<li>Connections are not required to have names -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/298">https://github.com/osate/osate2-core/issues/298</a></li>
+<li>getLocationReference() always returns null -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/295">https://github.com/osate/osate2-core/issues/295</a></li>
+<li>newFormal must be an instance of ComponentPrototype -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/293">https://github.com/osate/osate2-core/issues/293</a></li>
+<li>Connection Refinement Issue -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/291">https://github.com/osate/osate2-core/issues/291</a></li>
+<li>EMV2.aadl being included with OSATE -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/290">https://github.com/osate/osate2-core/issues/290</a></li>
+<li>Mode Transition Trigger Port Reference Issue -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/289">https://github.com/osate/osate2-core/issues/289</a></li>
+<li>Cannot resolve units type in constant declaration -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/288">https://github.com/osate/osate2-core/issues/288</a></li>
+<li>Connection id is now mandatory -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/304">https://github.com/osate/osate2-core/issues/304</a></li>
+<li>add nullity test to &#8220;upfgt&#8221; in Aadl2InstanceUtil.isSame -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/305">https://github.com/osate/osate2-core/issues/305</a></li>
+<li>Issue with Xtext Grammar/Meta Model -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/306">https://github.com/osate/osate2-core/issues/306</a></li>
+<li>System subcomponents become Abstract when instantiated -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/307">https://github.com/osate/osate2-core/issues/307</a></li>
+<li>Typo in Metamodel -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/308">https://github.com/osate/osate2-core/issues/308</a></li>
+<li>Hybrid and Timed literals do not exist in AadlProject -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/309">https://github.com/osate/osate2-core/issues/309</a></li>
+<li>OSATE allows subprograms to provide data access -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/310">https://github.com/osate/osate2-core/issues/310</a></li>
+<li>getSubcomponentType does not invoke eIsProxy if subcomponentType is
+null... - <a class="reference external" href="https://github.com/osate/osate2-core/issues/311">https://github.com/osate/osate2-core/issues/311</a></li>
+<li>Question on connecting &#8216;out data port&#8217; to &#8216;requires data access&#8217; -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/312">https://github.com/osate/osate2-core/issues/312</a></li>
+<li>Extra natures added to the Plugin_Resources project are always
+removed at startup. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/319">https://github.com/osate/osate2-core/issues/319</a></li>
+<li>The name of a subcomponent should be set to null whenever its
+refined subcomponent is set to a non null value. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/320">https://github.com/osate/osate2-core/issues/320</a></li>
+<li>AADL package section elements have a null qualified name. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/321">https://github.com/osate/osate2-core/issues/321</a></li>
+<li>AADL navigator content provider throws null pointer exception for
+the Plugin_Resources project. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/322">https://github.com/osate/osate2-core/issues/322</a></li>
+<li>AnnexParserAgent.java -
+<a class="reference external" href="https://github.com/osate/osate2-core/pull/284">https://github.com/osate/osate2-core/pull/284</a></li>
+<li>Error when defining bus binding -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/39">https://github.com/osate/ErrorModelV2/issues/39</a></li>
+<li>FHA cannot be generated when using error type -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/38">https://github.com/osate/ErrorModelV2/issues/38</a></li>
+</ol>
+</div>
+</div>
+<div class="section" id="version-2-0-4">
+<span id="version-2-0-4"></span><h3>Version 2.0.4<a class="headerlink" href="#version-2-0-4" title="Permalink to this headline">¶</a></h3>
+<p>This release was published after the 2013 Fall AADL meeting hold in
+Montreal, Canada.</p>
+<div class="section" id="release">
+<span id="id30"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.4-RELEASE-201309240847</li>
+<li><strong>Release date</strong>: September, 24 2013</li>
+<li><strong>Eclipse base version</strong>: Kepler</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.4/update-site">http://www.aadl.info/aadl/osate/stable/2.0.4/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.4/products">http://www.aadl.info/aadl/osate/stable/2.0.4/products</a></li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<span id="id31"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the update site, under Windows7 you may have a file protection
+issue for your installation. Eclipse update is just silently failing
+to update rather than reporting &#8220;permission denied.&#8221; Please check
+the date of the installed OSATE feature (Open Source AADL Tool
+Environment) under Help-&gt;About and then Installation Details. If it
+did not get updated to the most recent date, please change your
+permissions.</li>
+<li>Using the update site, when you are in OSATE (Eclipse) and just
+checked an update site for updates, Eclipse caches that information.
+If someone tells you about a new release on the update site, please
+exit and reenter OSATE so it will actually find the new release.</li>
+<li>If you updated an old Juno installation, you should also add the
+Kepler update site so that the Kepler dependencies can be updated as
+well.</li>
+</ol>
+</div>
+<div class="section" id="changes-and-new-features">
+<span id="id32"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>EMV2.aadl being included with OSATE -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/290">https://github.com/osate/osate2-core/issues/290</a></li>
+<li>Cannot resolve units type in constant declaration -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/288">https://github.com/osate/osate2-core/issues/288</a></li>
+<li>Data_Volume property not defined in AADL_Project.aadl -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/287">https://github.com/osate/osate2-core/issues/287</a></li>
+<li>Constant property declaration using user-defined property set is not
+working - <a class="reference external" href="https://github.com/osate/osate2-core/issues/286">https://github.com/osate/osate2-core/issues/286</a></li>
+<li>ResolvePrototypeUtil - FeatureGroupPrototypeActual support -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/285">https://github.com/osate/osate2-core/issues/285</a></li>
+<li>ResolvePrototypeUtil.resolveFeaturePrototype always returns null -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/281">https://github.com/osate/osate2-core/issues/281</a></li>
+<li>Adding a property fails -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/279">https://github.com/osate/osate2-core/issues/279</a></li>
+<li>property edition: unit are not recognized -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/278">https://github.com/osate/osate2-core/issues/278</a></li>
+<li>Feature Group Connections. Invalid inverse connection is allowed. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/276">https://github.com/osate/osate2-core/issues/276</a></li>
+<li>NullPointerException at
+org.osate.aadl2.properties.PropertyAcc.addLocalContained(PropertyAcc.java:107)<ul>
+<li><a class="reference external" href="https://github.com/osate/osate2-core/issues/275">https://github.com/osate/osate2-core/issues/275</a></li>
+</ul>
+</li>
+<li>GetProperties::getDelayedUnitLiteral always returns null. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/273">https://github.com/osate/osate2-core/issues/273</a></li>
+<li>org.eclipse.sphinx.emf needed and not found -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/271">https://github.com/osate/osate2-core/issues/271</a></li>
+<li>Unable to Instantiate System/Qualified names are not unique -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/270">https://github.com/osate/osate2-core/issues/270</a></li>
+<li>Defining a property delete other components -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/268">https://github.com/osate/osate2-core/issues/268</a></li>
+<li>Refreshing property values -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/267">https://github.com/osate/osate2-core/issues/267</a></li>
+<li>Adding a property on a component fails and triggers an exception -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/266">https://github.com/osate/osate2-core/issues/266</a></li>
+<li>Most-Recent Develop Build Omits Plug-In Launch(es) -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/265">https://github.com/osate/osate2-core/issues/265</a></li>
+<li>Instantiation Warning Not Helpful: Instantiated subcomponent has a
+component type only -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/264">https://github.com/osate/osate2-core/issues/264</a></li>
+<li>Update to Kepler - <a class="reference external" href="https://github.com/osate/osate2-core/issues/263">https://github.com/osate/osate2-core/issues/263</a></li>
+<li>Properties already defined are not shown -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/261">https://github.com/osate/osate2-core/issues/261</a></li>
+<li>Cannot add a property value -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/260">https://github.com/osate/osate2-core/issues/260</a></li>
+<li>error when building osate -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/258">https://github.com/osate/osate2-core/issues/258</a></li>
+<li>Instance Model Viewer: Keep User Position Changes When Inserting
+Subcomponents - <a class="reference external" href="https://github.com/osate/osate2-core/issues/257">https://github.com/osate/osate2-core/issues/257</a></li>
+<li>Types that are allows in global index are too restrictive. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/256">https://github.com/osate/osate2-core/issues/256</a></li>
+<li>AADL Properties View Issues -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/254">https://github.com/osate/osate2-core/issues/254</a></li>
+<li>Setting the type of component implementations and the extended
+component for types and implementations throws unsupported operation
+exception. - <a class="reference external" href="https://github.com/osate/osate2-core/issues/253">https://github.com/osate/osate2-core/issues/253</a></li>
+<li>Checking properties for connection instances -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/252">https://github.com/osate/osate2-core/issues/252</a></li>
+<li>FHA cannot be generated when using error type -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/38">https://github.com/osate/ErrorModelV2/issues/38</a></li>
+<li>add severity and likelhood in the hazard record -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/36">https://github.com/osate/ErrorModelV2/issues/36</a></li>
+<li>Fail to parse the annex content when not using types -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/26">https://github.com/osate/ErrorModelV2/issues/26</a></li>
+<li>Cannot specify the type associated to a state in the composite model<ul>
+<li><a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/27">https://github.com/osate/ErrorModelV2/issues/27</a></li>
+</ul>
+</li>
+<li>Property not being inherited -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/34">https://github.com/osate/ErrorModelV2/issues/34</a></li>
+<li>Properties for refined components -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/35">https://github.com/osate/ErrorModelV2/issues/35</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="version-2-0-3">
+<span id="version-2-0-3"></span><h3>Version 2.0.3<a class="headerlink" href="#version-2-0-3" title="Permalink to this headline">¶</a></h3>
+<p>This release was published after the 2013 Summer AADL meeting hold in
+Pittsburgh, USA.</p>
+<div class="section" id="release">
+<span id="id33"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.3-RELEASE-201307220847</li>
+<li><strong>Release date</strong>: July, 22 2013</li>
+<li><strong>Eclipse base version</strong>: Juno - 4.2</li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.3/update-site">http://www.aadl.info/aadl/osate/stable/2.0.3/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.3/products">http://www.aadl.info/aadl/osate/stable/2.0.3/products</a></li>
+<li><strong>Number of commits since the last stable</strong>: 383</li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<span id="id34"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the update site, under Windows7 you may have a file protection
+issue for your installation. Eclipse update is just silently failing
+to update rather than reporting &#8220;permission denied.&#8221; Please check
+the date of the installed OSATE feature (Open Source AADL Tool
+Environment) under Help-&gt;About and then Installation Details. If it
+did not get updated to the most recent date, please change your
+permissions.</li>
+<li>Using the update site, when you are in OSATE (Eclipse) and just
+checked an update site for updates, Eclipse caches that information.
+If someone tells you about a new release on the update site, please
+exit and reenter OSATE so it will actually find the new release.</li>
+</ol>
+</div>
+<div class="section" id="changes-and-new-features">
+<span id="id35"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>PRISM export now supports error propagation</li>
+<li>Updated Error Model Support</li>
+<li>Property editor updated and refined</li>
+<li>Integration of Sphinx, contribution from Geensyde</li>
+</ul>
+</div>
+<div class="section" id="issues-closed">
+<span id="issues-closed"></span><h4>Issues closed<a class="headerlink" href="#issues-closed" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Connection instances not created for feature group connection -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/228">https://github.com/osate/osate2-core/issues/228</a></li>
+<li>annex subclauses are not parsed in feature group type -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/227">https://github.com/osate/osate2-core/issues/227</a></li>
+<li>Subprogram Problem -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/226">https://github.com/osate/osate2-core/issues/226</a></li>
+<li>Error when connecting array of subcomponents -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/225">https://github.com/osate/osate2-core/issues/225</a></li>
+<li>Connection instances not created for feature group connection -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/228">https://github.com/osate/osate2-core/issues/228</a></li>
+<li>ModelLoadingAdapter returns null instead of a model -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/229">https://github.com/osate/osate2-core/issues/229</a></li>
+<li>Update ModelLoadingAdapter.java -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/230">https://github.com/osate/osate2-core/issues/230</a></li>
+<li>property parsing error -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/231">https://github.com/osate/osate2-core/issues/231</a></li>
+<li>ConnectionReferences in ConnectionInstance is incorrect for arrays -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/232">https://github.com/osate/osate2-core/issues/232</a></li>
+<li>Properties Viewer throws null pointer exception -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/233">https://github.com/osate/osate2-core/issues/233</a></li>
+<li>when feature group is defined via prototype the connection instances
+connect as if all_to_all -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/235">https://github.com/osate/osate2-core/issues/235</a></li>
+<li>AnalysisModel does not take bindings information into account -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/238">https://github.com/osate/osate2-core/issues/238</a></li>
+<li>Add Preference to turn off *all* Xtext background operations until
+file save - <a class="reference external" href="https://github.com/osate/osate2-core/issues/239">https://github.com/osate/osate2-core/issues/239</a></li>
+<li>Call to getType on AbstractImplementation classifier causes a stack
+trace overflow. - <a class="reference external" href="https://github.com/osate/osate2-core/issues/240">https://github.com/osate/osate2-core/issues/240</a></li>
+<li>Error when defining a property that applies to package -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/241">https://github.com/osate/osate2-core/issues/241</a></li>
+<li>Request - API to retrieve NamedElement by qualified name -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/242">https://github.com/osate/osate2-core/issues/242</a></li>
+<li>index order in Connection_Set issue -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/243">https://github.com/osate/osate2-core/issues/243</a></li>
+<li>Calling methods EMFIndexRetrieval too early can cause exception. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/244">https://github.com/osate/osate2-core/issues/244</a></li>
+<li>ConnectionReference holds incorrect values when arrays are involved<ul>
+<li><a class="reference external" href="https://github.com/osate/osate2-core/issues/245">https://github.com/osate/osate2-core/issues/245</a></li>
+</ul>
+</li>
+<li>References to AADL model elements from models of other meta-models
+are shifted when elements are deleted / added in the AADL
+declarative model. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/247">https://github.com/osate/osate2-core/issues/247</a></li>
+<li>Class cast exception thrown when resolving some derived references
+of the meta-model. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/248">https://github.com/osate/osate2-core/issues/248</a></li>
+<li>Setting the name of a package section throws an unsuported operation
+exception and causes problems for model merge.. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/249">https://github.com/osate/osate2-core/issues/249</a></li>
+<li>EcoreUtil.equals does not work on Generalizations -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/250">https://github.com/osate/osate2-core/issues/250</a></li>
+<li>connection between data and a subcomponent inside an other data -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/251">https://github.com/osate/osate2-core/issues/251</a></li>
+<li>Instance Model Viewer: Keep User Position Changes When Inserting
+Subcomponents - <a class="reference external" href="https://github.com/osate/osate2-core/issues/257">https://github.com/osate/osate2-core/issues/257</a></li>
+<li>bindings information in AnalysisModel -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/22">https://github.com/osate/ErrorModelV2/issues/22</a></li>
+<li>Check of duplicate flow identifiers -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/23">https://github.com/osate/ErrorModelV2/issues/23</a></li>
+<li>EM2TypeSetUtil.contains improvement -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/24">https://github.com/osate/ErrorModelV2/issues/24</a></li>
+<li>Fail to parse the annex content when not using types -
+<a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/26">https://github.com/osate/ErrorModelV2/issues/26</a></li>
+<li>Cannot specify the type associated to a state in the composite model<ul>
+<li><a class="reference external" href="https://github.com/osate/ErrorModelV2/issues/27">https://github.com/osate/ErrorModelV2/issues/27</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="version-2-0-2">
+<span id="version-2-0-2"></span><h3>Version 2.0.2<a class="headerlink" href="#version-2-0-2" title="Permalink to this headline">¶</a></h3>
+<p>This release is published after the 2013 Spring AADL meeting hold in
+Jacksonville, USA. Please note that this release changed also the
+structure of our download area. The testing update site is now available
+on <a class="reference external" href="http://www.aadl.info/aadl/osate/testing/">http://www.aadl.info/aadl/osate/testing/</a></p>
+<div class="section" id="release">
+<span id="id36"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.2-RELEASE-201304300847</li>
+<li><strong>Release date</strong>: April, 30 1013</li>
+<li><strong>Eclipse base version</strong>: Juno version <strong>4.2.2</strong></li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.2/update-site">http://www.aadl.info/aadl/osate/stable/2.0.2/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.2/products">http://www.aadl.info/aadl/osate/stable/2.0.2/products</a></li>
+<li>Number of commits since the last stable: 283 (194 on the core) and
+89 on the plugins.</li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<span id="id37"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the update site, under Windows7 you may have a file protection
+issue for your installation. Eclipse update is just silently failing
+to update rather than reporting &#8220;permission denied.&#8221; Please check
+the date of the installed OSATE feature (Open Source AADL Tool
+Environment) under Help-&gt;About and then Installation Details. If it
+did not get updated to the most recent date, please change your
+permissions.</li>
+<li>Using the update site, when you are in OSATE (Eclipse) and just
+checked an update site for updates, Eclipse caches that information.
+If someone tells you about a new release on the update site, please
+exit and reenter OSATE so it will actually find the new release.</li>
+</ol>
+</div>
+<div class="section" id="changes-and-new-features">
+<span id="id38"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Integration of the Property View</li>
+<li>Integration of the IMV viewer with error-model annex</li>
+<li>Add the Markov-Chain export for the Error-Model</li>
+<li>Add the Reliability Block Diagram analysis tool for the Error-Model</li>
+<li>Add the Fault-Tree Analysis tool for the Error-Model</li>
+<li>Improvements of the Fault Hazard Assessment</li>
+<li>Clean up the AADL perspective, analysis function being available
+only when using AADL view</li>
+</ul>
+</div>
+<div class="section" id="issues-closed">
+<span id="id39"></span><h4>Issues closed<a class="headerlink" href="#issues-closed" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using Xtext to create annex-
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/224">https://github.com/osate/osate2-core/issues/224</a></li>
+<li>Instanciation exception when using connection datasubcomponent -&gt;
+call.dataaccess - <a class="reference external" href="https://github.com/osate/osate2-core/issues/222">https://github.com/osate/osate2-core/issues/222</a></li>
+<li>inconsistent kind between flow spec and implementation not detected<ul>
+<li><a class="reference external" href="https://github.com/osate/osate2-core/issues/221">https://github.com/osate/osate2-core/issues/221</a></li>
+</ul>
+</li>
+<li>Instanciation exception when using connection datasubcomponent -&gt;
+call.parameter - <a class="reference external" href="https://github.com/osate/osate2-core/issues/220">https://github.com/osate/osate2-core/issues/220</a></li>
+<li>ConnectionKind in AADL2 Meta model -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/215">https://github.com/osate/osate2-core/issues/215</a></li>
+<li>mode specific property values in instance model -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/214">https://github.com/osate/osate2-core/issues/214</a></li>
+<li>AADL BA wizard examples -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/212">https://github.com/osate/osate2-core/issues/212</a></li>
+<li>conflicting handlers when invoking Content Assist -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/211">https://github.com/osate/osate2-core/issues/211</a></li>
+<li>clock_period and clock_period_range should apply to device -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/210">https://github.com/osate/osate2-core/issues/210</a></li>
+<li>Instence creation with prototype binding does not work -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/209">https://github.com/osate/osate2-core/issues/209</a></li>
+<li>flow latency calculation not correct for components without flow
+spec - <a class="reference external" href="https://github.com/osate/osate2-core/issues/207">https://github.com/osate/osate2-core/issues/207</a></li>
+<li>flow implementation without connections accepted without warning or
+error - <a class="reference external" href="https://github.com/osate/osate2-core/issues/206">https://github.com/osate/osate2-core/issues/206</a></li>
+<li>property association not created in instance model -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/205">https://github.com/osate/osate2-core/issues/205</a></li>
+<li>Missing connection instances -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/204">https://github.com/osate/osate2-core/issues/204</a></li>
+<li>User Interface Improvements -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/203">https://github.com/osate/osate2-core/issues/203</a></li>
+<li>ProeprtyView icon not found -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/202">https://github.com/osate/osate2-core/issues/202</a></li>
+<li>Resolution of Device_Driver property -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/200">https://github.com/osate/osate2-core/issues/200</a></li>
+<li>patch proposal - <a class="reference external" href="https://github.com/osate/osate2-core/issues/199">https://github.com/osate/osate2-core/issues/199</a></li>
+<li>Features direction for subprogram ports and thread ports -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/198">https://github.com/osate/osate2-core/issues/198</a></li>
+<li>(Modified) Plugin_Resources not updated upon &#8216;Create/update
+Predeclared and Annex Properties&#8217;&#8217; -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/197">https://github.com/osate/osate2-core/issues/197</a></li>
+<li>flow path reports incrrectly that the port direction is wrong -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/196">https://github.com/osate/osate2-core/issues/196</a></li>
+<li>The AADL meta-models are not declared in the EMF package registry
+for the development time version. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/195">https://github.com/osate/osate2-core/issues/195</a></li>
+<li>Last Connection Reference of a Connection Instance generated from a
+bidirectional feature group bug -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/194">https://github.com/osate/osate2-core/issues/194</a></li>
+<li>Aadl Property Viewer does not show values on virtual processor in
+instance model - <a class="reference external" href="https://github.com/osate/osate2-core/issues/193">https://github.com/osate/osate2-core/issues/193</a></li>
+<li>Some new operations in the meta-model are not implemented in the
+Java classes. - <a class="reference external" href="https://github.com/osate/osate2-core/issues/192">https://github.com/osate/osate2-core/issues/192</a></li>
+<li>null pointer error on OSATE startup when AADL Properties view is
+open - <a class="reference external" href="https://github.com/osate/osate2-core/issues/191">https://github.com/osate/osate2-core/issues/191</a></li>
+<li>requires subprogram access causes parsing error -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/189">https://github.com/osate/osate2-core/issues/189</a></li>
+<li>osate2-core now has dependency to ErrorModelV2 -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/188">https://github.com/osate/osate2-core/issues/188</a></li>
+<li>Problems with classifier matching rules on refined subcomponents. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/182">https://github.com/osate/osate2-core/issues/182</a></li>
+<li>for bidirectional feature group connections false warning about no
+ingoing connection -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/184">https://github.com/osate/osate2-core/issues/184</a></li>
+<li>Can wrap illegal features inside legal feature groups -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/185">https://github.com/osate/osate2-core/issues/185</a></li>
+<li>class cast exception in validator -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/186">https://github.com/osate/osate2-core/issues/186</a></li>
+<li>FlowSpecificationInstance no longer has Source and Destination
+assigned - <a class="reference external" href="https://github.com/osate/osate2-core/issues/187">https://github.com/osate/osate2-core/issues/187</a></li>
+</ol>
+</div>
+</div>
+<div class="section" id="version-2-0-1">
+<span id="version-2-0-1"></span><h3>Version 2.0.1<a class="headerlink" href="#version-2-0-1" title="Permalink to this headline">¶</a></h3>
+<p>This release is published after the Winter AADL meeting hold on
+Valencia, Spain. We thank again our host for hosting this event.</p>
+<div class="section" id="release">
+<span id="id40"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.0.1-RELEASE-201302141024</li>
+<li><strong>Release date</strong>: 2013, Feb 14</li>
+<li><strong>Eclipse base version</strong>: Juno version <strong>4.2.1</strong></li>
+<li><strong>Eclipse Update-Site</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.1/update-site">http://www.aadl.info/aadl/osate/stable/2.0.1/update-site</a></li>
+<li><strong>Download URL</strong>:
+<a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.0.1/products">http://www.aadl.info/aadl/osate/stable/2.0.1/products</a></li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<span id="id41"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the update site, under Windows7 you may have a file protection
+issue for your installation. Eclipse update is just silently failing
+to update rather than reporting &#8220;permission denied.&#8221; Please check
+the date of the installed OSATE feature (Open Source AADL Tool
+Environment) under Help-&gt;About and then Installation Details. If it
+did not get updated to the most recent date, please change your
+permissions.</li>
+<li>Using the update site, when you are in OSATE (Eclipse) and just
+checked an update site for updates, Eclipse caches that information.
+If someone tells you about a new release on the update site, please
+exit and reenter OSATE so it will actually find the new release.</li>
+</ol>
+</div>
+<div class="section" id="changes-and-new-features">
+<span id="id42"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>LUTE integration in AADL plug-ins</li>
+<li>Instance Model Viewer Integration</li>
+<li>Error Model Annex v1</li>
+<li>Error Model Annex v2</li>
+<li>Integration of Ocarina specific property sets</li>
+<li>Migration to Eclipse/Juno</li>
+<li>ARINC653 validation functions</li>
+<li>Support for ARINC653 annex</li>
+<li>Update of help content within Eclipse (with Java API, plugins
+description, etc.)</li>
+<li>User feedback when model instantiation fails</li>
+<li>System Instance can be validated using EMF</li>
+<li>Property viewer integration</li>
+<li>Reference Manual integration</li>
+</ul>
+</div>
+<div class="section" id="bugfixes">
+<span id="bugfixes"></span><h4>Bugfixes<a class="headerlink" href="#bugfixes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Subprogram implementations in call sequences
+(https://github.com/osate/osate2-core/issues/181)</li>
+<li>Flows through feature groups (cf.
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/179">https://github.com/osate/osate2-core/issues/179</a>)</li>
+<li>subcomponent reference required in system instance
+(https://github.com/osate/osate2-core/issues/142)</li>
+<li>duplicate flow implementations not reported
+(https://github.com/osate/osate2-core/issues/164)</li>
+<li>Implement classifier matching rule other than default rule
+(https://github.com/osate/osate2-core/issues/69)</li>
+<li>Semantic checking of flows
+(https://github.com/osate/osate2-core/issues/67)</li>
+<li>Semantic checking of access connections
+(https://github.com/osate/osate2-core/issues/66)</li>
+<li>Requires subprogram in feature group prototype
+(https://github.com/osate/osate2-core/issues/166)</li>
+<li>Nested inverse of feature groups
+(https://github.com/osate/osate2-core/issues/177)</li>
+<li>Connection Instance property when Multiple properties exist, only
+creates one in certain cases.
+(https://github.com/osate/osate2-core/issues/178)</li>
+<li>ForAllElement.defaultTraversalAllDeclarativeModels() not working
+(https://github.com/osate/osate2-core/issues/169)</li>
+<li>Error instantiating model
+(https://github.com/osate/osate2-core/issues/176)</li>
+<li>AADL connection instance property. &#8220;applies to&#8221; does not work.
+(https://github.com/osate/osate2-core/issues/174)</li>
+<li>DATA_VOLUME_UNITS is now defined in AADL_Project</li>
+<li>AADL_Project.java file need update for Data_Volume_Units
+(https://github.com/osate/osate2-core/issues/173)</li>
+<li>Invalid ConnectionInstance property value
+(https://github.com/osate/osate2-core/issues/171)</li>
+<li>Property Association Missing in instantiation -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/168">https://github.com/osate/osate2-core/issues/168</a></li>
+<li>Access features are missing the super class of the specific category
+in the Meta model -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/167">https://github.com/osate/osate2-core/issues/167</a></li>
+<li>Instantiation error (regression); trace suggests it comes from the
+process component -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/172">https://github.com/osate/osate2-core/issues/172</a></li>
+<li>Naming resolution error: subprogram call context not found -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/170">https://github.com/osate/osate2-core/issues/170</a></li>
+<li>Incorrect error reporting: &#8220;Value for property.. is inconsistent
+along connection&#8221; -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/158">https://github.com/osate/osate2-core/issues/158</a></li>
+<li>Menu item failures from 2013-01-30 Development Branch. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/165">https://github.com/osate/osate2-core/issues/165</a></li>
+<li>Support of Juno - <a class="reference external" href="https://github.com/osate/osate2-core/issues/139">https://github.com/osate/osate2-core/issues/139</a></li>
+<li>Cyclic reference error when typing in an alias (renames) -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/163">https://github.com/osate/osate2-core/issues/163</a></li>
+<li>Exception when Instantiating System with Warning -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/162">https://github.com/osate/osate2-core/issues/162</a></li>
+<li>Type mis-match warning on correct connection -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/155">https://github.com/osate/osate2-core/issues/155</a></li>
+<li>Error when instantiating the model -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/156">https://github.com/osate/osate2-core/issues/156</a></li>
+<li>Incorrect message for feature direction in flow implementation -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/161">https://github.com/osate/osate2-core/issues/161</a></li>
+<li>Incorrect error message on flow between elements of feature groups -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/160">https://github.com/osate/osate2-core/issues/160</a></li>
+<li>Error in org.osate.imv.propertydecorations.threads -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/159">https://github.com/osate/osate2-core/issues/159</a></li>
+<li>Support for subprogram implementation -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/153">https://github.com/osate/osate2-core/issues/153</a></li>
+<li>Visibility differs in subcomponent declaration versus properties
+section - <a class="reference external" href="https://github.com/osate/osate2-core/issues/152">https://github.com/osate/osate2-core/issues/152</a></li>
+<li>Illegal refinement of category type allowed -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/150">https://github.com/osate/osate2-core/issues/150</a></li>
+<li>Instance model error -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/151">https://github.com/osate/osate2-core/issues/151</a></li>
+<li>Package visible without being withed -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/149">https://github.com/osate/osate2-core/issues/149</a></li>
+<li>Property association classifier type -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/148">https://github.com/osate/osate2-core/issues/148</a></li>
+<li>setPropertyValue method in NamedElementImpl -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/59">https://github.com/osate/osate2-core/issues/59</a></li>
+<li>Formatting (via I or format command seems to loose the text in
+annexes. - <a class="reference external" href="https://github.com/osate/osate2-core/issues/145">https://github.com/osate/osate2-core/issues/145</a></li>
+<li>Subset matching for feature group is not supported yet -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/107">https://github.com/osate/osate2-core/issues/107</a></li>
+<li>renames causes cyclic lazy resolution -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/143">https://github.com/osate/osate2-core/issues/143</a></li>
+<li>Checking type of reference value and classifier value -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/68">https://github.com/osate/osate2-core/issues/68</a></li>
+<li>Property constant as value in range -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/129">https://github.com/osate/osate2-core/issues/129</a></li>
+<li>Bus classifier not recognized in bus access connection for refined
+features. - <a class="reference external" href="https://github.com/osate/osate2-core/issues/121">https://github.com/osate/osate2-core/issues/121</a></li>
+<li>Local path in target definition -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/7">https://github.com/osate/osate2-core/issues/7</a></li>
+<li>Instance model corrupted when error occurs -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/135">https://github.com/osate/osate2-core/issues/135</a></li>
+<li>Verification of duplicate elements -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/141">https://github.com/osate/osate2-core/issues/141</a></li>
+<li>Instanciation error with Compute_Execution_Time property -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/140">https://github.com/osate/osate2-core/issues/140</a></li>
+<li>Check for duplicate packages too restrictive -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/91">https://github.com/osate/osate2-core/issues/91</a></li>
+<li>Default port &#8220;Complete&#8221; is not working -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/114">https://github.com/osate/osate2-core/issues/114</a></li>
+<li>Property association omitted at instantiation of virtual processors<ul>
+<li><a class="reference external" href="https://github.com/osate/osate2-core/issues/126">https://github.com/osate/osate2-core/issues/126</a></li>
+</ul>
+</li>
+<li>Inconsistent literals for properties -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/45">https://github.com/osate/osate2-core/issues/45</a></li>
+<li>Property sets for AADL annexes -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/64">https://github.com/osate/osate2-core/issues/64</a></li>
+<li>Subprogam call name resolution -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/127">https://github.com/osate/osate2-core/issues/127</a></li>
+<li>Record values surrounded with () vs. [] is inconsistent -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/137">https://github.com/osate/osate2-core/issues/137</a></li>
+<li>Non-existent qualified name for a property -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/138">https://github.com/osate/osate2-core/issues/138</a></li>
+<li>Enumeration literal not recognized -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/133">https://github.com/osate/osate2-core/issues/133</a></li>
+<li>EValidator error when property constant is used as value -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/134">https://github.com/osate/osate2-core/issues/134</a></li>
+<li>Incorrect error msg: &#8220;Connection between two components that inherit
+features is not supported&#8221; -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/136">https://github.com/osate/osate2-core/issues/136</a></li>
+<li>Error with OSATE views -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/128">https://github.com/osate/osate2-core/issues/128</a></li>
+<li>Bug with creating the connection instance with abstract component -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/118">https://github.com/osate/osate2-core/issues/118</a></li>
+<li>About dialog is outdated -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/123">https://github.com/osate/osate2-core/issues/123</a></li>
+<li>Method &#8220;acceptsProperty&#8221; in ComponentInstanceImpl always return true
+whatever the property is. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/122">https://github.com/osate/osate2-core/issues/122</a></li>
+<li>Property applicability clause to classifiers not recognized. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/120">https://github.com/osate/osate2-core/issues/120</a></li>
+<li>Discrepancy between ModeTransition ecore class and Java class -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/124">https://github.com/osate/osate2-core/issues/124</a></li>
+<li>OsateResourceUtil bug? -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/42">https://github.com/osate/osate2-core/issues/42</a></li>
+<li>Propertyset projects have been replaced by properties projects, this
+has... - <a class="reference external" href="https://github.com/osate/osate2-core/pull/125">https://github.com/osate/osate2-core/pull/125</a></li>
+<li>Exception at ConnectionInstanceImpl.java (Line 843) -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/112">https://github.com/osate/osate2-core/issues/112</a></li>
+<li>null pointer exception on hashcode of PropertyImpl -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/130">https://github.com/osate/osate2-core/issues/130</a></li>
+<li>Duplicate Element &#8216;mils_example&#8217; in PublicPackageSection
+&#8216;Test_Package&#8217; example.aadl -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/132">https://github.com/osate/osate2-core/issues/132</a></li>
+<li>Handling of instantiating a System when the model has errors. -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/77">https://github.com/osate/osate2-core/issues/77</a></li>
+<li>Array size via property value -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/89">https://github.com/osate/osate2-core/issues/89</a></li>
+<li>Workspace synchronization when instanciate several systems -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/119">https://github.com/osate/osate2-core/issues/119</a></li>
+<li>Meta model support for contaiment path in core AADL with annex
+specific segments -
+<a class="reference external" href="https://github.com/osate/osate2-core/issues/146">https://github.com/osate/osate2-core/issues/146</a></li>
+</ol>
+<p>This page uses the <a class="reference external" href="https://github.com/jasonlong/cayman-theme">Cayman
+theme</a> by <a class="reference external" href="https://twitter.com/jasonlong">Jason
+Long</a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="download-and-install.html" class="btn btn-neutral" title="Download and Installation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Carnegie Mellon University.
+      Last updated on Apr 20, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2.2.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
