@@ -20,8 +20,8 @@ used to start the tool.
 ### Detailed Installation for Windows
 
 The OSATE distribution for Windows is packaged as a zip file, e.g.,
-**osate2-2.1.2-win32.win32.x86.zip** for the 32-bit version and
-**osate2-2.1.2-win32.win32.x86\_64.zip** for the 64-bit version. Which
+**osate2-2.2.1-vfinal-win32.win32.x86.zip** for the 32-bit version and
+**osate2-2.2.1-vfinal-win32.win32.x86\_64.zip** for the 64-bit version. Which
 of these is needed depends on the installed Java version: 32-bit Java
 must use 32-bit OSATE and 64-bit Java must use 64-bit OSATE. To test
 which one is installed, run `java -version` in cmd.exe. The following

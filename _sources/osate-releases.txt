@@ -1,16 +1,4 @@
-# Releases
-
-## Current Stable
-
-This corresponds to the latest stable version of OSATE. It includes the
-latest version that has been tested. All information can be found [on
-this page](release_notes_of_OSATE2_2.1.2 "wikilink").
-
-## Testing version
-
-This is the testing version, always up-to-date with the latest release
-of Eclipse. You can read more about the current status in the [specific
-page related to this version](Testing_Version "wikilink").
+# Release Notes
 
 ## Stable Releases
 
