@@ -34,7 +34,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_51-b16)
 Java HotSpot(TM) Client VM (build 25.51-b03, mixed mode, sharing)
 ```
 
-A 64-bit Java will output "64-bit Server VM" instead if "Client VM".
+A 64-bit Java will output "64-bit Server VM" instead of "Client VM".
 
 After downloading the appropriate zip file from the OSATE download site,
 extract the zip file to an empty target directory, e.g.,
