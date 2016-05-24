@@ -2,6 +2,43 @@
 
 ## Stable Releases
 
+### Version 2.2.1 update 01
+
+#### Release
+
+  - **GIT tag**: 2.2.1-UPDATE01-20160523
+  - **Release date**: May 24, 2016
+  - **Eclipse base version**: Mars.2
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.1/update-site>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.2.1/products>
+
+This is a maintenance release that contains bug fixes and improvements to the ReqSpec language.
+
+#### Notable Changes
+
+1.  Property `Classifier_Matching_Rule => Subset` is now supported for instantiation.
+2.  Creating a text file for an instance model works now.
+3.  Added documention for using the AADL Property Values view under OSATE Core Documentation
+    -> Getting started -> Viewing and editing property values.
+4.  Added a Usage Guide to the Resolute documentation.
+5.  Added more types and type checking to the ReqSpec language. The help text has been updated
+    to reflect these changes.
+
+#### Known Issues
+
+1.  Using the AADL Property View to edit property values results in bad formatting.
+
+#### Fixed Issues
+
+The full lists of closed issues for this release are available at
+
+<https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2016-04-19..2016-05-22+is%3Aclosed>
+
+<https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2016-04-19..2016-05-22+is%3Aclosed>
+
+<https://github.com/osate/ErrorModelV2/issues?q=is%3Aissue+updated%3A2016-04-19..2016-05-22+is%3Aclosed>
+
 ### Version 2.2.1
 
 #### Release
