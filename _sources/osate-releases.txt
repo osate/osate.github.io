@@ -19,7 +19,7 @@ This is a maintenance release that contains bug fixes and improvements to the Re
 
 1.  Property `Classifier_Matching_Rule => Subset` is now supported for instantiation.
 2.  Creating a text file for an instance model works now.
-3.  Added documention for using the AADL Property Values view under OSATE Core Documentation
+3.  Added documentation for using the AADL Property Values view under OSATE Core Documentation
     -> Getting started -> Viewing and editing property values.
 4.  Added a Usage Guide to the Resolute documentation.
 5.  Added more types and type checking to the ReqSpec language. The help text has been updated
