@@ -85,10 +85,11 @@
                 <p class="caption"><span class="caption-text">User Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Download and Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#new-installation">New Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#detailed-installation-for-windows">Detailed Installation for Windows</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-osate">Updating OSATE</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#download-locations">Download Locations</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#stable-versions">Stable Versions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#testing-version">Testing Version</a></li>
@@ -97,6 +98,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="osate-releases.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osate-roadmap.html">Roadmap for AADL Language Support</a></li>
 </ul>
 
             
@@ -143,8 +145,8 @@
 <span id="download-and-installation"></span><h1>Download and Installation<a class="headerlink" href="#download-and-installation" title="Permalink to this headline">¶</a></h1>
 <p>The latest OSATE release can be downloaded from
 <a class="reference external" href="http://aadl.info/aadl/osate/stable/latest/products/">here</a>.</p>
-<div class="section" id="installation">
-<span id="installation"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="new-installation">
+<span id="new-installation"></span><h2>New Installation<a class="headerlink" href="#new-installation" title="Permalink to this headline">¶</a></h2>
 <p>OSATE is available for Windows (32-bit and 64-bit), Mac OSX (64-bit),
 and Linux (64-bit). As a prerequisite Java 8 is required; in the
 following we assume that it is already installed. See
@@ -154,7 +156,7 @@ with installing Java.</p>
 OSATE download site (see below), choose an installation directory and
 unpack the archive file there. The installation directory contains a
 platform specific executable (osate.exe / osate.app / osate) that can be
-used to start the tool.</p>
+used to start the OSATE.</p>
 <div class="section" id="detailed-installation-for-windows">
 <span id="detailed-installation-for-windows"></span><h3>Detailed Installation for Windows<a class="headerlink" href="#detailed-installation-for-windows" title="Permalink to this headline">¶</a></h3>
 <p>The OSATE distribution for Windows is packaged as a zip file, e.g.,
@@ -178,6 +180,16 @@ some sub-directories and files, including osate.exe:</p>
 <p><img alt="OSATE Directory Layout" src="_images/osate-directory-layout.png" /></p>
 <p>OSATE Directory Layout</p>
 </div>
+</div>
+<div class="section" id="updating-osate">
+<span id="updating-osate"></span><h2>Updating OSATE<a class="headerlink" href="#updating-osate" title="Permalink to this headline">¶</a></h2>
+<p>An existing OSATE installation can be updated when a new maintenance release has been published. We support updates within
+the same OSATE version from the final release to a maintenance release and from one maintenance release to the next.
+For example,</p>
+<p>2.2.1.vfinal -&gt; 2.2.1.vupdate01 -&gt; 2.2.1.vupdate02 -&gt; ...</p>
+<p>To start the update process, use the check for updates entry in the help menu in OSATE and follow the instructions in
+the dialog.</p>
+<p><img alt="OSATE Update Menu" src="_images/osate-update.png" /></p>
 </div>
 <div class="section" id="download-locations">
 <span id="download-locations"></span><h2>Download Locations<a class="headerlink" href="#download-locations" title="Permalink to this headline">¶</a></h2>
@@ -228,7 +240,7 @@ using it for production purpose due to potential unstable features.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, Carnegie Mellon University.
-      Last updated on May 17, 2016.
+      Last updated on Oct 08, 2016.
 
     </p>
   </div>

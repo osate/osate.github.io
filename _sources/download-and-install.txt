@@ -3,7 +3,7 @@
 The latest OSATE release can be downloaded from 
 [here](http://aadl.info/aadl/osate/stable/latest/products/).
 
-## Installation
+## New Installation
 
 OSATE is available for Windows (32-bit and 64-bit), Mac OSX (64-bit),
 and Linux (64-bit). As a prerequisite Java 8 is required; in the
@@ -15,7 +15,7 @@ To install OSATE, download the archive file for your platform from the
 OSATE download site (see below), choose an installation directory and
 unpack the archive file there. The installation directory contains a
 platform specific executable (osate.exe / osate.app / osate) that can be
-used to start the tool.
+used to start the OSATE.
 
 ### Detailed Installation for Windows
 
@@ -45,6 +45,20 @@ some sub-directories and files, including osate.exe:
 "OSATE Directory Layout")
 
 OSATE Directory Layout
+
+## Updating OSATE
+
+An existing OSATE installation can be updated when a new maintenance release has been published. We support updates within
+the same OSATE version from the final release to a maintenance release and from one maintenance release to the next.
+For example,
+
+2.2.1.vfinal -> 2.2.1.vupdate01 -> 2.2.1.vupdate02 -> ...
+
+To start the update process, use the check for updates entry in the help menu in OSATE and follow the instructions in
+the dialog.
+
+![OSATE Update Menu](images/osate-update.png 
+"Check for Updates Menu Entry")
 
 ## Download Locations
 
