@@ -14,7 +14,7 @@
   - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.2.1/products>
 
 This is a maintenance release that contains bug fixes and improvements to the ReqSpec language. It also includes
-a beta version the verify and assure languages.
+a beta version the Verify and Alisa languages for requirements verification.
 
 #### Notable Changes
 
@@ -28,7 +28,7 @@ a beta version the verify and assure languages.
 * OSATE core and analyses
   1. Flow sink implementations are now property serialized (#617)
   1. Fixed a crash when creating an instance model that has errors (#712)
-  1. Fixed a deadlock suring instantiation (#726)
+  1. Fixed a deadlock during instantiation (#726)
   1. Connections that go through a component (from in port directly to out port) are now flagged as errors (#727, #728)
   1. Validation of feature group connections now flags mismatched feature group types as an error (#709)
   1. Fixed validation to allow references to elements of multi-dimensional arrays in property values (#694)
