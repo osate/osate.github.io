@@ -2,11 +2,56 @@
 
 ## Stable Releases
 
+### Version 2.2.1 update 02
+
+#### Release
+
+  - **GIT tag**: 2.2.1-UPDATE02
+  - **Release date**: Oct 14, 2016
+  - **Eclipse base version**: Mars.2
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.1/update-site>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.2.1/products>
+
+This is a maintenance release that contains bug fixes and improvements to the ReqSpec language. It also includes
+a beta version the verify and assure languages.
+
+#### Notable Changes
+
+1. Added missing `Array_Size_Range` property type
+1. Updated help text for flow latency analysis
+1. Many small improvements to the graphical editor
+1. Various improvements for fault tree generation
+
+#### Fixed Issues
+
+* OSATE core and analyses
+  1. Flow sink implementations are now property serialized (#617)
+  1. Fixed a crash when creating an instance model that has errors (#712)
+  1. Fixed a deadlock suring instantiation (#726)
+  1. Connections that go through a component (from in port directly to out port) are now flagged as errors (#727, #728)
+  1. Validation of feature group connections now flags mismatched feature group types as an error (#709)
+  1. Fixed validation to allow references to elements of multi-dimensional arrays in property values (#694)
+  1. Fixed a bug that caused missing connections in instance model (#734)
+  1. Instance model analyses now take selected system operation mode into account (#736)
+  1. Fixed a deadlock during flow latency analysis (#737)
+* Graphical Editor
+  1. Default port direction is set according to the side of the component (#150)
+  1. Fixed bug that prevented adding subcomponent flow to end-to-end flow or flow implementation (#166)
+  1. It is now possible to select a component when it is covered by labels (context menu: select container) (#171)
+  1. Prevent negative y-coordinates for feature groups (#172)
+* Error Model Annex
+  1. FHA report was missing hazards (#113)
+
+#### Known Issues
+
+1.  Using the AADL Property View to edit property values results in bad formatting.
+
 ### Version 2.2.1 update 01
 
 #### Release
 
-  - **GIT tag**: 2.2.1-UPDATE01-20160523
+  - **GIT tag**: 2.2.1-UPDATE01
   - **Release date**: May 24, 2016
   - **Eclipse base version**: Mars.2
   - **Java version**: Java 8
