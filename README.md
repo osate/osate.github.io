@@ -1,2 +1,0 @@
-# osate.github.io
-pages

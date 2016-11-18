@@ -4,26 +4,30 @@
 
 ### OSATE 2.2.1
 
-This version supports AADL 2.1 and a subset of the changes introduced in AADL 2.2. We provide maintenance releases 
+This version supports AADL 2.1 and a subset of the changes introduced in AADL 2.2. We provide maintenance releases
 (update01, update02, ...) that fix bugs but do not change the supported language features or the underlying meta-model.
 
-The next maintenance rlelease (update02) is planned for October 2016.
+The next maintenance release (update03) is planned for December 2016.
 
 ### OSATE 2.2.2
 
 This version is under development will implement all laguage changes that were introduced as part of AADL version 2.2.
 The following language features are not part of OSATE 2.2.1 but will be implemented for OSATE 2.2.2.
 
-* Specification of partial end-to-end flows 
+* Specification of partial end-to-end flows
   [(issue #7)](https://github.com/saeaadl/aadlv2.1/issues/7)
-* Connections between two subcomponents can connect features nested in feature groups 
+* Connections between two subcomponents can connect features nested in feature groups
   [(issue #15)](https://github.com/saeaadl/aadlv2.1/issues/15)
 * All changes to predefined properties
 
-### OSATE 2.2.x (x > 2)
+### OSATE 2.2.y (y > 2)
 
-These will be bug fix releases. We don't anticipate further changes to supported language features orthe underlying
+These will be bug fix releases. We don't anticipate further changes to supported language features or the underlying
 meta-model.
+
+### OSATE 2.x (x > 2)
+
+These will add features and new analyses.
 
 ### Limitations
 
