@@ -2,6 +2,53 @@
 
 ## Stable Releases
 
+### TO BE RELEASED - Version 2.2.1.update 03
+
+#### Release
+
+  - **GIT tag**: 2.2.1-UPDATE03
+  - **Release date**: tbd
+  - **Eclipse base version**: Mars.2
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.1/update-site>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.2.1/products>
+
+This is a maintenance release that contains bug fixes and improvements.
+
+#### Notable changes
+
+1. Allow `Code_Size` property on virtual bus components
+1. Allow `Data_Size` property on bus and virtual bus components
+1. Improvements to flow latency analysis
+   - Use `Reference_Time` property to determine synchronous vs. asynchronous
+   - Improved help text for flow latency analysis
+1. Reworked ALISA views
+1. Improved layout and generation of requirement traceability reports
+1. Added simple requirements report as an example
+1. Added help text for reporting
+
+#### Fixed issues
+
+* OSATE core
+  1. Repaired ARP4761 example (#738)
+  2. Fixed regression in instantiation of feature group connections (#752)
+  3. Instantiate connections from input features to data subcomponents (#753)
+  4. Additional validation of feature directions for feature group connections
+* Analysis Plugins
+  1. Fixes in flow latency analysis:
+     - Use deadline as default latency (#62, #63)
+     - Don't skip components without flow path (#60)
+* Graphical Editor
+  1. Don't assume that component instances have a classifier (#183)
+  2. Fix issue with disappearing connection references (#181)
+* Error Model Annex
+  1. Fixed error model name resolution to conform to standard (#103, #114)
+  2. Additional validation rule (#117)
+
+#### Known Issues
+
+  1.  Using the AADL Property View to edit property values results in bad formatting.
+
 ### Version 2.2.1 update 02
 
 #### Release
@@ -105,7 +152,7 @@ The full lists of closed issues for this release are available at
     1.  Abstract features are allowed as mode transition triggers
     2.  Added property Reference_Time
 	3.  Abstract features can reference classifiers in addition to prototypes:
-	
+
             prototypes
 			  fp: feature;
 			  dt: data;
@@ -118,7 +165,7 @@ The full lists of closed issues for this release are available at
 			  f3: feature dt;
 
 4.  Added textual representation of instance models. Convert AADL instance model
-    file to text via action "Generate Textual Instance" in AADL Navigator context 
+    file to text via action "Generate Textual Instance" in AADL Navigator context
 	menu
 5.  Added BIRT for report generation. An example report for requirements
     traceability is included: Action "Requirements Tracing" in context menu in
@@ -1081,4 +1128,3 @@ Valencia, Spain. We thank again our host for hosting this event.
 This page uses the [Cayman
 theme](https://github.com/jasonlong/cayman-theme) by [Jason
 Long](https://twitter.com/jasonlong).
-
