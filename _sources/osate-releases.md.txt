@@ -2,7 +2,7 @@
 
 ## Stable Releases
 
-### TO BE RELEASED - Version 2.2.1.update 03
+### TO BE RELEASED - Version 2.2.1 update 03
 
 #### Release
 
@@ -30,20 +30,23 @@ This is a maintenance release that contains bug fixes and improvements.
 #### Fixed issues
 
 * OSATE core
-  1. Repaired ARP4761 example (#738)
-  2. Fixed regression in instantiation of feature group connections (#752)
-  3. Instantiate connections from input features to data subcomponents (#753)
+  1. Repaired ARP4761 example ([#738](https://github.com/osate/osate2-core/issues/738))
+  2. Fixed regression in instantiation of feature group connections ([#752](https://github.com/osate/osate2-core/issues/752))
+  3. Instantiate connections from input features to data subcomponents ([#753](https://github.com/osate/osate2-core/issues/753))
   4. Additional validation of feature directions for feature group connections
 * Analysis Plugins
   1. Fixes in flow latency analysis:
-     - Use deadline as default latency (#62, #63)
-     - Don't skip components without flow path (#60)
+     - Use deadline as default latency ([#62](https://github.com/osate/osate2-plugins/issues/62), [#63](https://github.com/osate/osate2-plugins/issues/63))
+     - Don't skip components without flow path ([#60](https://github.com/osate/osate2-plugins/issues/60))
 * Graphical Editor
-  1. Don't assume that component instances have a classifier (#183)
-  2. Fix issue with disappearing connection references (#181)
+  1. Don't assume that component instances have a classifier ([#183](https://github.com/osate/osate-ge/issues/183))
+  2. Fix issue with disappearing connection references ([#181](https://github.com/osate/osate-ge/issues/181))
+  3. Show flows from called subprogram types ([#186](https://github.com/osate/osate-ge/issues/186))
 * Error Model Annex
-  1. Fixed error model name resolution to conform to standard (#103, #114)
-  2. Additional validation rule (#117)
+  1. Fixed error model name resolution to conform to standard ([#103](https://github.com/osate/ErrorModelV2/issues/103), [#114](https://github.com/osate/ErrorModelV2/issues/114))
+  2. Additional validation rule ([#117](https://github.com/osate/ErrorModelV2/issues/117))
+  3. Fixed containment check for type sets ([#118](https://github.com/osate/ErrorModelV2/issues/118), [#120](https://github.com/osate/ErrorModelV2/issues/120))
+  4. Fixed name resolution issue for error types ([#119](https://github.com/osate/ErrorModelV2/issues/119))
 
 #### Known Issues
 
