@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### TO BE RELEASED - Version 2.2.1 update 03
+### Version 2.2.1 update 03
 
 #### Release
 
   - **GIT tag**: 2.2.1-UPDATE03
-  - **Release date**: tbd
+  - **Release date**: January 20, 2017
   - **Eclipse base version**: Mars.2
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.1/update-site>
@@ -24,7 +24,7 @@ This is a maintenance release that contains bug fixes and improvements.
    - Improved help text for flow latency analysis
 1. Reworked ALISA views
 1. Improved layout and generation of requirement traceability reports
-1. Added simple requirements report as an example
+1. Added simple requirements report
 1. Added help text for reporting
 
 #### Fixed issues
