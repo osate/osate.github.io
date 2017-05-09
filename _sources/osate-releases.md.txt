@@ -2,6 +2,55 @@
 
 ## Stable Releases
 
+### Version 2.2.2 - NOT YET RELEASED
+
+#### Release
+
+  - **GIT tag**: 2.2.2
+  - **Release date**: TBD
+  - **Eclipse base version**: Mars.2
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.2/update-site>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.2.2/products>
+
+This release adds support for features new in AADL 2.2.
+
+#### Notable changes
+
+1. Allow connection ends that reach down into feature groups ([#500](https://github.com/osate/osate2-core/issues/500))
+1. Removed `Type_Extension` from property `Classifier_Matching_Rule` ([#740](https://github.com/osate/osate2-core/issues/740))
+1. Support property types `classifier` and `reference` with empty list of classifiers ([#718](https://github.com/osate/osate2-core/issues/718))
+1. Added a checker that can be run before code generation
+1. Added AADL and ALISA file types to Eclipse logical model
+   - Dependent files are added to git commits
+   - **NOTE** Comparing two AADL or ALISA text files starts the structural compare view. There textual comparison must be selected manually. 
+1. Updated Xtext to version 2.11 ([#697](https://github.com/osate/osate2-core/issues/697), [#800](https://github.com/osate/osate2-core/issues/800))
+
+#### Fixed issues
+
+* OSATE core
+  1. Improved end to end flow validation ([#763](https://github.com/osate/osate2-core/issues/763))
+  1. Component instances reference their declarative classifier ([#746](https://github.com/osate/osate2-core/issues/746))
+  1. Correct serialization of flow implementations ([#750](https://github.com/osate/osate2-core/issues/750))
+  1. Various fixes in connection instantiation ([#766](https://github.com/osate/osate2-core/issues/766), [#780](https://github.com/osate/osate2-core/issues/780))
+  1. Correct checking of property applicability ([#635](https://github.com/osate/osate2-core/issues/635))
+  1. Warn about empty flow implementations ([#781](https://github.com/osate/osate2-core/issues/781))
+  1. Fix in end to end flow instantiation ([#789](https://github.com/osate/osate2-core/issues/789))
+  1. Generate sensible names for end to end flow instances ([#742](https://github.com/osate/osate2-core/issues/742))
+  1. Fixed validation of classifier substitution rule `Classifier_Match` ([#795](https://github.com/osate/osate2-core/issues/795))
+  1. Detect cycles in property references during instantiation ([#699](https://github.com/osate/osate2-core/issues/699))
+  1. Detect cycles in feature group containment during instantiation ([#761](https://github.com/osate/osate2-core/issues/761))
+  1. Add utility methods for internal features ([#683](https://github.com/osate/osate2-core/issues/683))
+  1. OSATE warns about usage of aggregate data ports which are not handled in model instantiation ([#744](https://github.com/osate/osate2-core/issues/744))
+  1.  ([#](https://github.com/osate/osate2-core/issues/))
+* Analysis Plugins
+  1. Fix flow latency calculation when end to end flow includes other end to end flows ([#792](https://github.com/osate/osate2-core/issues/792))
+* Graphical Editor
+
+#### Known Issues
+
+  1.  Using the AADL Property View to edit property values results in bad formatting.
+
 ### Version 2.2.1 update 03
 
 #### Release
