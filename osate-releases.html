@@ -281,15 +281,16 @@
 <li>Allow connection ends that reach down into feature groups (<a class="reference external" href="https://github.com/osate/osate2-core/issues/500">#500</a>)</li>
 <li>Removed <code class="docutils literal"><span class="pre">Type_Extension</span></code> from property <code class="docutils literal"><span class="pre">Classifier_Matching_Rule</span></code> (<a class="reference external" href="https://github.com/osate/osate2-core/issues/740">#740</a>)</li>
 <li>Support property types <code class="docutils literal"><span class="pre">classifier</span></code> and <code class="docutils literal"><span class="pre">reference</span></code> with empty list of classifiers (<a class="reference external" href="https://github.com/osate/osate2-core/issues/718">#718</a>)</li>
+<li>Flow implementations may reference a feature in a feature group even if the flow specification references the geature group (<a class="reference external" href="https://github.com/osate/osate2-core/issues/794">#794</a>)</li>
 <li>Added a checker that can be run before code generation</li>
-<li>Added AADL and ALISA file types to Eclipse logical model<ul>
-<li>Dependent files are added to git commits</li>
-<li><strong>NOTE</strong> Comparing two AADL or ALISA text files starts the structural compare view. There textual comparison must be selected manually.</li>
-</ul>
-</li>
+<li>Added outline support to the graphical editor</li>
 <li>Updated Xtext to version 2.11 (<a class="reference external" href="https://github.com/osate/osate2-core/issues/697">#697</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/800">#800</a>)</li>
 </ol>
-</div>
+<!---
+1. Added AADL and ALISA file types to Eclipse logical model
+   - Dependent files are added to git commits
+   - **NOTE** Comparing two AADL or ALISA text files starts the structural compare view. There textual comparison must be selected manually.
+--></div>
 <div class="section" id="fixed-issues">
 <span id="fixed-issues"></span><h4>Fixed issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
@@ -297,30 +298,42 @@
 <li>Improved end to end flow validation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/763">#763</a>)</li>
 <li>Component instances reference their declarative classifier (<a class="reference external" href="https://github.com/osate/osate2-core/issues/746">#746</a>)</li>
 <li>Correct serialization of flow implementations (<a class="reference external" href="https://github.com/osate/osate2-core/issues/750">#750</a>)</li>
-<li>Various fixes in connection instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/766">#766</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/780">#780</a>)</li>
+<li>Fixes in connection instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/766">#766</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/780">#780</a>)</li>
 <li>Correct checking of property applicability (<a class="reference external" href="https://github.com/osate/osate2-core/issues/635">#635</a>)</li>
 <li>Warn about empty flow implementations (<a class="reference external" href="https://github.com/osate/osate2-core/issues/781">#781</a>)</li>
 <li>Fix in end to end flow instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/789">#789</a>)</li>
 <li>Generate sensible names for end to end flow instances (<a class="reference external" href="https://github.com/osate/osate2-core/issues/742">#742</a>)</li>
-<li>Fixed validation of classifier substitution rule <code class="docutils literal"><span class="pre">Classifier_Match</span></code> (<a class="reference external" href="https://github.com/osate/osate2-core/issues/795">#795</a>)</li>
+<li>Correct validation of classifier substitution rule <code class="docutils literal"><span class="pre">Classifier_Match</span></code> (<a class="reference external" href="https://github.com/osate/osate2-core/issues/795">#795</a>)</li>
 <li>Detect cycles in property references during instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/699">#699</a>)</li>
 <li>Detect cycles in feature group containment during instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/761">#761</a>)</li>
-<li>Add utility methods for internal features (<a class="reference external" href="https://github.com/osate/osate2-core/issues/683">#683</a>)</li>
+<li>Added utility methods for internal features (<a class="reference external" href="https://github.com/osate/osate2-core/issues/683">#683</a>)</li>
 <li>OSATE warns about usage of aggregate data ports which are not handled in model instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/744">#744</a>)</li>
-<li>(<a class="reference external" href="https://github.com/osate/osate2-core/issues/">#</a>)</li>
+<li>Fixed bugs related to inverses of feature groups (<a class="reference external" href="https://github.com/osate/osate2-core/issues/277">#277</a>, (<a class="reference external" href="https://github.com/osate/osate2-core/issues/810">#810</a>, (<a class="reference external" href="https://github.com/osate/osate2-core/issues/277">#277</a>, )</li>
 </ol>
 </li>
 <li>Analysis Plugins<ol>
 <li>Fix flow latency calculation when end to end flow includes other end to end flows (<a class="reference external" href="https://github.com/osate/osate2-core/issues/792">#792</a>)</li>
 </ol>
 </li>
-<li>Graphical Editor</li>
+<li>Graphical Editor<ol>
+<li>Subprogram calls now display the flow specifications of the contained subprogram type (<a class="reference external" href="https://github.com/osate/osate-ge/issues/186">#186</a>)</li>
+<li>Fixed an exception which occured when a Component Instance did not have a classifier (<a class="reference external" href="https://github.com/osate/osate-ge/issues/183">#183</a>)</li>
+<li>Allow bendpoints for generalizations (<a class="reference external" href="https://github.com/osate/osate2-core/issues/786">#786</a>)</li>
+<li>Fixed an exception which could occur when working with models which include annex subclauses</li>
+</ol>
+</li>
+<li>Resolute/AGREE<ol>
+<li>This release contains numerous bug fixes for Resolute.</li>
+<li>It also includes the addition of &#8220;Real-time Patterns&#8221; and &#8220;Linearization&#8221; to AGREE. These new features are documented in the <a class="reference external" href="https://github.com/smaccm/smaccm/raw/master/documentation/agree/AGREE%20Users%20Guide.pdf">User&#8217;s Guide</a></li>
+</ol>
+</li>
 </ul>
 </div>
 <div class="section" id="known-issues">
 <span id="known-issues"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
-<li>Using the AADL Property View to edit property values results in bad formatting.</li>
+<li>Using the AADL Property View to edit property values results in bad formatting</li>
+<li>AADL 2.2: Partial end to end flows are not yet supported</li>
 </ol>
 </div>
 </div>
@@ -1609,7 +1622,7 @@ Long</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on May 09, 2017.
+      Last updated on May 10, 2017.
 
     </p>
   </div>
