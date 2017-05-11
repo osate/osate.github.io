@@ -24,6 +24,8 @@ This release adds support for features new in AADL 2.2.
 1. Added a checker that can be run before code generation
 1. Added outline support to the graphical editor
 1. Updated Xtext to version 2.11 ([#697](https://github.com/osate/osate2-core/issues/697), [#800](https://github.com/osate/osate2-core/issues/800))
+1. ReqSpec now allows requirement and val declarations to be interspersed. ([#13] (https://github.com/osate/alisa/issues/13))
+1. Alisa now supports automated verification when verification plans are not complete, i.e., activities missing for some requirements. ([#14] (https://github.com/osate/alisa/issues/14))
 <!---
 1. Added AADL and ALISA file types to Eclipse logical model
    - Dependent files are added to git commits
@@ -57,11 +59,18 @@ This release adds support for features new in AADL 2.2.
 * Resolute/AGREE
   1. This release contains numerous bug fixes for Resolute. 
   1. It also includes the addition of "Real-time Patterns" and "Linearization" to AGREE. These new features are documented in the [User's Guide](https://github.com/smaccm/smaccm/raw/master/documentation/agree/AGREE%20Users%20Guide.pdf)
+* ALISA Incremental Assurance
+  1. Alisa Assurance View: Color bars replaced by colored count entries. ([#21] (https://github.com/osate/alisa/issues/21))
+  1. Removed Assurance Progress View. Progress indication already available in Assurance View. ([#20] (https://github.com/osate/alisa/issues/20))
+  1. Assurance Requirement Coverage now has its own filter selection. ([#22] (https://github.com/osate/alisa/issues/22))
+  1. Several bug fixes realted to predicate evaluation and error marker on references that actually have been resolved.
+
 
 #### Known Issues
 
   1. Using the AADL Property View to edit property values results in bad formatting
   1. AADL 2.2: Partial end to end flows are not yet supported
+  1. ALISA still has error markers on some references despite correctly resolved - a concurrency issue in the way XText/EMF performs name resolution.
 
 ### Version 2.2.1 update 03
 

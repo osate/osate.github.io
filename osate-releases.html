@@ -285,6 +285,8 @@
 <li>Added a checker that can be run before code generation</li>
 <li>Added outline support to the graphical editor</li>
 <li>Updated Xtext to version 2.11 (<a class="reference external" href="https://github.com/osate/osate2-core/issues/697">#697</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/800">#800</a>)</li>
+<li>ReqSpec now allows requirement and val declarations to be interspersed. ([#13] (https://github.com/osate/alisa/issues/13))</li>
+<li>Alisa now supports automated verification when verification plans are not complete, i.e., activities missing for some requirements. ([#14] (https://github.com/osate/alisa/issues/14))</li>
 </ol>
 <!---
 1. Added AADL and ALISA file types to Eclipse logical model
@@ -327,6 +329,13 @@
 <li>It also includes the addition of &#8220;Real-time Patterns&#8221; and &#8220;Linearization&#8221; to AGREE. These new features are documented in the <a class="reference external" href="https://github.com/smaccm/smaccm/raw/master/documentation/agree/AGREE%20Users%20Guide.pdf">User&#8217;s Guide</a></li>
 </ol>
 </li>
+<li>ALISA Incremental Assurance<ol>
+<li>Alisa Assurance View: Color bars replaced by colored count entries. ([#21] (https://github.com/osate/alisa/issues/21))</li>
+<li>Removed Assurance Progress View. Progress indication already available in Assurance View. ([#20] (https://github.com/osate/alisa/issues/20))</li>
+<li>Assurance Requirement Coverage now has its own filter selection. ([#22] (https://github.com/osate/alisa/issues/22))</li>
+<li>Several bug fixes realted to predicate evaluation and error marker on references that actually have been resolved.</li>
+</ol>
+</li>
 </ul>
 </div>
 <div class="section" id="known-issues">
@@ -334,6 +343,7 @@
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad formatting</li>
 <li>AADL 2.2: Partial end to end flows are not yet supported</li>
+<li>ALISA still has error markers on some references despite correctly resolved - a concurrency issue in the way XText/EMF performs name resolution.</li>
 </ol>
 </div>
 </div>
@@ -1622,7 +1632,7 @@ Long</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on May 10, 2017.
+      Last updated on May 11, 2017.
 
     </p>
   </div>
