@@ -25,7 +25,7 @@ This release adds support for features new in AADL 2.2.
 1. Added outline support to the graphical editor
 1. Updated Xtext to version 2.11 ([#697](https://github.com/osate/osate2-core/issues/697), [#800](https://github.com/osate/osate2-core/issues/800))
 1. ReqSpec now allows requirement and val declarations to be interspersed ([#13](https://github.com/osate/alisa/issues/13))
-1. Alisa now supports automated verification when verification plans are not complete, i.e., activities missing for some requirements ([#14](https://github.com/osate/alisa/issues/14))
+1. Alisa now supports automated verification when verification plans are not complete, i.e., activities are missing for some requirements ([#14](https://github.com/osate/alisa/issues/14))
 
 <!---
 1. Added AADL and ALISA file types to Eclipse logical model
@@ -49,9 +49,11 @@ This release adds support for features new in AADL 2.2.
   1. Detect cycles in feature group containment during instantiation ([#761](https://github.com/osate/osate2-core/issues/761))
   1. Added utility methods for internal features ([#683](https://github.com/osate/osate2-core/issues/683))
   1. OSATE warns about usage of aggregate data ports which are not handled in model instantiation ([#744](https://github.com/osate/osate2-core/issues/744))
-  1. Fixed bugs related to inverses of feature groups ([#277](https://github.com/osate/osate2-core/issues/277), ([#810](https://github.com/osate/osate2-core/issues/810), ([#277](https://github.com/osate/osate2-core/issues/277), )
+  1. Fixed bugs related to inverses of feature groups ([#277](https://github.com/osate/osate2-core/issues/277), [#810](https://github.com/osate/osate2-core/issues/810, [#277](https://github.com/osate/osate2-core/issues/277))
 * Analysis Plugins
-  1. Fix flow latency calculation when end to end flow includes other end to end flows ([#792](https://github.com/osate/osate2-core/issues/792))
+  1. Fixed flow latency calculation when end to end flow includes other end to end flows ([#792](https://github.com/osate/osate2-core/issues/792))
+  1. Separate menu entries for ARP4761 and MIL-STD-882 FHA ([#827](https://github.com/osate/osate2-core/issues/827))
+  1. Various bug fixes in FHA report ([#821](https://github.com/osate/osate2-core/issues/821), [#822](https://github.com/osate/osate2-core/issues/822), [#823](https://github.com/osate/osate2-core/issues/823), [#824](https://github.com/osate/osate2-core/issues/824), [#825](https://github.com/osate/osate2-core/issues/825), [#826](https://github.com/osate/osate2-core/issues/826))
 * Graphical Editor
   1. Subprogram calls now display the flow specifications of the contained subprogram type ([#186](https://github.com/osate/osate-ge/issues/186))
   1. Fixed an exception which occured when a Component Instance did not have a classifier ([#183](https://github.com/osate/osate-ge/issues/183))
@@ -62,16 +64,16 @@ This release adds support for features new in AADL 2.2.
   1. It also includes the addition of "Real-time Patterns" and "Linearization" to AGREE. These new features are documented in the [User's Guide](https://github.com/smaccm/smaccm/raw/master/documentation/agree/AGREE%20Users%20Guide.pdf)
 * ALISA Incremental Assurance
   1. Alisa Assurance View: Color bars replaced by colored count entries ([#21](https://github.com/osate/osate2-core/issues/21))
-  1. Removed Assurance Progress View. Progress indication already available in Assurance View. ([#20](https://github.com/osate/alisa/issues/20))
-  1. Assurance Requirement Coverage now has its own filter selection. ([#22](https://github.com/osate/alisa/issues/22))
-  1. Several bug fixes realted to predicate evaluation and error marker on references that actually have been resolved.
+  1. Removed Assurance Progress View. Progress indication already available in Assurance View ([#20](https://github.com/osate/alisa/issues/20))
+  1. Assurance Requirement Coverage now has its own filter selection ([#22](https://github.com/osate/alisa/issues/22))
+  1. Several bug fixes related to predicate evaluation and error marker on references that actually have been resolved
 
 
 #### Known Issues
 
   1. Using the AADL Property View to edit property values results in bad formatting
   1. AADL 2.2: Partial end to end flows are not yet supported
-  1. ALISA still has error markers on some references despite correctly resolved - a concurrency issue in the way XText/EMF performs name resolution.
+  1. ALISA still has error markers on some references even though they are correctly resolved
 
 ### Version 2.2.1 update 03
 

@@ -286,7 +286,7 @@
 <li>Added outline support to the graphical editor</li>
 <li>Updated Xtext to version 2.11 (<a class="reference external" href="https://github.com/osate/osate2-core/issues/697">#697</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/800">#800</a>)</li>
 <li>ReqSpec now allows requirement and val declarations to be interspersed (<a class="reference external" href="https://github.com/osate/alisa/issues/13">#13</a>)</li>
-<li>Alisa now supports automated verification when verification plans are not complete, i.e., activities missing for some requirements (<a class="reference external" href="https://github.com/osate/alisa/issues/14">#14</a>)</li>
+<li>Alisa now supports automated verification when verification plans are not complete, i.e., activities are missing for some requirements (<a class="reference external" href="https://github.com/osate/alisa/issues/14">#14</a>)</li>
 </ol>
 <!---
 1. Added AADL and ALISA file types to Eclipse logical model
@@ -310,11 +310,13 @@
 <li>Detect cycles in feature group containment during instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/761">#761</a>)</li>
 <li>Added utility methods for internal features (<a class="reference external" href="https://github.com/osate/osate2-core/issues/683">#683</a>)</li>
 <li>OSATE warns about usage of aggregate data ports which are not handled in model instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/744">#744</a>)</li>
-<li>Fixed bugs related to inverses of feature groups (<a class="reference external" href="https://github.com/osate/osate2-core/issues/277">#277</a>, (<a class="reference external" href="https://github.com/osate/osate2-core/issues/810">#810</a>, (<a class="reference external" href="https://github.com/osate/osate2-core/issues/277">#277</a>, )</li>
+<li>Fixed bugs related to inverses of feature groups (<a class="reference external" href="https://github.com/osate/osate2-core/issues/277">#277</a>, [#810](https://github.com/osate/osate2-core/issues/810, <a class="reference external" href="https://github.com/osate/osate2-core/issues/277">#277</a>)</li>
 </ol>
 </li>
 <li>Analysis Plugins<ol>
-<li>Fix flow latency calculation when end to end flow includes other end to end flows (<a class="reference external" href="https://github.com/osate/osate2-core/issues/792">#792</a>)</li>
+<li>Fixed flow latency calculation when end to end flow includes other end to end flows (<a class="reference external" href="https://github.com/osate/osate2-core/issues/792">#792</a>)</li>
+<li>Separate menu entries for ARP4761 and MIL-STD-882 FHA (<a class="reference external" href="https://github.com/osate/osate2-core/issues/827">#827</a>)</li>
+<li>Various bug fixes in FHA report (<a class="reference external" href="https://github.com/osate/osate2-core/issues/821">#821</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/822">#822</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/823">#823</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/824">#824</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/825">#825</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/826">#826</a>)</li>
 </ol>
 </li>
 <li>Graphical Editor<ol>
@@ -326,14 +328,14 @@
 </li>
 <li>Resolute/AGREE<ol>
 <li>This release contains numerous bug fixes for Resolute.</li>
-<li>It also includes the addition of &#8220;Real-time Patterns&#8221; and &#8220;Linearization&#8221; to AGREE. These new features are documented in the <a class="reference external" href="https://github.com/smaccm/smaccm/raw/master/documentation/agree/AGREE%20Users%20Guide.pdf">User&#8217;s Guide</a></li>
+<li>It also includes the addition of &quot;Real-time Patterns&quot; and &quot;Linearization&quot; to AGREE. These new features are documented in the <a class="reference external" href="https://github.com/smaccm/smaccm/raw/master/documentation/agree/AGREE%20Users%20Guide.pdf">User's Guide</a></li>
 </ol>
 </li>
 <li>ALISA Incremental Assurance<ol>
 <li>Alisa Assurance View: Color bars replaced by colored count entries (<a class="reference external" href="https://github.com/osate/osate2-core/issues/21">#21</a>)</li>
-<li>Removed Assurance Progress View. Progress indication already available in Assurance View. (<a class="reference external" href="https://github.com/osate/alisa/issues/20">#20</a>)</li>
-<li>Assurance Requirement Coverage now has its own filter selection. (<a class="reference external" href="https://github.com/osate/alisa/issues/22">#22</a>)</li>
-<li>Several bug fixes realted to predicate evaluation and error marker on references that actually have been resolved.</li>
+<li>Removed Assurance Progress View. Progress indication already available in Assurance View (<a class="reference external" href="https://github.com/osate/alisa/issues/20">#20</a>)</li>
+<li>Assurance Requirement Coverage now has its own filter selection (<a class="reference external" href="https://github.com/osate/alisa/issues/22">#22</a>)</li>
+<li>Several bug fixes related to predicate evaluation and error marker on references that actually have been resolved</li>
 </ol>
 </li>
 </ul>
@@ -343,7 +345,7 @@
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad formatting</li>
 <li>AADL 2.2: Partial end to end flows are not yet supported</li>
-<li>ALISA still has error markers on some references despite correctly resolved - a concurrency issue in the way XText/EMF performs name resolution.</li>
+<li>ALISA still has error markers on some references even though they are correctly resolved</li>
 </ol>
 </div>
 </div>
@@ -390,13 +392,13 @@
 <li>Analysis Plugins<ol>
 <li>Fixes in flow latency analysis:<ul>
 <li>Use deadline as default latency (<a class="reference external" href="https://github.com/osate/osate2-plugins/issues/62">#62</a>, <a class="reference external" href="https://github.com/osate/osate2-plugins/issues/63">#63</a>)</li>
-<li>Don&#8217;t skip components without flow path (<a class="reference external" href="https://github.com/osate/osate2-plugins/issues/60">#60</a>)</li>
+<li>Don't skip components without flow path (<a class="reference external" href="https://github.com/osate/osate2-plugins/issues/60">#60</a>)</li>
 </ul>
 </li>
 </ol>
 </li>
 <li>Graphical Editor<ol>
-<li>Don&#8217;t assume that component instances have a classifier (<a class="reference external" href="https://github.com/osate/osate-ge/issues/183">#183</a>)</li>
+<li>Don't assume that component instances have a classifier (<a class="reference external" href="https://github.com/osate/osate-ge/issues/183">#183</a>)</li>
 <li>Fix issue with disappearing connection references (<a class="reference external" href="https://github.com/osate/osate-ge/issues/181">#181</a>)</li>
 <li>Show flows from called subprogram types (<a class="reference external" href="https://github.com/osate/osate-ge/issues/186">#186</a>)</li>
 </ol>
@@ -561,11 +563,11 @@ our ALISA project (see Help text)</p>
 </ol>
 </li>
 <li><p class="first">Added textual representation of instance models. Convert AADL instance model
-file to text via action &#8220;Generate Textual Instance&#8221; in AADL Navigator context
+file to text via action &quot;Generate Textual Instance&quot; in AADL Navigator context
 menu</p>
 </li>
 <li><p class="first">Added BIRT for report generation. An example report for requirements
-traceability is included: Action &#8220;Requirements Tracing&#8221; in context menu in
+traceability is included: Action &quot;Requirements Tracing&quot; in context menu in
 the AADL Navigatior view, active for AADL packages, instance models, system
 requirements and system goals.
 The report sources are in plugin org.osate.reqtrace</p>
@@ -712,18 +714,18 @@ at</p>
 <span id="id25"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>OSATE now requires Java 8</li>
-<li>Automatically add &#8220;end&#8221; when typing in the text editor, see
+<li>Automatically add &quot;end&quot; when typing in the text editor, see
 preference Window -&gt; Preferences -&gt; OSATE Preferences -&gt; Aadl2
 Text Editor to control this behavior</li>
 <li>New text editor command to organize with clauses</li>
 <li>The Plugin_Resources project has subdirectories to organize
 property sets - existing workspaces should be updated automatically
 (If there is a problem, try to re-create the project using the
-context menu in the AADL Navigator: &#8220;Reset/create all Predeclared
-and Annex Properties&#8221;)</li>
+context menu in the AADL Navigator: &quot;Reset/create all Predeclared
+and Annex Properties&quot;)</li>
 <li>The AADL Property View supports editing of property associations
-declared in the classifier&#8217;s properties section if the applies to
-contains a single name (&#8220;local contained&#8221;)</li>
+declared in the classifier's properties section if the applies to
+contains a single name (&quot;local contained&quot;)</li>
 <li>The AADL Property View works properly when the instance model editor
 is open</li>
 <li>Default values can be hidden in the AADL Property View</li>
@@ -921,7 +923,7 @@ Santa Barbara, USA.</p>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
-to update rather than reporting &#8220;permission denied.&#8221; Please check
+to update rather than reporting &quot;permission denied.&quot; Please check
 the date of the installed OSATE feature (Open Source AADL Tool
 Environment) under Help-&gt;About and then Installation Details. If it
 did not get updated to the most recent date, please change your
@@ -961,7 +963,7 @@ Toulouse, France.</p>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
-to update rather than reporting &#8220;permission denied.&#8221; Please check
+to update rather than reporting &quot;permission denied.&quot; Please check
 the date of the installed OSATE feature (Open Source AADL Tool
 Environment) under Help-&gt;About and then Installation Details. If it
 did not get updated to the most recent date, please change your
@@ -983,7 +985,7 @@ working - <a class="reference external" href="https://github.com/osate/osate2-co
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/287">https://github.com/osate/osate2-core/issues/287</a></li>
 <li>standard properties are no longer parsed -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/302">https://github.com/osate/osate2-core/issues/302</a></li>
-<li>Instantiated subcomponent has a component type only&#8221; error message -
+<li>Instantiated subcomponent has a component type only&quot; error message -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/301">https://github.com/osate/osate2-core/issues/301</a></li>
 <li>Concrete Syntax Validation Error -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/299">https://github.com/osate/osate2-core/issues/299</a></li>
@@ -1003,7 +1005,7 @@ working - <a class="reference external" href="https://github.com/osate/osate2-co
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/288">https://github.com/osate/osate2-core/issues/288</a></li>
 <li>Connection id is now mandatory -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/304">https://github.com/osate/osate2-core/issues/304</a></li>
-<li>add nullity test to &#8220;upfgt&#8221; in Aadl2InstanceUtil.isSame -
+<li>add nullity test to &quot;upfgt&quot; in Aadl2InstanceUtil.isSame -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/305">https://github.com/osate/osate2-core/issues/305</a></li>
 <li>Issue with Xtext Grammar/Meta Model -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/306">https://github.com/osate/osate2-core/issues/306</a></li>
@@ -1017,7 +1019,7 @@ working - <a class="reference external" href="https://github.com/osate/osate2-co
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/310">https://github.com/osate/osate2-core/issues/310</a></li>
 <li>getSubcomponentType does not invoke eIsProxy if subcomponentType is
 null... - <a class="reference external" href="https://github.com/osate/osate2-core/issues/311">https://github.com/osate/osate2-core/issues/311</a></li>
-<li>Question on connecting &#8216;out data port&#8217; to &#8216;requires data access&#8217; -
+<li>Question on connecting 'out data port' to 'requires data access' -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/312">https://github.com/osate/osate2-core/issues/312</a></li>
 <li>Extra natures added to the Plugin_Resources project are always
 removed at startup. -
@@ -1060,7 +1062,7 @@ Montreal, Canada.</p>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
-to update rather than reporting &#8220;permission denied.&#8221; Please check
+to update rather than reporting &quot;permission denied.&quot; Please check
 the date of the installed OSATE feature (Open Source AADL Tool
 Environment) under Help-&gt;About and then Installation Details. If it
 did not get updated to the most recent date, please change your
@@ -1174,7 +1176,7 @@ Pittsburgh, USA.</p>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
-to update rather than reporting &#8220;permission denied.&#8221; Please check
+to update rather than reporting &quot;permission denied.&quot; Please check
 the date of the installed OSATE feature (Open Source AADL Tool
 Environment) under Help-&gt;About and then Installation Details. If it
 did not get updated to the most recent date, please change your
@@ -1294,7 +1296,7 @@ on <a class="reference external" href="http://www.aadl.info/aadl/osate/testing/"
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
-to update rather than reporting &#8220;permission denied.&#8221; Please check
+to update rather than reporting &quot;permission denied.&quot; Please check
 the date of the installed OSATE feature (Open Source AADL Tool
 Environment) under Help-&gt;About and then Installation Details. If it
 did not get updated to the most recent date, please change your
@@ -1360,8 +1362,8 @@ error - <a class="reference external" href="https://github.com/osate/osate2-core
 <li>patch proposal - <a class="reference external" href="https://github.com/osate/osate2-core/issues/199">https://github.com/osate/osate2-core/issues/199</a></li>
 <li>Features direction for subprogram ports and thread ports -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/198">https://github.com/osate/osate2-core/issues/198</a></li>
-<li>(Modified) Plugin_Resources not updated upon &#8216;Create/update
-Predeclared and Annex Properties&#8217;&#8217; -
+<li>(Modified) Plugin_Resources not updated upon 'Create/update
+Predeclared and Annex Properties'' -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/197">https://github.com/osate/osate2-core/issues/197</a></li>
 <li>flow path reports incrrectly that the port direction is wrong -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/196">https://github.com/osate/osate2-core/issues/196</a></li>
@@ -1416,7 +1418,7 @@ Valencia, Spain. We thank again our host for hosting this event.</p>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
-to update rather than reporting &#8220;permission denied.&#8221; Please check
+to update rather than reporting &quot;permission denied.&quot; Please check
 the date of the installed OSATE feature (Open Source AADL Tool
 Environment) under Help-&gt;About and then Installation Details. If it
 did not get updated to the most recent date, please change your
@@ -1474,7 +1476,7 @@ creates one in certain cases.
 (https://github.com/osate/osate2-core/issues/169)</li>
 <li>Error instantiating model
 (https://github.com/osate/osate2-core/issues/176)</li>
-<li>AADL connection instance property. &#8220;applies to&#8221; does not work.
+<li>AADL connection instance property. &quot;applies to&quot; does not work.
 (https://github.com/osate/osate2-core/issues/174)</li>
 <li>DATA_VOLUME_UNITS is now defined in AADL_Project</li>
 <li>AADL_Project.java file need update for Data_Volume_Units
@@ -1491,8 +1493,8 @@ process component -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/172">https://github.com/osate/osate2-core/issues/172</a></li>
 <li>Naming resolution error: subprogram call context not found -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/170">https://github.com/osate/osate2-core/issues/170</a></li>
-<li>Incorrect error reporting: &#8220;Value for property.. is inconsistent
-along connection&#8221; -
+<li>Incorrect error reporting: &quot;Value for property.. is inconsistent
+along connection&quot; -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/158">https://github.com/osate/osate2-core/issues/158</a></li>
 <li>Menu item failures from 2013-01-30 Development Branch. -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/165">https://github.com/osate/osate2-core/issues/165</a></li>
@@ -1547,7 +1549,7 @@ features. - <a class="reference external" href="https://github.com/osate/osate2-
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/140">https://github.com/osate/osate2-core/issues/140</a></li>
 <li>Check for duplicate packages too restrictive -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/91">https://github.com/osate/osate2-core/issues/91</a></li>
-<li>Default port &#8220;Complete&#8221; is not working -
+<li>Default port &quot;Complete&quot; is not working -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/114">https://github.com/osate/osate2-core/issues/114</a></li>
 <li>Property association omitted at instantiation of virtual processors<ul>
 <li><a class="reference external" href="https://github.com/osate/osate2-core/issues/126">https://github.com/osate/osate2-core/issues/126</a></li>
@@ -1567,8 +1569,8 @@ features. - <a class="reference external" href="https://github.com/osate/osate2-
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/133">https://github.com/osate/osate2-core/issues/133</a></li>
 <li>EValidator error when property constant is used as value -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/134">https://github.com/osate/osate2-core/issues/134</a></li>
-<li>Incorrect error msg: &#8220;Connection between two components that inherit
-features is not supported&#8221; -
+<li>Incorrect error msg: &quot;Connection between two components that inherit
+features is not supported&quot; -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/136">https://github.com/osate/osate2-core/issues/136</a></li>
 <li>Error with OSATE views -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/128">https://github.com/osate/osate2-core/issues/128</a></li>
@@ -1576,7 +1578,7 @@ features is not supported&#8221; -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/118">https://github.com/osate/osate2-core/issues/118</a></li>
 <li>About dialog is outdated -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/123">https://github.com/osate/osate2-core/issues/123</a></li>
-<li>Method &#8220;acceptsProperty&#8221; in ComponentInstanceImpl always return true
+<li>Method &quot;acceptsProperty&quot; in ComponentInstanceImpl always return true
 whatever the property is. -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/122">https://github.com/osate/osate2-core/issues/122</a></li>
 <li>Property applicability clause to classifiers not recognized. -
@@ -1591,8 +1593,8 @@ has... - <a class="reference external" href="https://github.com/osate/osate2-cor
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/112">https://github.com/osate/osate2-core/issues/112</a></li>
 <li>null pointer exception on hashcode of PropertyImpl -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/130">https://github.com/osate/osate2-core/issues/130</a></li>
-<li>Duplicate Element &#8216;mils_example&#8217; in PublicPackageSection
-&#8216;Test_Package&#8217; example.aadl -
+<li>Duplicate Element 'mils_example' in PublicPackageSection
+'Test_Package' example.aadl -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/132">https://github.com/osate/osate2-core/issues/132</a></li>
 <li>Handling of instantiating a System when the model has errors. -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/77">https://github.com/osate/osate2-core/issues/77</a></li>
@@ -1632,7 +1634,7 @@ Long</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on May 11, 2017.
+      Last updated on May 16, 2017.
 
     </p>
   </div>
