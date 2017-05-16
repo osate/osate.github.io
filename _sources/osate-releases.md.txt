@@ -49,7 +49,7 @@ This release adds support for features new in AADL 2.2.
   1. Detect cycles in feature group containment during instantiation ([#761](https://github.com/osate/osate2-core/issues/761))
   1. Added utility methods for internal features ([#683](https://github.com/osate/osate2-core/issues/683))
   1. OSATE warns about usage of aggregate data ports which are not handled in model instantiation ([#744](https://github.com/osate/osate2-core/issues/744))
-  1. Fixed bugs related to inverses of feature groups ([#277](https://github.com/osate/osate2-core/issues/277), [#810](https://github.com/osate/osate2-core/issues/810, [#277](https://github.com/osate/osate2-core/issues/277))
+  1. Fixed bugs related to inverses of feature groups ([#277](https://github.com/osate/osate2-core/issues/277), [#810](https://github.com/osate/osate2-core/issues/810), [#277](https://github.com/osate/osate2-core/issues/277))
 * Analysis Plugins
   1. Fixed flow latency calculation when end to end flow includes other end to end flows ([#792](https://github.com/osate/osate2-core/issues/792))
   1. Separate menu entries for ARP4761 and MIL-STD-882 FHA ([#827](https://github.com/osate/osate2-core/issues/827))
