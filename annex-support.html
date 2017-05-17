@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; OSATE 2.2.1 documentation</title>
+  <title>Annexes Supported in OSATE &mdash; OSATE 2.2.1 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
         <link rel="index" title="Index"
               href="genindex.html"/>
-        <link rel="search" title="Search" href="#"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="OSATE 2.2.1 documentation" href="index.html"/> 
 
   
@@ -69,7 +69,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -110,7 +110,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -118,8 +118,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Search</li>
+    <li>Annexes Supported in OSATE</li>
     <li class="wy-breadcrumbs-aside">
+      
+        
       
     </li>
   </ul>
@@ -128,19 +130,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="annexes-supported-in-osate">
+<span id="annexes-supported-in-osate"></span><h1>Annexes Supported in OSATE<a class="headerlink" href="#annexes-supported-in-osate" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="emv2-language-support">
+<span id="emv2-language-support"></span><h2>EMV2 Language Support<a class="headerlink" href="#emv2-language-support" title="Permalink to this headline">¶</a></h2>
+<p>OSATE strives to supports all of EMV2 as specified in the annex standard. However,
+the syntax used to apply a property to an EMV2 annex element in a subcomponent
+cannot be implemented in our LL(k) parser because it requires infinite look-ahead
+to distinguish applies to paths that contain an '&#64;' from those that do not.</p>
+<p>We use the following modified rule (note the added ^)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">emv2_containment_path</span> <span class="p">::</span><span class="o">=</span>
+     <span class="p">[</span> <span class="o">^</span> <span class="n">aadl2_core_path</span> <span class="o">@</span> <span class="p">]</span> <span class="n">emv2_annex_specific_path</span>
+</pre></div>
+</div>
+<p>The EMV2 implementation in OSATE contains the following extensions that are
+proposed as errata (see <a class="reference external" href="https:github.com/saeaadl/emv2&gt;">here</a>)</p>
+<ul class="simple">
+<li>Repair events require a <code class="docutils literal"><span class="pre">when</span></code> keyword
+(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/3">#3</a>)</li>
+<li>Allow single trigger as argument for operators <code class="docutils literal"><span class="pre">ormore</span></code>, <code class="docutils literal"><span class="pre">orless</span></code>, ...
+(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/4">#4</a>)</li>
+<li>Support for operators <code class="docutils literal"><span class="pre">all</span></code> and <code class="docutils literal"><span class="pre">all</span> <span class="pre">(...)</span> <span class="pre">but</span></code>
+(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/7">#7</a>)</li>
+<li>Allow out propagation of a subcomponent in out propagation condition
+(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/11">#11</a>)</li>
+<li>Allow references to out propagations of deeply nested subcomponents
+(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/26">#26</a>)</li>
+</ul>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
           </div>
@@ -184,7 +203,6 @@
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -200,14 +218,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

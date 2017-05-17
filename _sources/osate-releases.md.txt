@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.2.2 - NOT YET RELEASED
+### Version 2.2.2
 
 #### Release
 
   - **GIT tag**: 2.2.2
-  - **Release date**: TBD
+  - **Release date**: May 15, 2017
   - **Eclipse base version**: Mars.2
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.2/update-site>
@@ -64,7 +64,7 @@ This release adds support for features new in AADL 2.2.
   1. It also includes the addition of "Real-time Patterns" and "Linearization" to AGREE. These new features are documented in the [User's Guide](https://github.com/smaccm/smaccm/raw/master/documentation/agree/AGREE%20Users%20Guide.pdf)
 * ALISA Incremental Assurance
   1. Alisa Assurance View: Color bars replaced by colored count entries ([#21](https://github.com/osate/osate2-core/issues/21))
-  1. Removed Assurance Progress View. Progress indication already available in Assurance View ([#20](https://github.com/osate/alisa/issues/20))
+  1. Removed Assurance Progress View. Progress indication is already available in Assurance View ([#20](https://github.com/osate/alisa/issues/20))
   1. Assurance Requirement Coverage now has its own filter selection ([#22](https://github.com/osate/alisa/issues/22))
   1. Several bug fixes related to predicate evaluation and error marker on references that actually have been resolved
 
