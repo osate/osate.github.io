@@ -15,6 +15,8 @@
 
 This release adds support for features new in AADL 2.2.
 
+Note that the underlying AADL meta-model has changed. This makes it necessary to do a clean build of existing projects and to recreate all instance models. Otherwise errors may occur when running analyses.
+
 #### Notable changes
 
 1. Allow connection ends that reach down into feature groups ([#500](https://github.com/osate/osate2-core/issues/500))
