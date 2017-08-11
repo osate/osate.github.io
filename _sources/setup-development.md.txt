@@ -6,7 +6,7 @@ Starting with OSATE 2.3, which is based on Eclipse 4.7 (Oxygen), the recommended
 
 The Eclipse Installer can be downloaded from the eclipse Web site. Follow this [link](https://www.eclipse.org/downloads/) to download the installer for your platform. Make sure that the word size of the installer version matches the word size of your Java installation. For example, if you are running 32bit Java on a 64bit Windows you must use the 32bit installer.
 
-On Mac OSX and Linux the installer is a compressed archive. extract it to a directory of your choice.
+On Mac OSX and Linux the installer is a compressed archive. Extract it to a directory of your choice.
 
 The installer for Windows is a self-extracting archive. When running the executable you can choose to keep the extracted installer and select an installation directory. 
 
@@ -75,6 +75,6 @@ Cloning the git repositories takes some time. Progress can be viewed in a dialog
 
 ## 8. Updating the development environment
 
-Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually vie *Help* -> *Perform Setup Tasks ...*
+Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually via *Help* -> *Perform Setup Tasks ...*
 
 Please report issues with the setup using the osate2-core issue tracker on Github.
