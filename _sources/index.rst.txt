@@ -10,6 +10,7 @@ Wiki`_ to here.
 .. The main documentation for the site is organized into a couple sections:
 
 * :ref:`user-docs`
+* :ref:`developer-docs`
 
 .. * :ref:`feature-docs`
 .. * :ref:`about-docs`
@@ -29,4 +30,12 @@ Wiki`_ to here.
    download-and-install
    osate-releases
    osate-roadmap
+   
+.. _developer-docs:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Developer Documentation
+   
+   setup-development
    

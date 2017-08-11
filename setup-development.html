@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setting up an OSATE development environment &mdash; OSATE 2.2.2 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="OSATE 2.2.2 documentation" href="index.html"/>
+        <link rel="prev" title="Roadmap for AADL Language Support" href="osate-roadmap.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OSATE
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="download-and-install.html">Download and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osate-releases.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osate-roadmap.html">Roadmap for AADL Language Support</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up an OSATE development environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-the-installer">1. Download the installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-the-installer">2. Run the installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#select-the-eclipse-platform">3. Select the Eclipse platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-the-osate-setup-file">4. Add the OSATE setup file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-required-variables">5. Set required variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-eclipse">6. Install Eclipse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-osate-sources">7. Get OSATE sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-the-development-environment">8. Updating the development environment</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">OSATE</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Setting up an OSATE development environment</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setting-up-an-osate-development-environment">
+<span id="setting-up-an-osate-development-environment"></span><h1>Setting up an OSATE development environment<a class="headerlink" href="#setting-up-an-osate-development-environment" title="Permalink to this headline">¶</a></h1>
+<p>Starting with OSATE 2.3, which is based on Eclipse 4.7 (Oxygen), the recommended way to set up a development environment uses the Eclipse Installer.</p>
+<div class="section" id="download-the-installer">
+<span id="download-the-installer"></span><h2>1. Download the installer<a class="headerlink" href="#download-the-installer" title="Permalink to this headline">¶</a></h2>
+<p>The Eclipse Installer can be downloaded from the eclipse Web site. Follow this <a class="reference external" href="https://www.eclipse.org/downloads/">link</a> to download the installer for your platform. Make sure that the word size of the installer version matches the word size of your Java installation. For example, if you are running 32bit Java on a 64bit Windows you must use the 32bit installer.</p>
+<p>On Mac OSX and Linux the installer is a compressed archive. extract it to a directory of your choice.</p>
+<p>The installer for Windows is a self-extracting archive. When running the executable you can choose to keep the extracted installer and select an installation directory.</p>
+<p><small><strong>Note:</strong> On Windows the initial extraction is into a temporary directory, usually into a temporary directory in C:\User\Joe\AppData\Local\Temp. The name of the temporary directory starts with the letters <em>eoi</em> If your computer is subject to a restrictive security policy that does not allow execution of arbitrary programs from that directory you should copy the directory content to another place from where the installer can be executed.</small></p>
+</div>
+<div class="section" id="run-the-installer">
+<span id="run-the-installer"></span><h2>2. Run the installer<a class="headerlink" href="#run-the-installer" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Installer 1" src="_images/installer1.png" /></p>
+<p>Open the menu (A), bundle pools should be on (B), and switch to advanced mode (C)</p>
+</div>
+<div class="section" id="select-the-eclipse-platform">
+<span id="select-the-eclipse-platform"></span><h2>3. Select the Eclipse platform<a class="headerlink" href="#select-the-eclipse-platform" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Installer 2" src="_images/installer2.png" /></p>
+<p>On first use update the installer (A)</p>
+<p>If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.</p>
+<p>Select <em>Eclipse Modeling Tools</em> as the base product to install, and select <em>Oxygen</em> as the product version. Choose 32 or 64 bit according to your Java version.</p>
+</div>
+<div class="section" id="add-the-osate-setup-file">
+<span id="add-the-osate-setup-file"></span><h2>4. Add the OSATE setup file<a class="headerlink" href="#add-the-osate-setup-file" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Installer 3" src="_images/installer3.png" /></p>
+<p>Add a user project by clicking on the <em>+</em> icon (A).</p>
+<p>Select the catalog <em>Github Projects</em> and enter the following URL as the <em>Resource URI</em>:</p>
+<p>https://raw.githubusercontent.com/osate/osate2-core/develop/osate.releng/osate2.setup</p>
+<p>Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>.</p>
+</div>
+<div class="section" id="set-required-variables">
+<span id="set-required-variables"></span><h2>5. Set required variables<a class="headerlink" href="#set-required-variables" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Installer 4" src="_images/installer4.png" /></p>
+<p>Check <em>Show all variables</em> near the bottom of the dialog. Without this only variables that do not have a value will be displayed. Oomph stores variable values between invocations, so nothing would be shown after the first run.</p>
+<p>The first group of variables determines the directory for the new eclipse installation. You can choose between (a) a root directory and a subdirectory within that root directory and (b) a full path to the installation directory.</p>
+<p>The next group determines the location of the workspace.</p>
+<p>The git clone location is the root directory into which all git repositories are cloned. The tycho build requires that all git repositories share the same root directory.</p>
+<p>Finally, choose how to access the git repositories. The default choice uses ssh access and requires ssh credentials, and your public key must be uploaded to github. The  <em>HTTPS (read-write)</em> option uses your Github username and password.</p>
+</div>
+<div class="section" id="install-eclipse">
+<span id="install-eclipse"></span><h2>6. Install Eclipse<a class="headerlink" href="#install-eclipse" title="Permalink to this headline">¶</a></h2>
+<p>The next screen shows the installation steps that will be executed. Click <em>Finish</em> to download eclipse and install it to the selected location. When run for the first time, it will download features and plugins into the bundle pool. The bundle pool is shared among eclipse installations such that subsequent installations are much faster.</p>
+</div>
+<div class="section" id="get-osate-sources">
+<span id="get-osate-sources"></span><h2>7. Get OSATE sources<a class="headerlink" href="#get-osate-sources" title="Permalink to this headline">¶</a></h2>
+<p>Upon first start eclipse executes additional setup tasks to set preferences, clone git repositories if needed, import projects, and organize projects into working sets.</p>
+<p>The OSATE2 setup file sets the following preferences:</p>
+<ul class="simple">
+<li>The Java perspective is set as the default and eclipse is configured to start with this perspective.</li>
+<li>The default file encoding is set to UTF-8.</li>
+<li>A source cleanup profile <em>Osate</em> is created and enabled for the workspace.</li>
+<li>Java formatter profiles <em>Osate</em> and <em>SMACCM</em>. Profile <em>Osate</em> is enabled for the workspace.</li>
+<li>Java code cleanup on save are configured and enabled for the workspace.</li>
+<li>An Xtend formatter profile <em>Oosate</em> is created and enabled for the workspace.</li>
+</ul>
+<p>Cloning the git repositories takes some time. Progress can be viewed in a dialog. To show the progress dialog, click on the animated icon the eclipse status bar.</p>
+</div>
+<div class="section" id="updating-the-development-environment">
+<span id="updating-the-development-environment"></span><h2>8. Updating the development environment<a class="headerlink" href="#updating-the-development-environment" title="Permalink to this headline">¶</a></h2>
+<p>Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually vie <em>Help</em> -&gt; <em>Perform Setup Tasks ...</em></p>
+<p>Please report issues with the setup using the osate2-core issue tracker on Github.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="osate-roadmap.html" class="btn btn-neutral" title="Roadmap for AADL Language Support" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2017, Carnegie Mellon University.
+      Last updated on Aug 11, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2.2.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
