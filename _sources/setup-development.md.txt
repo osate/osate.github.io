@@ -69,7 +69,7 @@ The OSATE2 setup file sets the following preferences:
 * A source cleanup profile *Osate* is created and enabled for the workspace.
 * Java formatter profiles *Osate* and *SMACCM*. Profile *Osate* is enabled for the workspace.
 * Java code cleanup on save are configured and enabled for the workspace.
-* An Xtend formatter profile *Oosate* is created and enabled for the workspace.
+* An Xtend formatter profile *Osate* is created and enabled for the workspace.
 
 Cloning the git repositories takes some time. Progress can be viewed in a dialog. To show the progress dialog, click on the animated icon the eclipse status bar.
 
