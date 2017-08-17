@@ -101,6 +101,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#install-eclipse">6. Install Eclipse</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#get-osate-sources">7. Get OSATE sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#updating-the-development-environment">8. Updating the development environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 </ul>
@@ -207,6 +208,11 @@
 <p>Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually via <em>Help</em> -&gt; <em>Perform Setup Tasks ...</em></p>
 <p>Please report issues with the setup using the osate2-core issue tracker on Github.</p>
 </div>
+<div class="section" id="troubleshooting">
+<span id="troubleshooting"></span><h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p><strong>Q:</strong> I get an error message &quot;Target is not a JDK Root. Java executable was not found&quot;</p>
+<p><strong>A:</strong> This tends to happen on Windows when the Java version is updated. Oracle's installer removes the old version and installs the new version into a new directory. Go back in the Oomph dialog to the variables page and change the <em>JRE 1.8 Location</em> variable to the new location.</p>
+</div>
 </div>
 
 
@@ -227,7 +233,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on Aug 12, 2017.
+      Last updated on Aug 17, 2017.
 
     </p>
   </div>

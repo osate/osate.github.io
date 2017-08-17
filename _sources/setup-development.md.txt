@@ -78,3 +78,9 @@ Cloning the git repositories takes some time. Progress can be viewed in a dialog
 Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually via *Help* -> *Perform Setup Tasks ...*
 
 Please report issues with the setup using the osate2-core issue tracker on Github.
+
+## Troubleshooting
+
+**Q:** I get an error message "Target is not a JDK Root. Java executable was not found"
+
+**A:** This tends to happen on Windows when the Java version is updated. Oracle's installer removes the old version and installs the new version into a new directory. Go back in the Oomph dialog to the variables page and change the *JRE 1.8 Location* variable to the new location.
