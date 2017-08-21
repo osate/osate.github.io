@@ -2,11 +2,95 @@
 
 ## Stable Releases
 
+### Version 2.2.3
+
+#### Release
+
+  - **GIT tag**: 2.2.3
+  - **Release date**: August 21, 2017
+  - **Eclipse base version**: Mars.2
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.3/update-site>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.2.3/products>
+
+This is the last release based on Eclipse Mars.
+
+#### Notable changes
+
+1. New analysis checks if bindings (Actual\_\*\_Binding) adhere to constraints (Allowed\_\*\_Binding, Allowed\_\*\_Binding_Class, Required \ Provided\_Connection\_Quality\_of\_Service, Required \ Provided\_Virtual\_Bus\_Class) ([#775](https://github.com/osate/osate2-core/issues/775))
+1. Significant improvements to the graphical editor. See below for details.
+1. Added an AGREE simulator. A user guide is included in the help content.
+
+#### Fixed issues
+
+* OSATE core
+  1. Resolve property constants in record fields ([#835](https://github.com/osate/osate2-core/issues/835))
+  1. Fixed bogous error when validating property consistency along connections during instantiation ([#819](https://github.com/osate/osate2-core/issues/819))
+  1. An empty annex library or subclause no longer causes an exception ([#816](https://github.com/osate/osate2-core/issues/816))
+  1. Fixed corner case in connection validation with inverse feature groups ([#815](https://github.com/osate/osate2-core/issues/815))
+  1. OSATE now contains a plugin that supports diagram export ([#707](https://github.com/osate/osate2-core/issues/707))
+  1. End to end flows can now be expanded to show the flow segments in the instance model editor ([#859](https://github.com/osate/osate2-core/issues/859))
+  1. Use short names for system operation modes ([#743](https://github.com/osate/osate2-core/issues/743))
+  1. System operation moedes can now be expanded to show the participating modes in the instance model editor ([#867](https://github.com/osate/osate2-core/issues/867))
+  1. Instantiation now limits the number of system operation modes to 1000 ([#666](https://github.com/osate/osate2-core/issues/666))
+  1. Cleaned up test labels in instance model editor ([#865](https://github.com/osate/osate2-core/issues/865))
+  1. No duplicate value error for binding specifig property association ([#833](https://github.com/osate/osate2-core/issues/833))
+* Analysis Plugins
+  1. Fixed wrong data in FHA reports ([#848](https://github.com/osate/osate2-core/issues/848))
+  1. Flow latency analysis now uses fixed transmission overhead when a port is missing a data type ([#852](https://github.com/osate/osate2-core/issues/852))
+* Graphical Editor
+  - Diagrams
+    - The file format used by previous versions of the Graphical Editor has been deprecated. Support for opening such diagrams will be removed in a subsequent release. When opening a legacy diagram, the user will be prompted to convert the file. The new file format is more compact and contains more reliable linkages with the AADL model.
+    - It is recommended to convert all legacy diagrams to the new format by opening them.
+    - Diagrams no longer use UUIDs are part of file names. Legacy diagrams will be renamed as part of the conversion process.
+    - Added support for multiple diagrams representing the same model element. 
+    - Added a "Configure Diagram..." option to the diagram's context menu which is used for configuring which model elements are displayed in the diagram.
+    - Removed diagram-wide nesting level option. The nesting level of diagram elements can now be controlled individually.
+    - Added Show Contents, Hide Contents, and Show Type Contents to the diagram element context menu.
+    - Added an asterisk indicator after labels which indicates whether all of the contents for an element are shown.
+  - Refactoring
+    - Renaming elements from the diagram editor will refactor the AADL model. 
+    - Renaming elements from the diagram editor will update related diagrams.
+    - References in legacy diagrams are not updated.
+    - Renaming a model elment using the "Rename Element" menu option updates linkages in diagrams.
+  - AADL Property Support
+    - Reworked AADL property support. Individual AADL properties can be enabled on a per-diagram basis using the "Configure Diagram..." context menu.
+    - AADL reference property values between descendants which are not shown are displayed as a binding between the closest ancestors which are included in the diagram.
+    - AADL reference property values for the same AADL property, source, and destination are grouped together into a single connection.
+    - Added tooltip for grouped AADL property reference values which contains details about the property values.
+    - Bindings along with other reference properties now support bendpoints.
+  - AADL Features
+    - Features may be docked to any side. Previously only the left and right were supported.
+    - Feature group types use the same symbol regardless of the type of diagram. Previously, feature group types used a rectangle on classifier diagrams.
+	- Feature groups can be resized.
+  - Formatting
+    - Labels of classifiers on package diagrams are now located at the top and centered.
+    - Added labels for classifiers in classifier diagrams.
+    - Elements are now colored differently to indicate that they are not owned by the container.
+    - Added toolbar commands for positioning shapes in a radial or grid pattern.
+  - Miscellaneous
+    - Changed behavior of unique identifier generation to include the containing classifier's name. This is to avoid naming conflicts with classifiers that extend the classifier being edited.
+    - Relaxed validation in the flow implementation tool. It is intended that the validation will be improved in a future release. The tool should allow creation of all valid flow implementations but will also allow selection of invalid elements in some circumstances.
+    - Modified filtering when selecting model elements. Now matches any part of name.
+    - Fixed cases where setting a subcomponent classifier was not working properly.
+    - Added support for connections whose features are not included in the diagram. Such connections are formatted differently from normal connections.
+    - Added command to navigate to component type diagram for subcomponents.
+* Resolute/AGREE
+  1. Various bug fixes 
+* ALISA Incremental Assurance
+  1. Minor bug fixes ([#17](https://github.com/osate/osate2-core/issues/17), [#23](https://github.com/osate/osate2-core/issues/23), [#24](https://github.com/osate/osate2-core/issues/24))
+
+#### Known Issues
+
+  1. Using the AADL Property View to edit property values results in bad formatting
+  1. AADL 2.2 support: Partial end to end flows are not yet supported
+  1. ALISA still has error markers on some references even though they are correctly resolved
+
 ### Version 2.2.2
 
 #### Release
 
-  - **GIT tag**: 2.2.2
+  - **GIT tag**: 2.2.2-RELEASE-20170515
   - **Release date**: May 15, 2017
   - **Eclipse base version**: Mars.2
   - **Java version**: Java 8
@@ -74,7 +158,7 @@ Note that the underlying AADL meta-model has changed. This makes it necessary to
 #### Known Issues
 
   1. Using the AADL Property View to edit property values results in bad formatting
-  1. AADL 2.2: Partial end to end flows are not yet supported
+  1. AADL 2.2 support: Partial end to end flows are not yet supported
   1. ALISA still has error markers on some references even though they are correctly resolved
 
 ### Version 2.2.1 update 03

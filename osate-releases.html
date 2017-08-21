@@ -90,6 +90,13 @@
 <li class="toctree-l1"><a class="reference internal" href="download-and-install.html">Download and Installation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#stable-releases">Stable Releases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-2-3">Version 2.2.3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#notable-changes">Notable changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fixed-issues">Fixed issues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#version-2-2-2">Version 2.2.2</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#notable-changes">Notable changes</a></li>
@@ -265,12 +272,126 @@
 <span id="release-notes"></span><h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="stable-releases">
 <span id="stable-releases"></span><h2>Stable Releases<a class="headerlink" href="#stable-releases" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="version-2-2-2">
-<span id="version-2-2-2"></span><h3>Version 2.2.2<a class="headerlink" href="#version-2-2-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="version-2-2-3">
+<span id="version-2-2-3"></span><h3>Version 2.2.3<a class="headerlink" href="#version-2-2-3" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
 <span id="release"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><strong>GIT tag</strong>: 2.2.2</li>
+<li><strong>GIT tag</strong>: 2.2.3</li>
+<li><strong>Release date</strong>: August 21, 2017</li>
+<li><strong>Eclipse base version</strong>: Mars.2</li>
+<li><strong>Java version</strong>: Java 8</li>
+<li><strong>Eclipse Update-Site</strong>: <a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.2.3/update-site">http://www.aadl.info/aadl/osate/stable/2.2.3/update-site</a></li>
+<li><strong>Download URL</strong>: <a class="reference external" href="http://www.aadl.info/aadl/osate/stable/2.2.3/products">http://www.aadl.info/aadl/osate/stable/2.2.3/products</a></li>
+</ul>
+<p>This is the last release based on Eclipse Mars.</p>
+</div>
+<div class="section" id="notable-changes">
+<span id="notable-changes"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>New analysis checks if bindings (Actual_*_Binding) adhere to constraints (Allowed_*_Binding, Allowed_*_Binding_Class, Required \ Provided_Connection_Quality_of_Service, Required \ Provided_Virtual_Bus_Class) (<a class="reference external" href="https://github.com/osate/osate2-core/issues/775">#775</a>)</li>
+<li>Significant improvements to the graphical editor. See below for details.</li>
+<li>Added an AGREE simulator. A user guide is included in the help content.</li>
+</ol>
+</div>
+<div class="section" id="fixed-issues">
+<span id="fixed-issues"></span><h4>Fixed issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>OSATE core<ol>
+<li>Resolve property constants in record fields (<a class="reference external" href="https://github.com/osate/osate2-core/issues/835">#835</a>)</li>
+<li>Fixed bogous error when validating property consistency along connections during instantiation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/819">#819</a>)</li>
+<li>An empty annex library or subclause no longer causes an exception (<a class="reference external" href="https://github.com/osate/osate2-core/issues/816">#816</a>)</li>
+<li>Fixed corner case in connection validation with inverse feature groups (<a class="reference external" href="https://github.com/osate/osate2-core/issues/815">#815</a>)</li>
+<li>OSATE now contains a plugin that supports diagram export (<a class="reference external" href="https://github.com/osate/osate2-core/issues/707">#707</a>)</li>
+<li>End to end flows can now be expanded to show the flow segments in the instance model editor (<a class="reference external" href="https://github.com/osate/osate2-core/issues/859">#859</a>)</li>
+<li>Use short names for system operation modes (<a class="reference external" href="https://github.com/osate/osate2-core/issues/743">#743</a>)</li>
+<li>System operation moedes can now be expanded to show the participating modes in the instance model editor (<a class="reference external" href="https://github.com/osate/osate2-core/issues/867">#867</a>)</li>
+<li>Instantiation now limits the number of system operation modes to 1000 (<a class="reference external" href="https://github.com/osate/osate2-core/issues/666">#666</a>)</li>
+<li>Cleaned up test labels in instance model editor (<a class="reference external" href="https://github.com/osate/osate2-core/issues/865">#865</a>)</li>
+<li>No duplicate value error for binding specifig property association (<a class="reference external" href="https://github.com/osate/osate2-core/issues/833">#833</a>)</li>
+</ol>
+</li>
+<li>Analysis Plugins<ol>
+<li>Fixed wrong data in FHA reports (<a class="reference external" href="https://github.com/osate/osate2-core/issues/848">#848</a>)</li>
+<li>Flow latency analysis now uses fixed transmission overhead when a port is missing a data type (<a class="reference external" href="https://github.com/osate/osate2-core/issues/852">#852</a>)</li>
+</ol>
+</li>
+<li>Graphical Editor<ul>
+<li>Diagrams<ul>
+<li>The file format used by previous versions of the Graphical Editor has been deprecated. Support for opening such diagrams will be removed in a subsequent release. When opening a legacy diagram, the user will be prompted to convert the file. The new file format is more compact and contains more reliable linkages with the AADL model.</li>
+<li>It is recommended to convert all legacy diagrams to the new format by opening them.</li>
+<li>Diagrams no longer use UUIDs are part of file names. Legacy diagrams will be renamed as part of the conversion process.</li>
+<li>Added support for multiple diagrams representing the same model element.</li>
+<li>Added a &quot;Configure Diagram...&quot; option to the diagram's context menu which is used for configuring which model elements are displayed in the diagram.</li>
+<li>Removed diagram-wide nesting level option. The nesting level of diagram elements can now be controlled individually.</li>
+<li>Added Show Contents, Hide Contents, and Show Type Contents to the diagram element context menu.</li>
+<li>Added an asterisk indicator after labels which indicates whether all of the contents for an element are shown.</li>
+</ul>
+</li>
+<li>Refactoring<ul>
+<li>Renaming elements from the diagram editor will refactor the AADL model.</li>
+<li>Renaming elements from the diagram editor will update related diagrams.</li>
+<li>References in legacy diagrams are not updated.</li>
+<li>Renaming a model elment using the &quot;Rename Element&quot; menu option updates linkages in diagrams.</li>
+</ul>
+</li>
+<li>AADL Property Support<ul>
+<li>Reworked AADL property support. Individual AADL properties can be enabled on a per-diagram basis using the &quot;Configure Diagram...&quot; context menu.</li>
+<li>AADL reference property values between descendants which are not shown are displayed as a binding between the closest ancestors which are included in the diagram.</li>
+<li>AADL reference property values for the same AADL property, source, and destination are grouped together into a single connection.</li>
+<li>Added tooltip for grouped AADL property reference values which contains details about the property values.</li>
+<li>Bindings along with other reference properties now support bendpoints.</li>
+</ul>
+</li>
+<li>AADL Features<ul>
+<li>Features may be docked to any side. Previously only the left and right were supported.</li>
+<li>Feature group types use the same symbol regardless of the type of diagram. Previously, feature group types used a rectangle on classifier diagrams.</li>
+<li>Feature groups can be resized.</li>
+</ul>
+</li>
+<li>Formatting<ul>
+<li>Labels of classifiers on package diagrams are now located at the top and centered.</li>
+<li>Added labels for classifiers in classifier diagrams.</li>
+<li>Elements are now colored differently to indicate that they are not owned by the container.</li>
+<li>Added toolbar commands for positioning shapes in a radial or grid pattern.</li>
+</ul>
+</li>
+<li>Miscellaneous<ul>
+<li>Changed behavior of unique identifier generation to include the containing classifier's name. This is to avoid naming conflicts with classifiers that extend the classifier being edited.</li>
+<li>Relaxed validation in the flow implementation tool. It is intended that the validation will be improved in a future release. The tool should allow creation of all valid flow implementations but will also allow selection of invalid elements in some circumstances.</li>
+<li>Modified filtering when selecting model elements. Now matches any part of name.</li>
+<li>Fixed cases where setting a subcomponent classifier was not working properly.</li>
+<li>Added support for connections whose features are not included in the diagram. Such connections are formatted differently from normal connections.</li>
+<li>Added command to navigate to component type diagram for subcomponents.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Resolute/AGREE<ol>
+<li>Various bug fixes</li>
+</ol>
+</li>
+<li>ALISA Incremental Assurance<ol>
+<li>Minor bug fixes (<a class="reference external" href="https://github.com/osate/osate2-core/issues/17">#17</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/23">#23</a>, <a class="reference external" href="https://github.com/osate/osate2-core/issues/24">#24</a>)</li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<span id="known-issues"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Using the AADL Property View to edit property values results in bad formatting</li>
+<li>AADL 2.2 support: Partial end to end flows are not yet supported</li>
+<li>ALISA still has error markers on some references even though they are correctly resolved</li>
+</ol>
+</div>
+</div>
+<div class="section" id="version-2-2-2">
+<span id="version-2-2-2"></span><h3>Version 2.2.2<a class="headerlink" href="#version-2-2-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="release">
+<span id="id1"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>GIT tag</strong>: 2.2.2-RELEASE-20170515</li>
 <li><strong>Release date</strong>: May 15, 2017</li>
 <li><strong>Eclipse base version</strong>: Mars.2</li>
 <li><strong>Java version</strong>: Java 8</li>
@@ -281,7 +402,7 @@
 <p>Note that the underlying AADL meta-model has changed. This makes it necessary to do a clean build of existing projects and to recreate all instance models. Otherwise errors may occur when running analyses.</p>
 </div>
 <div class="section" id="notable-changes">
-<span id="notable-changes"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id2"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Allow connection ends that reach down into feature groups (<a class="reference external" href="https://github.com/osate/osate2-core/issues/500">#500</a>)</li>
 <li>Removed <code class="docutils literal"><span class="pre">Type_Extension</span></code> from property <code class="docutils literal"><span class="pre">Classifier_Matching_Rule</span></code> (<a class="reference external" href="https://github.com/osate/osate2-core/issues/740">#740</a>)</li>
@@ -299,7 +420,7 @@
    - **NOTE** Comparing two AADL or ALISA text files starts the structural compare view. There textual comparison must be selected manually.
 --></div>
 <div class="section" id="fixed-issues">
-<span id="fixed-issues"></span><h4>Fixed issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id3"></span><h4>Fixed issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>OSATE core<ol>
 <li>Improved end to end flow validation (<a class="reference external" href="https://github.com/osate/osate2-core/issues/763">#763</a>)</li>
@@ -346,10 +467,10 @@
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="known-issues"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id4"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad formatting</li>
-<li>AADL 2.2: Partial end to end flows are not yet supported</li>
+<li>AADL 2.2 support: Partial end to end flows are not yet supported</li>
 <li>ALISA still has error markers on some references even though they are correctly resolved</li>
 </ol>
 </div>
@@ -357,7 +478,7 @@
 <div class="section" id="version-2-2-1-update-03">
 <span id="version-2-2-1-update-03"></span><h3>Version 2.2.1 update 03<a class="headerlink" href="#version-2-2-1-update-03" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id1"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id5"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.2.1-UPDATE03</li>
 <li><strong>Release date</strong>: January 20, 2017</li>
@@ -369,7 +490,7 @@
 <p>This is a maintenance release that contains bug fixes and improvements.</p>
 </div>
 <div class="section" id="notable-changes">
-<span id="id2"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id6"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Allow <code class="docutils literal"><span class="pre">Code_Size</span></code> property on virtual bus components</li>
 <li>Allow <code class="docutils literal"><span class="pre">Data_Size</span></code> property on bus and virtual bus components</li>
@@ -385,7 +506,7 @@
 </ol>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id3"></span><h4>Fixed issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id7"></span><h4>Fixed issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>OSATE core<ol>
 <li>Repaired ARP4761 example (<a class="reference external" href="https://github.com/osate/osate2-core/issues/738">#738</a>)</li>
@@ -418,7 +539,7 @@
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="id4"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id8"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad formatting.</li>
 </ol>
@@ -427,7 +548,7 @@
 <div class="section" id="version-2-2-1-update-02">
 <span id="version-2-2-1-update-02"></span><h3>Version 2.2.1 update 02<a class="headerlink" href="#version-2-2-1-update-02" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id5"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id9"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.2.1-UPDATE02</li>
 <li><strong>Release date</strong>: Oct 14, 2016</li>
@@ -440,7 +561,7 @@
 a beta version the Verify and Alisa languages for requirements verification.</p>
 </div>
 <div class="section" id="notable-changes">
-<span id="id6"></span><h4>Notable Changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id10"></span><h4>Notable Changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Added missing <code class="docutils literal"><span class="pre">Array_Size_Range</span></code> property type</li>
 <li>Updated help text for flow latency analysis</li>
@@ -449,7 +570,7 @@ a beta version the Verify and Alisa languages for requirements verification.</p>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id7"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id11"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>OSATE core and analyses<ol>
 <li>Flow sink implementations are now property serialized (#617)</li>
@@ -477,7 +598,7 @@ a beta version the Verify and Alisa languages for requirements verification.</p>
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="id8"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id12"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad formatting.</li>
 </ol>
@@ -486,7 +607,7 @@ a beta version the Verify and Alisa languages for requirements verification.</p>
 <div class="section" id="version-2-2-1-update-01">
 <span id="version-2-2-1-update-01"></span><h3>Version 2.2.1 update 01<a class="headerlink" href="#version-2-2-1-update-01" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id9"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id13"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.2.1-UPDATE01</li>
 <li><strong>Release date</strong>: May 24, 2016</li>
@@ -498,7 +619,7 @@ a beta version the Verify and Alisa languages for requirements verification.</p>
 <p>This is a maintenance release that contains bug fixes and improvements to the ReqSpec language.</p>
 </div>
 <div class="section" id="notable-changes">
-<span id="id10"></span><h4>Notable Changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id14"></span><h4>Notable Changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Property <code class="docutils literal"><span class="pre">Classifier_Matching_Rule</span> <span class="pre">=&gt;</span> <span class="pre">Subset</span></code> is now supported for instantiation.</li>
 <li>Creating a text file for an instance model works now.</li>
@@ -510,13 +631,13 @@ to reflect these changes.</li>
 </ol>
 </div>
 <div class="section" id="known-issues">
-<span id="id11"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id15"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad formatting.</li>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id12"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id16"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <p>The full lists of closed issues for this release are available at</p>
 <p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2016-04-19..2016-05-22+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2016-04-19..2016-05-22+is%3Aclosed</a></p>
 <p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2016-04-19..2016-05-22+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2016-04-19..2016-05-22+is%3Aclosed</a></p>
@@ -526,7 +647,7 @@ to reflect these changes.</li>
 <div class="section" id="version-2-2-1">
 <span id="version-2-2-1"></span><h3>Version 2.2.1<a class="headerlink" href="#version-2-2-1" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id13"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id17"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.2.1-RELEASE-20160418</li>
 <li><strong>Release date</strong>: April 18, 2016</li>
@@ -537,7 +658,7 @@ to reflect these changes.</li>
 </ul>
 </div>
 <div class="section" id="notable-changes">
-<span id="id14"></span><h4>Notable Changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id18"></span><h4>Notable Changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
 <ol>
 <li><p class="first">We have included the EMFTA tool for fault tree analysis (see Help text).
 The existing export to OpenFTA has been removed</p>
@@ -586,14 +707,14 @@ The report sources are in plugin org.osate.reqtrace</p>
 </ol>
 </div>
 <div class="section" id="known-issues">
-<span id="id15"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id19"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad
 formatting</li>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id16"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id20"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <p>The full lists of closed issues for this release are available at</p>
 <p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed</a></p>
 <p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-12-24..2016-04-18+is%3Aclosed</a></p>
@@ -604,7 +725,7 @@ formatting</li>
 <div class="section" id="version-2-2-0">
 <span id="version-2-2-0"></span><h3>Version 2.2.0<a class="headerlink" href="#version-2-2-0" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id17"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id21"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.2.0-RELEASE-20151223</li>
 <li><strong>Release date</strong>: January 5, 2016</li>
@@ -617,7 +738,7 @@ formatting</li>
 </ul>
 </div>
 <div class="section" id="notable-changes">
-<span id="id18"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id22"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>OSATE is now based on Eclipse Mars which requires a new full
 installation</li>
@@ -643,14 +764,14 @@ budgets.</li>
 </ol>
 </div>
 <div class="section" id="known-issues">
-<span id="id19"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id23"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad
 formatting</li>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id20"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id24"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <p>The full lists of closed issues for this release are available at</p>
 <p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed</a></p>
 <p><a class="reference external" href="https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed">https://github.com/osate/osate2-plugins/issues?q=is%3Aissue+updated%3A2015-09-05..2015-12-22+is%3Aclosed</a></p>
@@ -661,7 +782,7 @@ formatting</li>
 <div class="section" id="version-2-1-2">
 <span id="version-2-1-2"></span><h3>Version 2.1.2<a class="headerlink" href="#version-2-1-2" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id21"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id25"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.1.2-RELEASE-20150904</li>
 <li><strong>Release date</strong>: September 14, 2015</li>
@@ -685,14 +806,14 @@ OSATE Preferences -&gt; Aadl2 Text Editor to control this behavior</li>
 </ol>
 </div>
 <div class="section" id="known-issues">
-<span id="id22"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id26"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad
 formatting</li>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id23"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id27"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <p>The full lists of closed issues for this release are available
 at</p>
 <p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-07-06..2015-09-04+is%3Aclosed</a></p>
@@ -704,7 +825,7 @@ at</p>
 <div class="section" id="version-2-1-1">
 <span id="version-2-1-1"></span><h3>Version 2.1.1<a class="headerlink" href="#version-2-1-1" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id24"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id28"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.1.1-RELEASE-20150702</li>
 <li><strong>Release date</strong>: July 6, 2015</li>
@@ -716,7 +837,7 @@ at</p>
 </ul>
 </div>
 <div class="section" id="major-changes">
-<span id="id25"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id29"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>OSATE now requires Java 8</li>
 <li>Automatically add &quot;end&quot; when typing in the text editor, see
@@ -744,14 +865,14 @@ instantiated again</li>
 </ol>
 </div>
 <div class="section" id="known-issues">
-<span id="id26"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id30"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the AADL Property View to edit property values results in bad
 formatting</li>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id27"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id31"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <p>The full lists of closed issues for this release are available
 at</p>
 <p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-05-01..2015-07-05+is%3Aclosed</a></p>
@@ -763,7 +884,7 @@ at</p>
 <div class="section" id="version-2-1-0">
 <span id="version-2-1-0"></span><h3>Version 2.1.0<a class="headerlink" href="#version-2-1-0" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id28"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id32"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.1.0-RELEASE-20150501</li>
 <li><strong>Release date</strong>: May 2, 2015</li>
@@ -775,7 +896,7 @@ at</p>
 </ul>
 </div>
 <div class="section" id="major-changes">
-<span id="id29"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id33"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Additional validations for textual AADL models</li>
 <li>Added quick fixes in the AADL text editor</li>
@@ -786,13 +907,13 @@ at</p>
 </ol>
 </div>
 <div class="section" id="known-issues">
-<span id="id30"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id34"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Running Agree requires Java 8</li>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id31"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id35"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <p>The full lists of closed issues for this release are available
 at</p>
 <p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2015-02-26..2015-05-01+is%3Aclosed</a></p>
@@ -804,7 +925,7 @@ at</p>
 <div class="section" id="version-2-0-9">
 <span id="version-2-0-9"></span><h3>Version 2.0.9<a class="headerlink" href="#version-2-0-9" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
-<span id="id32"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id36"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.9-RELEASE-20150301</li>
 <li><strong>Release date</strong>: March 2, 2015</li>
@@ -816,7 +937,7 @@ at</p>
 </ul>
 </div>
 <div class="section" id="major-changes">
-<span id="id33"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id37"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>The AADL Property View has been rewritten to support expansion of
 list and record values. In addition, property values can be edited
@@ -833,10 +954,10 @@ run.</li>
 </ol>
 </div>
 <div class="section" id="known-issues">
-<span id="id34"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id38"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="fixed-issues">
-<span id="id35"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id39"></span><h4>Fixed Issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <p>The full list of closed issues for this release are available
 at</p>
 <p><a class="reference external" href="https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed">https://github.com/osate/osate2-core/issues?q=is%3Aissue+updated%3A2014-10-01..2015-02-25+is%3Aclosed</a></p>
@@ -850,7 +971,7 @@ at</p>
 <p>A special page is dedicated to the <a class="reference external" href="release_notes_of_OSATE2_2.0.8">release notes of OSATE2
 2.0.8</a></p>
 <div class="section" id="release">
-<span id="id36"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id40"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.8-RELEASE</li>
 <li><strong>Release date</strong>: September, 5 2014</li>
@@ -862,7 +983,7 @@ at</p>
 </ul>
 </div>
 <div class="section" id="major-changes">
-<span id="id37"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id41"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Switched to Eclipse Luna</li>
 <li>Refactored many analysis plugins</li>
@@ -871,7 +992,7 @@ at</p>
 </ol>
 </div>
 <div class="section" id="known-issues">
-<span id="id38"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id42"></span><h4>Known Issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>After the first start with a new workspace the project
 <strong>Plugin_Resources</strong> may shown three times in the AADL navigator.
@@ -884,7 +1005,7 @@ Restarting OSATE fixes the issue.</li>
 <p>This release was published after the 2014 July AADL meeting hold in
 Orlando, Florida, USA.</p>
 <div class="section" id="release">
-<span id="id39"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id43"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.7-RELEASE</li>
 <li><strong>Release date</strong>: July, 14 2014</li>
@@ -896,7 +1017,7 @@ Orlando, Florida, USA.</p>
 </ul>
 </div>
 <div class="section" id="major-changes">
-<span id="id40"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id44"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Automatically compute reliability values from sub-components in the
 Reliability Block Diagram plugin</li>
@@ -912,7 +1033,7 @@ under ballot for the coming September meeting.</li>
 <p>This release was published after the 2014 April AADL meeting hold in
 Santa Barbara, USA.</p>
 <div class="section" id="release">
-<span id="id41"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id45"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.6-RELEASE</li>
 <li><strong>Release date</strong>: Apr, 28 2014</li>
@@ -924,7 +1045,7 @@ Santa Barbara, USA.</p>
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="id42"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id46"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
@@ -940,7 +1061,7 @@ exit and reenter OSATE so it will actually find the new release.</li>
 </ol>
 </div>
 <div class="section" id="major-changes">
-<span id="id43"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
+<span id="id47"></span><h4>Major changes<a class="headerlink" href="#major-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Integration of the Graphical Editor</li>
 <li>New safety analysis tools</li>
@@ -952,7 +1073,7 @@ exit and reenter OSATE so it will actually find the new release.</li>
 <p>This release was published after the 2014 February AADL meeting hold in
 Toulouse, France.</p>
 <div class="section" id="release">
-<span id="id44"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id48"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.5-RELEASE-201402040847</li>
 <li><strong>Release date</strong>: February 4, 2014.</li>
@@ -964,7 +1085,7 @@ Toulouse, France.</p>
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="id45"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id49"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
@@ -1051,7 +1172,7 @@ the Plugin_Resources project. -
 <p>This release was published after the 2013 Fall AADL meeting hold in
 Montreal, Canada.</p>
 <div class="section" id="release">
-<span id="id46"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id50"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.4-RELEASE-201309240847</li>
 <li><strong>Release date</strong>: September, 24 2013</li>
@@ -1063,7 +1184,7 @@ Montreal, Canada.</p>
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="id47"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id51"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
@@ -1082,7 +1203,7 @@ well.</li>
 </ol>
 </div>
 <div class="section" id="changes-and-new-features">
-<span id="id48"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<span id="id52"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>EMV2.aadl being included with OSATE -
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/290">https://github.com/osate/osate2-core/issues/290</a></li>
@@ -1164,7 +1285,7 @@ exception. - <a class="reference external" href="https://github.com/osate/osate2
 <p>This release was published after the 2013 Summer AADL meeting hold in
 Pittsburgh, USA.</p>
 <div class="section" id="release">
-<span id="id49"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id53"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.3-RELEASE-201307220847</li>
 <li><strong>Release date</strong>: July, 22 2013</li>
@@ -1177,7 +1298,7 @@ Pittsburgh, USA.</p>
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="id50"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id54"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
@@ -1193,7 +1314,7 @@ exit and reenter OSATE so it will actually find the new release.</li>
 </ol>
 </div>
 <div class="section" id="changes-and-new-features">
-<span id="id51"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<span id="id55"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>PRISM export now supports error propagation</li>
 <li>Updated Error Model Support</li>
@@ -1283,7 +1404,7 @@ Jacksonville, USA. Please note that this release changed also the
 structure of our download area. The testing update site is now available
 on <a class="reference external" href="http://www.aadl.info/aadl/osate/testing/">http://www.aadl.info/aadl/osate/testing/</a></p>
 <div class="section" id="release">
-<span id="id52"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id56"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.2-RELEASE-201304300847</li>
 <li><strong>Release date</strong>: April, 30 1013</li>
@@ -1297,7 +1418,7 @@ on <a class="reference external" href="http://www.aadl.info/aadl/osate/testing/"
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="id53"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id57"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
@@ -1313,7 +1434,7 @@ exit and reenter OSATE so it will actually find the new release.</li>
 </ol>
 </div>
 <div class="section" id="changes-and-new-features">
-<span id="id54"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<span id="id58"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>Integration of the Property View</li>
 <li>Integration of the IMV viewer with error-model annex</li>
@@ -1326,7 +1447,7 @@ only when using AADL view</li>
 </ul>
 </div>
 <div class="section" id="issues-closed">
-<span id="id55"></span><h4>Issues closed<a class="headerlink" href="#issues-closed" title="Permalink to this headline">¶</a></h4>
+<span id="id59"></span><h4>Issues closed<a class="headerlink" href="#issues-closed" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using Xtext to create annex-
 <a class="reference external" href="https://github.com/osate/osate2-core/issues/224">https://github.com/osate/osate2-core/issues/224</a></li>
@@ -1407,7 +1528,7 @@ assigned - <a class="reference external" href="https://github.com/osate/osate2-c
 <p>This release is published after the Winter AADL meeting hold on
 Valencia, Spain. We thank again our host for hosting this event.</p>
 <div class="section" id="release">
-<span id="id56"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
+<span id="id60"></span><h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.0.1-RELEASE-201302141024</li>
 <li><strong>Release date</strong>: 2013, Feb 14</li>
@@ -1419,7 +1540,7 @@ Valencia, Spain. We thank again our host for hosting this event.</p>
 </ul>
 </div>
 <div class="section" id="known-issues">
-<span id="id57"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
+<span id="id61"></span><h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
 <li>Using the update site, under Windows7 you may have a file protection
 issue for your installation. Eclipse update is just silently failing
@@ -1435,7 +1556,7 @@ exit and reenter OSATE so it will actually find the new release.</li>
 </ol>
 </div>
 <div class="section" id="changes-and-new-features">
-<span id="id58"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
+<span id="id62"></span><h4>Changes and new features<a class="headerlink" href="#changes-and-new-features" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>LUTE integration in AADL plug-ins</li>
 <li>Instance Model Viewer Integration</li>
@@ -1639,7 +1760,7 @@ Long</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on Aug 17, 2017.
+      Last updated on Aug 21, 2017.
 
     </p>
   </div>
