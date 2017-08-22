@@ -6,7 +6,7 @@
 
 #### Release
 
-  - **GIT tag**: 2.2.3
+  - **GIT tag**: 2.2.3-RELEASE-20170811
   - **Release date**: August 21, 2017
   - **Eclipse base version**: Mars.2
   - **Java version**: Java 8
@@ -18,7 +18,7 @@ This is the last release based on Eclipse Mars.
 #### Notable changes
 
 1. New analysis checks if bindings (Actual\_\*\_Binding) adhere to constraints (Allowed\_\*\_Binding, Allowed\_\*\_Binding_Class, Required \ Provided\_Connection\_Quality\_of\_Service, Required \ Provided\_Virtual\_Bus\_Class) ([#775](https://github.com/osate/osate2-core/issues/775))
-1. Significant improvements to the graphical editor. See below for details.
+1. Significant improvements in the graphical editor. See below for details.
 1. Added an AGREE simulator. A user guide is included in the help content.
 
 #### Fixed issues
