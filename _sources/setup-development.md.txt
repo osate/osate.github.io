@@ -32,7 +32,7 @@ Select *Eclipse Modeling Tools* as the base product to install, and select *Oxyg
 
 ![Installer 3](images/installer3.png "Installer 3")
 
-Add a user project by clicking on the *+* icon (A).
+Add a user project by clicking on the + icon (A).
 
 Select the catalog *Github Projects* and enter the following URL as the *Resource URI*:
 
@@ -79,8 +79,38 @@ Ideally the development environment is completely managed using the setup file. 
 
 Please report issues with the setup using the osate2-core issue tracker on Github.
 
-## Troubleshooting
+## Q & A / Troubleshooting
 
-**Q:** I get an error message "Target is not a JDK Root. Java executable was not found"
+### The heap size is set to 1GB. How do I increase that to 2GB?
 
-**A:** This tends to happen on Windows when the Java version is updated. Oracle's installer removes the old version and installs the new version into a new directory. Go back in the Oomph dialog to the variables page and change the *JRE 1.8 Location* variable to the new location.
+The initial heap size is set to 1GB for 32bit environments with a process size limitation of 2GB, in particular 32bit Windows).
+You can edit the user setup to override the setting for all eclipse installations. Follow these steps in eclipse:
+
+1. Open the user setup: _Navigate_ -> _Open Setup_ -> _User_
+2. Add an Eclipse Ini task: In the setup editor right click on *User* and select *New Child* -> *Eclipse Ini*
+3. Edit the task properties: Right click on the new *Eclipse Ini* task and select *Show Properties View*
+4. Set the maximum heap size value: In the properties view enter the _Option_ "-Xmx" (without the quotes) and _Value_ "2g" or "2048m" (without the quotes) to set the heap size to 2GB.
+5. Save the user setup
+6. Execute the setup: *Help* -> *Perform Setup Tasks...*
+
+You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.
+
+### How do I add a feature to my eclipse installation and share it with others in my team?
+
+Create your own setup file and import it into eclipse. P2 Director tasks install features in eclipse. It is recommended to put setup files under version control.
+
+### I have installed a feature in my eclipse installation, but it's not available when I start OSATE using a launch configuration.
+
+Installed features must be part of the target platform to be available to a runtime workbench. The OSATE2 setup uses a target platform _Modular Target_. To add to this target create a _Targlet_ in your setup. See osate2.setup for an example.
+
+### How can I add a feature to the OSATE2 development setup?
+
+Edit the OSATE2 setup (add a P2 director task and/or a targlet) and submit a pull request. **DO NOT push a modified _osate2.setup_ file to the develop branch on github!**
+
+### I get an error message "Target is not a JDK Root. Java executable was not found"
+
+This tends to happen on Windows when the Java version is updated. Oracle's installer removes the old version and installs the new version into a new directory. Go back in the Oomph dialog to the variables page and change the *JRE 1.8 Location* variable to the new location.
+
+### Where can I find documentation about Oomph setups?
+
+On the eclipse wiki: [Eclipse Oomph Authoring](https://wiki.eclipse.org/Eclipse_Oomph_Authoring)

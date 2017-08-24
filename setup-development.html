@@ -101,7 +101,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#install-eclipse">6. Install Eclipse</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#get-osate-sources">7. Get OSATE sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#updating-the-development-environment">8. Updating the development environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#q-a-troubleshooting">Q &amp; A / Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb">The heap size is set to 1GB. How do I increase that to 2GB?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">How do I add a feature to my eclipse installation and share it with others in my team?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration">I have installed a feature in my eclipse installation, but it's not available when I start OSATE using a launch configuration.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-add-a-feature-to-the-osate2-development-setup">How can I add a feature to the OSATE2 development setup?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-get-an-error-message-target-is-not-a-jdk-root-java-executable-was-not-found">I get an error message &quot;Target is not a JDK Root. Java executable was not found&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#where-can-i-find-documentation-about-oomph-setups">Where can I find documentation about Oomph setups?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -171,7 +179,7 @@
 <div class="section" id="add-the-osate-setup-file">
 <span id="add-the-osate-setup-file"></span><h2>4. Add the OSATE setup file<a class="headerlink" href="#add-the-osate-setup-file" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Installer 3" src="_images/installer3.png" /></p>
-<p>Add a user project by clicking on the <em>+</em> icon (A).</p>
+<p>Add a user project by clicking on the + icon (A).</p>
 <p>Select the catalog <em>Github Projects</em> and enter the following URL as the <em>Resource URI</em>:</p>
 <p>https://raw.githubusercontent.com/osate/osate2-core/develop/osate.releng/osate2.setup</p>
 <p>Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>.</p>
@@ -208,10 +216,42 @@
 <p>Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually via <em>Help</em> -&gt; <em>Perform Setup Tasks ...</em></p>
 <p>Please report issues with the setup using the osate2-core issue tracker on Github.</p>
 </div>
-<div class="section" id="troubleshooting">
-<span id="troubleshooting"></span><h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<p><strong>Q:</strong> I get an error message &quot;Target is not a JDK Root. Java executable was not found&quot;</p>
-<p><strong>A:</strong> This tends to happen on Windows when the Java version is updated. Oracle's installer removes the old version and installs the new version into a new directory. Go back in the Oomph dialog to the variables page and change the <em>JRE 1.8 Location</em> variable to the new location.</p>
+<div class="section" id="q-a-troubleshooting">
+<span id="q-a-troubleshooting"></span><h2>Q &amp; A / Troubleshooting<a class="headerlink" href="#q-a-troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb">
+<span id="the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb"></span><h3>The heap size is set to 1GB. How do I increase that to 2GB?<a class="headerlink" href="#the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb" title="Permalink to this headline">¶</a></h3>
+<p>The initial heap size is set to 1GB for 32bit environments with a process size limitation of 2GB, in particular 32bit Windows).
+You can edit the user setup to override the setting for all eclipse installations. Follow these steps in eclipse:</p>
+<ol class="simple">
+<li>Open the user setup: <em>Navigate</em> -&gt; <em>Open Setup</em> -&gt; <em>User</em></li>
+<li>Add an Eclipse Ini task: In the setup editor right click on <em>User</em> and select <em>New Child</em> -&gt; <em>Eclipse Ini</em></li>
+<li>Edit the task properties: Right click on the new <em>Eclipse Ini</em> task and select <em>Show Properties View</em></li>
+<li>Set the maximum heap size value: In the properties view enter the <em>Option</em> &quot;-Xmx&quot; (without the quotes) and <em>Value</em> &quot;2g&quot; or &quot;2048m&quot; (without the quotes) to set the heap size to 2GB.</li>
+<li>Save the user setup</li>
+<li>Execute the setup: <em>Help</em> -&gt; <em>Perform Setup Tasks...</em></li>
+</ol>
+<p>You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.</p>
+</div>
+<div class="section" id="how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">
+<span id="how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team"></span><h3>How do I add a feature to my eclipse installation and share it with others in my team?<a class="headerlink" href="#how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team" title="Permalink to this headline">¶</a></h3>
+<p>Create your own setup file and import it into eclipse. P2 Director tasks install features in eclipse. It is recommended to put setup files under version control.</p>
+</div>
+<div class="section" id="i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration">
+<span id="i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration"></span><h3>I have installed a feature in my eclipse installation, but it's not available when I start OSATE using a launch configuration.<a class="headerlink" href="#i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Installed features must be part of the target platform to be available to a runtime workbench. The OSATE2 setup uses a target platform <em>Modular Target</em>. To add to this target create a <em>Targlet</em> in your setup. See osate2.setup for an example.</p>
+</div>
+<div class="section" id="how-can-i-add-a-feature-to-the-osate2-development-setup">
+<span id="how-can-i-add-a-feature-to-the-osate2-development-setup"></span><h3>How can I add a feature to the OSATE2 development setup?<a class="headerlink" href="#how-can-i-add-a-feature-to-the-osate2-development-setup" title="Permalink to this headline">¶</a></h3>
+<p>Edit the OSATE2 setup (add a P2 director task and/or a targlet) and submit a pull request. <strong>DO NOT push a modified <em>osate2.setup</em> file to the develop branch on github!</strong></p>
+</div>
+<div class="section" id="i-get-an-error-message-target-is-not-a-jdk-root-java-executable-was-not-found">
+<span id="i-get-an-error-message-target-is-not-a-jdk-root-java-executable-was-not-found"></span><h3>I get an error message &quot;Target is not a JDK Root. Java executable was not found&quot;<a class="headerlink" href="#i-get-an-error-message-target-is-not-a-jdk-root-java-executable-was-not-found" title="Permalink to this headline">¶</a></h3>
+<p>This tends to happen on Windows when the Java version is updated. Oracle's installer removes the old version and installs the new version into a new directory. Go back in the Oomph dialog to the variables page and change the <em>JRE 1.8 Location</em> variable to the new location.</p>
+</div>
+<div class="section" id="where-can-i-find-documentation-about-oomph-setups">
+<span id="where-can-i-find-documentation-about-oomph-setups"></span><h3>Where can I find documentation about Oomph setups?<a class="headerlink" href="#where-can-i-find-documentation-about-oomph-setups" title="Permalink to this headline">¶</a></h3>
+<p>On the eclipse wiki: <a class="reference external" href="https://wiki.eclipse.org/Eclipse_Oomph_Authoring">Eclipse Oomph Authoring</a></p>
+</div>
 </div>
 </div>
 
@@ -233,7 +273,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on Aug 23, 2017.
+      Last updated on Aug 24, 2017.
 
     </p>
   </div>
