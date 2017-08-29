@@ -48,11 +48,11 @@ Check *Show all variables* near the bottom of the dialog. Without this only vari
 
 The first group of variables determines the directory for the new eclipse installation. You can choose between (a) a root directory and a subdirectory within that root directory and (b) a full path to the installation directory.
 
-The next group determines the location of the workspace.
+The next group determines the location of the workspace. Do not reuse an existing workspace as that will likely lead to problems.
 
-The git clone location is the root directory into which all git repositories are cloned. The tycho build requires that all git repositories share the same root directory.
+The git clone location is the root directory into which all git repositories are cloned. The tycho build requires that all git repositories share the same root directory. If you have (all or some) repositories cloned already you can re-use the clones. Make sure that all clones have the develop branch checked out (except osate2-ocarina, which has just a master branch). Also, make sure that they are up to date by issuing a _git pull_ command.
 
-Finally, choose how to access the git repositories. The default choice uses ssh access and requires ssh credentials, and your public key must be uploaded to github. The  *HTTPS (read-write)* option uses your Github username and password. 
+Finally, choose how to access the git repositories. The default choice uses ssh access and requires ssh credentials (click the key icon at the bottom to set this up), and your public key must be uploaded to github. The  *HTTPS (read-write)* option uses your Github username and password. When you choose https a variable for the user name will show up. Replace the default _anonymous_ with your github user name. 
 
 ## 6. Install Eclipse
 
@@ -95,6 +95,19 @@ You can edit the user setup to override the setting for all eclipse installation
 
 You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.
 
+
+### Can I add the OSATE2 project setup to that an existing workspace?
+
+Yes, a project setup can be imported into a workspace: _File_ -> _Import..._ -> _Oomph_ -> _Projects into workspace_ 
+
+You can also use the import to add additional project setups to a workspace.
+  
+### I want to use the eclipse installation with a new workspace?
+
+No problem. Switch to the new workspace location and import the OSATE2 project setup.
+
+Alternatively, you can create a new eclipse installation for each new workspace workspace. When using a bundle pool, an eclipse installation is comparatively lightweight, and quick to set up.
+  
 ### How do I add a feature to my eclipse installation and share it with others in my team?
 
 Create your own setup file and import it into eclipse. P2 Director tasks install features in eclipse. It is recommended to put setup files under version control.

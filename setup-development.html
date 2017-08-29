@@ -103,6 +103,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#updating-the-development-environment">8. Updating the development environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#q-a-troubleshooting">Q &amp; A / Troubleshooting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb">The heap size is set to 1GB. How do I increase that to 2GB?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can-i-add-the-osate2-project-setup-to-that-an-existing-workspace">Can I add the OSATE2 project setup to that an existing workspace?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace">I want to use the eclipse installation with a new workspace?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">How do I add a feature to my eclipse installation and share it with others in my team?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration">I have installed a feature in my eclipse installation, but it's not available when I start OSATE using a launch configuration.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#how-can-i-add-a-feature-to-the-osate2-development-setup">How can I add a feature to the OSATE2 development setup?</a></li>
@@ -189,9 +191,9 @@
 <p><img alt="Installer 4" src="_images/installer4.png" /></p>
 <p>Check <em>Show all variables</em> near the bottom of the dialog. Without this only variables that do not have a value will be displayed. Oomph stores variable values between invocations, so nothing would be shown after the first run.</p>
 <p>The first group of variables determines the directory for the new eclipse installation. You can choose between (a) a root directory and a subdirectory within that root directory and (b) a full path to the installation directory.</p>
-<p>The next group determines the location of the workspace.</p>
-<p>The git clone location is the root directory into which all git repositories are cloned. The tycho build requires that all git repositories share the same root directory.</p>
-<p>Finally, choose how to access the git repositories. The default choice uses ssh access and requires ssh credentials, and your public key must be uploaded to github. The  <em>HTTPS (read-write)</em> option uses your Github username and password.</p>
+<p>The next group determines the location of the workspace. Do not reuse an existing workspace as that will likely lead to problems.</p>
+<p>The git clone location is the root directory into which all git repositories are cloned. The tycho build requires that all git repositories share the same root directory. If you have (all or some) repositories cloned already you can re-use the clones. Make sure that all clones have the develop branch checked out (except osate2-ocarina, which has just a master branch). Also, make sure that they are up to date by issuing a <em>git pull</em> command.</p>
+<p>Finally, choose how to access the git repositories. The default choice uses ssh access and requires ssh credentials (click the key icon at the bottom to set this up), and your public key must be uploaded to github. The  <em>HTTPS (read-write)</em> option uses your Github username and password. When you choose https a variable for the user name will show up. Replace the default <em>anonymous</em> with your github user name.</p>
 </div>
 <div class="section" id="install-eclipse">
 <span id="install-eclipse"></span><h2>6. Install Eclipse<a class="headerlink" href="#install-eclipse" title="Permalink to this headline">¶</a></h2>
@@ -231,6 +233,16 @@ You can edit the user setup to override the setting for all eclipse installation
 <li>Execute the setup: <em>Help</em> -&gt; <em>Perform Setup Tasks...</em></li>
 </ol>
 <p>You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.</p>
+</div>
+<div class="section" id="can-i-add-the-osate2-project-setup-to-that-an-existing-workspace">
+<span id="can-i-add-the-osate2-project-setup-to-that-an-existing-workspace"></span><h3>Can I add the OSATE2 project setup to that an existing workspace?<a class="headerlink" href="#can-i-add-the-osate2-project-setup-to-that-an-existing-workspace" title="Permalink to this headline">¶</a></h3>
+<p>Yes, a project setup can be imported into a workspace: <em>File</em> -&gt; <em>Import...</em> -&gt; <em>Oomph</em> -&gt; <em>Projects into workspace</em></p>
+<p>You can also use the import to add additional project setups to a workspace.</p>
+</div>
+<div class="section" id="i-want-to-use-the-eclipse-installation-with-a-new-workspace">
+<span id="i-want-to-use-the-eclipse-installation-with-a-new-workspace"></span><h3>I want to use the eclipse installation with a new workspace?<a class="headerlink" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace" title="Permalink to this headline">¶</a></h3>
+<p>No problem. Switch to the new workspace location and import the OSATE2 project setup.</p>
+<p>Alternatively, you can create a new eclipse installation for each new workspace workspace. When using a bundle pool, an eclipse installation is comparatively lightweight, and quick to set up.</p>
 </div>
 <div class="section" id="how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">
 <span id="how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team"></span><h3>How do I add a feature to my eclipse installation and share it with others in my team?<a class="headerlink" href="#how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team" title="Permalink to this headline">¶</a></h3>
@@ -273,7 +285,7 @@ You can edit the user setup to override the setting for all eclipse installation
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on Aug 24, 2017.
+      Last updated on Aug 29, 2017.
 
     </p>
   </div>
