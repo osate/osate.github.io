@@ -2,6 +2,41 @@
 
 ## Stable Releases
 
+### Version 2.2.3 update 01
+
+#### Release
+
+  - **GIT tag**: 2.2.3-UPDATE01
+  - **Release date**: September 6, 2017
+  - **Eclipse base version**: Mars.2
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.2.3/update-site>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.2.3/products>
+
+This is a maintenance release that contains bug fixes for the graphical editor.
+
+#### Notable changes
+
+1. Adjusted the data types of several fields in the diagram meta-model.
+   Unfortunately, the this breaks forward compatibility. The original 2.2.3 release will not be able to correctly parse diagrams
+   saved with newer versions. However the change is backward compatible. The updated version will work with diagrams created
+   with the original 2.2.3 release.
+
+#### Fixed issues
+
+* Graphical Editor
+  1. Fixes elements being assigned duplicate id's. As a result, AADL properties were not represented accurately.
+  2. Fixed case where a rename refactoring caused a NPE.
+  3. Fixes flow implementations not appearing the drop-down list to be highlighted.
+  4. Fixes multiple errors and race conditions with diagram indexing.
+  5. Fixes exception when opening empty AADL file ([#218](https://github.com/osate/osate-ge/issues/218))
+  6. Fixes exception when attempting to delete a realization. Deletion of realizations is not supported.
+  7. Fixed typo in the user guide
+
+#### Known Issues
+
+  1.  Using the AADL Property View to edit property values results in bad formatting.
+
 ### Version 2.2.3
 
 #### Release
