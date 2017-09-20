@@ -30,6 +30,7 @@ Wiki`_ to here.
    download-and-install
    osate-releases
    osate-roadmap
+   getting-help
    
 .. _developer-docs:
 
