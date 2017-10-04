@@ -60,15 +60,15 @@ This is the last release based on Eclipse Mars.
 
 * OSATE core
   1. Resolve property constants in record fields ([#835](https://github.com/osate/osate2-core/issues/835))
-  1. Fixed bogous error when validating property consistency along connections during instantiation ([#819](https://github.com/osate/osate2-core/issues/819))
+  1. Fixed bogus error when validating property consistency along connections during instantiation ([#819](https://github.com/osate/osate2-core/issues/819))
   1. An empty annex library or subclause no longer causes an exception ([#816](https://github.com/osate/osate2-core/issues/816))
   1. Fixed corner case in connection validation with inverse feature groups ([#815](https://github.com/osate/osate2-core/issues/815))
   1. OSATE now contains a plugin that supports diagram export ([#707](https://github.com/osate/osate2-core/issues/707))
   1. End to end flows can now be expanded to show the flow segments in the instance model editor ([#859](https://github.com/osate/osate2-core/issues/859))
   1. Use short names for system operation modes ([#743](https://github.com/osate/osate2-core/issues/743))
-  1. System operation moedes can now be expanded to show the participating modes in the instance model editor ([#867](https://github.com/osate/osate2-core/issues/867))
+  1. System operation modes can now be expanded to show the participating modes in the instance model editor ([#867](https://github.com/osate/osate2-core/issues/867))
   1. Instantiation now limits the number of system operation modes to 1000 ([#666](https://github.com/osate/osate2-core/issues/666))
-  1. Cleaned up test labels in instance model editor ([#865](https://github.com/osate/osate2-core/issues/865))
+  1. Cleaned up labels in instance model editor ([#865](https://github.com/osate/osate2-core/issues/865))
   1. No duplicate value error for binding specifig property association ([#833](https://github.com/osate/osate2-core/issues/833))
 * Analysis Plugins
   1. Fixed wrong data in FHA reports ([#848](https://github.com/osate/osate2-core/issues/848))
