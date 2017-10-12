@@ -4,7 +4,7 @@
 
 ### OSATE 2.3.0
 
-Release: Nov 2017
+Release: Oct 2017
 
 #### Public release
 
