@@ -147,7 +147,7 @@ There are a couple of rarely used language features that are not fully supported
 supported in the declarative model but models containing these features cannot be instantiated.
 
 * Binding-specific property associations (`in binding`)
-* Automatic expansion of a property reference value the references an array into a list of references (11.4 (L6).
+* Automatic expansion of a property reference value the references an array into a list of references. (Standard document section 11.4 (L6))
 * Subcomponent arrays with multiple component implementations
 * Aggregate data ports
 * Not all classifier matching and substitution rules are fully implemented
