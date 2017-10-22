@@ -94,6 +94,7 @@
 <p class="caption"><span class="caption-text">Developer Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up an OSATE development environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#problem-with-oxygen-1a">Problem with Oxygen.1a</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#download-the-installer">1. Download the installer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#run-the-installer">2. Run the installer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#select-the-eclipse-platform">3. Select the Eclipse platform</a></li>
@@ -159,7 +160,15 @@
             
   <div class="section" id="setting-up-an-osate-development-environment">
 <span id="setting-up-an-osate-development-environment"></span><h1>Setting up an OSATE development environment<a class="headerlink" href="#setting-up-an-osate-development-environment" title="Permalink to this headline">¶</a></h1>
-<p>Starting with OSATE 2.3, which is based on Eclipse 4.7 (Oxygen), the recommended way to set up a development environment uses the Eclipse Installer.</p>
+<p>Starting with OSATE 2.3, which is based on Eclipse 4.7.1 (Oxygen.1), the recommended way to set up a development environment uses the Eclipse Installer.</p>
+<div class="section" id="problem-with-oxygen-1a">
+<span id="problem-with-oxygen-1a"></span><h2>Problem with Oxygen.1a<a class="headerlink" href="#problem-with-oxygen-1a" title="Permalink to this headline">¶</a></h2>
+<p>The instructions below use Eclipse Modeling with the Eclipse Oxygen composite repository. Oxygen service releases are added to that repository. Following the instructions will install the latest Oxygen service release and <em>Help</em> -&gt; <em>Perform Setup Tasks...</em> will automatically update the development setup to the latest service release.</p>
+<p>There is an issue with Oxygen.1a that breaks things: Xtext 2.12 does not work with Oxygen.1a. Xtext 2.13 does, but some of the OSATE components only work with Xtext 2.12.</p>
+<p>As a workaround, create a development environment that does not automatically update: Add</p>
+<p>https://raw.githubusercontent.com/osate/osate2-core/develop/osate.releng/Oxygen1.setup</p>
+<p>as a user product on the product page of the installer and use it instead of Eclipse Modeling Tools.</p>
+</div>
 <div class="section" id="download-the-installer">
 <span id="download-the-installer"></span><h2>1. Download the installer<a class="headerlink" href="#download-the-installer" title="Permalink to this headline">¶</a></h2>
 <p>The Eclipse Installer can be downloaded from the eclipse Web site. Follow this <a class="reference external" href="https://www.eclipse.org/downloads/">link</a> to download the installer for your platform. Make sure that the word size of the installer version matches the word size of your Java installation. For example, if you are running 32bit Java on a 64bit Windows you must use the 32bit installer.</p>
@@ -286,7 +295,7 @@ You can edit the user setup to override the setting for all eclipse installation
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on Oct 18, 2017.
+      Last updated on Oct 22, 2017.
 
     </p>
   </div>
