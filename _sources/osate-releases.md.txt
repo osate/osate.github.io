@@ -2,6 +2,47 @@
 
 ## Stable Releases
 
+### Version 2.3.0
+
+#### Release
+
+  - **GIT tag**: 2.3.0-RELEASE
+  - **Release date**: November 9, 2017
+  - **Eclipse base version**: Oxygen.1
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.3.0/updates>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.3.0/products>
+
+#### Notable changes
+
+1. The underlying Eclipse is updated to Oxygen1.
+1. Property sets and packages contributed by plugins are no longer copied as files into each workspace. Existing workspaces will be
+   migrated automatically.
+1. The FTA and minimal cut set calculation have been rewritten. The fault tree uses a new graphical representation.
+
+#### Fixed issues
+
+* OSATE Core and Analysis Plugins
+  1. Created an EMF based generic analysis result format ([#898](https://github.com/osate/osate2-core/issues/898))
+  1. Latency analysis updated to use new result format ([#902](https://github.com/osate/osate2-core/issues/902))
+  1. Plugin contributed resources are shown in the navigator but lo longer copied into the workspace ([#527](https://github.com/osate/osate2-core/issues/527))
+  1. Abstract features were serialized with keyword `prototype` ([#883](https://github.com/osate/osate2-core/issues/883))
+  1. Behavior annex errors are now processed correctly ([#891](https://github.com/osate/osate2-core/issues/891))
+  1. Created new representation for fault propagation graphs and fault trees ([#901](https://github.com/osate/osate2-core/issues/901))
+* Graphical Editor
+  1. Added basic formatting support. This includes adjusting the outline color, fill color, text color, line size, and font-size.([#151](https://github.com/osate/osate-ge/issues/151))
+  2. Added options to toggle connection label visibility on a per-diagram or per connection basis. ([#239](https://github.com/osate/osate-ge/issues/239))
+  3. Port graphic and connection point adjustments. ([#228](https://github.com/osate/osate-ge/issues/228))([#229](https://github.com/osate/osate-ge/issues/229))
+  4. Mode transitions now use free-form connections. ([#236](https://github.com/osate/osate-ge/issues/236))
+  5. Mode assignments is now performed using the Properties view. Modes can be assigned to multiple elements simultaneously. ([#200](https://github.com/osate/osate-ge/issues/200))
+  6. Double-clicking a model element now opens the Properties view. The properties view allows the modification of diagram element formatting and model element properties. Additional properties will be added in subsequent releases.
+* Resolute/AGREE
+  1. Bug fixes
+
+#### Known Issues
+
+  1.  Using the AADL Property View to edit property values results in bad formatting.
+
 ### Version 2.2.3 update 01
 
 #### Release
