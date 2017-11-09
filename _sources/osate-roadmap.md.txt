@@ -2,30 +2,13 @@
 
 ## Planned OSATE Releases
 
-### OSATE 2.3.0
-
-Release: Oct 2017
-
-__Public release__
-* Based on Eclipse Oxygen.1
-* Reworked fault tree representation
-* Improved minimal cut-set calculation
-* Plugin contributions as virtual project
-* Unified analysis result representation (internal)
-* New result representation used in latency analysis (internal)
-* Update from Eclipse actions to commands (internal)
-
-__Development__
-
-* Oomph setup for development environment
-
 ### OSATE 2.3.1
 
 Release: Dec 2017
 
 __Public release__
 
-* Based on Eclipse Oxygen.1a, Xtext 2.13
+* Based on Eclipse Oxygen.1a, Xtext 2.13 (?)
 * Graphical editor improvements
 * Additional file creation wizards for reqspec, etc
 * Consistent reorganization of commands in main menu, toolbar, context menu
@@ -50,7 +33,7 @@ Release: Feb 2018
 __Public release__
 
 * Based on Eclipse Oxygen.2
-* Update to Java9 (question)
+* Update to Java9 (?)
 * Graphical editor improvements
 * Analysis result reports generated using BIRT
 * Documentation updates
