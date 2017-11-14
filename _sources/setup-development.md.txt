@@ -2,18 +2,6 @@
 
 Starting with OSATE 2.3, which is based on Eclipse 4.7.1 (Oxygen.1), the recommended way to set up a development environment uses the Eclipse Installer.
 
-## Problem with Oxygen.1a
-
-The instructions below use Eclipse Modeling with the Eclipse Oxygen composite repository. Oxygen service releases are added to that repository. Following the instructions will install the latest Oxygen service release and *Help* -> *Perform Setup Tasks...* will automatically update the development setup to the latest service release.
-
-There is an issue with Oxygen.1a that breaks things: Xtext 2.12 does not work with Oxygen.1a. Xtext 2.13 does, but some of the OSATE components only work with Xtext 2.12.
-
-As a workaround, create a development environment that does not automatically update: Add 
-
-https://raw.githubusercontent.com/osate/osate2-core/develop/osate.releng/Oxygen1.setup
-
-as a user product on the product page of the installer and use it instead of Eclipse Modeling Tools.
-
 ## 1. Download the installer
 
 The Eclipse Installer can be downloaded from the eclipse Web site. Follow this [link](https://www.eclipse.org/downloads/) to download the installer for your platform. Make sure that the word size of the installer version matches the word size of your Java installation. For example, if you are running 32bit Java on a 64bit Windows you must use the 32bit installer.
