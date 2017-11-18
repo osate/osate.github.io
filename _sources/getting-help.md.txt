@@ -3,11 +3,8 @@
 Please use the [Google group for OSATE](https://groups.google.com/forum/#!forum/osate "OSATE Google Group") to ask
 questions about OSATE. This group is also a good place to discuss existing OSATE features and request new ones.
 
-If possible, use a Google account to join the group. If you cannot use a Google account, send an email to the group
-[osate@googlegroups.com](mailto:osate@googlegroups.com "Group Email") and ask to be added as a member.
-
-Posts by non-members and by new members will be moderated.
-
+To avoid spam, only group members may post to the group, and posts by new members are moderated.
+ 
 See [Google Groups Help](https://support.google.com/groups "Help") for more information about Google groups, e.g.,
 how to sign up, and how to post.
 
