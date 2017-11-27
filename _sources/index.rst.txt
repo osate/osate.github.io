@@ -27,6 +27,7 @@ Wiki`_ to here.
    :maxdepth: 2
    :caption: User Documentation
 
+   about-osate
    download-and-install
    osate-releases
    osate-roadmap
