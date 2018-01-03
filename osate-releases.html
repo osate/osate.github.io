@@ -314,6 +314,8 @@
 <li>Complete redesign of the menu structure and the toolbar.</li>
 <li>Added new wizards for all file types supported by OSATE.</li>
 <li>The underlying Eclipse is updated to Oxygen.1A.</li>
+<li>Implemented new automatic layout capability to the graphical editor. A preference to control the incremental layout mode is located at OSATE Preferences/Diagrams. See OSATE Graphical Editor User Guide for additional details.</li>
+<li>Reworked instance model diagram referencing system. When opening such diagrams, the user will be prompted to relink instance model diagrams with the appropriate instance model. Relinked diagrams will not be compatible with older versions of OSATE.</li>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
@@ -341,7 +343,13 @@
 </ol>
 </li>
 <li>Graphical Editor<ol>
-<li>TBD (<a class="reference external" href="https://github.com/osate/osate-ge/issues/???">#???</a>)</li>
+<li>Added ability to show Mode Transition Triggers as labels. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/244">#244</a>)</li>
+<li>Reworked flow and mode highlighting. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/133">#133</a>)</li>
+<li>Reworked automatic layout support by integerating the Eclipse Layout Kernel(ELK). (<a class="reference external" href="https://github.com/osate/osate-ge/issues/158">#158</a>)</li>
+<li>Added capability to correct broken reference to the AADL model. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/136">#136</a>)</li>
+<li>Prevented showing both Implements and Extends relationships for the same component implementation. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/254">#254</a>)</li>
+<li>Fixed Arrays having invalid names when renaming. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/262">#254</a>)</li>
+<li>Added support for show bindings in instance Model (<a class="reference external" href="https://github.com/osate/osate-ge/issues/196">#196</a>)</li>
 </ol>
 </li>
 <li>Resolute/AGREE<ol>

@@ -17,6 +17,8 @@
 1. Complete redesign of the menu structure and the toolbar.
 2. Added new wizards for all file types supported by OSATE.
 3. The underlying Eclipse is updated to Oxygen.1A. 
+4. Implemented new automatic layout capability to the graphical editor. A preference to control the incremental layout mode is located at OSATE Preferences/Diagrams. See OSATE Graphical Editor User Guide for additional details.
+5. Reworked instance model diagram referencing system. When opening such diagrams, the user will be prompted to relink instance model diagrams with the appropriate instance model. Relinked diagrams will not be compatible with older versions of OSATE.
 
 #### Fixed issues
 
@@ -40,7 +42,13 @@
   17. Updated tests for FTA. ([#930](https://github.com/osate/osate2-core/issues/930))
   18. Cleaned up menus and toolbar. ([#928](https://github.com/osate/osate2-core/issues928))
 * Graphical Editor
-  1. TBD ([#???](https://github.com/osate/osate-ge/issues/???))
+  1. Added ability to show Mode Transition Triggers as labels. ([#244](https://github.com/osate/osate-ge/issues/244))
+  2. Reworked flow and mode highlighting. ([#133](https://github.com/osate/osate-ge/issues/133))
+  3. Reworked automatic layout support by integerating the Eclipse Layout Kernel(ELK). ([#158](https://github.com/osate/osate-ge/issues/158))
+  4. Added capability to correct broken reference to the AADL model. ([#136](https://github.com/osate/osate-ge/issues/136))
+  5. Prevented showing both Implements and Extends relationships for the same component implementation. ([#254](https://github.com/osate/osate-ge/issues/254))
+  6. Fixed Arrays having invalid names when renaming. ([#254](https://github.com/osate/osate-ge/issues/262))
+  7. Added support for show bindings in instance Model ([#196](https://github.com/osate/osate-ge/issues/196))
 * Resolute/AGREE
   1. Bug fixes
 
