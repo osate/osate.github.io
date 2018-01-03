@@ -55,6 +55,7 @@
 #### Known Issues
 
   1.  Using the AADL Property View to edit property values results in bad formatting.
+  2.  End points for connections representing mode transitions triggers and property values which reference connections are incorrect if the mode transition or referenced connection does not contain a bendpoint.
 
 ### Version 2.3.0
 
