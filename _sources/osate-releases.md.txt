@@ -2,6 +2,52 @@
 
 ## Stable Releases
 
+### Version 2.3.1 (NOT YET RELEASED)
+
+#### Release
+
+  - **GIT tag**: 2.3.1-RELEASE
+  - **Release date**: January 3, 2018
+  - **Eclipse base version**: Oxygen.1A
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.3.1/updates>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.3.1/products>
+
+#### Notable changes
+1. Complete redesign of the menu structure and the toolbar.
+2. Added new wizards for all file types supported by OSATE.
+3. The underlying Eclipse is updated to Oxygen.1A. 
+
+#### Fixed issues
+
+* OSATE Core and Analysis Plugins
+  1. Support flows through subprogram calls. ([#929](https://github.com/osate/osate2-core/issues/929))
+  2. Fixed bug in validation of flow implementations. ([#931](https://github.com/osate/osate2-core/issues/931))
+  3. Support error model properties on untyped feature groups. ([#963](https://github.com/osate/osate2-core/issues/963))
+  4. New command to install additional OSATE components under Help menu. ([#933](https://github.com/osate/osate2-core/issues/933))
+  5. Remove obsolete .aadlsettings directory in AADL projects. ([#729](https://github.com/osate/osate2-core/issues/729), [#974](https://github.com/osate/osate2-core/issues/974))
+  6. AADL project icons are again decorated with 'A' instead of 'X'. ([#437](https://github.com/osate/osate2-core/issues/437))
+  7. Provide complete set of file creation wizards for AADL and ALSIA languages. ([#946](https://github.com/osate/osate2-core/issues/946))
+  8. Added code coverage tool (jacoco) to tycho build. ([#934](https://github.com/osate/osate2-core/issues/934))
+  9. Support properties on connection error source. ([#954](https://github.com/osate/osate2-core/issues/954))
+  10. Added binding paths to propagation analysis. ([#962](https://github.com/osate/osate2-core/issues/962))
+  11. Updated MILSTD882 and ARP4761 property sets. ([#956](https://github.com/osate/osate2-core/issues/956), [#967](https://github.com/osate/osate2-core/issues/967))
+  12. Fixed a text editor crash. ([#957](https://github.com/osate/osate2-core/issues/957))
+  13. New icons for several analyses. ([#938](https://github.com/osate/osate2-core/issues/938))
+  14. Disable instantiation for component types. ([#943](https://github.com/osate/osate2-core/issues/943))
+  15. Fixed a null pointer exception. ([#953](https://github.com/osate/osate2-core/issues/953))
+  16. Bug fixes for latency analysis. ([#942](https://github.com/osate/osate2-core/issues/942), [#955](https://github.com/osate/osate2-core/issues/955), [#944](https://github.com/osate/osate2-core/issues/944), [#939](https://github.com/osate/osate2-core/issues/939))
+  17. Updated tests for FTA. ([#930](https://github.com/osate/osate2-core/issues/930))
+  18. Cleaned up menus and toolbar. ([#928](https://github.com/osate/osate2-core/issues928))
+* Graphical Editor
+  1. TBD ([#???](https://github.com/osate/osate-ge/issues/???))
+* Resolute/AGREE
+  1. Bug fixes
+
+#### Known Issues
+
+  1.  Using the AADL Property View to edit property values results in bad formatting.
+
 ### Version 2.3.0
 
 #### Release
