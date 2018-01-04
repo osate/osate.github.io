@@ -14,7 +14,8 @@
   - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.3.1/products>
 
 #### Notable changes
-1. Complete redesign of the menu structure and the toolbar.
+1. Complete redesign of the menu structure and the toolbar. In the process some useless or defective commands and analyses were removed (Generate Marker Report, Report Generator Settings, Clear Eclipse History, Remove Problem Markers, Save as XMI,
+Model Statistics, Import Scade Model, Graphically view instances and implementations, Common Mode Assessment, Reliability Block Diagram, ImplementationCompliance, Spotlight).
 2. Added new wizards for all file types supported by OSATE.
 3. The underlying Eclipse is updated to Oxygen.1A. 
 4. Implemented new automatic layout capability to the graphical editor. A preference to control the incremental layout mode is located at OSATE Preferences/Diagrams. See OSATE Graphical Editor User Guide for additional details.
