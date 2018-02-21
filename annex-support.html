@@ -143,20 +143,20 @@
 <p>OSATE strives to supports all of EMV2 as specified in the annex standard. However,
 the syntax used to apply a property to an EMV2 annex element in a subcomponent
 cannot be implemented in our LL(k) parser because it requires infinite look-ahead
-to distinguish applies to paths that contain an '&#64;' from those that do not.</p>
+to distinguish applies to paths that contain an ‘&#64;’ from those that do not.</p>
 <p>We use the following modified rule (note the added ^)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">emv2_containment_path</span> <span class="p">::</span><span class="o">=</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">emv2_containment_path</span> <span class="p">::</span><span class="o">=</span>
      <span class="p">[</span> <span class="o">^</span> <span class="n">aadl2_core_path</span> <span class="o">@</span> <span class="p">]</span> <span class="n">emv2_annex_specific_path</span>
 </pre></div>
 </div>
 <p>The EMV2 implementation in OSATE contains the following extensions that are
 proposed as errata (see <a class="reference external" href="https:github.com/saeaadl/emv2&gt;">here</a>)</p>
 <ul class="simple">
-<li>Repair events require a <code class="docutils literal"><span class="pre">when</span></code> keyword
+<li>Repair events require a <code class="docutils literal notranslate"><span class="pre">when</span></code> keyword
 (<a class="reference external" href="https://github.com/saeaadl/emv2/issues/3">#3</a>)</li>
-<li>Allow single trigger as argument for operators <code class="docutils literal"><span class="pre">ormore</span></code>, <code class="docutils literal"><span class="pre">orless</span></code>, ...
+<li>Allow single trigger as argument for operators <code class="docutils literal notranslate"><span class="pre">ormore</span></code>, <code class="docutils literal notranslate"><span class="pre">orless</span></code>, …
 (<a class="reference external" href="https://github.com/saeaadl/emv2/issues/4">#4</a>)</li>
-<li>Support for operators <code class="docutils literal"><span class="pre">all</span></code> and <code class="docutils literal"><span class="pre">all</span> <span class="pre">(...)</span> <span class="pre">but</span></code>
+<li>Support for operators <code class="docutils literal notranslate"><span class="pre">all</span></code> and <code class="docutils literal notranslate"><span class="pre">all</span> <span class="pre">(...)</span> <span class="pre">but</span></code>
 (<a class="reference external" href="https://github.com/saeaadl/emv2/issues/7">#7</a>)</li>
 <li>Allow out propagation of a subcomponent in out propagation condition
 (<a class="reference external" href="https://github.com/saeaadl/emv2/issues/11">#11</a>)</li>
@@ -177,7 +177,7 @@ proposed as errata (see <a class="reference external" href="https:github.com/sae
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2017, Carnegie Mellon University.
-      Last updated on Jan 04, 2018.
+      Last updated on Feb 21, 2018.
 
     </p>
   </div>

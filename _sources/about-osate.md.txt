@@ -96,14 +96,15 @@ as well as by a workflow approach to executing the analyses.
 ## Limited Distribution Tools
 
 The tools and analytical capabilities described in this section are only available for US contractors. They were developed using Government funding or a mix of Government 
-and non-Government funding. These tools will be available for use by the developers during Capstone. U.S.-only tools are available through the JMR Community of Practice 
-SharePoint site.
+and non-Government funding. These tools will be available for use by the developers during Capstone. 
 
-### SEI Tools
+### SEI Tools (US-Only)
 
 1. AADL Analysis Workflows for Items 4-6 above (User-friendly OSATE Interface). Provides workflow support for analysis of schedulability, processor throughput budgeting, 
    safety analysis, bandwidth budgeting, weight budgeting, power budgeting, and memory budgeting.
 2. ReqIF importer. Imports DOORS requirements including coverage of stakeholders and stakeholder goals, mapping these to the ALISA models for representing requirements in OSATE.
+
+To receive the US-Only tools from the SEI please contact the respective Government Contracting Office to request them from the SEI.
 
 ### Adventium Tools
 
