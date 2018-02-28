@@ -2,6 +2,32 @@
 
 ## Stable Releases
 
+### Version 2.3.2 (NOT YET RELEASED)
+
+#### Release
+
+  - **GIT tag**: 2.3.2-RELEASE
+  - **Release date**: TBD
+  - **Eclipse base version**: Oxygen.2
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.3.2/updates>
+  - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.3.2/products>
+
+#### Notable changes
+1. TBD
+
+#### Fixed issues
+
+* OSATE Core and Analysis Plugins
+  1. TBD
+* Graphical Editor
+  1. TBD
+* Resolute/AGREE
+  1. TBD
+
+#### Known Issues
+1.  Using the AADL Property View to edit property values results in bad formatting.
+
 ### Version 2.3.1
 
 #### Release
