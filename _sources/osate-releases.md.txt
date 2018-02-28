@@ -26,9 +26,9 @@
   1. Fixed appearance properties settings only working on Windows. ([#282](https://github.com/osate/osate-ge/issues/282))
   2. Fixed change indicators appearing when a change had not been made to the diagram. ([#270](https://github.com/osate/osate-ge/issues/270))
   3. Reworked context menu.
-	- Replaced menu items related to modifying the AADL model with additions to the eclipse *Properties* view. Double-clicking a diagram element will open the *Properties* view. ([#212](https://github.com/osate/osate-ge/issues/212))
-	- Menu items for adjusting diagram contents has been reworked. ([#211](https://github.com/osate/osate-ge/issues/211))
-	- Reorganized context menu items.
+	   - Replaced menu items related to modifying the AADL model with additions to the eclipse *Properties* view. Double-clicking a diagram element will open the *Properties* view. ([#212](https://github.com/osate/osate-ge/issues/212))
+	   - Menu items for adjusting diagram contents has been reworked. ([#211](https://github.com/osate/osate-ge/issues/211))
+	   - Reorganized context menu items.
   4. Reworked content filtering and added document types. ([#211](https://github.com/osate/osate-ge/issues/211))
   5. Loosened editing rules. Classifiers can be edited by modifying a graphical subcomponent or feature group. Can create a component implementation without manually creating a component type.([#193](https://github.com/osate/osate-ge/issues/193))
   6. Fixed cases in which diagram layout failed to execute.
