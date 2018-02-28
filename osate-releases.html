@@ -318,21 +318,38 @@
 <div class="section" id="notable-changes">
 <span id="notable-changes"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
 <ol class="simple">
-<li>TBD</li>
+<li>Diagrams created with this version of OSATE will not work properly with older versions of OSATE. A warning will be displayed when opening such diagrams in an older versions of OSATE.</li>
+<li>The graphical editor’s diagram configuration options have been redesigned and predefined diagram types have been added. All existing diagrams will be converted to <em>Custom</em> diagrams. See the user guide for additional details.</li>
+<li>The context menu for the graphical editor has been redesigned. Model editing functionality which was previously in the context menu has been moved to the eclipse <em>Properties</em> view. This view can be accessed by double-clicking a diagram element.</li>
 </ol>
 </div>
 <div class="section" id="fixed-issues">
 <span id="fixed-issues"></span><h4>Fixed issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first">OSATE Core and Analysis Plugins</p>
+<ol class="simple">
+<li>TBD</li>
+</ol>
+</li>
+<li><p class="first">Graphical Editor</p>
+<ol class="simple">
+<li>Fixed appearance properties settings only working on Windows. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/282">#282</a>)</li>
+<li>Fixed change indicators appearing when a change had not been made to the diagram. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/270">#270</a>)</li>
+<li>Reworked context menu.</li>
+</ol>
 <ul class="simple">
-<li>OSATE Core and Analysis Plugins<ol>
-<li>TBD</li>
+<li>Replaced menu items related to modifying the AADL model with additions to the eclipse <em>Properties</em> view. Double-clicking a diagram element will open the <em>Properties</em> view. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/212">#212</a>)</li>
+<li>Menu items for adjusting diagram contents has been reworked. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/211">#211</a>)</li>
+<li>Reorganized context menu items.</li>
+</ul>
+<ol class="simple">
+<li>Reworked content filtering and added document types. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/211">#211</a>)</li>
+<li>Loosened editing rules. Classifiers can be edited by modifying a graphical subcomponent or feature group. Can create a component implementation without manually creating a component type.(<a class="reference external" href="https://github.com/osate/osate-ge/issues/193">#193</a>)</li>
+<li>Fixed cases in which diagram layout failed to execute.</li>
 </ol>
 </li>
-<li>Graphical Editor<ol>
-<li>TBD</li>
-</ol>
-</li>
-<li>Resolute/AGREE<ol>
+<li><p class="first">Resolute/AGREE</p>
+<ol class="simple">
 <li>TBD</li>
 </ol>
 </li>
@@ -396,7 +413,7 @@ Model Statistics, Import Scade Model, Graphically view instances and implementat
 <li>Graphical Editor<ol>
 <li>Added ability to show Mode Transition Triggers as labels. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/244">#244</a>)</li>
 <li>Reworked flow and mode highlighting. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/133">#133</a>)</li>
-<li>Reworked automatic layout support by integerating the Eclipse Layout Kernel(ELK). (<a class="reference external" href="https://github.com/osate/osate-ge/issues/158">#158</a>)</li>
+<li>Reworked automatic layout support by integrating the Eclipse Layout Kernel(ELK). (<a class="reference external" href="https://github.com/osate/osate-ge/issues/158">#158</a>)</li>
 <li>Added capability to correct broken reference to the AADL model. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/136">#136</a>)</li>
 <li>Prevented showing both Implements and Extends relationships for the same component implementation. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/254">#254</a>)</li>
 <li>Fixed Arrays having invalid names when renaming. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/262">#254</a>)</li>

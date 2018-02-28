@@ -14,14 +14,24 @@
   - **Download URL**: <http://www.aadl.info/aadl/osate/stable/2.3.2/products>
 
 #### Notable changes
-1. TBD
+1. Diagrams created with this version of OSATE will not work properly with older versions of OSATE. A warning will be displayed when opening such diagrams in an older versions of OSATE.
+2. The graphical editor's diagram configuration options have been redesigned and predefined diagram types have been added. All existing diagrams will be converted to *Custom* diagrams. See the user guide for additional details.
+3. The context menu for the graphical editor has been redesigned. Model editing functionality which was previously in the context menu has been moved to the eclipse *Properties* view. This view can be accessed by double-clicking a diagram element.
 
 #### Fixed issues
 
 * OSATE Core and Analysis Plugins
   1. TBD
 * Graphical Editor
-  1. TBD
+  1. Fixed appearance properties settings only working on Windows. ([#282](https://github.com/osate/osate-ge/issues/282))
+  2. Fixed change indicators appearing when a change had not been made to the diagram. ([#270](https://github.com/osate/osate-ge/issues/270))
+  3. Reworked context menu.
+	- Replaced menu items related to modifying the AADL model with additions to the eclipse *Properties* view. Double-clicking a diagram element will open the *Properties* view. ([#212](https://github.com/osate/osate-ge/issues/212))
+	- Menu items for adjusting diagram contents has been reworked. ([#211](https://github.com/osate/osate-ge/issues/211))
+	- Reorganized context menu items.
+  4. Reworked content filtering and added document types. ([#211](https://github.com/osate/osate-ge/issues/211))
+  5. Loosened editing rules. Classifiers can be edited by modifying a graphical subcomponent or feature group. Can create a component implementation without manually creating a component type.([#193](https://github.com/osate/osate-ge/issues/193))
+  6. Fixed cases in which diagram layout failed to execute.
 * Resolute/AGREE
   1. TBD
 
@@ -71,7 +81,7 @@ Model Statistics, Import Scade Model, Graphically view instances and implementat
 * Graphical Editor
   1. Added ability to show Mode Transition Triggers as labels. ([#244](https://github.com/osate/osate-ge/issues/244))
   2. Reworked flow and mode highlighting. ([#133](https://github.com/osate/osate-ge/issues/133))
-  3. Reworked automatic layout support by integerating the Eclipse Layout Kernel(ELK). ([#158](https://github.com/osate/osate-ge/issues/158))
+  3. Reworked automatic layout support by integrating the Eclipse Layout Kernel(ELK). ([#158](https://github.com/osate/osate-ge/issues/158))
   4. Added capability to correct broken reference to the AADL model. ([#136](https://github.com/osate/osate-ge/issues/136))
   5. Prevented showing both Implements and Extends relationships for the same component implementation. ([#254](https://github.com/osate/osate-ge/issues/254))
   6. Fixed Arrays having invalid names when renaming. ([#254](https://github.com/osate/osate-ge/issues/262))
