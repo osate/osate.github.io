@@ -15,7 +15,7 @@
 
 #### Notable changes
 1. Diagrams created with this version of OSATE will not work properly with older versions of OSATE. A warning will be displayed when opening such diagrams in an older versions of OSATE.
-2. The graphical editor's diagram configuration options have been redesigned and predefined diagram types have been added. All existing diagrams will be converted to *Custom* diagrams. See the user guide for additional details.
+2. The graphical editor's diagram configuration options have been redesigned and predefined diagram types have been added. Existing diagrams associated with AADL packages will be converted to *Package* diagrams. Existing diagrams associated with AADL classifiers will be converted to *Structure* diagrams. See the user guide for additional details.
 3. The context menu for the graphical editor has been redesigned. Model editing functionality which was previously in the context menu has been moved to the eclipse *Properties* view. This view can be accessed by double-clicking a diagram element.
 
 #### Fixed issues
