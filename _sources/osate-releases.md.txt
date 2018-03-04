@@ -21,19 +21,49 @@
 #### Fixed issues
 
 * OSATE Core and Analysis Plugins
-  1. TBD
+  1. AND gates were getting lost in fault tree generation from composite state logic. ([#988](https://github.com/osate/osate2-core/issues/988)
+  2. Added AADL project wizard to navigator context menu. ([#989](https://github.com/osate/osate2-core/issues/989)
+  3. Fixed exception when creating abstract feature in graphical editor. ([#990](https://github.com/osate/osate2-core/issues/990)
+  4. EMV2: composite parts fault tree based on error states only. ([#992](https://github.com/osate/osate2-core/issues/992)
+  5. EMV2: propagation path cannot point to propagation point without subcomponent. ([#993](https://github.com/osate/osate2-core/issues/993)
+  6. Fixed bug with flow through call in call sequence. ([#994](https://github.com/osate/osate2-core/issues/994)
+  7. Process user defined error propagation paths. ([#995](https://github.com/osate/osate2-core/issues/995)
+  8. Reinstantiate command is now properly enabled on instance models. ([#997](https://github.com/osate/osate2-core/issues/997)
+  9. OSATE no longer requires 'with EMV2' for models containing error modeling annex elements. ([#1002](https://github.com/osate/osate2-core/issues/1002)
+  10. EMV2: presentation improvements and better handling of state types and optional type constraints. ([#1005](https://github.com/osate/osate2-core/issues/1005)
+  11. Improved fault tree integration tests to check content structurally. ([#1006](https://github.com/osate/osate2-core/issues/1006)
+  12. Fixed a name resolution issues. ([#1009](https://github.com/osate/osate2-core/issues/1009)
+  13. Updated the OSATE user guide. ([#1012](https://github.com/osate/osate2-core/issues/1012)
+  14. Fixed exception when renaming a subprogram call. ([#1021](https://github.com/osate/osate2-core/issues/1021)
+  15. Fixed deadlock when instantiating models with errors. ([#1024](https://github.com/osate/osate2-core/issues/1024)
+  16. Inverse feature group were badly formatted when modifying them in the graphical editor. ([#1026](https://github.com/osate/osate2-core/issues/1026)
+  17. Provide single wizard for new AADL package (textual or graphical). ([#1029](https://github.com/osate/osate2-core/issues/1029)
+  18. Fault impact analysis included error events as starting points incorrectly. ([#1037](https://github.com/osate/osate2-core/issues/1037)
+  19. Fault impact and fault tree analysis now interpret "all" in error flows. ([#1038](https://github.com/osate/osate2-core/issues/1038)
+  20. Changes in the graphical editor no longer insert extra newlines in text. ([#1043](https://github.com/osate/osate2-core/issues/1043)
+  21. Latency report now spells out preference settings. ([#1050](https://github.com/osate/osate2-core/issues/1050)
+  22. User defined propagation paths to features are now supported. ([#1053](https://github.com/osate/osate2-core/issues/1053)
+  23. Fixed a fault tree generation issue with type set and multi state transitions. ([#1057](https://github.com/osate/osate2-core/issues/1057)
+  24. Handle inherited actual processor bindings when computing error propagation paths. ([#1058](https://github.com/osate/osate2-core/issues/1058)
+  25. Process mix of error flows and outgoing propagation conditions to compute error propagation paths. ([#1059](https://github.com/osate/osate2-core/issues/1059)
+  26. Fixed exception when using the graphical editor without text editor open. ([#1063](https://github.com/osate/osate2-core/issues/1063)
+  27. Updated latency and safety analysis documentation. ([#1065](https://github.com/osate/osate2-core/issues/1065)
+  28. Fixed icons and added missing icons to outline view. ([#1069](https://github.com/osate/osate2-core/issues/1069)
+  29. Don'd add additional spaces to annex subclauses when using the graphical editor without a text editor open. ([#1074](https://github.com/osate/osate2-core/issues/1074)
+  30. Removed duplicate entries in fault tree. ([#1081](https://github.com/osate/osate2-core/issues/1081)
 * Graphical Editor
   1. Fixed appearance properties settings only working on Windows. ([#282](https://github.com/osate/osate-ge/issues/282))
   2. Fixed change indicators appearing when a change had not been made to the diagram. ([#270](https://github.com/osate/osate-ge/issues/270))
   3. Reworked context menu.
-	   - Replaced menu items related to modifying the AADL model with additions to the eclipse *Properties* view. Double-clicking a diagram element will open the *Properties* view. ([#212](https://github.com/osate/osate-ge/issues/212))
-	   - Menu items for adjusting diagram contents has been reworked. ([#211](https://github.com/osate/osate-ge/issues/211))
-	   - Reorganized context menu items.
+    - Replaced menu items related to modifying the AADL model with additions to the eclipse *Properties* view. Double-clicking a diagram element will open the *Properties* view. ([#212](https://github.com/osate/osate-ge/issues/212))
+    - Menu items for adjusting diagram contents has been reworked. ([#211](https://github.com/osate/osate-ge/issues/211))
+    - Reorganized context menu items.
   4. Reworked content filtering and added document types. ([#211](https://github.com/osate/osate-ge/issues/211))
   5. Loosened editing rules. Classifiers can be edited by modifying a graphical subcomponent or feature group. Can create a component implementation without manually creating a component type.([#193](https://github.com/osate/osate-ge/issues/193))
   6. Fixed cases in which diagram layout failed to execute.
 * Resolute/AGREE
-  1. TBD
+  1. Added AGREE documentation.
+  2. A couple of bug fixes.
 
 #### Known Issues
 1.  Using the AADL Property View to edit property values results in bad formatting.
