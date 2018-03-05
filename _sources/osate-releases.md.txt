@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.3.2 (NOT YET RELEASED)
+### Version 2.3.2
 
 #### Release
 
   - **GIT tag**: 2.3.2-RELEASE
-  - **Release date**: TBD
+  - **Release date**: March 5, 2018
   - **Eclipse base version**: Oxygen.2
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://www.aadl.info/aadl/osate/stable/2.3.2/updates>
