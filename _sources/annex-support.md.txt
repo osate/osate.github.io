@@ -15,7 +15,7 @@ emv2_containment_path ::=
 ```
 
 The EMV2 implementation in OSATE contains the following extensions that are
-proposed as errata (see [here](https:github.com/saeaadl/emv2>))
+proposed as errata (see [here](https:github.com/saeaadl/emv2/))
 
 * Repair events require a `when` keyword
   ([#3](https://github.com/saeaadl/emv2/issues/3))
