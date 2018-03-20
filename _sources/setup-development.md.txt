@@ -10,7 +10,7 @@ On Mac OSX and Linux the installer is a compressed archive. Extract it to a dire
 
 The installer for Windows is a self-extracting archive. When running the executable you can choose to keep the extracted installer and select an installation directory. 
 
-<small>**Note:** On Windows the initial extraction is into a temporary directory, usually into a temporary directory in C:\User\Joe\AppData\Local\Temp\. The name of the temporary directory starts with the letters *eoi* If your computer is subject to a restrictive security policy that does not allow execution of arbitrary programs from that directory you should copy the directory content to another place from where the installer can be executed.</small>
+<small>**Note:** On Windows the initial extraction is into a temporary directory, usually into a temporary directory in C:\User\Joe\AppData\Local\Temp\. The name of the temporary directory starts with the letters *eoi*. If your computer is subject to a restrictive security policy that does not allow execution of arbitrary programs from that directory you should copy the directory content to another place from where the installer can be executed.</small>
 
 ## 2. Run the installer
 
