@@ -1,7 +1,7 @@
 # Download and Installation     
 
 The latest OSATE release can be downloaded from 
-[here](http://aadl.info/aadl/osate/stable/latest/products/).
+[here](http://osate-build.sei.cmu.edu/download/osate/stable/latest/products/).
 
 ## New Installation
 
@@ -72,8 +72,8 @@ available for Windows, Linux and Mac OS X.
 
 All available versions can be found at the following locations.
 
-  - **Product**: <http://aadl.info/aadl/osate/stable/>
-  - **Update sites**: <http://aadl.info/aadl/osate/stable/>
+  - **Product**: <http://osate-build.sei.cmu.edu/download/osate/stable/>
+  - **Update sites**: <http://osate-build.sei.cmu.edu/download/osate/stable/>
 
 ### Testing Version
 
@@ -82,6 +82,6 @@ fixes but also some unstable code related to features being developed.
 While it might be useful to use it for some projects, please think about
 using it for production purpose due to potential unstable features.
 
-  - **Product**: <http://aadl.info/aadl/osate/testing/products/>
-  - **Update site**: <http://aadl.info/aadl/osate/testing/update-site/>
+  - **Product**: <http://osate-build.sei.cmu.edu/download/osate/testing/products/>
+  - **Update site**: <http://osate-build.sei.cmu.edu/download/osate/testing/updates/>
 
