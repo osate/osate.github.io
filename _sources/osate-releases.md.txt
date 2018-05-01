@@ -2,6 +2,64 @@
 
 ## Stable Releases
 
+### Version 2.3.3 - TO BE RELEASED
+
+#### Release
+
+  - **GIT tag**: 2.3.3-RELEASE
+  - **Release date**: May 7, 2018
+  - **Eclipse base version**: Oxygen.3a
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.3/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.3/products>
+
+#### Notable changes
+
+#### Fixed issues
+
+* OSATE Core and Analysis Plugins
+* Graphical Editor
+  1. Added Diagrams View. ([#214](https://github.com/osate/osate-ge/issues/214))
+  2. Added ability to show diagram element as image. ([#154](https://github.com/osate/osate-ge/issues/154))
+  3. Improrved performance with diagrams which a large number of connections. ([#290](https://github.com/osate/osate-ge/issues/290))
+  4. Improved automatic layout by allowing layout algorithm to optionally ignore feature direction when positioning port. ([#325](https://github.com/osate/osate-ge/issues/325))
+  5. Added support for diagrams which are not associated with a particular model element. Such diagrams allow displaying multiple packages in a single diagram. ([#213](https://github.com/osate/osate-ge/issues/213))
+  6. Added AADL Diagram wizard. ([#213](https://github.com/osate/osate-ge/issues/213))
+* Resolute
+  1. Resolute collection semantics ([#91](https://github.com/smaccm/smaccm/issues/91))
+  2. Restore non-short-circuit behavior for logical operator evaluation in claims ([\#122](https://github.com/smaccm/smaccm/issues/122))
+  3. Fix exception computing return type of list/set function ([\#121](https://github.com/smaccm/smaccm/issues/121))
+  4. Fix stack overflow in Resolute validation ([\#117](https://github.com/smaccm/smaccm/issues/117))
+  5. Fix connected function to correctly handle connection instances ([\#100](https://github.com/smaccm/smaccm/issues/100))
+  6. Remove remnants of D-Case export ([\#93](https://github.com/smaccm/smaccm/issues/93))
+* AGREE
+  1. Analysis of AGREE models with unspecified AADL properties ([\#98](https://github.com/smaccm/smaccm/issues/98))
+  2. Support analysis on pure event ports ([\#57](https://github.com/smaccm/smaccm/issues/57))
+  3. Support AADL data subranges in AGREE ([\#76](https://github.com/smaccm/smaccm/issues/76))
+  4. Add ability for AGREE to access AADL property constants ([\#77](https://github.com/smaccm/smaccm/issues/77))
+  5. Update model checker to Jkind v4.0.1 ([\#83](https://github.com/smaccm/smaccm/issues/83))
+  6. Add case handling type evaluation of enumerations as data subcomponent types ([\#124](https://github.com/smaccm/smaccm/issues/124))
+  7. Refactor AgreeScopeProvider to fix scoping omissions ([\#110](https://github.com/smaccm/smaccm/issues/110), [\#12](https://github.com/smaccm/smaccm/issues/12))
+  8. Fix erroneous typing of properties ([\#74](https://github.com/smaccm/smaccm/issues/74))
+  9. Fix problem scoping NodeDef from other packages ([\#78](https://github.com/smaccm/smaccm/issues/78))
+  10. Fix spurious validation errors from re-used ids in linearization and record definitions ([\#102](https://github.com/smaccm/smaccm/issues/102))
+  11. Disallow property statements in annex libraries ([\#103](https://github.com/smaccm/smaccm/issues/103))
+  12. Allow executing AGREE analysis and TCG from graphical editor ([\#105](https://github.com/smaccm/smaccm/issues/105))
+  13. Subrange type predicates should be obligations, not assertions ([\#96](https://github.com/smaccm/smaccm/issues/96))
+  14. Fix incorrect references to figures in AGREE documentation ([\#88](https://github.com/smaccm/smaccm/issues/88))
+  15. Fix missing variables in counter example views ([\#75](https://github.com/smaccm/smaccm/issues/75))
+  16. Serialization fixes ([\#84](https://github.com/smaccm/smaccm/issues/84))
+  17. Fix scoping of enumerators ([\#81](https://github.com/smaccm/smaccm/issues/81))
+  18. Fix 'Check Realizability' analysis causes Xtext exception (and possible crash) ([\#79](https://github.com/smaccm/smaccm/issues/79))
+
+#### Known Issues
+1. Using the AADL Property View to edit property values results in bad formatting.
+2. Resolute: Mixing claim functions and compute functions omits display of some subclaims ([\#127](https://github.com/smaccm/smaccm/issues/127))
+3. Resolute: No way to access AGREE as external analysis ([\#90](https://github.com/smaccm/smaccm/issues/90))
+4. AGREE does not support feature groups in AGREE assign statements ([\#119](https://github.com/smaccm/smaccm/issues/119))
+5. AGREE does not support AADL property record types ([\#114](https://github.com/smaccm/smaccm/issues/114))
+6. AGREE does not support AADL properties of type aadlenumeration ([\#113](https://github.com/smaccm/smaccm/issues/113))
+
 ### Version 2.3.2
 
 #### Release
@@ -49,7 +107,7 @@
   26. Fixed exception when using the graphical editor without text editor open. ([#1063](https://github.com/osate/osate2-core/issues/1063))
   27. Updated latency and safety analysis documentation. ([#1065](https://github.com/osate/osate2-core/issues/1065))
   28. Fixed icons and added missing icons to outline view. ([#1069](https://github.com/osate/osate2-core/issues/1069))
-  29. Don'd add additional spaces to annex subclauses when using the graphical editor without a text editor open. ([#1074](https://github.com/osate/osate2-core/issues/1074))
+  29. Don't add additional spaces to annex subclauses when using the graphical editor without a text editor open. ([#1074](https://github.com/osate/osate2-core/issues/1074))
   30. Removed duplicate entries in fault tree. ([#1081](https://github.com/osate/osate2-core/issues/1081))
 * Graphical Editor
   1. Fixed appearance properties settings only working on Windows. ([#282](https://github.com/osate/osate-ge/issues/282))
