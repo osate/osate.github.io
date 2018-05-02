@@ -342,21 +342,74 @@
 </div>
 <div class="section" id="notable-changes">
 <span id="notable-changes"></span><h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li>Improved code coverage for weight, resource budget, and flow latency analysis tests uncovered several bugs, which were fixed.</li>
+</ol>
 </div>
 <div class="section" id="fixed-issues">
 <span id="fixed-issues"></span><h4>Fixed issues<a class="headerlink" href="#fixed-issues" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>OSATE Core and Analysis Plugins</li>
+<li>OSATE Core and Analysis Plugins<ol>
+<li>Fixed a class cast exception when generating fault tree (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1163">#1163</a>)</li>
+<li>Fixed error “representations.aird resource has been externally changed, should we reload it?” when opening a fault tree (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1162">#1162</a>)</li>
+<li>OSATE has been updated to Oxygen.3 (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1155">#1155</a>)</li>
+<li>Property set wizard now checks for name conflicts (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1154">#1154</a>)</li>
+<li>Fixed missing queuing latency on data ports and extra sampling latency on queuing ports (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1152">#1152</a>)</li>
+<li>Use correct Sirius version (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1149">#1149</a>)</li>
+<li>Added missing per byte computation when only wrapper data size given (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1144">#1144</a>)</li>
+<li>Include virtual bus latency contribution if requires VB (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1143">#1143</a>)</li>
+<li>Queuing latency now calculated correctly for sporadic or periodic threads (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1142">#1142</a>)</li>
+<li>On connections from outside a partition both major frame and offset latency were added for a given partition (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1141">#1141</a>)</li>
+<li>Use specified connection latency when binding target has no latency (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1140">#1140</a>)</li>
+<li>Latency contribution by virtual bus and sampling latency by buses and virtual buses are now included (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1139">#1139</a>)</li>
+<li>Global requirements added in assurance plans and system requirements were sometimes ignored (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1137">#1137</a>)</li>
+<li>Added hover support for verification activities (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1136">#1136</a>)</li>
+<li>Support <strong>when</strong> condition on requirements (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1133">#1133</a>)</li>
+<li>Flow latency analysis used wrong property in some cases (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1127">#1127</a>)</li>
+<li>Fixed a NullPointerException in Flow Latency Analysis (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1126">#1126</a>)</li>
+<li>Verification of global requirements on instance root only (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1123">#1123</a>)</li>
+<li>Fix handling of global requirements on connections in assure generation (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1122">#1122</a>)</li>
+<li>Updated Sirius to version 5.1.0 (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1118">#1118</a>)</li>
+<li>Added SWTBot GEF to Setup File (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1116">#1116</a>)</li>
+<li>Fixed typo in wizard title (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1114">#1114</a>)</li>
+<li>Updated documentation for the new AADL package wizard (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1109">#1109</a>)</li>
+<li>Removed dependency on D-Cace (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1095">#1095</a>)</li>
+<li>Cleaned up Assure execution engine - use of Issue and stand alone call of Resolute Claim Functions (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1093">#1093</a>)</li>
+<li>Instantiation failed when referencing a required mode in a property association. (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1092">#1092</a>)</li>
+<li>Fixed a gate logic optimization problem in fault tree generation (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1088">#1088</a>)</li>
+<li><strong>All</strong> in error flows was not handled correctly in fault tree generation (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1087">#1087</a>)</li>
+<li>Improved test coverage for fault tree and cut set generation (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1086">#1086</a>)</li>
+<li>Added preference to select FHA version (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1083">#1083</a>)</li>
+<li>Fixed an XtextReconcilerJob error while editing text (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1082">#1082</a>)</li>
+<li>Asymmetric SOM handling (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1079">#1079</a>)</li>
+<li>Better separation of flow latency analysis from handler (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1078">#1078</a>)</li>
+<li>Fixed NPE in bound resource allocations analysis (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1075">#1075</a>)</li>
+<li>Weight analysis considered too many connections (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1071">#1071</a>)</li>
+<li>Connection bindings are now handled by fault tree generator (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1062">#1062</a>)</li>
+<li>Restructured preference settings (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1061">#1061</a>)</li>
+<li>Simplified analysis result data structure (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1055">#1055</a>)</li>
+<li>Safety Analysis documentation is now properly included in online help (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1049">#1049</a>)</li>
+<li>Latency Analysis documentation is now properly included online help (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1048">#1048</a>)</li>
+<li>AADL package wizard now checks for name conflicts (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1044">#1044</a>)</li>
+<li>Moved Resolute help to smaccm repo (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1015">#1015</a>)</li>
+<li>Integrated help text markdown to HTML conversion into build (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1013">#1013</a>)</li>
+<li>Updated splash screen (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/1010">#1010</a>)</li>
+<li>ALISA dependency on Resolute/AGREE is now optional (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/926">#926</a>)</li>
+<li>Fixed instantiation error with extended inverse feature group type (<a class="reference external" href="https://api.github.com/repos/osate/osate2-core/issues/818">#818</a>)</li>
+</ol>
+</li>
 <li>Graphical Editor<ol>
 <li>Added Diagrams View. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/214">#214</a>)</li>
 <li>Added ability to show diagram element as image. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/154">#154</a>)</li>
-<li>Improrved performance with diagrams which a large number of connections. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/290">#290</a>)</li>
+<li>Improved performance with diagrams which a large number of connections. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/290">#290</a>)</li>
 <li>Improved automatic layout by allowing layout algorithm to optionally ignore feature direction when positioning port. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/325">#325</a>)</li>
 <li>Added support for diagrams which are not associated with a particular model element. Such diagrams allow displaying multiple packages in a single diagram. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/213">#213</a>)</li>
 <li>Added AADL Diagram wizard. (<a class="reference external" href="https://github.com/osate/osate-ge/issues/213">#213</a>)</li>
 </ol>
 </li>
-<li>Resolute<ol>
+<li>Resolute</li>
+</ul>
+<ol class="simple">
 <li>Resolute collection semantics (<a class="reference external" href="https://github.com/smaccm/smaccm/issues/91">#91</a>)</li>
 <li>Restore non-short-circuit behavior for logical operator evaluation in claims (<a class="reference external" href="https://github.com/smaccm/smaccm/issues/122">#122</a>)</li>
 <li>Fix exception computing return type of list/set function (<a class="reference external" href="https://github.com/smaccm/smaccm/issues/121">#121</a>)</li>
@@ -364,7 +417,7 @@
 <li>Fix connected function to correctly handle connection instances (<a class="reference external" href="https://github.com/smaccm/smaccm/issues/100">#100</a>)</li>
 <li>Remove remnants of D-Case export (<a class="reference external" href="https://github.com/smaccm/smaccm/issues/93">#93</a>)</li>
 </ol>
-</li>
+<ul class="simple">
 <li>AGREE<ol>
 <li>Analysis of AGREE models with unspecified AADL properties (<a class="reference external" href="https://github.com/smaccm/smaccm/issues/98">#98</a>)</li>
 <li>Support analysis on pure event ports (<a class="reference external" href="https://github.com/smaccm/smaccm/issues/57">#57</a>)</li>
@@ -2147,7 +2200,7 @@ Long</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2018, Carnegie Mellon University.
-      Last updated on May 01, 2018.
+      Last updated on May 02, 2018.
 
     </p>
   </div>
