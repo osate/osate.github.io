@@ -11,6 +11,8 @@ following we assume that it is already installed. See
 [here](https://java.com/en/download/help/download_options.xml) for help
 with installing Java.
 
+Note: Running OSATE under Java 9 is not supported and may not work.
+ 
 To install OSATE, download the archive file for your platform from the
 OSATE download site (see below), choose an installation directory and
 unpack the archive file there. The installation directory contains a
