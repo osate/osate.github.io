@@ -103,7 +103,9 @@
    18. Fix 'Check Realizability' analysis causes Xtext exception (and possible crash) ([\#79](https://github.com/smaccm/smaccm/issues/79))
 
 #### Known Issues
-1. Using the AADL Property View to edit property values results in bad formatting.
+
+1. Running OSATE under Java 9 or Java 10 is not supported.
+2. Using the AADL Property View to edit property values results in bad formatting.
 
 ### Version 2.3.2
 
