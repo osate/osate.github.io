@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.3.3 - TO BE RELEASED
+### Version 2.3.3
 
 #### Release
 
   - **GIT tag**: 2.3.3-RELEASE
-  - **Release date**: May 7, 2018
+  - **Release date**: May 4, 2018
   - **Eclipse base version**: Oxygen.3a
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.3/updates>
@@ -15,7 +15,9 @@
 
 #### Notable changes
 
-1. Improved code coverage for weight, resource budget, and flow latency analysis tests uncovered several bugs, which were fixed.
+1. There is a new diagrams view.
+2. Improved code coverage for weight, resource budget, and flow latency analysis tests uncovered several bugs, which were fixed.
+3. There is now a single command to run an FHA, the FHA variant is selected via a preference.
 
 #### Fixed issues
 
@@ -102,11 +104,6 @@
 
 #### Known Issues
 1. Using the AADL Property View to edit property values results in bad formatting.
-2. Resolute: Mixing claim functions and compute functions omits display of some subclaims ([\#127](https://github.com/smaccm/smaccm/issues/127))
-3. Resolute: No way to access AGREE as external analysis ([\#90](https://github.com/smaccm/smaccm/issues/90))
-4. AGREE does not support feature groups in AGREE assign statements ([\#119](https://github.com/smaccm/smaccm/issues/119))
-5. AGREE does not support AADL property record types ([\#114](https://github.com/smaccm/smaccm/issues/114))
-6. AGREE does not support AADL properties of type aadlenumeration ([\#113](https://github.com/smaccm/smaccm/issues/113))
 
 ### Version 2.3.2
 
