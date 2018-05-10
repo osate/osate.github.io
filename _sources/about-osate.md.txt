@@ -102,7 +102,6 @@ and non-Government funding. These tools will be available for use by the develop
 
 1. AADL Analysis Workflows for Items 4-6 above (User-friendly OSATE Interface). Provides workflow support for analysis of schedulability, processor throughput budgeting, 
    safety analysis, bandwidth budgeting, weight budgeting, power budgeting, and memory budgeting.
-2. ReqIF importer. Imports DOORS requirements including coverage of stakeholders and stakeholder goals, mapping these to the ALISA models for representing requirements in OSATE.
 
 To receive the US-Only tools from the SEI please contact the respective Government Contracting Office to request them from the SEI.
 
