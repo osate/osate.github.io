@@ -29,7 +29,6 @@ Wiki`_ to here.
 
    about-osate
    download-and-install
-   additional-components
    osate-releases
    osate-roadmap
    getting-help

@@ -48,6 +48,10 @@ some sub-directories and files, including osate.exe:
 
 OSATE Directory Layout
 
+## Installing Additional OSATE Components
+
+to be written
+
 ## Updating OSATE
 
 An existing OSATE installation can be updated when a new maintenance release has been published. We support updates within
