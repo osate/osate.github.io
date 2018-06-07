@@ -40,4 +40,5 @@ Wiki`_ to here.
    :caption: Developer Documentation
    
    setup-development
+   dev/writing-tests
    
