@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Annexes Supported in OSATE &mdash; OSATE 2.3.3 documentation</title>
+  <title>Additional OSATE Components &mdash; OSATE 2.3.3 documentation</title>
   
 
   
@@ -138,7 +138,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Annexes Supported in OSATE</li>
+      <li>Additional OSATE Components</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -155,33 +155,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="annexes-supported-in-osate">
-<span id="annexes-supported-in-osate"></span><h1>Annexes Supported in OSATE<a class="headerlink" href="#annexes-supported-in-osate" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="emv2-language-support">
-<span id="emv2-language-support"></span><h2>EMV2 Language Support<a class="headerlink" href="#emv2-language-support" title="Permalink to this headline">¶</a></h2>
-<p>OSATE strives to supports all of EMV2 as specified in the annex standard. However,
-the syntax used to apply a property to an EMV2 annex element in a subcomponent
-cannot be implemented in our LL(k) parser because it requires infinite look-ahead
-to distinguish applies to paths that contain an ‘&#64;’ from those that do not.</p>
-<p>We use the following modified rule (note the added ^)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">emv2_containment_path</span> <span class="p">::</span><span class="o">=</span>
-     <span class="p">[</span> <span class="o">^</span> <span class="n">aadl2_core_path</span> <span class="o">@</span> <span class="p">]</span> <span class="n">emv2_annex_specific_path</span>
-</pre></div>
-</div>
-<p>The EMV2 implementation in OSATE contains the following extensions that are
-proposed as errata (see <a class="reference external" href="https:github.com/saeaadl/emv2/">here</a>)</p>
-<ul class="simple">
-<li>Repair events require a <code class="docutils literal notranslate"><span class="pre">when</span></code> keyword
-(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/3">#3</a>)</li>
-<li>Allow single trigger as argument for operators <code class="docutils literal notranslate"><span class="pre">ormore</span></code>, <code class="docutils literal notranslate"><span class="pre">orless</span></code>, …
-(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/4">#4</a>)</li>
-<li>Support for operators <code class="docutils literal notranslate"><span class="pre">all</span></code> and <code class="docutils literal notranslate"><span class="pre">all</span> <span class="pre">(...)</span> <span class="pre">but</span></code>
-(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/7">#7</a>)</li>
-<li>Allow out propagation of a subcomponent in out propagation condition
-(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/11">#11</a>)</li>
-<li>Allow references to out propagations of deeply nested subcomponents
-(<a class="reference external" href="https://github.com/saeaadl/emv2/issues/26">#26</a>)</li>
-</ul>
+  <div class="section" id="additional-osate-components">
+<span id="additional-osate-components"></span><h1>Additional OSATE Components<a class="headerlink" href="#additional-osate-components" title="Permalink to this headline">¶</a></h1>
+<p>The following additional OSATE components are not port of the base installation. They can be installed
+into OSATE via the dialog <code class="docutils literal notranslate"><span class="pre">Help</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Additional</span> <span class="pre">OSATE</span> <span class="pre">Components...</span></code>. For detailed instructions
+click <a class="reference external" href="http://osate.org/download-and-install.html#installing-additional-osate-components">here</a>.</p>
+<div class="section" id="face-data-model-to-aadl-translator">
+<span id="face-data-model-to-aadl-translator"></span><h2>FACE Data Model to AADL Translator<a class="headerlink" href="#face-data-model-to-aadl-translator" title="Permalink to this headline">¶</a></h2>
+<p><em>The translator has not been released yet. Planned release is in June 2018.</em></p>
+<p>The FACE Data Model to AADL Translator converts a FACE 3.0 “.face” file into an AADL 2.2 model. It
+translates the Data Model, UoP Model, and Integration Model. The translator produces data classifiers
+for the Data Model, thread groups for the UoP Model, and a system component for the Integration Model.
+The system contains subcomponents for the UoPs and Transport Nodes and connections between these
+subcomponents.</p>
+<p>The purpose of the translator is to enable developers of FACE components to use the analytical
+capabilities of AADL. The architectural information included in the FACE model is captured and expressed
+in the resulting AADL model. This model can then be extended by the user to add various properties and
+then analyzed. The existence of the FACE Data Model to AADL Translator allows for changes in the FACE
+model to be quickly realized in the AADL model and then analyzed.</p>
+<p>The FACE Data Model to AADL Translator is a set of plugins to OSATE. The translator integrates with the
+OSATE modeling environment and is invoked from within OSATE.</p>
 </div>
 </div>
 
