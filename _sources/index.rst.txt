@@ -28,6 +28,7 @@ Wiki`_ to here.
    :caption: User Documentation
 
    about-osate
+   additional-components
    download-and-install
    osate-releases
    osate-roadmap
