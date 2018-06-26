@@ -30,6 +30,7 @@
         license="EPL"
         groups="//@filters.0"
         incubation="true">
+      <sitesURLS>http://osate-build.sei.cmu.edu/download/osate/components/face2aadl/</sitesURLS>
       <overview
           summary=""
           url=""/>
