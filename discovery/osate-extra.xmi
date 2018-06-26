@@ -19,8 +19,21 @@
       <sitesURLS>http://osate-build.sei.cmu.edu/download/osate/experimental/</sitesURLS>
       <overview
           summary="AADL to AltaRica Translator"
+          screenshot=""
           url=""/>
       <id>org.osate.altarica.sdk</id>
+    </components>
+    <components
+        name="FACE Data Model to AADL Translator"
+        provider="Software Engineering Institute"
+        description="The FACE Data Model to AADL Translator converts a FACE 3.0 &#x201c;.face&#x201d; file into an AADL 2.2 model. It translates the Data Model, UoP Model, and Integration Model."
+        license="EPL"
+        groups="//@filters.0"
+        incubation="true">
+      <overview
+          summary=""
+          url=""/>
+      <id>org.osate.face2aadl.feature</id>
     </components>
   </categories>
   <filters name="Stable"/>
