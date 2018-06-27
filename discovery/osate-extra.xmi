@@ -10,13 +10,13 @@
       image48="">
     <components
         name="AADL2AR"
-        provider="Software Engineering Institute"
+        provider="CMU/SEI"
         description="AADL to AltaRica Translator"
         license="EPL"
         groups="//@filters.1"
         image32=""
         incubation="true">
-      <sitesURLS>http://osate-build.sei.cmu.edu/download/osate/experimental/</sitesURLS>
+      <sitesURLS>https://osate-build.sei.cmu.edu/download/osate/experimental</sitesURLS>
       <overview
           summary="AADL to AltaRica Translator"
           screenshot=""
@@ -25,11 +25,10 @@
     </components>
     <components
         name="FACE Data Model to AADL Translator"
-        provider="Software Engineering Institute"
+        provider="CMU/SEI"
         description="The FACE Data Model to AADL Translator converts a FACE 3.0 &#x201c;.face&#x201d; file into an AADL 2.2 model. It translates the Data Model, UoP Model, and Integration Model."
         license="EPL"
-        groups="//@filters.0"
-        incubation="true">
+        groups="//@filters.0">
       <sitesURLS>https://osate-build.sei.cmu.edu/download/osate/components/face2aadl</sitesURLS>
       <overview
           summary=""
