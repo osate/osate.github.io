@@ -6,8 +6,6 @@ click [here](http://osate.org/download-and-install.html#installing-additional-os
 
 ## FACE Data Model to AADL Translator
 
-_The translator has not been released yet. Planned release is in June 2018._
-
 The FACE Data Model to AADL Translator converts a FACE 3.0 “.face” file into an AADL 2.2 model. It
 translates the Data Model, UoP Model, and Integration Model. The translator produces data classifiers
 for the Data Model, thread groups for the UoP Model, and a system component for the Integration Model.

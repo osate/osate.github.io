@@ -43,14 +43,23 @@ extract the zip file to an empty target directory, e.g.,
 C:\\Tools\\OSATE. After extraction the target directory will contain
 some sub-directories and files, including osate.exe:
 
-![OSATE Directory Layout](images/osate-directory-layout.png 
-"OSATE Directory Layout")
+![OSATE Directory Layout](images/osate-directory-layout.png "OSATE Directory Layout")
 
 OSATE Directory Layout
 
 ## Installing Additional OSATE Components
 
-to be written
+There are several optional components available for installation. OSATE provides
+a convenient way to discover the available components and install them via a
+dialog that is available in the `Help` menu.
+
+![OSATE Help Menu](images/install-components1.png "Component Installation Menu Entry")
+
+This brings up a component installation dialog that displays the available components.
+To install one or more components, select the component's checkbox and click on 
+`Finish` to start the installation.
+
+![OSATE Help Menu](images/install-components2.png "Component Installation Dialog")
 
 ## Updating OSATE
 
@@ -63,8 +72,7 @@ For example,
 To start the update process, use the check for updates entry in the help menu in OSATE and follow the instructions in
 the dialog.
 
-![OSATE Update Menu](images/osate-update.png 
-"Check for Updates Menu Entry")
+![OSATE Update Menu](images/osate-update.png "Check for Updates Menu Entry")
 
 ## Download Locations
 
