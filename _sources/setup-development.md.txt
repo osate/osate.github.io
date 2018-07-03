@@ -83,13 +83,20 @@ Please report issues with the setup using the osate2-core issue tracker on Githu
 
 ### The heap size is set to 1GB. How do I increase that to 2GB?
 
-The initial heap size is set to 1GB for 32bit environments with a process size limitation of 2GB, in particular 32bit Windows).
-You can edit the user setup to override the setting for all eclipse installations. Follow these steps in eclipse:
+The initial heap size is set to 1GB for 32bit environments with a process size limitation of 2GB, in particular 32-bit Windows.
+You *will* want to increase the heap size to a minimum of 2GB due to the Xtend environment.
+You can edit the user setup to override the setting for all eclipse installations. Follow these steps in Eclipse:
 
 1. Open the user setup: _Navigate_ -> _Open Setup_ -> _User_
 2. Add an Eclipse Ini task: In the setup editor right click on *User* and select *New Child* -> *Eclipse Ini*
 3. Edit the task properties: Right click on the new *Eclipse Ini* task and select *Show Properties View*
-4. Set the maximum heap size value: In the properties view enter the _Option_ "-Xmx" (without the quotes) and _Value_ "2g" or "2048m" (without the quotes) to set the heap size to 2GB.
+4. Set the maximum heap size value: In the *Properties* view
+    1. Set _Option_ to "-Xmx" (without the quotes)
+    2. Set _Value_ "2g" or "2048m" (without the quotes) to set the heap size to 2GB
+    3. Set  _VM_ to "true".
+    
+   ![Properties View Screenshot](images/heapsize.png "Properties View")
+
 5. Save the user setup
 6. Execute the setup: *Help* -> *Perform Setup Tasks...*
 

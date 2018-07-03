@@ -245,15 +245,28 @@
 <span id="q-a-troubleshooting"></span><h2>Q &amp; A / Troubleshooting<a class="headerlink" href="#q-a-troubleshooting" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb">
 <span id="the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb"></span><h3>The heap size is set to 1GB. How do I increase that to 2GB?<a class="headerlink" href="#the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb" title="Permalink to this headline">¶</a></h3>
-<p>The initial heap size is set to 1GB for 32bit environments with a process size limitation of 2GB, in particular 32bit Windows).
-You can edit the user setup to override the setting for all eclipse installations. Follow these steps in eclipse:</p>
+<p>The initial heap size is set to 1GB for 32bit environments with a process size limitation of 2GB, in particular 32-bit Windows.
+You <em>will</em> want to increase the heap size to a minimum of 2GB due to the Xtend environment.
+You can edit the user setup to override the setting for all eclipse installations. Follow these steps in Eclipse:</p>
+<ol>
+<li><p class="first">Open the user setup: <em>Navigate</em> -&gt; <em>Open Setup</em> -&gt; <em>User</em></p>
+</li>
+<li><p class="first">Add an Eclipse Ini task: In the setup editor right click on <em>User</em> and select <em>New Child</em> -&gt; <em>Eclipse Ini</em></p>
+</li>
+<li><p class="first">Edit the task properties: Right click on the new <em>Eclipse Ini</em> task and select <em>Show Properties View</em></p>
+</li>
+<li><p class="first">Set the maximum heap size value: In the <em>Properties</em> view</p>
 <ol class="simple">
-<li>Open the user setup: <em>Navigate</em> -&gt; <em>Open Setup</em> -&gt; <em>User</em></li>
-<li>Add an Eclipse Ini task: In the setup editor right click on <em>User</em> and select <em>New Child</em> -&gt; <em>Eclipse Ini</em></li>
-<li>Edit the task properties: Right click on the new <em>Eclipse Ini</em> task and select <em>Show Properties View</em></li>
-<li>Set the maximum heap size value: In the properties view enter the <em>Option</em> “-Xmx” (without the quotes) and <em>Value</em> “2g” or “2048m” (without the quotes) to set the heap size to 2GB.</li>
-<li>Save the user setup</li>
-<li>Execute the setup: <em>Help</em> -&gt; <em>Perform Setup Tasks…</em></li>
+<li>Set <em>Option</em> to “-Xmx” (without the quotes)</li>
+<li>Set <em>Value</em> “2g” or “2048m” (without the quotes) to set the heap size to 2GB</li>
+<li>Set  <em>VM</em> to “true”.</li>
+</ol>
+<p><img alt="Properties View Screenshot" src="_images/heapsize.png" /></p>
+</li>
+<li><p class="first">Save the user setup</p>
+</li>
+<li><p class="first">Execute the setup: <em>Help</em> -&gt; <em>Perform Setup Tasks…</em></p>
+</li>
 </ol>
 <p>You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.</p>
 </div>
@@ -311,7 +324,7 @@ You can edit the user setup to override the setting for all eclipse installation
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2018, Carnegie Mellon University.
-      Last updated on Jun 29, 2018.
+      Last updated on Jul 03, 2018.
 
     </p>
   </div>
