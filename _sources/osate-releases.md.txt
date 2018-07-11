@@ -16,6 +16,7 @@
 #### Notable changes
 
 1. Running OSATE under Java 9 or Java 10 is now supported.
+2. Improvements to automated tests (speedup of >10x)
 
 #### Fixed issues
 
@@ -91,11 +92,15 @@
    1. Incorrect inconsistency reported between requirement target and verification method target ([#1160](https://github.com/repos/osate/osate2/issues/1160))
    1. ALISA does not handle assurance cases on subsystems ([#1159](https://github.com/repos/osate/osate2/issues/1159))
  * Resolute
+   1. Resolute debug built-in method writes to System.out which does not show in OSATE ([\#143](https://github.com/smaccm/smaccm/issues/143))
+   1. Resolute can retrive property value but not values of property constants ([\#144](https://github.com/smaccm/smaccm/issues/144))
+   1. Mixing claim functions and compute functions in binary operations in the Resolute Prover ([\#127](https://github.com/smaccm/smaccm/issues/127))
+   1. Incorrect comparison of instances in Resolute Evaluator ([\#129](https://github.com/smaccm/smaccm/issues/129))
+   1. Does connections function return {connection} or [connection] ([\#136](https://github.com/smaccm/smaccm/issues/136))
+   1. Resolute fail expression and built-in function type shortcomings ([\#137](https://github.com/smaccm/smaccm/issues/137))
+   1. Resolute documentation is out of date ([\#139](https://github.com/smaccm/smaccm/issues/139))
  * AGREE
-
-#### Known Issues
-
-1. Using the AADL Property View to edit property values results in bad formatting.
+   1. Generation of type predicates clutters results with trivial obligations ([\#159](https://github.com/smaccm/smaccm/issues/159))
 
 ### Version 2.3.3
 
@@ -171,12 +176,12 @@
    5. Added support for diagrams which are not associated with a particular model element. Such diagrams allow displaying multiple packages in a single diagram. ([#213](https://github.com/osate/osate-ge/issues/213))
    6. Added AADL Diagram wizard. ([#213](https://github.com/osate/osate-ge/issues/213))
  * Resolute
-  1. Resolute collection semantics ([#91](https://github.com/smaccm/smaccm/issues/91))
-  2. Restore non-short-circuit behavior for logical operator evaluation in claims ([\#122](https://github.com/smaccm/smaccm/issues/122))
-  3. Fix exception computing return type of list/set function ([\#121](https://github.com/smaccm/smaccm/issues/121))
-  4. Fix stack overflow in Resolute validation ([\#117](https://github.com/smaccm/smaccm/issues/117))
-  5. Fix connected function to correctly handle connection instances ([\#100](https://github.com/smaccm/smaccm/issues/100))
-  6. Remove remnants of D-Case export ([\#93](https://github.com/smaccm/smaccm/issues/93))
+   1. Resolute collection semantics ([#91](https://github.com/smaccm/smaccm/issues/91))
+   2. Restore non-short-circuit behavior for logical operator evaluation in claims ([\#122](https://github.com/smaccm/smaccm/issues/122))
+   3. Fix exception computing return type of list/set function ([\#121](https://github.com/smaccm/smaccm/issues/121))
+   4. Fix stack overflow in Resolute validation ([\#117](https://github.com/smaccm/smaccm/issues/117))
+   5. Fix connected function to correctly handle connection instances ([\#100](https://github.com/smaccm/smaccm/issues/100))
+   6. Remove remnants of D-Case export ([\#93](https://github.com/smaccm/smaccm/issues/93))
  * AGREE
    1. Analysis of AGREE models with unspecified AADL properties ([\#98](https://github.com/smaccm/smaccm/issues/98))
    2. Support analysis on pure event ports ([\#57](https://github.com/smaccm/smaccm/issues/57))
