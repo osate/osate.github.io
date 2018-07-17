@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.3.4 (DRAFT, NOT YET RELEASED)
+### Version 2.3.4
 
 #### Release
 
   - **GIT tag**: 2.3.4-RELEASE
-  - **Release date**: TO BE RELEASED
+  - **Release date**: July 17, 2018
   - **Eclipse base version**: Oxygen.3a
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.4/updates>
