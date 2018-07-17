@@ -53,23 +53,14 @@
    1. Support conditional Error Flows and Events ([#1094](https://github.com/repos/osate/osate2/issues/1094))
    1. Create a formatter for EMV2 annex libraries and subclauses ([#1085](https://github.com/repos/osate/osate2/issues/1085))
  * Graphical Editor
-   1. Cleanup keybindings ([#1352](https://github.com/repos/osate/osate2/issues/1352))
-   1. Deleting multiple annex shapes results in error. ([#1347](https://github.com/repos/osate/osate2/issues/1347))
-   1. Graphical editor creates separate undo entries when moving multiple shapes ([#1345](https://github.com/repos/osate/osate2/issues/1345))
-   1. Graphical editor creates unneeded with statements. ([#1342](https://github.com/repos/osate/osate2/issues/1342))
-   1. Cleanup errors in graphical editor documentation ([#1341](https://github.com/repos/osate/osate2/issues/1341))
-   1. Fix graphical editor exceptions on shutdown ([#1340](https://github.com/repos/osate/osate2/issues/1340))
-   1. Remove GE gitlab CI file ([#1339](https://github.com/repos/osate/osate2/issues/1339))
-   1. Graphical editor property tab sorting ([#1337](https://github.com/repos/osate/osate2/issues/1337))
-   1. Set extended classifier to none ([#1336](https://github.com/repos/osate/osate2/issues/1336))
-   1. Opening diagram from text editor ([#1313](https://github.com/repos/osate/osate2/issues/1313))
-   1. Fix Memory Leaks in the Graphical Editor ([#1307](https://github.com/repos/osate/osate2/issues/1307))
-   1. Diagrams are automaticly marked as changed ([#1246](https://github.com/repos/osate/osate2/issues/1246))
-   1. GE Doesn't Specify ELK Version Dependency ([#1244](https://github.com/repos/osate/osate2/issues/1244))
-   1. Bendpoints created by layout algorithm makes manual layout difficult ([#1210](https://github.com/repos/osate/osate2/issues/1210))
-   1. Dirty marker doesn't disappear when undo-ing all changes in graphical editor ([#1199](https://github.com/repos/osate/osate2/issues/1199))
-   1. Improve Undo and Redo Support ([#1182](https://github.com/repos/osate/osate2/issues/1182))
-   1. Create API for Exporting Diagrams ([#1176](https://github.com/repos/osate/osate2/issues/1176))
+   1. Reworked Undo/Redo Support. ([#1182](https://github.com/osate/osate2/issues/1182))
+   1. Added menu option for removing bendpoints from selected connections. ([#1210](https://github.com/osate/osate2/issues/1210))
+   1. Added menu option for selecting all connections. ([#1210](https://github.com/osate/osate2/issues/1210))
+   1. Added option to set extended classifier to none. ([#1336](https://github.com/osate/osate2/issues/1336))
+   1. Fixed erroneous unsaved diagram change indicator. ([#1246](https://github.com/osate/osate2/issues/1246))
+   1. Fixed creation of unnecessary with statements. ([#1342](https://github.com/osate/osate2/issues/1342))
+   1. Fixed memory management issues. ([#1307](https://github.com/osate/osate2/issues/1307))
+   1. Added API for Exporting Diagrams. ([#1176](https://github.com/osate/osate2/issues/1176))
  * ALISA
    1. null pointer exception when editing ([#1332](https://github.com/repos/osate/osate2/issues/1332))
    1. Assurance View in ALISA does not always update itself ([#1331](https://github.com/repos/osate/osate2/issues/1331))
@@ -100,6 +91,7 @@
    1. Resolute fail expression and built-in function type shortcomings ([\#137](https://github.com/smaccm/smaccm/issues/137))
    1. Resolute documentation is out of date ([\#139](https://github.com/smaccm/smaccm/issues/139))
  * AGREE
+   1. Added support for editing AGREE models via the OSATE graphical editor
    1. Generation of type predicates clutters results with trivial obligations ([\#159](https://github.com/smaccm/smaccm/issues/159))
 
 ### Version 2.3.3

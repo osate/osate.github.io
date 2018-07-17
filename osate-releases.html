@@ -395,23 +395,14 @@
 </ol>
 </li>
 <li>Graphical Editor<ol>
-<li>Cleanup keybindings (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1352">#1352</a>)</li>
-<li>Deleting multiple annex shapes results in error. (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1347">#1347</a>)</li>
-<li>Graphical editor creates separate undo entries when moving multiple shapes (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1345">#1345</a>)</li>
-<li>Graphical editor creates unneeded with statements. (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1342">#1342</a>)</li>
-<li>Cleanup errors in graphical editor documentation (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1341">#1341</a>)</li>
-<li>Fix graphical editor exceptions on shutdown (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1340">#1340</a>)</li>
-<li>Remove GE gitlab CI file (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1339">#1339</a>)</li>
-<li>Graphical editor property tab sorting (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1337">#1337</a>)</li>
-<li>Set extended classifier to none (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1336">#1336</a>)</li>
-<li>Opening diagram from text editor (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1313">#1313</a>)</li>
-<li>Fix Memory Leaks in the Graphical Editor (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1307">#1307</a>)</li>
-<li>Diagrams are automaticly marked as changed (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1246">#1246</a>)</li>
-<li>GE Doesn’t Specify ELK Version Dependency (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1244">#1244</a>)</li>
-<li>Bendpoints created by layout algorithm makes manual layout difficult (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1210">#1210</a>)</li>
-<li>Dirty marker doesn’t disappear when undo-ing all changes in graphical editor (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1199">#1199</a>)</li>
-<li>Improve Undo and Redo Support (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1182">#1182</a>)</li>
-<li>Create API for Exporting Diagrams (<a class="reference external" href="https://github.com/repos/osate/osate2/issues/1176">#1176</a>)</li>
+<li>Reworked Undo/Redo Support. (<a class="reference external" href="https://github.com/osate/osate2/issues/1182">#1182</a>)</li>
+<li>Added menu option for removing bendpoints from selected connections. (<a class="reference external" href="https://github.com/osate/osate2/issues/1210">#1210</a>)</li>
+<li>Added menu option for selecting all connections. (<a class="reference external" href="https://github.com/osate/osate2/issues/1210">#1210</a>)</li>
+<li>Added option to set extended classifier to none. (<a class="reference external" href="https://github.com/osate/osate2/issues/1336">#1336</a>)</li>
+<li>Fixed erroneous unsaved diagram change indicator. (<a class="reference external" href="https://github.com/osate/osate2/issues/1246">#1246</a>)</li>
+<li>Fixed creation of unnecessary with statements. (<a class="reference external" href="https://github.com/osate/osate2/issues/1342">#1342</a>)</li>
+<li>Fixed memory management issues. (<a class="reference external" href="https://github.com/osate/osate2/issues/1307">#1307</a>)</li>
+<li>Added API for Exporting Diagrams. (<a class="reference external" href="https://github.com/osate/osate2/issues/1176">#1176</a>)</li>
 </ol>
 </li>
 <li>ALISA<ol>
@@ -448,6 +439,7 @@
 </ol>
 </li>
 <li>AGREE<ol>
+<li>Added support for editing AGREE models via the OSATE graphical editor</li>
 <li>Generation of type predicates clutters results with trivial obligations (<a class="reference external" href="https://github.com/smaccm/smaccm/issues/159">#159</a>)</li>
 </ol>
 </li>
@@ -2323,7 +2315,7 @@ Long</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2018, Carnegie Mellon University.
-      Last updated on Jul 11, 2018.
+      Last updated on Jul 17, 2018.
 
     </p>
   </div>
