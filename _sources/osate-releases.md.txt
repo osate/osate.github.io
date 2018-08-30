@@ -13,6 +13,13 @@
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.4/updates>
   - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.4/products>
 
+#### SHA256 Hashes for the downloads
+```
+456d82b33103f2e93d83a226f34084658f1981ab3d944ee661bfacdc0233cda3  osate2-2.3.4-vfinal-linux.gtk.x86_64.tar.gz
+891ce022cb01a9fb0ec578fe9859ca55711d37805c3d7ae7eecbf027bd13e532  osate2-2.3.4-vfinal-macosx.cocoa.x86_64.tar.gz
+11d5fd0eb4dcf31ce3929dd0dcf5e0014333c8ef600822390120326a801782f2  osate2-2.3.4-vfinal-win32.win32.x86_64.zip
+895e93d6bfb877ad5d84145a6634be895c7ecfebc7170d46236be160d00e45cd  osate2-2.3.4-vfinal-win32.win32.x86.zip
+```
 #### Notable changes
 
 1. Running OSATE under Java 9 or Java 10 is now supported.
