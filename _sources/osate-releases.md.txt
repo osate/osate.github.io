@@ -2,6 +2,85 @@
 
 ## Stable Releases
 
+### Version 2.3.5
+
+#### Release
+
+  - **GIT tag**: 2.3.5-RELEASE
+  - **Release date**: August 31, 2018
+  - **Eclipse base version**: Oxygen.3a
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.5/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.5/products>
+
+#### SHA256 Hashes for the downloads
+```
+0f6794c2671b4b52455ade7665f15684165010d9b4cc819cfab1f36e774dbb6f  osate2-2.3.5-vfinal-linux.gtk.x86_64.tar.gz
+b34ba1818aa3ab7492e59b06b8ae5cfa768b43d1d3b88f62386fdc95dbdb694d  osate2-2.3.5-vfinal-macosx.cocoa.x86_64.tar.gz
+88ebbad352fd4919bdc767950f993a0d72ac6da670aa7096630223e3dfe69ed6  osate2-2.3.5-vfinal-win32.win32.x86_64.zip
+e37d4fdae443c46a68382211264cfc544fd3f7b229f56e740d8f218aed3a3cca  osate2-2.3.5-vfinal-win32.win32.x86.zip
+```
+
+#### Notable changes
+
+1. The AADL Navigator now supports working sets. Note that Plugin Contributions are now displayed in each project.
+2. It is now possible to copy and paste elements in the graphical editor.
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+   1. PropertyDoesNotApplyToHolderException in checkConstantProperty ([#1465](https://api.github.com/repos/osate/osate2/issues/1465))
+   1. AADL Navigator should not sort file content ([#1459](https://api.github.com/repos/osate/osate2/issues/1459))
+   1. Renaming a Mode throws ClassCastException ([#1449](https://api.github.com/repos/osate/osate2/issues/1449))
+   1. Missing icon and label text for feature groups in text editor outline view ([#1434](https://api.github.com/repos/osate/osate2/issues/1434))
+   1. AADL Navigator: Contributed AADL files cannot be expanded ([#1433](https://api.github.com/repos/osate/osate2/issues/1433))
+   1. AADL Navigator: "Link with Editor" doesn't work for component implementations ([#1430](https://api.github.com/repos/osate/osate2/issues/1430))
+   1. AADL Navigator: Expanded AADL file content collapses on save ([#1429](https://api.github.com/repos/osate/osate2/issues/1429))
+   1. Exception when formatting code which context annex which doesn't support IFormatter2 ([#1401](https://api.github.com/repos/osate/osate2/issues/1401))
+   1. Help contains content for removed components ([#1391](https://api.github.com/repos/osate/osate2/issues/1391))
+   1. Missing entries in help table of contents ([#1390](https://api.github.com/repos/osate/osate2/issues/1390))
+   1. Exception in type check validation ([#1366](https://api.github.com/repos/osate/osate2/issues/1366))
+   1. Double clicking a project in AADL explorer should open it ([#1296](https://api.github.com/repos/osate/osate2/issues/1296))
+   1. Potential AnnexParseUtil Thread Safety ([#1146](https://api.github.com/repos/osate/osate2/issues/1146))
+   1. AADL Navigator Re-orders itself ([#1120](https://api.github.com/repos/osate/osate2/issues/1120))
+   1. AADL Navigator Does not Properly Support Working Sets ([#1056](https://api.github.com/repos/osate/osate2/issues/1056))
+   1. No errors for constant property associations ([#935](https://api.github.com/repos/osate/osate2/issues/935))
+ * Error Model and Analysis Plugins
+   1. FTA does not pick up new property values ([#1487](https://api.github.com/repos/osate/osate2/issues/1487))
+   1. Safety analysis should better explain the use of OccurrenceDistribution ([#1482](https://api.github.com/repos/osate/osate2/issues/1482))
+   1. Fault Tree tests use UI dependent test harness ([#1457](https://api.github.com/repos/osate/osate2/issues/1457))
+   1. Stack Overflow in fault tree generation ([#1424](https://api.github.com/repos/osate/osate2/issues/1424))
+   1. Serialized reference to ErrorTypes incorrectly qualified ([#1399](https://api.github.com/repos/osate/osate2/issues/1399))
+   1. Stack overflow for cyclic error library extension ([#1392](https://api.github.com/repos/osate/osate2/issues/1392))
+   1. transition branch probability is not taken into account in fault tree ([#1380](https://api.github.com/repos/osate/osate2/issues/1380))
+   1. Migrate EMV2 tests to new framework ([#1372](https://api.github.com/repos/osate/osate2/issues/1372))
+   1. Fault tree analysis always saves the resulting tree ([#1361](https://api.github.com/repos/osate/osate2/issues/1361))
+   1. Unreachable code in FlowLatencyAnalysisSwitch ([#1427](https://api.github.com/repos/osate/osate2/issues/1427))
+   1. Flow latency analysis runs with synchronous setting when the preference is asynchonous and vice versa ([#1394](https://api.github.com/repos/osate/osate2/issues/1394))
+   1. Update Weight Analysis to use AnalysisResult ([#1381](https://api.github.com/repos/osate/osate2/issues/1381))
+   1. Virtual processor without properties is not included in flow latency report ([#1311](https://api.github.com/repos/osate/osate2/issues/1311))
+ * Graphical Editor
+   1. Outline color does not work for processor and memory shapes ([#1485](https://api.github.com/repos/osate/osate2/issues/1485))
+   1. Prevent tooltip contributors from being called with null business object ([#1419](https://api.github.com/repos/osate/osate2/issues/1419))
+   1. Rename DiagamElementUtil to DiagramElementUtil ([#1417](https://api.github.com/repos/osate/osate2/issues/1417))
+   1. Setting extended classifier to same classifier in graphical editor causes error. ([#1413](https://api.github.com/repos/osate/osate2/issues/1413))
+   1. Memory leak when graphical editor fails to load diagram ([#1389](https://api.github.com/repos/osate/osate2/issues/1389))
+   1. Prompt for Unlock When Editing Diagrams in Subversion Repository ([#1217](https://api.github.com/repos/osate/osate2/issues/1217))
+   1. Alignment Tools ([#1178](https://api.github.com/repos/osate/osate2/issues/1178))
+   1. Copy/paste of model elements in graphical editor ([#1167](https://api.github.com/repos/osate/osate2/issues/1167))
+ * ALISA
+   1. AssureProcessor always saves assure and instance model files ([#1473](https://api.github.com/repos/osate/osate2/issues/1473))
+   1. Enable test of Resolute library with units ([#1469](https://api.github.com/repos/osate/osate2/issues/1469))
+   1. Reference finder does not work except in one method in ALISA ([#1453](https://api.github.com/repos/osate/osate2/issues/1453))
+   1. Documentation mentions ReqIF import ([#1440](https://api.github.com/repos/osate/osate2/issues/1440))
+   1. ReqSpec does not resolve measurement units ([#1421](https://api.github.com/repos/osate/osate2/issues/1421))
+   1. ALISA does not handle AnalysisResult returned from a Java verification method ([#1262](https://api.github.com/repos/osate/osate2/issues/1262))
+   1. There are no automated tests for ALSIA ([#1161](https://api.github.com/repos/osate/osate2/issues/1161))
+ * Resolute
+   1. minor bug fixes
+ * AGREE
+   1. minor bug fixes
+
 ### Version 2.3.4
 
 #### Release
