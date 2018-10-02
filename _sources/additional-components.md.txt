@@ -20,3 +20,9 @@ model to be quickly realized in the AADL model and then analyzed.
 
 The FACE Data Model to AADL Translator is a set of plugins to OSATE. The translator integrates with the
 OSATE modeling environment and is invoked from within OSATE.
+
+## Cheddar Plugin (available soon)
+
+Cheddar is a real-time scheduling analysis tool composed of a scheduling simulator and a set of 
+schedulability tests. The plugin allows to generate Cheddar models to verify schedulability of 
+uniprocessor and multiprocessor real-time systems.
