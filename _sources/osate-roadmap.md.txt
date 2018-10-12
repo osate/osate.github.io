@@ -140,6 +140,7 @@ supported in the declarative model but models containing these features cannot b
       and `Subset` are implemented
     + For `Classifier_Matching_Rule` in the context of any other connection kind only `Classifier_Match`, `Equivalence`,
       `Subset`, and `Conversion` are implemented
+* Internal features and processor features (Standard document section 8.9)
 
 ### Support for AADL 3
 
