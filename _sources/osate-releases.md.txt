@@ -2,6 +2,98 @@
 
 ## Stable Releases
 
+### Version 2.3.6
+
+#### Release
+
+  - **GIT tag**: 2.3.6-RELEASE
+  - **Release date**: November 15, 2018
+  - **Eclipse base version**: Oxygen.3a
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.6/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.6/products>
+
+#### SHA256 Hashes for the downloads
+```
+ded61fcdde1056b1a303ee117aa3c5fd31cfdbe93deb7ebc3db3410aa6eb7e9b  osate2-2.3.6-vfinal-linux.gtk.x86_64.tar.gz
+79dfa684244250a2774d944dbe2bc24deb5e15b54533b9247f3fb72eb3548cba  osate2-2.3.6-vfinal-macosx.cocoa.x86_64.tar.gz
+2e99cb854746b1be4d414782b5dd5f8b6c7d5d7baf77a5103ee74d0347c391ff  osate2-2.3.6-vfinal-win32.win32.x86_64.zip
+d90ac3a54b8a9d6a670d56919f9380d4dbde926099239762da7539b31ef992c4  osate2-2.3.6-vfinal-win32.win32.x86.zip
+```
+
+#### Notable changes
+
+1. The graphical editor now supports annotations on diagrams and can visualize flows and modes for instance models.
+2. Added support for Python scripting to OSATE. This uses Eclipse EASE with Py4J. See, for example, 
+   [this presentation](https://www.eclipsecon.org/france2016/sites/default/files/slides/EASE-ily%20Python.pdf) for an introduction.
+   Python can also be used to write ALISA verification methods (see help text).
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+   1. Project references are not set in the new AADL project wizard ([#1602](https://github.com/osate/osate2/issues/1602))
+   1. Don't use cached project references in New Package Wizard ([#1595](https://github.com/osate/osate2/issues/1595))
+   1. AADL Navigator: Double-click on instance model content doesn't open editor ([#1572](https://github.com/osate/osate2/issues/1572))
+   1. In modes clause attached to connection is missing when saving an AADL model ([#1551](https://github.com/osate/osate2/issues/1551))
+   1. Add import/export of working sets ([#1539](https://github.com/osate/osate2/issues/1539))
+   1. AnalysisResult records parameters, Result with status, no more recursive Diagnostic ([#1521](https://github.com/osate/osate2/issues/1521))
+   1. Plugin contributions node is added to all projects ([#1510](https://github.com/osate/osate2/issues/1510))
+   1. Setting a modal path to in-mode does not reflect change ([#1493](https://github.com/osate/osate2/issues/1493))
+   1. Registration of Guice injectors should be removed ([#1467](https://github.com/osate/osate2/issues/1467))
+   1. AADL Navigator: Add node that shows project dependencies ([#1463](https://github.com/osate/osate2/issues/1463))
+   1. AADL Navigator should show annexes ([#1451](https://github.com/osate/osate2/issues/1451))
+   1. AADL Navigator: No status bar text for expanded file content and contributed AADL ([#1435](https://github.com/osate/osate2/issues/1435))
+   1. AADL Navigator: Double click on expanded file content doesn't open text editor ([#1432](https://github.com/osate/osate2/issues/1432))
+   1. AADL Navigator: No error/warning decorations on expanded file content ([#1431](https://github.com/osate/osate2/issues/1431))
+   1. Frequent Guice configuration errors ([#1321](https://github.com/osate/osate2/issues/1321))
+   1. Add UI tests for the package creation wizard ([#1229](https://github.com/osate/osate2/issues/1229))
+   1. Unused classes in core ([#1218](https://github.com/osate/osate2/issues/1218))
+   1. Delete EMFIndexRetrieval ([#1036](https://github.com/osate/osate2/issues/1036))
+   1. Compile OSATE without smaccm sources ([#1584](https://github.com/osate/osate2/issues/1584))
+   1. Integrate python scripting ([#1480](https://github.com/osate/osate2/issues/1480))
+   1. The build should be modularized ([#1225](https://github.com/osate/osate2/issues/1225))
+ * Error Model and Analysis Plugins
+   1. Add documentation for FaultTree representation ([#1588](https://github.com/osate/osate2/issues/1588))
+   1. FaultTree is currently stored with shared subtrees replicated ([#1586](https://github.com/osate/osate2/issues/1586))
+   1. Compile OSATE without smaccm sources ([#1584](https://github.com/osate/osate2/issues/1584))
+   1. FTA dialog shows initial state as first requiring user to typically select another state ([#1506](https://github.com/osate/osate2/issues/1506))
+   1. Quantitative FTA does not interpret occurrence probability on error paths ([#1503](https://github.com/osate/osate2/issues/1503))
+   1. Probability is calculated incorrectly for OR and 1 of (XOR) ([#1501](https://github.com/osate/osate2/issues/1501))
+   1. Transition branch probability is not always taken into account ([#1498](https://github.com/osate/osate2/issues/1498))
+   1. Outline view for EMV2 annex should be improved ([#1084](https://github.com/osate/osate2/issues/1084))
+ * Graphical Editor
+   1. ConcurrentModificationException in saved diagram index ([#1612](https://github.com/osate/osate2/issues/1612))
+   1. Subcomponent palette entries are missing ([#1567](https://github.com/osate/osate2/issues/1567))
+   1. Visualize mode and flows for instance model ([#1177](https://github.com/osate/osate2/issues/1177))
+   1. Support Annotations/Comments on Diagrams ([#1173](https://github.com/osate/osate2/issues/1173))
+ * ALISA
+   1. Marker based plugin analyses do not work when instance model and analysis results are not saved ([#1596](https://github.com/osate/osate2/issues/1596))
+   1. Assure provides wrong message when Java verification method does not exist ([#1591](https://github.com/osate/osate2/issues/1591))
+   1. ALISA tests require Resolute ([#1589](https://github.com/osate/osate2/issues/1589))
+   1. Compile OSATE without smaccm sources ([#1584](https://github.com/osate/osate2/issues/1584))
+   1. Assurance View should not show TBD on sub-Result objects ([#1583](https://github.com/osate/osate2/issues/1583))
+   1. Null pointer Exception in ALISA Assure View ([#1579](https://github.com/osate/osate2/issues/1579))
+   1. Verify validator depends on Resolute ([#1577](https://github.com/osate/osate2/issues/1577))
+   1. Serialization issue when verification runs same analysis multiple times ([#1569](https://github.com/osate/osate2/issues/1569))
+   1. Unsupported Operation exception in AssureProcessor ([#1523](https://github.com/osate/osate2/issues/1523))
+   1. AILSA Description does not handle references to instance objects ([#1517](https://github.com/osate/osate2/issues/1517))
+   1. Verify does not validate instance object reference parameters correctly ([#1516](https://github.com/osate/osate2/issues/1516))
+   1. Evaluation of Instance object parameters fails for Resolute ([#1512](https://github.com/osate/osate2/issues/1512))
+   1. Verify does not resolve model element references ([#1509](https://github.com/osate/osate2/issues/1509))
+   1. Integrate python scripting ([#1480](https://github.com/osate/osate2/issues/1480))
+   1. The ALISA plugin verification methods should call on methods returning AnalysisResult objects ([#1474](https://github.com/osate/osate2/issues/1474))
+   1. Add extension point registering Java classes whose methods can be invoked as verification methods ([#1468](https://github.com/osate/osate2/issues/1468))
+   1. Assure should be stored as XML files ([#1289](https://github.com/osate/osate2/issues/1289))
+   1. Assure uses nested Diagnostic objects which is deprecated ([#1288](https://github.com/osate/osate2/issues/1288))
+   1. No validation that verification activity assigns compute variables needed for value predicate ([#1284](https://github.com/osate/osate2/issues/1284))
+   1. Remove broken assure integration with AGREE ([#1106](https://github.com/osate/osate2/issues/1106))
+   1. Filtering on assurance case does not show subset any more ([#1102](https://github.com/osate/osate2/issues/1102))
+ * Resolute
+   1. Null pointer exception using instance() ([#167](https://github.com/smaccm/smaccm/issues/167))
+ * AGREE    
+   1. Equation variables in subcomponents do not resolve ([#163](https://github.com/smaccm/smaccm/issues/163))
+   1. Generation of type predicates clutters results with trivial obligations ([#159](https://github.com/smaccm/smaccm/issues/159))
+
 ### Version 2.3.5
 
 #### Release
