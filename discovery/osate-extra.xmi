@@ -40,14 +40,14 @@
       name="Non SEI Components"
       description="Components provided by various organizations">
     <components
-        name="Cheddar Plugin (NOT YET AVAILABLE)"
+        name="Cheddar Plugin"
         provider=" Universit&#xe9; de Bretagne Occidentale"
         description="Cheddar is a real-time scheduling analysis tool composed of a scheduling simulator and a set of schedulability tests. This plugin allows to generate Cheddar models to verify schedulability of uniprocessor and multiprocessor real-time systems.&#xA;"
         license="GPL"
         groups="//@filters.1"
         image32="images/logo_cheddar.png"
         incubation="true">
-      <sitesURLS>http://beru.univ-brest.fr/svn/CHEDDAR/trunk/src/osate/</sitesURLS>
+      <sitesURLS>http://beru.univ-brest.fr/svn/CHEDDAR/trunk/src/osate/osate2-update-site</sitesURLS>
       <overview
           summary="Generate Cheddar models to analyze schedulability."
           screenshot="images/cheddar_screenshot.jpg"
