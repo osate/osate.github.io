@@ -52,7 +52,7 @@
           summary="Generate Cheddar models to analyze schedulability."
           screenshot="images/cheddar_screenshot.jpg"
           url="http://beru.univ-brest.fr/~singhoff/cheddar/"/>
-      <id>cheddar</id>
+      <id>cheddar_osate2_feature</id>
     </components>
   </categories>
   <filters name="Stable"/>
