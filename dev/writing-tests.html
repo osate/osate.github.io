@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Writing Tests &mdash; OSATE 2.3.6 documentation</title>
+  <title>Writing Tests &mdash; OSATE 2.3.7 documentation</title>
   
 
   
@@ -168,7 +168,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="writing-tests">
-<span id="writing-tests"></span><h1>Writing Tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">¶</a></h1>
+<h1>Writing Tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">¶</a></h1>
 <p>We use a stylized way of writing tests based on the xtext testing framework. The
 test class declaration must extend XtextTest and be annotated as follows:</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@RunWith</span><span class="o">(</span><span class="n">XtextRunner</span><span class="o">)</span>
@@ -180,9 +180,9 @@ test class declaration must extend XtextTest and be annotated as follows:</p>
 provider as the UI injector requires the presence of files in an Eclipse
 workspace.</p>
 <div class="section" id="provided-helper-classes">
-<span id="provided-helper-classes"></span><h2>Provided Helper Classes<a class="headerlink" href="#provided-helper-classes" title="Permalink to this headline">¶</a></h2>
+<h2>Provided Helper Classes<a class="headerlink" href="#provided-helper-classes" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="class-testhelper">
-<span id="class-testhelper"></span><h3>Class TestHelper<a class="headerlink" href="#class-testhelper" title="Permalink to this headline">¶</a></h3>
+<h3>Class TestHelper<a class="headerlink" href="#class-testhelper" title="Permalink to this headline">¶</a></h3>
 <p>This class provides access to the parser, linker, validator, etc. and can
 process AADL strings and AADL files. It must be injected into the test class:</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Inject</span>
@@ -191,7 +191,7 @@ process AADL strings and AADL files. It must be injected into the test class:</p
 </div>
 </div>
 <div class="section" id="class-testresourcesethelper">
-<span id="class-testresourcesethelper"></span><h3>Class TestResourceSetHelper<a class="headerlink" href="#class-testresourcesethelper" title="Permalink to this headline">¶</a></h3>
+<h3>Class TestResourceSetHelper<a class="headerlink" href="#class-testresourcesethelper" title="Permalink to this headline">¶</a></h3>
 <p>This class provides a singleton resource set that can be reused across tests.
 The resource set is initialized on creation with all contributed AADL property
 sets and packages. It is mainly there for use in <code class="docutils literal notranslate"><span class="pre">TestHelper</span></code>. Note that each
@@ -199,13 +199,13 @@ call to <code class="docutils literal notranslate"><span class="pre">getResource
 resources loaded since the previous call.</p>
 </div>
 <div class="section" id="class-asserthelper">
-<span id="class-asserthelper"></span><h3>Class AssertHelper<a class="headerlink" href="#class-asserthelper" title="Permalink to this headline">¶</a></h3>
+<h3>Class AssertHelper<a class="headerlink" href="#class-asserthelper" title="Permalink to this headline">¶</a></h3>
 <p>This class provides a couple of extension methods for working with the
 <code class="docutils literal notranslate"><span class="pre">FluentIssueCollection</span></code> and to test scoping.</p>
 </div>
 </div>
 <div class="section" id="examples">
-<span id="examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>There are a couple of examples that show how tests can be written:</p>
 <ul class="simple">
 <li>in <code class="docutils literal notranslate"><span class="pre">org.osate.core.tests</span></code><ul>
@@ -227,7 +227,7 @@ and how to work with it.</li>
 </ul>
 </div>
 <div class="section" id="running-tests">
-<span id="running-tests"></span><h2>Running tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h2>
+<h2>Running tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h2>
 <p>Tests can be run in the development environment using <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">as...</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">JUnit</span> <span class="pre">Plug-in</span> <span class="pre">Test</span></code>. Running a plain JUnit tests does not work because the test
 envoronment needs the eclipse plugin mechanism to load contributed AADL property
 sets and packages.</p>
@@ -255,7 +255,7 @@ plugins that depend on UI plugins even if they don’t use the UI during the tes
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2018, Carnegie Mellon University.
-      Last updated on Jan 02, 2019.
+      Last updated on Feb 01, 2019.
 
     </p>
   </div>
@@ -277,7 +277,7 @@ plugins that depend on UI plugins even if they don’t use the UI during the tes
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2.3.6',
+            VERSION:'2.3.7',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

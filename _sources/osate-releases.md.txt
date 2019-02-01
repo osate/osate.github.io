@@ -2,6 +2,60 @@
 
 ## Stable Releases
 
+### Version 2.3.7
+
+#### Release
+
+  - **GIT tag**: 2.3.7-RELEASE
+  - **Release date**: January 31, 2019
+  - **Eclipse base version**: Oxygen.3a
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/products>
+
+#### SHA256 Hashes for the downloads
+```
+01864123ad681d805d3677a92fe699a93e159ab1aaed9d5d6ddb8ca590bda0d9  osate2-2.3.7-vfinal-linux.gtk.x86_64.tar.gz
+dadad40b7aacfb64a703411444525de51c8d5b6dce6431aabb87a268ae0e3c6f  osate2-2.3.7-vfinal-macosx.cocoa.x86_64.tar.gz
+e716eb0a7b2625eb827f623a557f45d0d24430126cb5b21e27d26ad6512ea284  osate2-2.3.7-vfinal-win32.win32.x86_64.zip
+10138025c453ccf7dd6a7c5e23faed8320c1ee39d4ae1341db3e3529dc9099f4  osate2-2.3.7-vfinal-win32.win32.x86.zip
+```
+
+#### Notable changes
+
+ * Added AADL search functionality.
+ * This is the last release based on Eclipse Oxygen, the next release will be based on Eclipse 2018-12.
+ * This is the last release that includes a 32bit version for Windows because Oracle has dropped 32bit support for Java.
+ * This is the last release that includes Resolute and AGREE in the default download. In future versions of OSATE Resolute and AGREE can be be installed as additional components.
+
+
+ 
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+   1. Remove deprecated classes ([#1672](https://github.com/osate/osate2/issues/1672))
+   1. OSATE nightly build failing since 12/19/18 ([#1667](https://github.com/osate/osate2/issues/1667))
+   1. AADL Properties View no longer works for instance models ([#1658](https://github.com/osate/osate2/issues/1658))
+   1. Provide AADL Search that includes Plugin Contributions ([#1028](https://github.com/osate/osate2/issues/1028))
+   1. OSATE does not include Code Generation Annex property set ([#1220](https://github.com/osate/osate2/issues/1220))
+   1. Instance Model Creation Crashes on Modal Properties on Threads included in a Thread Group ([#1616](https://github.com/osate/osate2/issues/1616))
+ * Error Model and Analysis Plugins
+   1. Probability computation for fault trees has rounding error due to use of Double ([#1649](https://github.com/osate/osate2/issues/1649))
+   1. Erroneous sum of branch probabilities error ([#1643](https://github.com/osate/osate2/issues/1643))
+   1. Fault tree root should be any component instance not just system instance ([#1641](https://github.com/osate/osate2/issues/1641))
+ * Graphical Editor
+   1. Improve graphical editor documentation ([#1175](https://github.com/osate/osate2/issues/1175))
+   1. Basic graphical editor EMV2 support ([#1170](https://github.com/osate/osate2/issues/1170))
+   1. Review graphical editor developer guide ([#1645](https://github.com/osate/osate2/issues/1645))
+   1. Improve AADL property editing support in graphical editor ([#1169](https://github.com/osate/osate2/issues/1169))
+ * ALISA
+   1. Execution of Java based verification throws class not found exception ([#1638](https://github.com/osate/osate2/issues/1638))
+   1. Value predicate for properties on model element does not retrieve value ([#1635](https://github.com/osate/osate2/issues/1635))
+ * Behavior Annex
+   1. In behavior annex plugin: add a prototype binding resolver for data component references ([#1631](https://github.com/osate/osate2/issues/1631))
+   1. In behavior annex plugin: unit is not set for timed actions ([#1632](https://github.com/osate/osate2/issues/1632))
+
 ### Version 2.3.6
 
 #### Release
