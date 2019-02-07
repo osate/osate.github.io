@@ -26,7 +26,7 @@ On first use update the installer (A)
 
 If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.
 
-Select *Eclipse Modeling Tools* as the base product to install, and select *Oxygen* as the product version. Choose 32 or 64 bit according to your Java version.
+Select *Eclipse Modeling Tools* as the base product to install, and select *2018-12* as the product version. Choose 32 or 64 bit according to your Java version.
 
 ## 4. Add the OSATE setup file
 
@@ -36,7 +36,7 @@ Add a user project by clicking on the + icon (A).
 
 Select the catalog *Github Projects* and enter the following URL as the *Resource URI*:
 
-https://raw.githubusercontent.com/osate/osate2/develop/setup/osate2.setup
+https://raw.githubusercontent.com/osate/osate2/develop/setup/osate2_2018-12.setup
 
 Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>.
 
@@ -77,7 +77,7 @@ Cloning the git repositories takes some time. Progress can be viewed in a dialog
 
 Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually via *Help* -> *Perform Setup Tasks ...*
 
-Please report issues with the setup using the osate2-core issue tracker on Github.
+Please report issues with the setup using the osate2 issue tracker on Github.
 
 ## Q & A / Troubleshooting
 
