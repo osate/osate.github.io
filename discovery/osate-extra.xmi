@@ -42,17 +42,33 @@
     <components
         name="Cheddar Plugin"
         provider=" Universit&#xe9; de Bretagne Occidentale"
-        description="Cheddar is a real-time scheduling analysis tool composed of a scheduling simulator and a set of schedulability tests. This plugin allows to generate Cheddar models to verify schedulability of uniprocessor and multiprocessor real-time systems.&#xA;"
+        description="Cheddar is a real-time scheduling analysis tool composed of a scheduling simulator and a set of schedulability tests."
         license="GPL"
         groups="//@filters.1"
         image32="images/logo_cheddar.png"
         incubation="true">
       <sitesURLS>http://beru.univ-brest.fr/svn/CHEDDAR/trunk/src/osate/osate2-update-site</sitesURLS>
       <overview
-          summary="Generate Cheddar models to analyze schedulability."
+          summary="Cheddar is a real-time scheduling analysis tool composed of a scheduling simulator and a set of schedulability tests. &#xA;&#xA;This plugin allows to generate Cheddar models to verify schedulability of uniprocessor and multiprocessor real-time systems."
           screenshot="images/cheddar_screenshot.jpg"
           url="http://beru.univ-brest.fr/~singhoff/cheddar/"/>
       <id>cheddar_osate2_feature</id>
+    </components>
+    <components
+        name="BLESS Annex Support"
+        provider="KSU &amp; Multitude Corp."
+        description="The Behavior Language for Embedded Systems with Software (BLESS) is an annex sublanguage of AADL to express behavior of components with state-transition machines."
+        license="CC BY 4.0 / EULA"
+        groups="//@filters.1"
+        image32="images/bless-logo.png"
+        incubation="true">
+      <sitesURLS>http://santoslab.org/pub/bless/update/site2.xml</sitesURLS>
+      <overview
+          summary="The Behavior Language for Embedded Systems with Software (BLESS) is an annex sublanguage of AADL to express behavior of components with state-transition machines.  BLESS is a superset of BA adding non-executed assertions expressing what is true about the system when in a state, or a point during execution of an action during transition.&#xA;&#xA;The goal of the BLESS language and tools is to enable the construction of proofs for AADL models that their (operational) behavior upholds their (declarative) specification. Therefore all specifications, programs, and executions be precise, mathematical objects, about which propositions can be made, and proven correct.  Correctness of containing components can be proved from proved-correct subcomponents and their connections.&#xA;&#xA;Code generation from BLESS state machines to both Slang and ISOSCELES tool chains produces executables.&#xA;&#xA;Providers:&#xA;The BLESS editors and translators are provided by Kansas State University under a Creative Commons Attribution 4.0 international license. &#xA;&#xA;The BLESS proof tool which generates verification conditions and transforms them into deductive proofs is provided by Multitude Corporation under a simple End User License Agreement."
+          screenshot="images/bless-screenshot.jpg"
+          url="http://bless.santoslab.org"/>
+      <id>edu.ksu.bless.feature</id>
+      <id>com.multitude.bless.feature</id>
     </components>
   </categories>
   <filters name="Stable"/>
