@@ -2,6 +2,63 @@
 
 ## Stable Releases
 
+### Version 2.4.0
+
+#### Release
+
+  - **GIT tag**: 2.4.0-RELEASE
+  - **Release date**: March 5, 2019
+  - **Eclipse base version**: 2018-12
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.4.0/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.4.0/products>
+
+#### SHA256 Hashes for the downloads
+```
+a7324c5217d8ac8db2379bd5f0f6a24f6c551857e837abba93a17f331a0a3f29  osate2-2.4.0-vfinal-linux.gtk.x86_64.tar.gz
+eb7a509eacb87a9554c603b60512a5b1c273386c98baa2381aa4a399e5439df0  osate2-2.4.0-vfinal-macosx.cocoa.x86_64.tar.gz
+fd65bdea01c49019f9281a8b56e2c189d417a7e44e13e1ed69a9391bf1b7b0cd  osate2-2.4.0-vfinal-win32.win32.x86_64.zip
+```
+
+#### Notable changes
+
+ * Added new functionality to find unused classifiers in a package.
+ * Added a classifier information view that shows all features, subcomponents, etc., of a classifier including inherited.
+ * Removed execution of Java and Python verification methods that are located in a project in the workspace.
+ * OSATE is now based on Eclipse 2018-12
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.4.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+   Once newer versions are provided by [loonwerks](http://loonwerks.com) we will make them available via the "Install Additional OSATE Features" dialog.
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Upgrade to Eclipse 2018-09 ([#1466](https://github.com/osate/osate2/issues/1466))
+    1. Upgrade to Eclipse 2018-12 ([#1670](https://github.com/osate/osate2/issues/1670))
+    1. Nightly build version in Testing fails to start up on any workspace ([#1695](https://github.com/osate/osate2/issues/1695))
+    1. SMACCM stubs are included in product build ([#1719](https://github.com/osate/osate2/issues/1719))
+    1. Need a way to  find unused classifiers in a package ([#1135](https://github.com/osate/osate2/issues/1135))
+    1. AADL Classifier View ([#1657](https://github.com/osate/osate2/issues/1657))
+    1. Exception when updating AADL property view ([#1685](https://github.com/osate/osate2/issues/1685))
+    1. ListType.ownedElementType Not Formatted ([#1697](https://github.com/osate/osate2/issues/1697))
+    1. CyberPhysical Properties and Data Types as Contributions ([#1703](https://github.com/osate/osate2/issues/1703))
+    1. AADL Navigator: Wrong context menu entry ([#1705](https://github.com/osate/osate2/issues/1705))
+    1. Classifier Information: Non-standard "link with editor" icon ([#1707](https://github.com/osate/osate2/issues/1707))
+    1. OSATE contains two definitions of weight units ([#1721](https://github.com/osate/osate2/issues/1721))
+    1. Too much underlining after unused classifier analysis ([#1704](https://github.com/osate/osate2/issues/1704))
+    1. Invoke interface without preference switches for Latency Analysis got lost ([#1710](https://github.com/osate/osate2/issues/1710))
+ * Error Model and Analysis Plugins
+    1. EMV2 validation exception when using branch probabilities with underscores. ([#1647](https://github.com/osate/osate2/issues/1647))
+ * Graphical Editor
+    1. Font scaling calculation for diagrams is wrong on Linux ([#1661](https://github.com/osate/osate2/issues/1661))
+ * ALISA
+    1. ALISA executes code that is part of models ([#1604](https://github.com/osate/osate2/issues/1604))
+    1. ALISA references outdated safety/security checker ([#1687](https://github.com/osate/osate2/issues/1687))
+    1. Latency analysis is getting no class error when called from Alisa ([#1693](https://github.com/osate/osate2/issues/1693))
+    1. Method registry reports unresolved reference error when Resolute is not installed ([#1700](https://github.com/osate/osate2/issues/1700))
+    1. CyberPhysical Properties and Data Types as Contributions ([#1703](https://github.com/osate/osate2/issues/1703))
+    1. NoClassDefFoundError exception when Resolute is not installed ([#1714](https://github.com/osate/osate2/issues/1714))
+    1. Resolute detection and invocation has multiple issues ([#1724](https://github.com/osate/osate2/issues/1724))
+
 ### Version 2.3.7
 
 #### Release
@@ -27,8 +84,6 @@ e716eb0a7b2625eb827f623a557f45d0d24430126cb5b21e27d26ad6512ea284  osate2-2.3.7-v
  * This is the last release based on Eclipse Oxygen, the next release will be based on Eclipse 2018-12.
  * This is the last release that includes a 32bit version for Windows because Oracle has dropped 32bit support for Java.
  * This is the last release that includes Resolute and AGREE in the default download. In future versions of OSATE Resolute and AGREE can be be installed as additional components.
-
-
  
 
 #### Fixed issues
