@@ -5,7 +5,7 @@ The latest OSATE release can be downloaded from
 
 ## New Installation
 
-OSATE is available for Windows (32-bit and 64-bit), Mac OSX (64-bit),
+OSATE is available for Windows (64-bit), Mac OSX (64-bit),
 and Linux (64-bit). As a prerequisite Java 8 is required; in the
 following we assume that it is already installed. See
 [here](https://java.com/en/download/help/download_options.xml) for help
@@ -21,11 +21,7 @@ used to start the OSATE.
 
 ### Detailed Installation for Windows
 
-The OSATE distribution for Windows is packaged as a zip file, e.g.,
-**osate2-2.2.1-vfinal-win32.win32.x86.zip** for the 32-bit version and
-**osate2-2.2.1-vfinal-win32.win32.x86\_64.zip** for the 64-bit version. Which
-of these is needed depends on the installed Java version: 32-bit Java
-must use 32-bit OSATE and 64-bit Java must use 64-bit OSATE. To test
+On Windows 64-bit Java must be installed to use 64-bit OSATE. To test
 which one is installed, run `java -version` in cmd.exe. The following
 output indicates 32-bit Java.
 
@@ -78,7 +74,7 @@ the dialog.
 
 ### Stable Versions
 
-A new stable version is released every 3 months. You can install it from an
+A new stable version is released every 2-3 months. You can install it from an
 existing Eclipse installation using the update site or just by
 installing the complete product. The product is a fully integrated and
 tailored Eclipse environment with all OSATE functions. The products are 
