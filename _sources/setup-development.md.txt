@@ -36,9 +36,9 @@ Add a user project by clicking on the + icon (A).
 
 Select the catalog *Github Projects* and enter the following URL as the *Resource URI*:
 
-https://raw.githubusercontent.com/osate/osate2/develop/setup/osate2_2018-12.setup
+https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2018-12.setup
 
-Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>.
+Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>. Then select the master stream in right column of the table at the bottom.
 
 ## 5. Set required variables
 
