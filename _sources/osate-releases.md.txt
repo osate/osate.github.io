@@ -2,6 +2,64 @@
 
 ## Stable Releases
 
+### Version 2.4.1
+
+#### Release
+
+  - **GIT tag**: 2.4.1-RELEASE
+  - **Release date**: April 5, 2019
+  - **Eclipse base version**: 2018-12
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.4.1/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.4.1/products>
+
+#### SHA256 Hashes for the downloads
+```
+e8dcc8606c3f800ae67be9fb86dda22965ffba24a19d50238c5798c6151580af  osate2-2.4.1-vfinal-linux.gtk.x86_64.tar.gz
+d0ec44739ce5fb89169dfd27a9a59dc4ac887beebe5475dc0a855c3e17f57391  osate2-2.4.1-vfinal-macosx.cocoa.x86_64.tar.gz
+e511dae3962cdec280a77cbb75ef30be20046e71c474829f51c60b2df6199440  osate2-2.4.1-vfinal-win32.win32.x86_64.zip
+```
+
+#### Notable changes
+
+ * New view to show project and package dependencies.
+ * Added Eclipse Mylyn support for AADL files.
+ * More intuitive usage of classifier information view.
+ * Improved "Install Additional OSATE Features" dialog. 
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Missing property association on mode transition instance  ([#1096](https://github.com/osate/osate2/issues/1096))
+    1. Confusing error message when installing an already installed OSATE component ([#1386](https://github.com/osate/osate2/issues/1386))
+    1. Missing validation for initial modes ([#1549](https://github.com/osate/osate2/issues/1549))
+    1. AADL Navigator: Replace references to EObjects with URIs ([#1571](https://github.com/osate/osate2/issues/1571))
+    1. Running the Instance Model Creator without Eclipse Workbench ([#1617](https://github.com/osate/osate2/issues/1617))
+    1. EValidator Error ([#1629](https://github.com/osate/osate2/issues/1629))
+    1. Project references view ([#1663](https://github.com/osate/osate2/issues/1663))
+    1. Add initial mylyn support to OSATE ([#1675](https://github.com/osate/osate2/issues/1675))
+    1. Help text describing how to find Plugin Contributed Properties in OSATE ([#1686](https://github.com/osate/osate2/issues/1686))
+    1. Memory leak in AADL workspace build ([#1726](https://github.com/osate/osate2/issues/1726))
+    1. org.osate.results has unnecessary dependency to org.osate.aadl ([#1728](https://github.com/osate/osate2/issues/1728))
+    1. NPE in AADL Navigator ([#1732](https://github.com/osate/osate2/issues/1732))
+    1. Populating classifier info view should be more intuitive ([#1748](https://github.com/osate/osate2/issues/1748))
+    1. Textual instance model doesn't resolve referenes to mode transition instances ([#1753](https://github.com/osate/osate2/issues/1753))
+    1. Deprecate unused and questionable methods ([#1755](https://github.com/osate/osate2/issues/1755))
+    1. Broken image links in help ([#1765](https://github.com/osate/osate2/issues/1765))
+    1. Use SpotBugs to spot bugs. ([#1552](https://github.com/osate/osate2/issues/1552))
+    1. Add separate repository project to build ([#1720](https://github.com/osate/osate2/issues/1720))
+    1. Use git master branch for development ([#1727](https://github.com/osate/osate2/issues/1727))
+ * ALISA
+    1. Assure test fails ([#1716](https://github.com/osate/osate2/issues/1716))
+
+#### Known issues
+
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.4.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+   Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
+   
+   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
+
+
 ### Version 2.4.0
 
 #### Release
