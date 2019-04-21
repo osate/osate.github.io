@@ -26,7 +26,7 @@ On first use update the installer (A)
 
 If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.
 
-Select *Eclipse Modeling Tools* as the base product to install, and select *2018-12* as the product version. Choose 32 or 64 bit according to your Java version.
+Select *Eclipse Modeling Tools* as the base product to install, and select *2019-03* as the product version. Choose 64bit as your Java version.
 
 ## 4. Add the OSATE setup file
 
