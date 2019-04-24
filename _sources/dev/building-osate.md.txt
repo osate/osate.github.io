@@ -25,4 +25,6 @@ Used parameters are
  * **spotbugs** - *true* run spotbugs during the build, *false* don't run spotbugs
  * **codecoverage** - *true* run jacoco to create a code coverage report, *false* don't run jacoco
  
- 
+The created archive file (*.zip and/or *.tar.gz) are created in project *org.osate.build.product* in subdirectory *target/products*. 
+
+Note that the very first build usually fails in project org.osate.reqtrace, but subsequent build should succeed.
