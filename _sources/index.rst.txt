@@ -42,4 +42,5 @@ Wiki`_ to here.
    
    setup-development
    dev/writing-tests
+   dev/building-osate
    
