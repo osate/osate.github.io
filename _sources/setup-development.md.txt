@@ -2,9 +2,11 @@
 
 Starting with OSATE 2.3, which is based on Eclipse 4.7.1 (Oxygen.1), the recommended way to set up a development environment uses the Eclipse Installer.
 
+<small>**Note:** Java SDK 1.8 is recommended to compile OSATE sources.</small>
+
 ## 1. Download the installer
 
-The Eclipse Installer can be downloaded from the eclipse Web site. Follow this [link](https://www.eclipse.org/downloads/) to download the installer for your platform. Make sure that the word size of the installer version matches the word size of your Java installation. For example, if you are running 32bit Java on a 64bit Windows you must use the 32bit installer.
+The Eclipse Installer can be downloaded from the eclipse Web site. Follow this [link](https://www.eclipse.org/downloads/) to download the installer for your platform. 
 
 On Mac OSX and Linux the installer is a compressed archive. Extract it to a directory of your choice.
 
@@ -44,7 +46,7 @@ Check the box next to the added OSATE2 Development entry in the tree under Githu
 
 ![Installer 4](images/installer4.png "Installer 4")
 
-Check *Show all variables* near the bottom of the dialog. Without this only variables that do not have a value will be displayed. Oomph stores variable values between invocations, so nothing would be shown after the first run.
+Check *Show all variables* near the bottom of the dialog. Without this, only variables that do not have a value will be displayed. Oomph stores variable values between invocations, so nothing would be shown after the first run.
 
 The first group of variables determines the directory for the new eclipse installation. You can choose between (a) a root directory and a subdirectory within that root directory and (b) a full path to the installation directory.
 
@@ -75,7 +77,7 @@ Cloning the git repositories takes some time. Progress can be viewed in a dialog
 
 ## 8. Updating the development environment
 
-Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually via *Help* -> *Perform Setup Tasks ...*
+Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is started (unless disabled in the preferences) or can be done manually via *Help* -> *Perform Setup Tasks ...*
 
 Please report issues with the setup using the osate2 issue tracker on Github.
 
@@ -101,7 +103,6 @@ You can edit the user setup to override the setting for all eclipse installation
 6. Execute the setup: *Help* -> *Perform Setup Tasks...*
 
 You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.
-
 
 ### Can I add the OSATE2 project setup to that an existing workspace?
 

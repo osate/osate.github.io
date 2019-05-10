@@ -183,9 +183,10 @@
   <div class="section" id="setting-up-an-osate-development-environment">
 <h1>Setting up an OSATE development environment<a class="headerlink" href="#setting-up-an-osate-development-environment" title="Permalink to this headline">¶</a></h1>
 <p>Starting with OSATE 2.3, which is based on Eclipse 4.7.1 (Oxygen.1), the recommended way to set up a development environment uses the Eclipse Installer.</p>
+<p><small><strong>Note:</strong> Java SDK 1.8 is recommended to compile OSATE sources.</small></p>
 <div class="section" id="download-the-installer">
 <h2>1. Download the installer<a class="headerlink" href="#download-the-installer" title="Permalink to this headline">¶</a></h2>
-<p>The Eclipse Installer can be downloaded from the eclipse Web site. Follow this <a class="reference external" href="https://www.eclipse.org/downloads/">link</a> to download the installer for your platform. Make sure that the word size of the installer version matches the word size of your Java installation. For example, if you are running 32bit Java on a 64bit Windows you must use the 32bit installer.</p>
+<p>The Eclipse Installer can be downloaded from the eclipse Web site. Follow this <a class="reference external" href="https://www.eclipse.org/downloads/">link</a> to download the installer for your platform.</p>
 <p>On Mac OSX and Linux the installer is a compressed archive. Extract it to a directory of your choice.</p>
 <p>The installer for Windows is a self-extracting archive. When running the executable you can choose to keep the extracted installer and select an installation directory.</p>
 <p><small><strong>Note:</strong> On Windows the initial extraction is into a temporary directory, usually into a temporary directory in C:\User\Joe\AppData\Local\Temp. The name of the temporary directory starts with the letters <em>eoi</em>. If your computer is subject to a restrictive security policy that does not allow execution of arbitrary programs from that directory you should copy the directory content to another place from where the installer can be executed.</small></p>
@@ -213,7 +214,7 @@
 <div class="section" id="set-required-variables">
 <h2>5. Set required variables<a class="headerlink" href="#set-required-variables" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Installer 4" src="_images/installer4.png" />Installer 4</p>
-<p>Check <em>Show all variables</em> near the bottom of the dialog. Without this only variables that do not have a value will be displayed. Oomph stores variable values between invocations, so nothing would be shown after the first run.</p>
+<p>Check <em>Show all variables</em> near the bottom of the dialog. Without this, only variables that do not have a value will be displayed. Oomph stores variable values between invocations, so nothing would be shown after the first run.</p>
 <p>The first group of variables determines the directory for the new eclipse installation. You can choose between (a) a root directory and a subdirectory within that root directory and (b) a full path to the installation directory.</p>
 <p>The next group determines the location of the workspace. Do not reuse an existing workspace as that will likely lead to problems.</p>
 <p>The git clone location is the root directory into which all git repositories are cloned. The tycho build requires that all git repositories share the same root directory. If you have (all or some) repositories cloned already you can re-use the clones. Make sure that all clones have the develop branch checked out (except osate2-ocarina, which has just a master branch). Also, make sure that they are up to date by issuing a <em>git pull</em> command.</p>
@@ -239,7 +240,7 @@
 </div>
 <div class="section" id="updating-the-development-environment">
 <h2>8. Updating the development environment<a class="headerlink" href="#updating-the-development-environment" title="Permalink to this headline">¶</a></h2>
-<p>Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is stared (unless disabled in the preferences) or can be done manually via <em>Help</em> -&gt; <em>Perform Setup Tasks …</em></p>
+<p>Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is started (unless disabled in the preferences) or can be done manually via <em>Help</em> -&gt; <em>Perform Setup Tasks …</em></p>
 <p>Please report issues with the setup using the osate2 issue tracker on Github.</p>
 </div>
 <div class="section" id="q-a-troubleshooting">
@@ -325,7 +326,7 @@ You can edit the user setup to override the setting for all eclipse installation
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2019, Carnegie Mellon University.
-      Last updated on Apr 24, 2019.
+      Last updated on May 10, 2019.
 
     </p>
   </div>
