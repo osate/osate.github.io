@@ -2,116 +2,51 @@
 
 ## Planned OSATE Releases
 
-### OSATE 2.3.1
+### OSATE 2.5.0
 
-Release: Dec 2017
+Release: May 2019
 
 __Public release__
 
-* Based on Eclipse Oxygen.1a, Xtext 2.13 (?)
-* Graphical editor improvements
-* Additional file creation wizards for reqspec, etc
-* Consistent reorganization of commands in main menu, toolbar, context menu
-* New result representation used in resource budgeting analyses (internal)
-* Documentation updates
+* based on Eclipse 2019-03
 
 __Non-public release__
 
-* Improvements to resource budgeting workflows
-* Additional workflows for safety analyses
+* TBD
 
 __Development__
 
-* Public build server?
-* Integration of code coverage tool into automated build
-* Automated build of pull requests
+* TBD
 
-### OSATE 2.3.2
+### OSATE 2.5.1
 
-Release: Feb 2018
-
-__Public release__
-
-* Based on Eclipse Oxygen.2
-* Update to Java9 (?)
-* Graphical editor improvements
-* Analysis result reports generated using BIRT
-* Documentation updates
-
-__Non-public release__
-
-* Updated workflows for safety analyses
-* Updated workflow documentation
-
-__Development__
-
-* Integration of GUI tests (SWTBot, RCPTT) into automated build
-* Test suite for resource budgeting
-* Semantic versioning for plugins
-
-### OSATE 2.3.3
-
-Release: Apr 2018
-
-__Public release__
-
-* Graphical editor improvements
-* Improved navigational views
-* New result representation used in safety analyses (internal)
-* Revised error marker handling (internal)
-* Documentation updates
-
-__Non-public release__
-
-* Updated workflows for safety analyses
-* Updated workflow documentation
-
-__Development__
-
-* Test suite for latency analysis
-
-### OSATE 2.3.4
-
-Release: Jun 2018
-
-__Public release__
-
-* Based on Eclipse Oxygen.3
-* Graphical editor improvements
-* Improved rename refactoring support
-* Documentation updates
-
-__Development__
-
-* Test suite for safety analyses
-
-### OSATE 2.3.5
-
-Release: Aug 2018
-
-__Public release__
-
-* Graphical editor improvements
-* Refactoring: moving classifiers between packages
-* Documentation updates (TBD)
-
-__Development__
-
-* Expanded test suite for safety analyses
-
-### OSATE 2.3.6
-
-Release: Oct 2018
+Release: June/July 2019
 
 __Public release__
 
 * TBD
 
-### OSATE 2.3.7
+__Non-public release__
 
-Release: Dec 2018
+* TBD
+
+__Development__
+
+* TBD
+
+### OSATE 2.6.0
+
+Release: August 2019
 
 __Public release__
+
+* based on Eclipse 2019-06
+
+__Non-public release__
+
+* TBD
+
+__Development__
 
 * TBD
 
