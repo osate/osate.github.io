@@ -2,6 +2,58 @@
 
 ## Stable Releases
 
+### Version 2.5.0 NOT YET RELEASED
+
+#### Release
+
+  - **GIT tag**: 2.5.0-RELEASE
+  - **Release date**: TBD
+  - **Eclipse base version**: 2019-03
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.5.0/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.5.0/products>
+
+#### SHA256 Hashes for the downloads
+```
+TBD
+```
+
+#### Notable changes
+
+ * TBD
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Missing validation for applicability of property reference ([1770](https://github.com/osate/osate2/issues/1770))
+    1. Migrate build to Jenkins pipeline ([1739](https://github.com/osate/osate2/issues/1739))
+    1. Instance model files: references to plugin-contributed AADL elements are serialized as relative URIs ([1805](https://github.com/osate/osate2/issues/1805))
+    1. Wrong feature group type validation ([1671](https://github.com/osate/osate2/issues/1671))
+    1. AADL Navigator: New AADL package is not inserted in correct order ([1622](https://github.com/osate/osate2/issues/1622))
+    1. OSATE doesn't reject connection arrays in property associations ([1746](https://github.com/osate/osate2/issues/1746))
+    1. ALISA predicate evaluation always false due to inconsistent result type from latency analysis  ([1777](https://github.com/osate/osate2/issues/1777))
+    1. Migrate build to Jenkins pipeline ([1739](https://github.com/osate/osate2/issues/1739))
+    1. Upgrade to Eclipse 2019-03 ([1762](https://github.com/osate/osate2/issues/1762))
+    1. Streamline maven setup ([1758](https://github.com/osate/osate2/issues/1758))
+ * Error Model and Analysis Plugins
+    1. EMV2 doesn't check legality of type products ([1222](https://github.com/osate/osate2/issues/1222))
+    1. Incorrect inverse by EMV2 validator ([1735](https://github.com/osate/osate2/issues/1735))
+    1. EMV2 properties do not handle property constants as values ([1792](https://github.com/osate/osate2/issues/1792))
+ * AADL Diagram Editor
+    1. Diagram always marked as changed after opening ([1682](https://github.com/osate/osate2/issues/1682))
+ * ALISA
+    1. ALISA predicate evaluation always false due to inconsistent result type from latency analysis  ([1777](https://github.com/osate/osate2/issues/1777))
+    1. ALISA does not support FTA for occurrence probability results ([1799](https://github.com/osate/osate2/issues/1799))
+    1. ALISA does not allow use of val as parameter in Rationale text ([1790](https://github.com/osate/osate2/issues/1790))
+
+#### Known issues
+
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+   Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
+   
+   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
+
+
 ### Version 2.4.1
 
 #### Release
