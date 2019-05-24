@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Release Notes &mdash; OSATE 2.4.1 documentation</title>
+  <title>Release Notes &mdash; OSATE 2.5.0 documentation</title>
   
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                2.4
+                2.5
               </div>
             
           
@@ -90,7 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="download-and-install.html">Download and Installation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#stable-releases">Stable Releases</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#version-2-5-0-not-yet-released">Version 2.5.0 NOT YET RELEASED</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-5-0">Version 2.5.0</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#release">Release</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sha256-hashes-for-the-downloads">SHA256 Hashes for the downloads</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#notable-changes">Notable changes</a></li>
@@ -381,13 +381,13 @@
 <h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="stable-releases">
 <h2>Stable Releases<a class="headerlink" href="#stable-releases" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="version-2-5-0-not-yet-released">
-<h3>Version 2.5.0 NOT YET RELEASED<a class="headerlink" href="#version-2-5-0-not-yet-released" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="version-2-5-0">
+<h3>Version 2.5.0<a class="headerlink" href="#version-2-5-0" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="release">
 <h4>Release<a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>GIT tag</strong>: 2.5.0-RELEASE</li>
-<li><strong>Release date</strong>: TBD</li>
+<li><strong>Release date</strong>: May 24, 2019</li>
 <li><strong>Eclipse base version</strong>: 2019-03</li>
 <li><strong>Java version</strong>: Java 8</li>
 <li><strong>Eclipse Update-Site</strong>: <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/stable/2.5.0/updates">http://osate-build.sei.cmu.edu/download/osate/stable/2.5.0/updates</a></li>
@@ -396,14 +396,16 @@
 </div>
 <div class="section" id="sha256-hashes-for-the-downloads">
 <h4>SHA256 Hashes for the downloads<a class="headerlink" href="#sha256-hashes-for-the-downloads" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">TBD</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span><span class="n">f7655e9fecff40b1bb3b464294e0d5bb89aa53f9a49749cee67aecfda59b723</span>  <span class="n">osate2</span><span class="o">-</span><span class="mf">2.5</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">vfinal</span><span class="o">-</span><span class="n">linux</span><span class="o">.</span><span class="n">gtk</span><span class="o">.</span><span class="n">x86_64</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="mi">97</span><span class="n">a4a313d0964b41da0d74e7ae3b3a1bf389f051f49d9827a2ace1d82d53c57c</span>  <span class="n">osate2</span><span class="o">-</span><span class="mf">2.5</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">vfinal</span><span class="o">-</span><span class="n">macosx</span><span class="o">.</span><span class="n">cocoa</span><span class="o">.</span><span class="n">x86_64</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="mi">18207</span><span class="n">ba8114eb94576ce32a01e86c4d8b6980a794677553d4e45cd1e0793cbf2</span>  <span class="n">osate2</span><span class="o">-</span><span class="mf">2.5</span><span class="o">.</span><span class="mi">0</span><span class="o">-</span><span class="n">vfinal</span><span class="o">-</span><span class="n">win32</span><span class="o">.</span><span class="n">win32</span><span class="o">.</span><span class="n">x86_64</span><span class="o">.</span><span class="n">zip</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="notable-changes">
 <h4>Notable changes<a class="headerlink" href="#notable-changes" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li>TBD</li>
+<li>We have updated the underlying Eclipse version to Eclipse 2019-03</li>
 </ul>
 </div>
 <div class="section" id="fixed-issues">
@@ -411,12 +413,10 @@
 <ul class="simple">
 <li>OSATE Core and Analysis Plugins<ol>
 <li>Missing validation for applicability of property reference (<a class="reference external" href="https://github.com/osate/osate2/issues/1770">1770</a>)</li>
-<li>Migrate build to Jenkins pipeline (<a class="reference external" href="https://github.com/osate/osate2/issues/1739">1739</a>)</li>
-<li>Instance model files: references to plugin-contributed AADL elements are serialized as relative URIs (<a class="reference external" href="https://github.com/osate/osate2/issues/1805">1805</a>)</li>
+<li>Instance model files: References to plugin-contributed AADL elements are serialized as relative URIs (<a class="reference external" href="https://github.com/osate/osate2/issues/1805">1805</a>)</li>
 <li>Wrong feature group type validation (<a class="reference external" href="https://github.com/osate/osate2/issues/1671">1671</a>)</li>
 <li>AADL Navigator: New AADL package is not inserted in correct order (<a class="reference external" href="https://github.com/osate/osate2/issues/1622">1622</a>)</li>
 <li>OSATE doesn’t reject connection arrays in property associations (<a class="reference external" href="https://github.com/osate/osate2/issues/1746">1746</a>)</li>
-<li>ALISA predicate evaluation always false due to inconsistent result type from latency analysis  (<a class="reference external" href="https://github.com/osate/osate2/issues/1777">1777</a>)</li>
 <li>Migrate build to Jenkins pipeline (<a class="reference external" href="https://github.com/osate/osate2/issues/1739">1739</a>)</li>
 <li>Upgrade to Eclipse 2019-03 (<a class="reference external" href="https://github.com/osate/osate2/issues/1762">1762</a>)</li>
 <li>Streamline maven setup (<a class="reference external" href="https://github.com/osate/osate2/issues/1758">1758</a>)</li>
@@ -429,7 +429,7 @@
 </ol>
 </li>
 <li>AADL Diagram Editor<ol>
-<li>Diagram always marked as changed after opening (<a class="reference external" href="https://github.com/osate/osate2/issues/1682">1682</a>)</li>
+<li>Diagrams are always marked as changed after opening (<a class="reference external" href="https://github.com/osate/osate2/issues/1682">1682</a>)</li>
 </ol>
 </li>
 <li>ALISA<ol>
@@ -2863,7 +2863,7 @@ Long</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2019, Carnegie Mellon University.
-      Last updated on May 17, 2019.
+      Last updated on May 24, 2019.
 
     </p>
   </div>
@@ -2885,7 +2885,7 @@ Long</a>.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2.4.1',
+            VERSION:'2.5.0',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
