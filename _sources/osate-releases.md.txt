@@ -2,6 +2,77 @@
 
 ## Stable Releases
 
+### Version 2.5.1 (not yet released)
+
+#### Release
+
+  - **GIT tag**: 2.5.1-RELEASE
+  - **Release date**: July 26, 2019
+  - **Eclipse base version**: 2019-03
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.5.1/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.5.1/products>
+
+#### SHA256 Hashes for the downloads
+```
+21b8da862f5d53864966552b5b9c533a3ea99a8a37317250eba788ce291ebd72  osate2-2.5.1-vfinal-linux.gtk.x86_64.tar.gz
+5283f691cdde4f2ba72c870b9be3fb937ccbefb4e0802f33bda00831aeeafe09  osate2-2.5.1-vfinal-macosx.cocoa.x86_64.tar.gz
+cdded4ff77d6b240f63eb8ceafa6074bd46f50a6a2a3ffdbd04e90d93be05bbc  osate2-2.5.1-vfinal-win32.win32.x86_64.zip
+```
+
+#### Notable changes
+
+ * Hiding and showing elements in AADL diagrams has been simplified, see issue [#1542](https://github.com/osate/osate2/issues/1542)
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Reduce tabs in autoformatting of records and lists ([1825](https://github.com/osate/osate2/issues/1825))
+    1. Missing validation for number values ([1100](https://github.com/osate/osate2/issues/1100))
+    1. Hover text in AADL text editor is not annex aware ([1828](https://github.com/osate/osate2/issues/1828))
+    1. OSATE does not handle "_" in real literals ([1653](https://github.com/osate/osate2/issues/1653))
+    1. Cannot view flow properties in an instance file ([1060](https://github.com/osate/osate2/issues/1060))
+    1. Annex registry should have standalone mode ([1387](https://github.com/osate/osate2/issues/1387))
+    1. End to end flow not instantiated in component with refined features in the flow ([1830](https://github.com/osate/osate2/issues/1830))
+    1. Checking property consistency along connection instance does not work correctly ([665](https://github.com/osate/osate2/issues/665))
+    1. Error in instantiation when using unnamed mode transitions ([1839](https://github.com/osate/osate2/issues/1839))
+    1. Cycle in hierarchy causes property resolution to never complete ([1842](https://github.com/osate/osate2/issues/1842))
+    1. Property not attached to flow spec instance for instance root component ([1815](https://github.com/osate/osate2/issues/1815))
+    1. Property sets and packages cannot be contributed in standalone mode ([1388](https://github.com/osate/osate2/issues/1388))
+    1. Error and warning icon decorations in AADL Navigator are not updated ([1824](https://github.com/osate/osate2/issues/1824))
+    1. Class OsateResourceUtil should be cleaned up ([1492](https://github.com/osate/osate2/issues/1492))
+    1. Implementation in ExecuteJavaUtil is way too convoluted ([1827](https://github.com/osate/osate2/issues/1827))
+    1. Cyclic project references are not detected ([1004](https://github.com/osate/osate2/issues/1004))
+    1. Error markers when creating a flow path implementation that includes refined connections ([1831](https://github.com/osate/osate2/issues/1831))
+    1. XML parser exception when opening a .gitignore file in OSATE ([1840](https://github.com/osate/osate2/issues/1840))
+    1. Instantiation does not check overriding of constant property associations ([1447](https://github.com/osate/osate2/issues/1447))
+    1. Latency analysis is run on end to end flows not part of an SOM ([1872](https://github.com/osate/osate2/issues/1872))
+    1. Latency report improvements: SOM name ([1850](https://github.com/osate/osate2/issues/1850))
+    1. Latency report improvements: "No latency"  ([1851](https://github.com/osate/osate2/issues/1851))
+ * Error Model and Analysis Plugins
+    1. Fault trees do not always get refreshed ([1904](https://github.com/osate/osate2/issues/1904))
+    1. Performance issue in minimal cutset calculation ([1880](https://github.com/osate/osate2/issues/1880))
+    1. Fault trace has unnecessary events when outgoing propagation is specified ([1882](https://github.com/osate/osate2/issues/1882))
+ * AADL Diagram Editor
+    1. Hide selected elements via context menu/keyboard shortcut ([1542](https://github.com/osate/osate2/issues/1542))
+    1. Making parameter connections in graphical editor fails ([1865](https://github.com/osate/osate2/issues/1865))
+    1. Exception with ELK 0.5.0 ([1911](https://github.com/osate/osate2/issues/1911))
+    1. Allow diagram exporter to output to a stream ([1835](https://github.com/osate/osate2/issues/1835))
+    1. Notes cause diagram to appear as dirty ([1844](https://github.com/osate/osate2/issues/1844))
+ * ALISA
+    1. Assure subsystem does not include verification plans if subcomponent only has type ([1816](https://github.com/osate/osate2/issues/1816))
+    1. ALISA: Verification fails with class cast exception when verification target does not exist in instance model ([1812](https://github.com/osate/osate2/issues/1812))
+    1. Null pointer exception in ALISA when model contains connection instances without cross connection ([1811](https://github.com/osate/osate2/issues/1811))
+    1. ALISA design goal does not resolve reference to VAL ([1873](https://github.com/osate/osate2/issues/1873))
+
+#### Known issues
+
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+   Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
+   
+   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
+
+
 ### Version 2.5.0
 
 #### Release
