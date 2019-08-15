@@ -77,6 +77,7 @@ supported in the declarative model but models containing these features cannot b
       `Subset`, and `Conversion` are implemented
 * Internal features and processor features (Standard document section 8.9)
 * `none` statement for `requires modes`
+* End to end flow specifications
 
 ### Support for AADL 3
 
