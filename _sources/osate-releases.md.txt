@@ -2,7 +2,7 @@
 
 ## Stable Releases
 
-### Version 2.5.1 (not yet released)
+### Version 2.5.1
 
 #### Release
 
