@@ -2,6 +2,72 @@
 
 ## Stable Releases
 
+### Version 2.5.2 (not yet released)
+
+#### Release
+
+  - **GIT tag**: 2.5.2-RELEASE
+  - **Release date**: End of August 2019
+  - **Eclipse base version**: 2019-03
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.5.2/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.5.2/products>
+
+#### SHA256 Hashes for the downloads
+```
+```
+
+#### Notable changes
+
+ * This release contains significant improvements to the faulst tree analysis.
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Flow path implementation incorrectly has error marking when components are modal ([1909](https://github.com/osate/osate2/issues/1909))
+    1. Annex parsing errors are not converted into markers ([1884](https://github.com/osate/osate2/issues/1884))
+    1. Missing validation for duplicate name ([1841](https://github.com/osate/osate2/issues/1841))
+    1. AnnexParseUtil silently discards exceptions ([1808](https://github.com/osate/osate2/issues/1808))
+    1. Outdated list of p2 repositories for installation ([1965](https://github.com/osate/osate2/issues/1965))
+    1. Flow instantiation fails silently in some conditions ([1809](https://github.com/osate/osate2/issues/1809))
+    1. Missing validation on call sequences ([1564](https://github.com/osate/osate2/issues/1564))
+    1. Online help: Scheduling analysis documentation is missing ([1853](https://github.com/osate/osate2/issues/1853))
+    1. Latency analysis does not produce report when model has no modes ([1897](https://github.com/osate/osate2/issues/1897))
+    1. Unused handlers ([1763](https://github.com/osate/osate2/issues/1763))
+    1. Documentation missing for semantic analysis of connection binding consistency ([1852](https://github.com/osate/osate2/issues/1852))
+    1. MIPS budget analysis reports error if Reference_Processor is not specified ([1952](https://github.com/osate/osate2/issues/1952))
+    1. Latency analysis does not scale execution time if thread is bound to virtual processor ([1966](https://github.com/osate/osate2/issues/1966))
+    1. Latency analysis help is missing explanation about Reference_Processor and execution time scaling ([1956](https://github.com/osate/osate2/issues/1956))
+ * Error Model and Analysis Plugins
+    1. Fault tree table shows no text in first column if it represents an error event ([1958](https://github.com/osate/osate2/issues/1958))
+    1. FTA maps error type to super error type unnecessarily ([1915](https://github.com/osate/osate2/issues/1915))
+    1. FTA does not handle data access, bus access correctly ([1899](https://github.com/osate/osate2/issues/1899))
+    1. FTA treats multiple out propagation conditions for the same our propagation and type incorrectly ([1961](https://github.com/osate/osate2/issues/1961))
+    1. FTA includes undeveloped in propagation event when type is not propagated ([1913](https://github.com/osate/osate2/issues/1913))
+    1. Support "k or  more" in fault tree generation ([1837](https://github.com/osate/osate2/issues/1837))
+    1. FTA does not handle types with subtypes and type products well ([1927](https://github.com/osate/osate2/issues/1927))
+    1. FTA fails when the model is modal ([1907](https://github.com/osate/osate2/issues/1907))
+    1. Fault tree generator ignores fault contributors when encountering a trace cycle in HW ([1893](https://github.com/osate/osate2/issues/1893))
+    1. Fault tree table does not show error source correctly under the first column ([1928](https://github.com/osate/osate2/issues/1928))
+    1. Error event in FTA sometimes does not show an error type even when one is defined ([1962](https://github.com/osate/osate2/issues/1962))
+ * AADL Diagram Editor
+    1. OSATE Graphical Editor should move bend points when both ends are moved together ([1476](https://github.com/osate/osate2/issues/1476))
+    1. Add context sensitive help to graphical editor ([1194](https://github.com/osate/osate2/issues/1194))
+    1. Allow creating classifier when setting classifier ([1198](https://github.com/osate/osate2/issues/1198))
+ * ALISA
+    1. In case of an expression evaluation error the exception message is not shown in ALISA ([1921](https://github.com/osate/osate2/issues/1921))
+    1. Common expression interpreter has problems with 'val' assigned a property whose type is RangeValue ([1933](https://github.com/osate/osate2/issues/1933))
+    1. ALISA expression language cannot operations on range values ([1918](https://github.com/osate/osate2/issues/1918))
+    1. The ReqSpec documentation indicates URI as reference to external documents but does not provide syntax details ([1917](https://github.com/osate/osate2/issues/1917))
+
+#### Known issues
+
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+   Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
+   
+   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
+
+
 ### Version 2.5.1
 
 #### Release
@@ -70,7 +136,7 @@ cdded4ff77d6b240f63eb8ceafa6074bd46f50a6a2a3ffdbd04e90d93be05bbc  osate2-2.5.1-v
  * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
    
-   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
+/   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
 
 
 ### Version 2.5.0
