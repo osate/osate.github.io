@@ -90,6 +90,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Download and Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#new-installation">New Installation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#detailed-installation-for-windows">Detailed Installation for Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#detailed-installation-for-macos">Detailed Installation for macOS</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#installing-additional-osate-components">Installing Additional OSATE Components</a></li>
@@ -178,7 +179,7 @@
 <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/stable/latest/products/">here</a>.</p>
 <div class="section" id="new-installation">
 <h2>New Installation<a class="headerlink" href="#new-installation" title="Permalink to this headline">¶</a></h2>
-<p>OSATE is available for Windows (64-bit), Mac OSX (64-bit),
+<p>OSATE is available for Windows (64-bit), macOS (64-bit),
 and Linux (64-bit). As a prerequisite Java 8 is required; in the
 following we assume that it is already installed. See
 <a class="reference external" href="https://java.com/en/download/help/download_options.xml">here</a> for help
@@ -207,6 +208,14 @@ C:\Tools\OSATE. After extraction the target directory will contain
 some sub-directories and files, including osate.exe:</p>
 <p><img alt="OSATE Directory Layout" src="_images/osate-directory-layout.png" /></p>
 <p>OSATE Directory Layout</p>
+</div>
+<div class="section" id="detailed-installation-for-macos">
+<h3>Detailed Installation for macOS<a class="headerlink" href="#detailed-installation-for-macos" title="Permalink to this headline">¶</a></h3>
+<p>OSATE binary is not signed. This can result in an error message when starting OSATE.</p>
+<p>To correct this issue, run the following command to allow OSATE execution:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo xattr -rd com.apple.quarantine osate2.app/
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="installing-additional-osate-components">
@@ -238,7 +247,7 @@ the dialog.</p>
 existing Eclipse installation using the update site or just by
 installing the complete product. The product is a fully integrated and
 tailored Eclipse environment with all OSATE functions. The products are
-available for Windows, Linux and Mac OS X.</p>
+available for Windows, Linux and macOS.</p>
 <p>All available versions can be found at the following locations.</p>
 <ul class="simple">
 <li><strong>Product</strong>: <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/stable/">http://osate-build.sei.cmu.edu/download/osate/stable/</a></li>

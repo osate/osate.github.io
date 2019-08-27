@@ -1,18 +1,18 @@
-# Download and Installation     
+# Download and Installation
 
-The latest OSATE release can be downloaded from 
+The latest OSATE release can be downloaded from
 [here](http://osate-build.sei.cmu.edu/download/osate/stable/latest/products/).
 
 ## New Installation
 
-OSATE is available for Windows (64-bit), Mac OSX (64-bit),
+OSATE is available for Windows (64-bit), macOS (64-bit),
 and Linux (64-bit). As a prerequisite Java 8 is required; in the
 following we assume that it is already installed. See
 [here](https://java.com/en/download/help/download_options.xml) for help
 with installing Java.
 
 Note: Running OSATE under Java 9 or 10 is not supported and may not work.
- 
+
 To install OSATE, download the archive file for your platform from the
 OSATE download site (see below), choose an installation directory and
 unpack the archive file there. The installation directory contains a
@@ -43,6 +43,15 @@ some sub-directories and files, including osate.exe:
 
 OSATE Directory Layout
 
+### Detailed Installation for macOS
+
+OSATE binary is not signed. This can result in an error message when starting OSATE.
+
+To correct this issue, run the following command to allow OSATE execution:
+```
+$ sudo xattr -rd com.apple.quarantine osate2.app/
+```
+
 ## Installing Additional OSATE Components
 
 There are several optional components available for installation. OSATE provides
@@ -52,7 +61,7 @@ dialog that is available in the `Help` menu.
 ![OSATE Help Menu](images/install-components1.png "Component Installation Menu Entry")
 
 This brings up a component installation dialog that displays the available components.
-To install one or more components, select the component's checkbox and click on 
+To install one or more components, select the component's checkbox and click on
 `Finish` to start the installation.
 
 ![OSATE Help Menu](images/install-components2.png "Component Installation Dialog")
@@ -77,8 +86,8 @@ the dialog.
 A new stable version is released every 2-3 months. You can install it from an
 existing Eclipse installation using the update site or just by
 installing the complete product. The product is a fully integrated and
-tailored Eclipse environment with all OSATE functions. The products are 
-available for Windows, Linux and Mac OS X.
+tailored Eclipse environment with all OSATE functions. The products are
+available for Windows, Linux and macOS.
 
 All available versions can be found at the following locations.
 
@@ -94,4 +103,3 @@ using it for production purpose due to potential unstable features.
 
   - **Product**: <http://osate-build.sei.cmu.edu/download/osate/testing/products/>
   - **Update site**: <http://osate-build.sei.cmu.edu/download/osate/testing/updates/>
-
