@@ -19,7 +19,7 @@
 
 #### Notable changes
 
- * This release contains significant improvements to the faulst tree analysis.
+ * This release contains significant improvements to the fault tree analysis.
 
 #### Fixed issues
 
@@ -62,11 +62,10 @@
 
 #### Known issues
 
- * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.2 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
-   
-   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
 
+   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
 
 ### Version 2.5.1
 
@@ -133,9 +132,9 @@ cdded4ff77d6b240f63eb8ceafa6074bd46f50a6a2a3ffdbd04e90d93be05bbc  osate2-2.5.1-v
 
 #### Known issues
 
- * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.1 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
-   
+
 /   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
 
 
@@ -187,7 +186,7 @@ cdded4ff77d6b240f63eb8ceafa6074bd46f50a6a2a3ffdbd04e90d93be05bbc  osate2-2.5.1-v
 
  * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.5.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
-   
+
    **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
 
 
@@ -214,7 +213,7 @@ e511dae3962cdec280a77cbb75ef30be20046e71c474829f51c60b2df6199440  osate2-2.4.1-v
  * New view to show project and package dependencies.
  * Added Eclipse Mylyn support for AADL files.
  * More intuitive usage of classifier information view.
- * Improved "Install Additional OSATE Features" dialog. 
+ * Improved "Install Additional OSATE Features" dialog.
 
 #### Fixed issues
 
@@ -243,9 +242,9 @@ e511dae3962cdec280a77cbb75ef30be20046e71c474829f51c60b2df6199440  osate2-2.4.1-v
 
 #### Known issues
 
- * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.4.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.4.1 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
-   
+
    **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
 
 
@@ -331,7 +330,7 @@ e716eb0a7b2625eb827f623a557f45d0d24430126cb5b21e27d26ad6512ea284  osate2-2.3.7-v
  * This is the last release based on Eclipse Oxygen, the next release will be based on Eclipse 2018-12.
  * This is the last release that includes a 32bit version for Windows because Oracle has dropped 32bit support for Java.
  * This is the last release that includes Resolute and AGREE in the default download. In future versions of OSATE Resolute and AGREE can be be installed as additional components.
- 
+
 
 #### Fixed issues
 
@@ -380,7 +379,7 @@ d90ac3a54b8a9d6a670d56919f9380d4dbde926099239762da7539b31ef992c4  osate2-2.3.6-v
 #### Notable changes
 
 1. The graphical editor now supports annotations on diagrams and can visualize flows and modes for instance models.
-2. Added support for Python scripting to OSATE. This uses Eclipse EASE with Py4J. See, for example, 
+2. Added support for Python scripting to OSATE. This uses Eclipse EASE with Py4J. See, for example,
    [this presentation](https://www.eclipsecon.org/france2016/sites/default/files/slides/EASE-ily%20Python.pdf) for an introduction.
    Python can also be used to write ALISA verification methods (see help text).
 
@@ -446,7 +445,7 @@ d90ac3a54b8a9d6a670d56919f9380d4dbde926099239762da7539b31ef992c4  osate2-2.3.6-v
    1. Filtering on assurance case does not show subset any more ([#1102](https://github.com/osate/osate2/issues/1102))
  * Resolute
    1. Null pointer exception using instance() ([#167](https://github.com/smaccm/smaccm/issues/167))
- * AGREE    
+ * AGREE
    1. Equation variables in subcomponents do not resolve ([#163](https://github.com/smaccm/smaccm/issues/163))
    1. Generation of type predicates clutters results with trivial obligations ([#159](https://github.com/smaccm/smaccm/issues/159))
 
@@ -814,7 +813,7 @@ e37d4fdae443c46a68382211264cfc544fd3f7b229f56e740d8f218aed3a3cca  osate2-2.3.5-v
 1. Complete redesign of the menu structure and the toolbar. In the process some unmaintained or defective commands and analyses were removed (Generate Marker Report, Report Generator Settings, Clear Eclipse History, Remove Problem Markers, Save as XMI,
 Model Statistics, Import Scade Model, Graphically view instances and implementations, Common Mode Assessment, Reliability Block Diagram, ImplementationCompliance, Spotlight).
 2. Added new wizards for all file types supported by OSATE.
-3. The underlying Eclipse is updated to Oxygen.1A. 
+3. The underlying Eclipse is updated to Oxygen.1A.
 4. Implemented new automatic layout capability to the graphical editor. A preference to control the incremental layout mode is located at OSATE Preferences/Diagrams. See OSATE Graphical Editor User Guide for additional details.
 5. Reworked instance model diagram referencing system. When opening such diagrams, the user will be prompted to relink instance model diagrams with the appropriate instance model. Relinked diagrams will not be compatible with older versions of OSATE.
 
@@ -972,13 +971,13 @@ This is the last release based on Eclipse Mars.
     - The file format used by previous versions of the Graphical Editor has been deprecated. Support for opening such diagrams will be removed in a subsequent release. When opening a legacy diagram, the user will be prompted to convert the file. The new file format is more compact and contains more reliable linkages with the AADL model.
     - It is recommended to convert all legacy diagrams to the new format by opening them.
     - Diagrams no longer use UUIDs are part of file names. Legacy diagrams will be renamed as part of the conversion process.
-    - Added support for multiple diagrams representing the same model element. 
+    - Added support for multiple diagrams representing the same model element.
     - Added a "Configure Diagram..." option to the diagram's context menu which is used for configuring which model elements are displayed in the diagram.
     - Removed diagram-wide nesting level option. The nesting level of diagram elements can now be controlled individually.
     - Added Show Contents, Hide Contents, and Show Type Contents to the diagram element context menu.
     - Added an asterisk indicator after labels which indicates whether all of the contents for an element are shown.
   - Refactoring
-    - Renaming elements from the diagram editor will refactor the AADL model. 
+    - Renaming elements from the diagram editor will refactor the AADL model.
     - Renaming elements from the diagram editor will update related diagrams.
     - References in legacy diagrams are not updated.
     - Renaming a model elment using the "Rename Element" menu option updates linkages in diagrams.
@@ -991,7 +990,7 @@ This is the last release based on Eclipse Mars.
   - AADL Features
     - Features may be docked to any side. Previously only the left and right were supported.
     - Feature group types use the same symbol regardless of the type of diagram. Previously, feature group types used a rectangle on classifier diagrams.
-	- Feature groups can be resized.
+        - Feature groups can be resized.
   - Formatting
     - Labels of classifiers on package diagrams are now located at the top and centered.
     - Added labels for classifiers in classifier diagrams.
@@ -1005,7 +1004,7 @@ This is the last release based on Eclipse Mars.
     - Added support for connections whose features are not included in the diagram. Such connections are formatted differently from normal connections.
     - Added command to navigate to component type diagram for subcomponents.
 * Resolute/AGREE
-  1. Various bug fixes 
+  1. Various bug fixes
 * ALISA Incremental Assurance
   1. Minor bug fixes ([#17](https://github.com/osate/osate2-core/issues/17), [#23](https://github.com/osate/osate2-core/issues/23), [#24](https://github.com/osate/osate2-core/issues/24))
 
@@ -1035,7 +1034,7 @@ Note that the underlying AADL meta-model has changed. This makes it necessary to
 1. Allow connection ends that reach down into feature groups ([#500](https://github.com/osate/osate2-core/issues/500))
 1. Removed `Type_Extension` from property `Classifier_Matching_Rule` ([#740](https://github.com/osate/osate2-core/issues/740))
 1. Support property types `classifier` and `reference` with empty list of classifiers ([#718](https://github.com/osate/osate2-core/issues/718))
-1. Flow implementations may reference a feature in a feature group even if the flow specification references the geature group ([#794](https://github.com/osate/osate2-core/issues/794)) 
+1. Flow implementations may reference a feature in a feature group even if the flow specification references the geature group ([#794](https://github.com/osate/osate2-core/issues/794))
 1. Added a checker that can be run before code generation
 1. Added outline support to the graphical editor
 1. Updated Xtext to version 2.11 ([#697](https://github.com/osate/osate2-core/issues/697), [#800](https://github.com/osate/osate2-core/issues/800))
@@ -1075,7 +1074,7 @@ Note that the underlying AADL meta-model has changed. This makes it necessary to
   1. Allow bendpoints for generalizations ([#786](https://github.com/osate/osate2-core/issues/786))
   1. Fixed an exception which could occur when working with models which include annex subclauses
 * Resolute/AGREE
-  1. This release contains numerous bug fixes for Resolute. 
+  1. This release contains numerous bug fixes for Resolute.
   1. It also includes the addition of "Real-time Patterns" and "Linearization" to AGREE. These new features are documented in the [User's Guide](https://github.com/smaccm/smaccm/raw/master/documentation/agree/AGREE%20Users%20Guide.pdf)
 * ALISA Incremental Assurance
   1. Alisa Assurance View: Color bars replaced by colored count entries ([#21](https://github.com/osate/osate2-core/issues/21))
@@ -1242,22 +1241,22 @@ The full lists of closed issues for this release are available at
 3.  Implemented approved language errata:
     1.  Abstract features are allowed as mode transition triggers
     2.  Added property Reference_Time
-	3.  Abstract features can reference classifiers in addition to prototypes:
+        3.  Abstract features can reference classifiers in addition to prototypes:
 
             prototypes
-			  fp: feature;
-			  dt: data;
-			features
-			  -- feature is the prototype actual
-			  f1: prototype fp;
-			  -- abstract feature referencing a data classifier
-			  f2: feature SomeDataType;
-			  -- abstract feature referencing a data prototype
-			  f3: feature dt;
+                          fp: feature;
+                          dt: data;
+                        features
+                          -- feature is the prototype actual
+                          f1: prototype fp;
+                          -- abstract feature referencing a data classifier
+                          f2: feature SomeDataType;
+                          -- abstract feature referencing a data prototype
+                          f3: feature dt;
 
 4.  Added textual representation of instance models. Convert AADL instance model
     file to text via action "Generate Textual Instance" in AADL Navigator context
-	menu
+        menu
 5.  Added BIRT for report generation. An example report for requirements
     traceability is included: Action "Requirements Tracing" in context menu in
     the AADL Navigatior view, active for AADL packages, instance models, system
