@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.5.2 (not yet released)
+### Version 2.5.2
 
 #### Release
 
   - **GIT tag**: 2.5.2-RELEASE
-  - **Release date**: End of August 2019
+  - **Release date**: August 31, 2019
   - **Eclipse base version**: 2019-03
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.5.2/updates>
@@ -15,11 +15,14 @@
 
 #### SHA256 Hashes for the downloads
 ```
+84992dad5f14d2e9ff54fe1d99af0619d15d3f16d564670c2ebffefcb6414d0c  osate2-2.5.2-vfinal-linux.gtk.x86_64.tar.gz
+24875995fb405e8ac31ce2576418b1c283d107186eae405d27a6ef2c75a28e00  osate2-2.5.2-vfinal-macosx.cocoa.x86_64.tar.gz
+6ccfe9401e57d773935c9979fd29bf381f4ee4c0d01be8caf89cb874768f1b0e  osate2-2.5.2-vfinal-win32.win32.x86_64.zip
 ```
 
 #### Notable changes
 
- * This release contains significant improvements to the fault tree analysis.
+ * This release contains various improvements to the fault tree analysis.
 
 #### Fixed issues
 
