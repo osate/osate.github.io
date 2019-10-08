@@ -38,7 +38,7 @@ Add a user project by clicking on the + icon (A).
 
 Select the catalog *Github Projects* and enter the following URL as the *Resource URI*:
 
-https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2019-03.setup
+https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2019-09.setup
 
 Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>. Then select the master stream in right column of the table at the bottom.
 
@@ -114,7 +114,7 @@ You can also use the import to add additional project setups to a workspace.
 
 No problem. Switch to the new workspace location and import the OSATE2 project setup.
 
-Alternatively, you can create a new eclipse installation for each new workspace workspace. When using a bundle pool, an eclipse installation is comparatively lightweight, and quick to set up.
+Alternatively, you can create a new eclipse installation for each new workspace. When using a bundle pool, an eclipse installation is comparatively lightweight, and quick to set up.
   
 ### How do I add a feature to my eclipse installation and share it with others in my team?
 
