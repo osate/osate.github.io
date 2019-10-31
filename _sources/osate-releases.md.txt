@@ -2,6 +2,68 @@
 
 ## Stable Releases
 
+### Version 2.6.0 (not yet released)s
+
+#### Release
+
+  - **GIT tag**: 2.6.0-RELEASE
+  - **Release date**: TBD
+  - **Eclipse base version**: 2019-09
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.6.0/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.6.0/products>
+
+#### SHA256 Hashes for the downloads
+```
+```
+
+#### Notable changes
+
+ * We have upgraded the underlying Eclipse version to 2019-09.
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Serializer fails on programmatically added property constant. ([1972](https://github.com/osate/osate2/issues/1972))
+    1. Error message on connection when starting a flow source implementation with a data subcomponent ([1987](https://github.com/osate/osate2/issues/1987))
+    1. Subprogram parameters are allowed as feature connection ends ([1954](https://github.com/osate/osate2/issues/1954))
+    1. Error on data access in the middle of end to end flow ([1124](https://github.com/osate/osate2/issues/1124))
+    1. End to end flow instantiation broken for flows through threads ([1953](https://github.com/osate/osate2/issues/1953))
+    1. Add isSubClassifier method to AadlUtil ([1989](https://github.com/osate/osate2/issues/1989))
+    1. Allow subprogram access parameter as flow start and end point  ([730](https://github.com/osate/osate2/issues/730))
+    1. Bidirectional access connections are not instantiated correctly ([1977](https://github.com/osate/osate2/issues/1977))
+    1. Instantiator merges access connections ([676](https://github.com/osate/osate2/issues/676))
+    1. Using feature-group specific flow paths has instance model errors for the "path not taken". ([1984](https://github.com/osate/osate2/issues/1984))
+    1. Upgrade to Eclipse 2019-09 ([1888](https://github.com/osate/osate2/issues/1888))
+    1. Annex formatter sometimes throws IllegalStateException ([2036](https://github.com/osate/osate2/issues/2036))
+    1. End to end flow not instantiated in component with refined features in the flow ([1830](https://github.com/osate/osate2/issues/1830))
+    1. Update pom files to use Xtext BOM ([2017](https://github.com/osate/osate2/issues/2017))
+    1. Flow through data component cannot be instantiated ([643](https://github.com/osate/osate2/issues/643))
+    1. Out of memory exception on OSATE 2.6.0 (testing) ([1997](https://github.com/osate/osate2/issues/1997))
+    1. Formatter indents comments too much ([2025](https://github.com/osate/osate2/issues/2025))
+    1. CoreException when selecting a file in the navigator ([2014](https://github.com/osate/osate2/issues/2014))
+    1. Wrong validation of end to end flow across data access ([1974](https://github.com/osate/osate2/issues/1974))
+    1. Update pom files to use Xtext BOM ([2017](https://github.com/osate/osate2/issues/2017))
+    1. Upgrade to Eclipse 2019-09 ([1888](https://github.com/osate/osate2/issues/1888))
+    1. Flow latency analysis crashes when run from instance model editor ([2013](https://github.com/osate/osate2/issues/2013))
+    1. IndexOutOfBoundsException when generating Excel spreadsheet for latency analysis ([1985](https://github.com/osate/osate2/issues/1985))
+ * Error Model and Analysis Plugins
+    1. EMV2Util.getErrorType(EMV2Path ep) returns null for bindings.NetworkError  ([1975](https://github.com/osate/osate2/issues/1975))
+    1. K ormore calculates failure probability wrong ([1976](https://github.com/osate/osate2/issues/1976))
+    1. Error model validations should be executed while typing  ([2034](https://github.com/osate/osate2/issues/2034))
+ * AADL Diagram Editor
+    1. GE-tests ([1219](https://github.com/osate/osate2/issues/1219))
+    1. Element hidden during rename ([1992](https://github.com/osate/osate2/issues/1992))
+ * ALISA
+    1. Arithmetic bugs in ALISA ([2031](https://github.com/osate/osate2/issues/2031))
+
+#### Known issues
+
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+   Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
+
+   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
+
 ### Version 2.5.2
 
 #### Release
