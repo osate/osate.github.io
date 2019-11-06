@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.6.0 (not yet released)s
+### Version 2.6.0
 
 #### Release
 
   - **GIT tag**: 2.6.0-RELEASE
-  - **Release date**: TBD
+  - **Release date**: November 6, 2019
   - **Eclipse base version**: 2019-09
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.6.0/updates>
@@ -15,11 +15,14 @@
 
 #### SHA256 Hashes for the downloads
 ```
-```
+20eef0b6c801ba3090a856aea05ec7807da1621e8768da953566875c50e42031  osate2-2.6.0-vfinal-linux.gtk.x86_64.tar.gz
+2b57e60a8c19893d27b686093c90df60467b80668bf270e7ef772685ccac3c89  osate2-2.6.0-vfinal-macosx.cocoa.x86_64.tar.gz
+cac1146f9c7bf967174264bddb831433f35568d12308b40d8ca7c0979654327e  osate2-2.6.0-vfinal-win32.win32.x86_64.zip```
 
 #### Notable changes
 
  * We have upgraded the underlying Eclipse version to 2019-09.
+ * The plugins are now signed. There should no longer be a warning about installing unsigned plugins when installing into an existing Eclipse installation.
 
 #### Fixed issues
 
@@ -34,10 +37,8 @@
     1. Bidirectional access connections are not instantiated correctly ([1977](https://github.com/osate/osate2/issues/1977))
     1. Instantiator merges access connections ([676](https://github.com/osate/osate2/issues/676))
     1. Using feature-group specific flow paths has instance model errors for the "path not taken". ([1984](https://github.com/osate/osate2/issues/1984))
-    1. Upgrade to Eclipse 2019-09 ([1888](https://github.com/osate/osate2/issues/1888))
     1. Annex formatter sometimes throws IllegalStateException ([2036](https://github.com/osate/osate2/issues/2036))
     1. End to end flow not instantiated in component with refined features in the flow ([1830](https://github.com/osate/osate2/issues/1830))
-    1. Update pom files to use Xtext BOM ([2017](https://github.com/osate/osate2/issues/2017))
     1. Flow through data component cannot be instantiated ([643](https://github.com/osate/osate2/issues/643))
     1. Out of memory exception on OSATE 2.6.0 (testing) ([1997](https://github.com/osate/osate2/issues/1997))
     1. Formatter indents comments too much ([2025](https://github.com/osate/osate2/issues/2025))
@@ -59,6 +60,7 @@
 
 #### Known issues
 
+ * The first startup of OSATE can take a rather long (up to a couple of minutes). This is an issue with Eclipse.
  * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
 
