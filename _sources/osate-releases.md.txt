@@ -17,7 +17,8 @@
 ```
 20eef0b6c801ba3090a856aea05ec7807da1621e8768da953566875c50e42031  osate2-2.6.0-vfinal-linux.gtk.x86_64.tar.gz
 2b57e60a8c19893d27b686093c90df60467b80668bf270e7ef772685ccac3c89  osate2-2.6.0-vfinal-macosx.cocoa.x86_64.tar.gz
-cac1146f9c7bf967174264bddb831433f35568d12308b40d8ca7c0979654327e  osate2-2.6.0-vfinal-win32.win32.x86_64.zip```
+cac1146f9c7bf967174264bddb831433f35568d12308b40d8ca7c0979654327e  osate2-2.6.0-vfinal-win32.win32.x86_64.zip
+```
 
 #### Notable changes
 
