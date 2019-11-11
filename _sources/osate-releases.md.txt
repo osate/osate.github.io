@@ -63,7 +63,9 @@ cac1146f9c7bf967174264bddb831433f35568d12308b40d8ca7c0979654327e  osate2-2.6.0-
 
 #### Known issues
 
+ * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
  * The first startup of OSATE can take a rather long (up to a couple of minutes). This is an issue with Eclipse.
+ * Under certain conditions the outline view displays no context menu menu on right click. As a workaround close and re-open the editor. See [issue 2050](https://github.com/osate/osate2/issues/2050).
  * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
 

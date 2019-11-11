@@ -482,7 +482,11 @@
 <div class="section" id="known-issues">
 <h4>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h4>
 <ul>
+<li><p class="first">MacOS users must run the command <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">xattr</span> <span class="pre">-rd</span> <span class="pre">com.apple.quarantine</span> <span class="pre">osate2.app/</span></code> to be able to run OSATE.</p>
+</li>
 <li><p class="first">The first startup of OSATE can take a rather long (up to a couple of minutes). This is an issue with Eclipse.</p>
+</li>
+<li><p class="first">Under certain conditions the outline view displays no context menu menu on right click. As a workaround close and re-open the editor. See <a class="reference external" href="https://github.com/osate/osate2/issues/2050">issue 2050</a>.</p>
 </li>
 <li><p class="first">Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates">http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates</a>.
 Once newer versions are provided by <a class="reference external" href="http://loonwerks.com">loonwerks</a> in an update site, we will make them available via the “Install Additional OSATE Features” dialog.</p>
@@ -3147,7 +3151,7 @@ Long</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2019, Carnegie Mellon University.
-      Last updated on Nov 06, 2019.
+      Last updated on Nov 11, 2019.
 
     </p>
   </div>
