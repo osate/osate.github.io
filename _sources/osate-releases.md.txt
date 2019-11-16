@@ -63,6 +63,7 @@ cac1146f9c7bf967174264bddb831433f35568d12308b40d8ca7c0979654327e  osate2-2.6.0-
 
 #### Known issues
 
+ * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
  * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
  * The first startup of OSATE can take a rather long (up to a couple of minutes). This is an issue with Eclipse.
  * Under certain conditions the outline view displays no context menu menu on right click. As a workaround close and re-open the editor. See [issue 2050](https://github.com/osate/osate2/issues/2050).
