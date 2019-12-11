@@ -173,9 +173,9 @@
 <h1>Writing Tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">¶</a></h1>
 <p>We use a stylized way of writing tests based on the xtext testing framework. The
 test class declaration must extend XtextTest and be annotated as follows:</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@RunWith</span><span class="o">(</span><span class="n">XtextRunner</span><span class="o">)</span>
-<span class="nd">@InjectWith</span><span class="o">(</span><span class="n">Aadl2InjectorProvider</span><span class="o">)</span>
-<span class="kd">class</span> <span class="nc">ModeTransitionsTest</span> <span class="kd">extends</span> <span class="n">XtextTest</span> <span class="o">{</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@RunWith</span><span class="p">(</span><span class="n">XtextRunner</span><span class="p">)</span>
+<span class="nd">@InjectWith</span><span class="p">(</span><span class="n">Aadl2InjectorProvider</span><span class="p">)</span>
+<span class="kd">class</span> <span class="nc">ModeTransitionsTest</span> <span class="kd">extends</span> <span class="n">XtextTest</span> <span class="p">{</span>
 </pre></div>
 </div>
 <p>It is important to use the <code class="docutils literal notranslate"><span class="pre">Aadl2Injectorprovider</span></code> and not the UI injector
@@ -259,7 +259,7 @@ plugins that depend on UI plugins even if they don’t use the UI during the tes
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2019, Carnegie Mellon University.
-      Last updated on Nov 16, 2019.
+      Last updated on Dec 11, 2019.
 
     </p>
   </div>

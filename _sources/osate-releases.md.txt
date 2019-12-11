@@ -2,6 +2,71 @@
 
 ## Stable Releases
 
+### Version 2.6.1 - NOT YET RELEASED
+
+#### Release
+
+  - **GIT tag**: 2.6.1-RELEASE
+  - **Release date**: December ???, 2019
+  - **Eclipse base version**: 2019-09
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.6.1/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.6.1/products>
+
+#### SHA256 Hashes for the downloads
+```
+```
+
+#### Notable changes
+
+ * This is a bug fix release.
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Renaming elements in text editor does not work ([359](https://github.com/osate/osate2/issues/359))
+    1. Difficult to Determine Direction of Access Feature Instances ([758](https://github.com/osate/osate2/issues/758))
+    1. PackageSection not defined when printing the stack after an exception ([905](https://github.com/osate/osate2/issues/905))
+    1. Some OSATE help pages are titled "THROW THIS PAGE AWAY" ([1496](https://github.com/osate/osate2/issues/1496))
+    1. Misleading warning on feature reference in parameter connection ([1988](https://github.com/osate/osate2/issues/1988))
+    1. Infinite loop when building workspace ([2007](https://github.com/osate/osate2/issues/2007))
+    1. Remove deprecated code ([2044](https://github.com/osate/osate2/issues/2044))
+    1. When renaming a port references in a connection declaration are not renamed ([2046](https://github.com/osate/osate2/issues/2046))
+    1. AadlFileTypePropertyTester is very inefficient ([2048](https://github.com/osate/osate2/issues/2048))
+    1. Add "Instantiate" command to navigator context menu ([2052](https://github.com/osate/osate2/issues/2052))
+    1. Outline view shows "Type Extension" instead of name of extended type ([2053](https://github.com/osate/osate2/issues/2053))
+    1. Connection_Pattern ignored when instantiating data access connection ([2057](https://github.com/osate/osate2/issues/2057))
+    1. Formatting issues with property sets ([2058](https://github.com/osate/osate2/issues/2058))
+    1. Rename refactoring fails for record fields ([2077](https://github.com/osate/osate2/issues/2077))
+    1. Various improvements to "mark occurrences" ([2086](https://github.com/osate/osate2/issues/2086))
+    1. Rename refactoring does not work in 'applies to' and reference value ([2088](https://github.com/osate/osate2/issues/2088))
+    1. Code for budget analyses should be cleaned up ([1964](https://github.com/osate/osate2/issues/1964))
+    1. AnalysisResult description for flow latency analysis is outdated ([2027](https://github.com/osate/osate2/issues/2027))
+    1. Use Sonarcloud for code analysis ([2055](https://github.com/osate/osate2/issues/2055))
+    1. ELK repository URL is incomplete ([2062](https://github.com/osate/osate2/issues/2062))
+    1. Unexpected XText version change when installing updates from 2.6.0-vfinal update site ([2097](https://github.com/osate/osate2/issues/2097))
+    1. Add test support plugin to p2 repository ([2105](https://github.com/osate/osate2/issues/2105))
+ * Error Model and Analysis Plugins
+    1. NullPointerException in Check Unhandled Faults ([2092](https://github.com/osate/osate2/issues/2092))
+    1. FHA: IndexOutOfBoundsException if likelihood unspecified ([2093](https://github.com/osate/osate2/issues/2093))
+ * ALISA
+    1. Add JUnit test that uses Resolute ([2038](https://github.com/osate/osate2/issues/2038))
+    1. ArrayIndexOutOfBounds exception in CommonScopeProvider ([2042](https://github.com/osate/osate2/issues/2042))
+    1. Validations on reqspec and verify files should be executed while typing ([2049](https://github.com/osate/osate2/issues/2049))
+ * Behavior Annex
+    1. OSATE editor crashes with index out of bounds exception with model using behavior annex ([2065](https://github.com/osate/osate
+
+#### Known issues
+
+ * Under certain conditions the outline view displays no context menu menu on right click. As a workaround close and re-open the editor. See [issue 2050](https://github.com/osate/osate2/issues/2050).
+ * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
+ * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
+ * The first startup of OSATE can take a rather long (up to a couple of minutes). This is an issue with Eclipse.
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+   Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
+
+   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
+
 ### Version 2.6.0
 
 #### Release
