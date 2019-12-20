@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.6.1 - NOT YET RELEASED
+### Version 2.6.1
 
 #### Release
 
   - **GIT tag**: 2.6.1-RELEASE
-  - **Release date**: December ???, 2019
+  - **Release date**: December 20, 2019
   - **Eclipse base version**: 2019-09
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.6.1/updates>
@@ -15,6 +15,9 @@
 
 #### SHA256 Hashes for the downloads
 ```
+c2f39cde12da4dea492be16d6167834092e0c37eadb29b45143c120ad0fe0708  osate2-2.6.1-vfinal-linux.gtk.x86_64.tar.gz
+7d2630efda4f9884f098a5f26fcd0fee944cf52919a5d486a501dd3db3bc0439  osate2-2.6.1-vfinal-macosx.cocoa.x86_64.tar.gz
+f2c4198cae85d1400b95aa883f821150a1238566df0e21fa51251ac2e1ea08a0  osate2-2.6.1-vfinal-win32.win32.x86_64.zip
 ```
 
 #### Notable changes
@@ -25,7 +28,7 @@
 
  * OSATE Core and Analysis Plugins
     1. Renaming elements in text editor does not work ([359](https://github.com/osate/osate2/issues/359))
-    1. Difficult to Determine Direction of Access Feature Instances ([758](https://github.com/osate/osate2/issues/758))
+    1. Difficult to determine direction of access feature instances ([758](https://github.com/osate/osate2/issues/758))
     1. PackageSection not defined when printing the stack after an exception ([905](https://github.com/osate/osate2/issues/905))
     1. Some OSATE help pages are titled "THROW THIS PAGE AWAY" ([1496](https://github.com/osate/osate2/issues/1496))
     1. Misleading warning on feature reference in parameter connection ([1988](https://github.com/osate/osate2/issues/1988))
@@ -44,7 +47,7 @@
     1. AnalysisResult description for flow latency analysis is outdated ([2027](https://github.com/osate/osate2/issues/2027))
     1. Use Sonarcloud for code analysis ([2055](https://github.com/osate/osate2/issues/2055))
     1. ELK repository URL is incomplete ([2062](https://github.com/osate/osate2/issues/2062))
-    1. Unexpected XText version change when installing updates from 2.6.0-vfinal update site ([2097](https://github.com/osate/osate2/issues/2097))
+    1. Unexpected Xtext version change when installing updates from 2.6.0 update site ([2097](https://github.com/osate/osate2/issues/2097))
     1. Add test support plugin to p2 repository ([2105](https://github.com/osate/osate2/issues/2105))
  * Error Model and Analysis Plugins
     1. NullPointerException in Check Unhandled Faults ([2092](https://github.com/osate/osate2/issues/2092))
@@ -54,14 +57,14 @@
     1. ArrayIndexOutOfBounds exception in CommonScopeProvider ([2042](https://github.com/osate/osate2/issues/2042))
     1. Validations on reqspec and verify files should be executed while typing ([2049](https://github.com/osate/osate2/issues/2049))
  * Behavior Annex
-    1. OSATE editor crashes with index out of bounds exception with model using behavior annex ([2065](https://github.com/osate/osate
+    1. OSATE editor crashes with index out of bounds exception with model using behavior annex ([2065](https://github.com/osate/osate2/issues/2065))
 
 #### Known issues
 
  * Under certain conditions the outline view displays no context menu menu on right click. As a workaround close and re-open the editor. See [issue 2050](https://github.com/osate/osate2/issues/2050).
  * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
  * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
- * The first startup of OSATE can take a rather long (up to a couple of minutes). This is an issue with Eclipse.
+ * The first startup of OSATE can take a rather long (up to a couple of minutes).
  * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
 
@@ -130,7 +133,7 @@ cac1146f9c7bf967174264bddb831433f35568d12308b40d8ca7c0979654327e  osate2-2.6.0-
 
  * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
  * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
- * The first startup of OSATE can take a rather long (up to a couple of minutes). This is an issue with Eclipse.
+ * The first startup of OSATE can take a rather long (up to a couple of minutes).
  * Under certain conditions the outline view displays no context menu menu on right click. As a workaround close and re-open the editor. See [issue 2050](https://github.com/osate/osate2/issues/2050).
  * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Features" dialog.
