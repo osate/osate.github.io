@@ -105,8 +105,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#updating-the-development-environment">8. Updating the development environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#q-a-troubleshooting">Q &amp; A / Troubleshooting</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb">The heap size is set to 1GB. How do I increase that to 2GB?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#can-i-add-the-osate2-project-setup-to-that-an-existing-workspace">Can I add the OSATE2 project setup to that an existing workspace?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace">I want to use the eclipse installation with a new workspace?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can-i-add-the-osate2-project-setup-to-an-existing-workspace">Can I add the OSATE2 project setup to an existing workspace?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that">I want to use the eclipse installation with a new workspace. Can I do that?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">How do I add a feature to my eclipse installation and share it with others in my team?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration">I have installed a feature in my eclipse installation, but it’s not available when I start OSATE using a launch configuration.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#how-can-i-add-a-feature-to-the-osate2-development-setup">How can I add a feature to the OSATE2 development setup?</a></li>
@@ -201,14 +201,14 @@
 <p><img alt="Installer 2" src="_images/installer2.png" /></p>
 <p>On first use update the installer (A)</p>
 <p>If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.</p>
-<p>Select <em>Eclipse Modeling Tools</em> as the base product to install, and select <em>2019-03</em> as the product version. Choose 64bit as your Java version.</p>
+<p>Select <em>Eclipse Modeling Tools</em> as the base product to install, and select <em>2019-12</em> as the product version. Choose 64bit as your Java version.</p>
 </div>
 <div class="section" id="add-the-osate-setup-file">
 <h2>4. Add the OSATE setup file<a class="headerlink" href="#add-the-osate-setup-file" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Installer 3" src="_images/installer3.png" /></p>
 <p>Add a user project by clicking on the + icon (A).</p>
 <p>Select the catalog <em>Github Projects</em> and enter the following URL as the <em>Resource URI</em>:</p>
-<p>https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2019-09.setup</p>
+<p>https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2019-12.setup</p>
 <p>Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>. Then select the master stream in right column of the table at the bottom.</p>
 </div>
 <div class="section" id="set-required-variables">
@@ -272,13 +272,13 @@ You can edit the user setup to override the setting for all eclipse installation
 </ol>
 <p>You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.</p>
 </div>
-<div class="section" id="can-i-add-the-osate2-project-setup-to-that-an-existing-workspace">
-<h3>Can I add the OSATE2 project setup to that an existing workspace?<a class="headerlink" href="#can-i-add-the-osate2-project-setup-to-that-an-existing-workspace" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="can-i-add-the-osate2-project-setup-to-an-existing-workspace">
+<h3>Can I add the OSATE2 project setup to an existing workspace?<a class="headerlink" href="#can-i-add-the-osate2-project-setup-to-an-existing-workspace" title="Permalink to this headline">¶</a></h3>
 <p>Yes, a project setup can be imported into a workspace: <em>File</em> -&gt; <em>Import…</em> -&gt; <em>Oomph</em> -&gt; <em>Projects into workspace</em></p>
 <p>You can also use the import to add additional project setups to a workspace.</p>
 </div>
-<div class="section" id="i-want-to-use-the-eclipse-installation-with-a-new-workspace">
-<h3>I want to use the eclipse installation with a new workspace?<a class="headerlink" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that">
+<h3>I want to use the eclipse installation with a new workspace. Can I do that?<a class="headerlink" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that" title="Permalink to this headline">¶</a></h3>
 <p>No problem. Switch to the new workspace location and import the OSATE2 project setup.</p>
 <p>Alternatively, you can create a new eclipse installation for each new workspace. When using a bundle pool, an eclipse installation is comparatively lightweight, and quick to set up.</p>
 </div>
@@ -326,7 +326,7 @@ You can edit the user setup to override the setting for all eclipse installation
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2019, Carnegie Mellon University.
-      Last updated on Dec 20, 2019.
+      Last updated on Jan 04, 2020.
 
     </p>
   </div>

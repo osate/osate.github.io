@@ -28,7 +28,7 @@ On first use update the installer (A)
 
 If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.
 
-Select *Eclipse Modeling Tools* as the base product to install, and select *2019-03* as the product version. Choose 64bit as your Java version.
+Select *Eclipse Modeling Tools* as the base product to install, and select *2019-12* as the product version. Choose 64bit as your Java version.
 
 ## 4. Add the OSATE setup file
 
@@ -38,7 +38,7 @@ Add a user project by clicking on the + icon (A).
 
 Select the catalog *Github Projects* and enter the following URL as the *Resource URI*:
 
-https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2019-09.setup
+https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2019-12.setup
 
 Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>. Then select the master stream in right column of the table at the bottom.
 
@@ -104,13 +104,13 @@ You can edit the user setup to override the setting for all eclipse installation
 
 You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.
 
-### Can I add the OSATE2 project setup to that an existing workspace?
+### Can I add the OSATE2 project setup to an existing workspace?
 
 Yes, a project setup can be imported into a workspace: _File_ -> _Import..._ -> _Oomph_ -> _Projects into workspace_ 
 
 You can also use the import to add additional project setups to a workspace.
   
-### I want to use the eclipse installation with a new workspace?
+### I want to use the eclipse installation with a new workspace. Can I do that?
 
 No problem. Switch to the new workspace location and import the OSATE2 project setup.
 
