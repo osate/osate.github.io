@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>About OSATE &mdash; OSATE 2.6.1 documentation</title>
+  <title>About OSATE &mdash; OSATE 2.7.0 documentation</title>
   
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                2.6
+                2.7
               </div>
             
           
@@ -176,25 +176,25 @@
 <h2>OSATE Modeling Capabilities<a class="headerlink" href="#osate-modeling-capabilities" title="Permalink to this headline">¶</a></h2>
 <p>OSATE (Open Source AADL Tool Environment) includes the capability to:</p>
 <ol class="simple">
-<li>Create AADL models using a syntax-aware text editor and synchronized graphical editor. AADL models are organized in separate projects in a workspace.
+<li><p>Create AADL models using a syntax-aware text editor and synchronized graphical editor. AADL models are organized in separate projects in a workspace.
 The tool supports validation of AADL models according to all naming and legality rules defined in the AADL standard. The text editor provides code templates,
 real-time syntax checking, code completion, and proposals to fix errors. In addition to the core language, models may contain elements from the
-AADL Standard Annexes (e.g., error model, requirements definition and analysis, ARINC653, and behavior annexes).</li>
-<li>Import Mathworks® MATLAB™ Simulink™ models into OSATE. The importer translates the diagram structure and transforms SCADE and Simulink blocks into AADL components.</li>
-<li>Support the SAE Standard Aerospace Recommended Practice (ARP) 4761, Guidelines and Methods for Conducting the Safety Assessment Process on Civil Airborne
+AADL Standard Annexes (e.g., error model, requirements definition and analysis, ARINC653, and behavior annexes).</p></li>
+<li><p>Import Mathworks® MATLAB™ Simulink™ models into OSATE. The importer translates the diagram structure and transforms SCADE and Simulink blocks into AADL components.</p></li>
+<li><p>Support the SAE Standard Aerospace Recommended Practice (ARP) 4761, Guidelines and Methods for Conducting the Safety Assessment Process on Civil Airborne
 Systems and Equipment. The processes and techniques of the ARP4761 standard addressed by the tool are the Functional Hazard Assessment, Fault Tree Analysis,
-Failure Modes and Effects Analysis, and Dependence Diagrams, also referred to as Reliability Block Diagrams.</li>
-<li>Perform structural verification of AADL models and of property values associated with model elements using the Resolute constraint language
+Failure Modes and Effects Analysis, and Dependence Diagrams, also referred to as Reliability Block Diagrams.</p></li>
+<li><p>Perform structural verification of AADL models and of property values associated with model elements using the Resolute constraint language
 (developed by Rockwell Collins in the SMACCM research project). Example use of Resolute: verify OS specific constraints on ARINC653 systems for
-code and configuration generation.</li>
-<li>Perform compositional verification of system and component behavior using the AGREE language (developed by Rockwell Collins in the SMACCM research project).
-This supports reasoning about system behavior based on assume/guarantee contracts and the structure of the system’s architecture model.</li>
-<li>Architecture Led Integrated System Assurance (ALISA). ALISA provides a Requirement Specification capability that allows users to express stakeholder
+code and configuration generation.</p></li>
+<li><p>Perform compositional verification of system and component behavior using the AGREE language (developed by Rockwell Collins in the SMACCM research project).
+This supports reasoning about system behavior based on assume/guarantee contracts and the structure of the system’s architecture model.</p></li>
+<li><p>Architecture Led Integrated System Assurance (ALISA). ALISA provides a Requirement Specification capability that allows users to express stakeholder
 requirements and system specifications in the context of an AADL model of a system. A requirements analysis will assess how well different
 aspects of the system (interfaces, quality attributes, and hazards) are covered by the requirements specification. This is a capability that was added to
 OSATE in version 2.2. The capability includes the ReqSpec requirements definition, requirements traceability, traceability reports, verification plan
-execution, and certification plan execution. For documentation see the Alisa User Guide accessible from the OSATE Help Page.</li>
-<li>Provide basic repository support through the git perspective in OSATE.</li>
+execution, and certification plan execution. For documentation see the Alisa User Guide accessible from the OSATE Help Page.</p></li>
+<li><p>Provide basic repository support through the git perspective in OSATE.</p></li>
 </ol>
 </div>
 <div class="section" id="osate-code-generation-capabilities">
@@ -204,19 +204,20 @@ specified in the AADL model (e.g., data, runtime behavior, code, partition sched
 after being linked and compiled, can be loaded onto the processor operating system for execution of the system functionality.</p>
 <p>OSATE currently includes the following automated generation capabilities, dependent on the Ocarina plugin:</p>
 <ol class="simple">
-<li>WindRiver® VxWorks™ and DDC-I® DeOS™ Configuration File Generator. This capability generates configuration files for WindRiver® VxWorks™ and
-DDC-I® DeOS™ ARINC653 Real-Time Operating System (RTOS) targets from verified AADL models with AADL Standard ARINC653 annex annotations.</li>
-<li>Runtime executive code generation for application functions. This capability utilizes Ocarina to generate C code that interfaces application functions
+<li><p>WindRiver® VxWorks™ and DDC-I® DeOS™ Configuration File Generator. This capability generates configuration files for WindRiver® VxWorks™ and
+DDC-I® DeOS™ ARINC653 Real-Time Operating System (RTOS) targets from verified AADL models with AADL Standard ARINC653 annex annotations.</p></li>
+<li><p>Runtime executive code generation for application functions. This capability utilizes Ocarina to generate C code that interfaces application functions
 through task communication services and application subprogram calls to be configured on a specific RTOS. Handwritten or generated subprograms from functional
 models such as SCADE or Simulink are supplied by the developer for integration with Ocarina generated code. This capability is available when installing
-Ocarina to interface with an OSATE Ocarina Bridge plugin.</li>
-<li>Prototyping with a portable Partitioned Operating system Kernel (POK). This capability generates configurations of ARINC653 partitioned applications from
-AADL models for POK, a configurable portable partition RTOS for distributed platforms. This capability allows for early prototyping without access to the target platform.</li>
-<li>User-friendly code generation. The code generation is based on the user selecting the target OS. The process can be started by selecting a model implementation,
-going to the OSATE menu bar and finding Code Generation -&gt; Check semantics for (VxWorks, DeOS, POK). The code generation tool will:<ul>
-<li>Perform semantic checks based on a particular OS validation rules that will ensure the use of appropriate modeling patterns/properties before generating code</li>
-<li>Guiding the system designer to check content of the model before generating code</li>
-<li>Inform the user as to any missing or incorrect properties particular to the OS selected.</li>
+Ocarina to interface with an OSATE Ocarina Bridge plugin.</p></li>
+<li><p>Prototyping with a portable Partitioned Operating system Kernel (POK). This capability generates configurations of ARINC653 partitioned applications from
+AADL models for POK, a configurable portable partition RTOS for distributed platforms. This capability allows for early prototyping without access to the target platform.</p></li>
+<li><p>User-friendly code generation. The code generation is based on the user selecting the target OS. The process can be started by selecting a model implementation,
+going to the OSATE menu bar and finding Code Generation -&gt; Check semantics for (VxWorks, DeOS, POK). The code generation tool will:</p>
+<ul class="simple">
+<li><p>Perform semantic checks based on a particular OS validation rules that will ensure the use of appropriate modeling patterns/properties before generating code</p></li>
+<li><p>Guiding the system designer to check content of the model before generating code</p></li>
+<li><p>Inform the user as to any missing or incorrect properties particular to the OS selected.</p></li>
 </ul>
 </li>
 </ol>
@@ -230,40 +231,41 @@ formal models, performs scheduling analysis and generates distributed applicatio
 <p>The following summarizes the analyses that can be performed. Items 4-7 below include information on analyses that are supported by direct invocation of the analysis
 as well as by a workflow approach to executing the analyses.</p>
 <ol class="simple">
-<li><em>End-to-end Latency Analysis</em> – This capability lets users determine the worst-case response time and latency jitter on an end-to-end flow specified in an AADL model.
+<li><p><em>End-to-end Latency Analysis</em> – This capability lets users determine the worst-case response time and latency jitter on an end-to-end flow specified in an AADL model.
 The analysis calculates the results with increasing fidelity as AADL models are refined. Latency may be calculated for functional architectures purely based on
 specified latency for components and connections, for sampling and queued task architectures with sampling, immediate (mid-frame), and (frame) delayed connections,
 binding to an ARINC653 partitioned architecture, and processors with different speeds. It can also take into account data size, protocol overhead, and network
-bandwidth. The tool produces a report that can be imported in popular productivity tools.</li>
-<li><em>Functional Integration Analysis</em> – This capability lets users assess consistency when components are integrated together through connections. It assures that for
+bandwidth. The tool produces a report that can be imported in popular productivity tools.</p></li>
+<li><p><em>Functional Integration Analysis</em> – This capability lets users assess consistency when components are integrated together through connections. It assures that for
 port connections the data types of data being communicated match, that their base types, such as signed 32-bit integer, expected range of values and assumed measurement
-units match, and that the data is consistently mapped into an underlying ARINC429 protocol.</li>
-<li><em>Port Connection Consistency Checks (also: Architecture Topology Analysis)</em> – This capability lets users assess consistency in architecture connectivity.
+units match, and that the data is consistently mapped into an underlying ARINC429 protocol.</p></li>
+<li><p><em>Port Connection Consistency Checks (also: Architecture Topology Analysis)</em> – This capability lets users assess consistency in architecture connectivity.
 Examples of this type of consistency checks are ensuring that the correct types of hardware components can be interconnected, e.g., a device is connected via USB2.0,
 ensuring that only one incoming sampling data port connection is active in each operational mode, and ensuring that when threads with port connections are bound to
-different processors a hardware path via buses/networks exists between these processors.</li>
-<li><em>Weight Analysis</em> – This capability allows users to determine whether a physical system exceeds maximum weight requirements. Weights on individual components and connecting
+different processors a hardware path via buses/networks exists between these processors.</p></li>
+<li><p><em>Weight Analysis</em> – This capability allows users to determine whether a physical system exceeds maximum weight requirements. Weights on individual components and connecting
 elements are expressed as gross or net weight. The analysis ensures consistency between weight specifications and compositionally aggregates weights across multiple
-architectural layers. The analysis provides feedback on incompletely specified models indicating the ratio of components with actual weight specification.</li>
-<li><em>Electrical Power Analysis</em> – This capability allows users to specify the supply capacity of electrical power providers, the demands/budgets for electrical power consumers,
+architectural layers. The analysis provides feedback on incompletely specified models indicating the ratio of components with actual weight specification.</p></li>
+<li><p><em>Electrical Power Analysis</em> – This capability allows users to specify the supply capacity of electrical power providers, the demands/budgets for electrical power consumers,
 as well as the capacity of the power distribution system. The distribution system can be connected to sub-distribution systems. The analysis identifies any mismatch
-between supply and demand. The analysis is intended for early electrical power budgeting and does not take into account any dynamics of a power distribution system.</li>
-<li><em>Computer Resource Budget Analysis</em> – This capability performs resource budget analysis for<ul>
-<li>processors with capacity expressed in MIPS and demands in terms of MIPS budgets and refined to threads with periods and execution time. The analysis can be applied
+between supply and demand. The analysis is intended for early electrical power budgeting and does not take into account any dynamics of a power distribution system.</p></li>
+<li><p><em>Computer Resource Budget Analysis</em> – This capability performs resource budget analysis for</p>
+<ul class="simple">
+<li><p>processors with capacity expressed in MIPS and demands in terms of MIPS budgets and refined to threads with periods and execution time. The analysis can be applied
 to the system as a whole. It can also be applied to systems/abstract components in a functional architecture, or processes and threads in a task architecture once
-they are bound to processors, in processor specific form.</li>
-<li>memory budget with memory capacity and component budgets expressed in terms of bytes, Kbytes, or Mbytes. The analysis helps ensure that the memory provided is
-sufficient to address the memory demands of the Application components.</li>
-<li>network bandwidth analysis based on 1) inferred binding of connections to buses; and 2) analysis based on explicit binding of connections to buses. Each of the
+they are bound to processors, in processor specific form.</p></li>
+<li><p>memory budget with memory capacity and component budgets expressed in terms of bytes, Kbytes, or Mbytes. The analysis helps ensure that the memory provided is
+sufficient to address the memory demands of the Application components.</p></li>
+<li><p>network bandwidth analysis based on 1) inferred binding of connections to buses; and 2) analysis based on explicit binding of connections to buses. Each of the
 two variants supports taking into consideration loopback communication of connections within the same processor. In case of loopback communication, intra-processor
 communication is also routed through the network. This technique allows application components to be relocated to different processors without impacting the load
-on the network.</li>
+on the network.</p></li>
 </ul>
 </li>
-<li><em>Safety Analysis</em> – OSATE supports SAE ARP 4761 safety analysis for Functional Hazard Assessments (FHAs), Fault Tree Analysis (FTA), Failure Modes Effects Analysis (FMEA),
-Common Mode Analysis, and Reliability Block Diagrams (RBD)/Decision Diagrams (DD).</li>
-<li><em>Structural Model Verification</em> – The Resolute language for model checking/requirements verification is included in the current release of OSATE.</li>
-<li><em>Compositional Verification</em> OSATE currently uses AGREE for compositional verification of system and component behavior based on assumptions and guarantees.</li>
+<li><p><em>Safety Analysis</em> – OSATE supports SAE ARP 4761 safety analysis for Functional Hazard Assessments (FHAs), Fault Tree Analysis (FTA), Failure Modes Effects Analysis (FMEA),
+Common Mode Analysis, and Reliability Block Diagrams (RBD)/Decision Diagrams (DD).</p></li>
+<li><p><em>Structural Model Verification</em> – The Resolute language for model checking/requirements verification is included in the current release of OSATE.</p></li>
+<li><p><em>Compositional Verification</em> OSATE currently uses AGREE for compositional verification of system and component behavior based on assumptions and guarantees.</p></li>
 </ol>
 </div>
 <div class="section" id="limited-distribution-tools">
@@ -273,8 +275,8 @@ and non-Government funding. These tools will be available for use by the develop
 <div class="section" id="sei-tools-us-only">
 <h3>SEI Tools (US-Only)<a class="headerlink" href="#sei-tools-us-only" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
-<li>AADL Analysis Workflows for Items 4-6 above (User-friendly OSATE Interface). Provides workflow support for analysis of schedulability, processor throughput budgeting,
-safety analysis, bandwidth budgeting, weight budgeting, power budgeting, and memory budgeting.</li>
+<li><p>AADL Analysis Workflows for Items 4-6 above (User-friendly OSATE Interface). Provides workflow support for analysis of schedulability, processor throughput budgeting,
+safety analysis, bandwidth budgeting, weight budgeting, power budgeting, and memory budgeting.</p></li>
 </ol>
 <p>To receive the US-Only tools from the SEI please contact the respective Government Contracting Office to request them from the SEI.</p>
 </div>
@@ -286,15 +288,15 @@ safety analysis, bandwidth budgeting, weight budgeting, power budgeting, and mem
 <h3>OSATE Tools Currently in Development<a class="headerlink" href="#osate-tools-currently-in-development" title="Permalink to this headline">¶</a></h3>
 <p>The OSATE Roadmap provides plans for releases of new OSATE capabilities through 2018. Below are additional capabilities.</p>
 <ol class="simple">
-<li><em>FACE-AADL Translator</em> – Enable the migration from FACE models to AADL models to take advantage of the integration analysis and generation capabilities available through
+<li><p><em>FACE-AADL Translator</em> – Enable the migration from FACE models to AADL models to take advantage of the integration analysis and generation capabilities available through
 AADL workbench support. The translation facilitates analysis of FACE compliant models through the AADL workbench as well as generation of runtime executive configurations
-for a specific target platform supporting partitioned architectures.</li>
-<li><em>SysML-AADL Translator</em> – Enable the migration from SysML models to AADL models to take advantage of the integration analysis and generation capabilities available through
+for a specific target platform supporting partitioned architectures.</p></li>
+<li><p><em>SysML-AADL Translator</em> – Enable the migration from SysML models to AADL models to take advantage of the integration analysis and generation capabilities available through
 AADL workbench support. This includes a translator for System Modeling Language (SysML) models represented in Enterprise Architect (EA) and in the open source Papyrus SysML
-workbench into Architecture Analysis &amp; Design Language (AADL) models. This includes translation of SysML with a profile representing specific AADL component concepts.</li>
-<li><em>OSATE Scalability</em> – This capability extends OSATE to scale to larger mission system architectures. It will allow a user to get an overview of an unfamiliar model, provide
-task-focused views of a model, and enhance support for collaborative model development</li>
-<li><em>Language extensions</em> – OSATE upgrades will address all AADL standard language updates prior to AADL 3 adoption.</li>
+workbench into Architecture Analysis &amp; Design Language (AADL) models. This includes translation of SysML with a profile representing specific AADL component concepts.</p></li>
+<li><p><em>OSATE Scalability</em> – This capability extends OSATE to scale to larger mission system architectures. It will allow a user to get an overview of an unfamiliar model, provide
+task-focused views of a model, and enhance support for collaborative model development</p></li>
+<li><p><em>Language extensions</em> – OSATE upgrades will address all AADL standard language updates prior to AADL 3 adoption.</p></li>
 </ol>
 </div>
 </div>
@@ -321,7 +323,7 @@ task-focused views of a model, and enhance support for collaborative model devel
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2020, Carnegie Mellon University.
-      Last updated on Feb 04, 2020.
+      Last updated on Feb 07, 2020.
 
     </p>
   </div>
@@ -343,7 +345,7 @@ task-focused views of a model, and enhance support for collaborative model devel
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2.6.1',
+            VERSION:'2.7.0',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

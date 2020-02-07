@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.7.0 (not yet released)
+### Version 2.7.0
 
 #### Release
 
   - **GIT tag**: 2.7.0-RELEASE
-  - **Release date**: TBD
+  - **Release date**: February 7, 2020
   - **Eclipse base version**: 2019-12
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.7.0/updates>
@@ -15,13 +15,18 @@
 
 #### SHA256 Hashes for the downloads
 ```
+1aa7cfa397d5ece55d4e785fce1461e5e8a56d7b293e0d0623abb304125f0754  osate2-2.7.0-vfinal-linux.gtk.x86_64.tar.gz
+2bcb707d7a777c4d2f0b8f915e1314646848c294c498ac4039ac8d7c5553c352  osate2-2.7.0-vfinal-macosx.cocoa.x86_64.tar.gz
+cae2e11f58406181450a5fca0b5b69518172197df1c3075f55fcd55bd0fbc039  osate2-2.7.0-vfinal-win32.win32.x86_64.zip
 ```
 
 #### Notable changes
 
+ * We have changed instantiation of data and subprogram access connections, they no longer end at thread boundaries. As a result more flows can be instantiated. See issues #1941, #2009, #2032, #2059, and #2161 for details.
+ * This version of OSATE is based on Eclipse 2019-12, so the context menu in the outline view does no longer disappear.
  * The first start after installation is significantly faster (seconds instead of minutes).
- * The Ocarina Connector plugin is now a separate component that can be installed via Help -> Install Additional OSATE Components.
- * OSATE plugins and feature now use semantic versions. Additional components must make use of these to assure that they are installed in a compatible OSATE version.
+ * The Ocarina Connector plugin is now a separate component that can be installed via `Help` -> `Install Additional OSATE Components`.
+ * OSATE plugins and feature now use semantic versions. Developers of additional components can (and should!) make use of them to assure that their components are installed in a compatible OSATE version.
 
 #### Fixed issues
 
@@ -52,8 +57,6 @@
     1. Remove unnecessary dependency on Papyrus UML editor ([2120](https://github.com/osate/osate2/issues/2120))
     1. Code generated from the AADL metamodel has compile errors ([2156](https://github.com/osate/osate2/issues/2156))
     1. Add a way to build with mirrored p2 repositories ([2162](https://github.com/osate/osate2/issues/2162))
-    1. Update BA license to EPL 2.0 ([2170](https://github.com/osate/osate2/issues/2170))
-    1. Update GE license to EPL 2.0 ([2171](https://github.com/osate/osate2/issues/2171))
  * Error Model and Analysis Plugins
     1. Reach-Down subcomponent hierarchy does not set property EMV2::OccurrenceDistribution ([2112](https://github.com/osate/osate2/issues/2112))
     1. Fault trace generation does not show all steps in trace ([2123](https://github.com/osate/osate2/issues/2123))
@@ -79,7 +82,7 @@
 
  * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
  * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
- * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.7.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Components" dialog.
 
    **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
@@ -147,7 +150,7 @@ f2c4198cae85d1400b95aa883f821150a1238566df0e21fa51251ac2e1ea08a0  osate2-2.6.1-
  * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
  * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
  * The first startup of OSATE can take a rather long (up to a couple of minutes).
- * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.6.1 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
    Once newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we will make them available via the "Install Additional OSATE Components" dialog.
 
    **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**

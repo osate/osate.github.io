@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>OSATE Roadmap &mdash; OSATE 2.6.1 documentation</title>
+  <title>OSATE Roadmap &mdash; OSATE 2.7.0 documentation</title>
   
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                2.6
+                2.7
               </div>
             
           
@@ -184,15 +184,15 @@
 <p>Release: May 2019</p>
 <p><strong>Public release</strong></p>
 <ul class="simple">
-<li>based on Eclipse 2019-03</li>
+<li><p>based on Eclipse 2019-03</p></li>
 </ul>
 <p><strong>Non-public release</strong></p>
 <ul class="simple">
-<li>TBD</li>
+<li><p>TBD</p></li>
 </ul>
 <p><strong>Development</strong></p>
 <ul class="simple">
-<li>TBD</li>
+<li><p>TBD</p></li>
 </ul>
 </div>
 <div class="section" id="osate-2-5-1">
@@ -200,15 +200,15 @@
 <p>Release: June/July 2019</p>
 <p><strong>Public release</strong></p>
 <ul class="simple">
-<li>TBD</li>
+<li><p>TBD</p></li>
 </ul>
 <p><strong>Non-public release</strong></p>
 <ul class="simple">
-<li>TBD</li>
+<li><p>TBD</p></li>
 </ul>
 <p><strong>Development</strong></p>
 <ul class="simple">
-<li>TBD</li>
+<li><p>TBD</p></li>
 </ul>
 </div>
 <div class="section" id="osate-2-6-0">
@@ -216,15 +216,15 @@
 <p>Release: August 2019</p>
 <p><strong>Public release</strong></p>
 <ul class="simple">
-<li>based on Eclipse 2019-06</li>
+<li><p>based on Eclipse 2019-06</p></li>
 </ul>
 <p><strong>Non-public release</strong></p>
 <ul class="simple">
-<li>TBD</li>
+<li><p>TBD</p></li>
 </ul>
 <p><strong>Development</strong></p>
 <ul class="simple">
-<li>TBD</li>
+<li><p>TBD</p></li>
 </ul>
 </div>
 </div>
@@ -234,30 +234,31 @@
 <h3>Support for AADL 2.2<a class="headerlink" href="#support-for-aadl-2-2" title="Permalink to this headline">¶</a></h3>
 <p>Support for the following AADL language constructs may be added in a future release</p>
 <ul class="simple">
-<li>Specification of partial end-to-end flows
-<a class="reference external" href="https://github.com/saeaadl/aadlv2.1/issues/7">(issue #7)</a></li>
+<li><p>Specification of partial end-to-end flows
+<a class="reference external" href="https://github.com/saeaadl/aadlv2.1/issues/7">(issue #7)</a></p></li>
 </ul>
 <div class="section" id="limitations">
 <h4>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h4>
 <p>There are a couple of rarely used language features that are not fully supported on OSATE. In general, these features are
 supported in the declarative model but models containing these features cannot be instantiated.</p>
 <ul class="simple">
-<li>Binding-specific property associations (<code class="docutils literal notranslate"><span class="pre">in</span> <span class="pre">binding</span></code>)</li>
-<li>Automatic expansion of a property reference value the references an array into a list of references. (Standard document section 11.4 (L6))</li>
-<li>Subcomponent arrays with multiple component implementations</li>
-<li>Aggregate data ports</li>
-<li>Not all classifier matching and substitution rules are fully implemented<ul>
-<li>For <code class="docutils literal notranslate"><span class="pre">Classifier_Substitution_Rule</span></code> only <code class="docutils literal notranslate"><span class="pre">Classifier_Match</span></code> and <code class="docutils literal notranslate"><span class="pre">Type_Extension</span></code> are implemented</li>
-<li>For <code class="docutils literal notranslate"><span class="pre">Prototype_Substitution_Rule</span></code> only <code class="docutils literal notranslate"><span class="pre">Classifier_Match</span></code> is implemented</li>
-<li>For <code class="docutils literal notranslate"><span class="pre">Classifier_Matching_Rule</span></code> in the context of feature group connections only <code class="docutils literal notranslate"><span class="pre">Classifier_Match</span></code>, <code class="docutils literal notranslate"><span class="pre">Equivalence</span></code>,
-and <code class="docutils literal notranslate"><span class="pre">Subset</span></code> are implemented</li>
-<li>For <code class="docutils literal notranslate"><span class="pre">Classifier_Matching_Rule</span></code> in the context of any other connection kind only <code class="docutils literal notranslate"><span class="pre">Classifier_Match</span></code>, <code class="docutils literal notranslate"><span class="pre">Equivalence</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Subset</span></code>, and <code class="docutils literal notranslate"><span class="pre">Conversion</span></code> are implemented</li>
+<li><p>Binding-specific property associations (<code class="docutils literal notranslate"><span class="pre">in</span> <span class="pre">binding</span></code>)</p></li>
+<li><p>Automatic expansion of a property reference value the references an array into a list of references. (Standard document section 11.4 (L6))</p></li>
+<li><p>Subcomponent arrays with multiple component implementations</p></li>
+<li><p>Aggregate data ports</p></li>
+<li><p>Not all classifier matching and substitution rules are fully implemented</p>
+<ul>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">Classifier_Substitution_Rule</span></code> only <code class="docutils literal notranslate"><span class="pre">Classifier_Match</span></code> and <code class="docutils literal notranslate"><span class="pre">Type_Extension</span></code> are implemented</p></li>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">Prototype_Substitution_Rule</span></code> only <code class="docutils literal notranslate"><span class="pre">Classifier_Match</span></code> is implemented</p></li>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">Classifier_Matching_Rule</span></code> in the context of feature group connections only <code class="docutils literal notranslate"><span class="pre">Classifier_Match</span></code>, <code class="docutils literal notranslate"><span class="pre">Equivalence</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">Subset</span></code> are implemented</p></li>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">Classifier_Matching_Rule</span></code> in the context of any other connection kind only <code class="docutils literal notranslate"><span class="pre">Classifier_Match</span></code>, <code class="docutils literal notranslate"><span class="pre">Equivalence</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Subset</span></code>, and <code class="docutils literal notranslate"><span class="pre">Conversion</span></code> are implemented</p></li>
 </ul>
 </li>
-<li>Internal features and processor features (Standard document section 8.9)</li>
-<li><code class="docutils literal notranslate"><span class="pre">none</span></code> statement for <code class="docutils literal notranslate"><span class="pre">requires</span> <span class="pre">modes</span></code></li>
-<li>End to end flow specifications</li>
+<li><p>Internal features and processor features (Standard document section 8.9)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">none</span></code> statement for <code class="docutils literal notranslate"><span class="pre">requires</span> <span class="pre">modes</span></code></p></li>
+<li><p>End to end flow specifications</p></li>
 </ul>
 </div>
 </div>
@@ -289,7 +290,7 @@ and <code class="docutils literal notranslate"><span class="pre">Subset</span></
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2020, Carnegie Mellon University.
-      Last updated on Feb 04, 2020.
+      Last updated on Feb 07, 2020.
 
     </p>
   </div>
@@ -311,7 +312,7 @@ and <code class="docutils literal notranslate"><span class="pre">Subset</span></
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2.6.1',
+            VERSION:'2.7.0',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

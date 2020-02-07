@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Setting up an OSATE development environment &mdash; OSATE 2.6.1 documentation</title>
+  <title>Setting up an OSATE development environment &mdash; OSATE 2.7.0 documentation</title>
   
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                2.6
+                2.7
               </div>
             
           
@@ -229,12 +229,12 @@
 <p>Upon first start eclipse executes additional setup tasks to set preferences, clone git repositories if needed, import projects, and organize projects into working sets.</p>
 <p>The OSATE2 setup file sets the following preferences:</p>
 <ul class="simple">
-<li>The Java perspective is set as the default and eclipse is configured to start with this perspective.</li>
-<li>The default file encoding is set to UTF-8.</li>
-<li>A source cleanup profile <em>Osate</em> is created and enabled for the workspace.</li>
-<li>Java formatter profiles <em>Osate</em> and <em>SMACCM</em>. Profile <em>Osate</em> is enabled for the workspace.</li>
-<li>Java code cleanup on save are configured and enabled for the workspace.</li>
-<li>An Xtend formatter profile <em>Osate</em> is created and enabled for the workspace.</li>
+<li><p>The Java perspective is set as the default and eclipse is configured to start with this perspective.</p></li>
+<li><p>The default file encoding is set to UTF-8.</p></li>
+<li><p>A source cleanup profile <em>Osate</em> is created and enabled for the workspace.</p></li>
+<li><p>Java formatter profiles <em>Osate</em> and <em>SMACCM</em>. Profile <em>Osate</em> is enabled for the workspace.</p></li>
+<li><p>Java code cleanup on save are configured and enabled for the workspace.</p></li>
+<li><p>An Xtend formatter profile <em>Osate</em> is created and enabled for the workspace.</p></li>
 </ul>
 <p>Cloning the git repositories takes some time. Progress can be viewed in a dialog. To show the progress dialog, click on the animated icon the eclipse status bar.</p>
 </div>
@@ -251,24 +251,19 @@
 You <em>will</em> want to increase the heap size to a minimum of 2GB due to the Xtend environment.
 You can edit the user setup to override the setting for all eclipse installations. Follow these steps in Eclipse:</p>
 <ol>
-<li><p class="first">Open the user setup: <em>Navigate</em> -&gt; <em>Open Setup</em> -&gt; <em>User</em></p>
-</li>
-<li><p class="first">Add an Eclipse Ini task: In the setup editor right click on <em>User</em> and select <em>New Child</em> -&gt; <em>Eclipse Ini</em></p>
-</li>
-<li><p class="first">Edit the task properties: Right click on the new <em>Eclipse Ini</em> task and select <em>Show Properties View</em></p>
-</li>
-<li><p class="first">Set the maximum heap size value: In the <em>Properties</em> view</p>
+<li><p>Open the user setup: <em>Navigate</em> -&gt; <em>Open Setup</em> -&gt; <em>User</em></p></li>
+<li><p>Add an Eclipse Ini task: In the setup editor right click on <em>User</em> and select <em>New Child</em> -&gt; <em>Eclipse Ini</em></p></li>
+<li><p>Edit the task properties: Right click on the new <em>Eclipse Ini</em> task and select <em>Show Properties View</em></p></li>
+<li><p>Set the maximum heap size value: In the <em>Properties</em> view</p>
 <ol class="simple">
-<li>Set <em>Option</em> to “-Xmx” (without the quotes)</li>
-<li>Set <em>Value</em> “2g” or “2048m” (without the quotes) to set the heap size to 2GB</li>
-<li>Set  <em>VM</em> to “true”.</li>
+<li><p>Set <em>Option</em> to “-Xmx” (without the quotes)</p></li>
+<li><p>Set <em>Value</em> “2g” or “2048m” (without the quotes) to set the heap size to 2GB</p></li>
+<li><p>Set  <em>VM</em> to “true”.</p></li>
 </ol>
 <p><img alt="Properties View Screenshot" src="_images/heapsize.png" /></p>
 </li>
-<li><p class="first">Save the user setup</p>
-</li>
-<li><p class="first">Execute the setup: <em>Help</em> -&gt; <em>Perform Setup Tasks…</em></p>
-</li>
+<li><p>Save the user setup</p></li>
+<li><p>Execute the setup: <em>Help</em> -&gt; <em>Perform Setup Tasks…</em></p></li>
 </ol>
 <p>You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.</p>
 </div>
@@ -326,7 +321,7 @@ You can edit the user setup to override the setting for all eclipse installation
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016-2020, Carnegie Mellon University.
-      Last updated on Feb 04, 2020.
+      Last updated on Feb 07, 2020.
 
     </p>
   </div>
@@ -348,7 +343,7 @@ You can edit the user setup to override the setting for all eclipse installation
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2.6.1',
+            VERSION:'2.7.0',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
