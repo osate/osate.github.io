@@ -1,15 +1,18 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Writing Tests &mdash; OSATE 2.7.0 documentation</title>
+  <title>&lt;no title&gt; &mdash; OSATE 2.7.0 documentation</title>
   
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
 
   
   
@@ -17,39 +20,38 @@
   
 
   
-
-  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Building OSATE" href="building-osate.html" />
-    <link rel="prev" title="Setting up an OSATE development environment" href="../setup-development.html" /> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
+    <link rel="next" title="&lt;no title&gt;" href="building-osate.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="../setup-development.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
-            <a href="../index.html" class="icon icon-home"> OSATE
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> OSATE
           
 
           
@@ -76,6 +78,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -83,35 +86,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">User Documentation</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../about-osate.html">About OSATE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../additional-components.html">Additional OSATE Components</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../download-and-install.html">Download and Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../osate-releases.html">Release Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../osate-roadmap.html">OSATE Roadmap</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../getting-help.html">Getting Help</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul class="simple">
 </ul>
-<p class="caption"><span class="caption-text">Developer Documentation</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../setup-development.html">Setting up an OSATE development environment</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Writing Tests</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#provided-helper-classes">Provided Helper Classes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#class-testhelper">Class TestHelper</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#class-testresourcesethelper">Class TestResourceSetHelper</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#class-asserthelper">Class AssertHelper</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#running-tests">Running tests</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="building-osate.html">Building OSATE</a></li>
-</ul>
-
+</div>
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -150,9 +132,9 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Writing Tests</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -169,75 +151,64 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="writing-tests">
-<h1>Writing Tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">¶</a></h1>
+  <p># Writing Tests</p>
 <p>We use a stylized way of writing tests based on the xtext testing framework. The
 test class declaration must extend XtextTest and be annotated as follows:</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@RunWith</span><span class="p">(</span><span class="n">XtextRunner</span><span class="p">)</span>
-<span class="nd">@InjectWith</span><span class="p">(</span><span class="n">Aadl2InjectorProvider</span><span class="p">)</span>
-<span class="kd">class</span> <span class="nc">ModeTransitionsTest</span> <span class="kd">extends</span> <span class="n">XtextTest</span> <span class="p">{</span>
-</pre></div>
-</div>
-<p>It is important to use the <code class="docutils literal notranslate"><span class="pre">Aadl2Injectorprovider</span></code> and not the UI injector
+<p><code class="docutils literal notranslate"><span class="pre">`java</span>
+<span class="pre">&#64;RunWith(XtextRunner)</span>
+<span class="pre">&#64;InjectWith(Aadl2InjectorProvider)</span>
+<span class="pre">class</span> <span class="pre">ModeTransitionsTest</span> <span class="pre">extends</span> <span class="pre">XtextTest</span> <span class="pre">{</span>
+<span class="pre">`</span></code></p>
+<p>It is important to use the <cite>Aadl2Injectorprovider</cite> and not the UI injector
 provider as the UI injector requires the presence of files in an Eclipse
 workspace.</p>
-<div class="section" id="provided-helper-classes">
-<h2>Provided Helper Classes<a class="headerlink" href="#provided-helper-classes" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="class-testhelper">
-<h3>Class TestHelper<a class="headerlink" href="#class-testhelper" title="Permalink to this headline">¶</a></h3>
+<p>## Provided Helper Classes</p>
+<p>### Class TestHelper</p>
 <p>This class provides access to the parser, linker, validator, etc. and can
 process AADL strings and AADL files. It must be injected into the test class:</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nd">@Inject</span>
-<span class="n">TestHelper</span><span class="o">&lt;</span><span class="n">AadlPackage</span><span class="o">&gt;</span> <span class="n">testHelper</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="class-testresourcesethelper">
-<h3>Class TestResourceSetHelper<a class="headerlink" href="#class-testresourcesethelper" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">`java</span>
+<span class="pre">&#64;Inject</span>
+<span class="pre">TestHelper&lt;AadlPackage&gt;</span> <span class="pre">testHelper</span>
+<span class="pre">`</span></code></p>
+<p>### Class TestResourceSetHelper</p>
 <p>This class provides a singleton resource set that can be reused across tests.
 The resource set is initialized on creation with all contributed AADL property
-sets and packages. It is mainly there for use in <code class="docutils literal notranslate"><span class="pre">TestHelper</span></code>. Note that each
-call to <code class="docutils literal notranslate"><span class="pre">getResourceSet()</span></code> returns the same resource set but removes all
+sets and packages. It is mainly there for use in <cite>TestHelper</cite>. Note that each
+call to <cite>getResourceSet()</cite> returns the same resource set but removes all
 resources loaded since the previous call.</p>
-</div>
-<div class="section" id="class-asserthelper">
-<h3>Class AssertHelper<a class="headerlink" href="#class-asserthelper" title="Permalink to this headline">¶</a></h3>
+<p>### Class AssertHelper</p>
 <p>This class provides a couple of extension methods for working with the
-<code class="docutils literal notranslate"><span class="pre">FluentIssueCollection</span></code> and to test scoping.</p>
-</div>
-</div>
-<div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<cite>FluentIssueCollection</cite> and to test scoping.</p>
+<p>## Examples</p>
 <p>There are a couple of examples that show how tests can be written:</p>
 <ul class="simple">
-<li><p>in <code class="docutils literal notranslate"><span class="pre">org.osate.core.tests</span></code></p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue277Test.xtend">Issue277Test.xtend</a>
+<li><dl class="simple">
+<dt>in <cite>org.osate.core.tests</cite></dt><dd><ul>
+<li><p>[Issue277Test.xtend](<a class="reference external" href="https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue277Test.xtend">https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue277Test.xtend</a>)
 This shows how to parse a string that contains AADL text and work with the
 resulting AADL Package.</p></li>
-<li><p><a class="reference external" href="https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue361Test.xtend">Issue361Test.xtend</a>
+<li><p>[Issue361Test.xtend](<a class="reference external" href="https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue361Test.xtend">https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue361Test.xtend</a>)
 This test shows how to instantiate a component implementation and work with
 the resulting instance model. Note that the instance model must be created
 in the same resource set as the declarative AADL model.</p></li>
-<li><p><a class="reference external" href="https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue1092Test.xtend">Issue1092Test.xtend</a>
+<li><p>[Issue1092Test.xtend](<a class="reference external" href="https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue1092Test.xtend">https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/issues/Issue1092Test.xtend</a>)
 This test shows how to analyze issues reported during instantiation, see
-method <code class="docutils literal notranslate"><span class="pre">testUnmappedModes()</span></code>.</p></li>
-<li><p><a class="reference external" href="https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/aadl2scopeprovider/ModeTransitionsTest.xtend">ModeTransitionsTest.xtend</a>
+method <cite>testUnmappedModes()</cite>.</p></li>
+<li><p>[ModeTransitionsTest.xtend](<a class="reference external" href="https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/aadl2scopeprovider/ModeTransitionsTest.xtend">https://github.com/osate/osate2/blob/develop/core/org.osate.core.tests/src/org/osate/core/tests/aadl2scopeprovider/ModeTransitionsTest.xtend</a>)
 This test shows how to get a fluent issue collection from an AADL string
 and how to work with it.</p></li>
 </ul>
+</dd>
+</dl>
 </li>
 </ul>
-</div>
-<div class="section" id="running-tests">
-<h2>Running tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h2>
-<p>Tests can be run in the development environment using <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">as...</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">JUnit</span> <span class="pre">Plug-in</span> <span class="pre">Test</span></code>. Running a plain JUnit tests does not work because the test
+<p>## Running tests</p>
+<p>Tests can be run in the development environment using <cite>Run as…</cite> -&gt; <cite>JUnit
+Plug-in Test</cite>. Running a plain JUnit tests does not work because the test
 envoronment needs the eclipse plugin mechanism to load contributed AADL property
 sets and packages.</p>
 <p>In the tycho build, test plugins must run with the UI enabled because tests load
 plugins that depend on UI plugins even if they don’t use the UI during the test.</p>
-</div>
-</div>
 
 
            </div>
@@ -247,10 +218,10 @@ plugins that depend on UI plugins even if they don’t use the UI during the tes
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="building-osate.html" class="btn btn-neutral float-right" title="Building OSATE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="building-osate.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../setup-development.html" class="btn btn-neutral" title="Setting up an OSATE development environment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../setup-development.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -259,12 +230,17 @@ plugins that depend on UI plugins even if they don’t use the UI during the tes
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016-2020, Carnegie Mellon University.
-      Last updated on Feb 07, 2020.
+        
+        &copy; Copyright 2016-2020, Carnegie Mellon University
+      <span class="lastupdated">
+        Last updated on Apr 15, 2020.
+      </span>
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -276,39 +252,16 @@ plugins that depend on UI plugins even if they don’t use the UI during the tes
   </div>
   
 
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'2.7.0',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/language_data.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
-          
-          SphinxRtdTheme.Navigation.enableSticky();
-          
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

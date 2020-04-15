@@ -2,6 +2,88 @@
 
 ## Stable Releases
 
+### Version 2.7.1 (NOT YET RELEASED)
+
+#### Release
+
+  - **GIT tag**: 2.7.1-RELEASE
+  - **Release date**: TBD
+  - **Eclipse base version**: 2019-12
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.7.1/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.7.1/products>
+
+#### SHA256 Hashes for the downloads
+```
+```
+
+#### Notable changes
+
+ * The bus load analysis now handles bandwidth budgets and capacities for virtual buses.
+ * The flow latency analysis now considers queuing latency for non-periodic buses.
+ * The flow latency analysis can now processes user-supplied thread response times instead of the execution time.
+ * Various bug fixes in the priority inversion checker.
+ * Instantiation and re-instantiation are more flexible to use, and errors are reported to the user.  
+ * We have implemented proper type checking for property constants. 
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Remove QuickSort ([1365](https://github.com/osate/osate2/issues/1365))
+    1. Redesign reinstantiation handlers ([1553](https://github.com/osate/osate2/issues/1553))
+    1. Abstract features allow all component classifiers ([1926](https://github.com/osate/osate2/issues/1926))
+    1. Content assist should propose property constants ([2073](https://github.com/osate/osate2/issues/2073))
+    1. Display AADLDoc for all elements ([2075](https://github.com/osate/osate2/issues/2075))
+    1. Add dialog proposing to save files prior to instantiation ([2083](https://github.com/osate/osate2/issues/2083))
+    1. Check for null containing classifier in Aadl2LinkingService::getLinkedObjects ([2139](https://github.com/osate/osate2/issues/2139))
+    1. Missing help text for property group filter in AADL Properties view ([2187](https://github.com/osate/osate2/issues/2187))
+    1. Various exceptions in AADL Property Values view ([2191](https://github.com/osate/osate2/issues/2191))
+    1. Closing a project can lead to unresolved references to predeclared properties ([2195](https://github.com/osate/osate2/issues/2195))
+    1. OSATE allows aadl2 file extension for AADL files ([2197](https://github.com/osate/osate2/issues/2197))
+    1. Enable annex instantiation ([2208](https://github.com/osate/osate2/issues/2208))
+    1. Plug-in contributions and referenced projects are no longer shown first in AADL navigator ([2217](https://github.com/osate/osate2/issues/2217))
+    1. NPE when closing OSATE ([2221](https://github.com/osate/osate2/issues/2221))
+    1. Incomplete type checking for property constants ([2222](https://github.com/osate/osate2/issues/2222))
+    1. Renaming property set drops property set prefix from references to constants ([2223](https://github.com/osate/osate2/issues/2223))
+    1. Newly created instance model references elements in other resource set(s) ([2241](https://github.com/osate/osate2/issues/2241))
+    1. Having the same property association as a contained property association and direct association causes instantiation exception ([2259](https://github.com/osate/osate2/issues/2259))
+    1. Rename refactoring misses a reference ([2262](https://github.com/osate/osate2/issues/2262))
+    1. Instantiation does not log exceptions ([2263](https://github.com/osate/osate2/issues/2263))
+    1. Actual_Connection_Binding is not overridden by contained property association ([2265](https://github.com/osate/osate2/issues/2265))
+    1. Missing queuing latency handling for buses ([1148](https://github.com/osate/osate2/issues/1148))
+    1. Flow latency analysis uses compute execution time instead of response time ([2122](https://github.com/osate/osate2/issues/2122))
+    1. Bus load analysis should take virtual buses into account ([2205](https://github.com/osate/osate2/issues/2205))
+    1. Priority inversion check misinterprets priority property and other bugs ([2243](https://github.com/osate/osate2/issues/2243))
+    1. Missing p2 site for yakindu plugin ([2193](https://github.com/osate/osate2/issues/2193))
+    1. Add comparison with baseline to build ([2194](https://github.com/osate/osate2/issues/2194))
+    1. API Analysis builder reports bogus API changes ([2204](https://github.com/osate/osate2/issues/2204))
+    1. Automate update of dependency versions for coverage report ([2213](https://github.com/osate/osate2/issues/2213))
+ * Error Model and Analysis Plugins
+    1. EMV2:  error_detection_effect not allow port in feature group ([2128](https://github.com/osate/osate2/issues/2128))
+    1. Wrong validation of error conditions ([2209](https://github.com/osate/osate2/issues/2209))
+ * Graphical Editor
+    1. Support Creating a Flow Implementation without Flow Specification being Visible ([1202](https://github.com/osate/osate2/issues/1202))
+    1. Add action to add all elements that are connected to a selected element ([1543](https://github.com/osate/osate2/issues/1543))
+    1. Add action to show all elements that participate in a flow or mode to a diagram ([1544](https://github.com/osate/osate2/issues/1544))
+    1. End to End flow creation in Graphical Editor requires extra clicks ([1774](https://github.com/osate/osate2/issues/1774))
+    1. Review graphical editor actions ([2219](https://github.com/osate/osate2/issues/2219))
+    1. GE Showing Flow With Errors ([2270](https://github.com/osate/osate2/issues/2270))
+ * Behavior Annex
+    1. Property associations for behavior variables are not supported ([2190](https://github.com/osate/osate2/issues/2190))
+    1. Behavior Annex: Null pointer exception when calling getContainingFeature() on an instance of  StructUnionElement ([2199](https://github.com/osate/osate2/issues/2199))
+    1. Behavior annex plugin throws an error if subprogram call action refers to something else than a subprogram classifier ([2200](https://github.com/osate/osate2/issues/2200))
+    1. In BA plugin, error with type checking of get/release resource behavior actions ([2234](https://github.com/osate/osate2/issues/2234))
+    1. In BA plugin, unparser fails on objects of type BehaviorIntegerLiteral and BehaviorRealLiteral ([2236](https://github.com/osate/osate2/issues/2236))
+  
+#### Known issues
+
+ * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
+ * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.7.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+   If newer versions are provided by [loonwerks](http://loonwerks.com) in an update site, we may make them available via the "Install Additional OSATE Components" dialog.
+
+   **After installing Resolute you must perform a clean build of your workspace, otherwise Resolute verification methods will fail with a class cast exception.**
+
 ### Version 2.7.0
 
 #### Release
