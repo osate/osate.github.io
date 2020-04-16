@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; OSATE 2.7.0 documentation</title>
+  <title>Building OSATE &mdash; OSATE 2.7.0 documentation</title>
   
 
   
@@ -26,17 +26,17 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="writing-tests.html" /> 
+    <link rel="prev" title="Writing Tests" href="writing-tests.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,10 +85,22 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about-osate.html">About OSATE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additional-components.html">Additional OSATE Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../download-and-install.html">Download and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osate-releases.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../osate-roadmap.html">OSATE Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-help.html">Getting Help</a></li>
 </ul>
-</div>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../setup-development.html">Setting up an OSATE development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing-tests.html">Writing Tests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Building OSATE</a></li>
+</ul>
+
             
           
         </div>
@@ -133,7 +145,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Building OSATE</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -150,23 +162,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p># Building OSATE</p>
+  <div class="section" id="building-osate">
+<h1>Building OSATE<a class="headerlink" href="#building-osate" title="Permalink to this headline">¶</a></h1>
 <p>OSATE is built using maven with the tycho plugin. Maven can be run inside Eclipse or from the command line.</p>
-<p>To run the build inside Eclipse we provide a couple of launch configurations in project osate.releng. The launch configurations can be run from Eclipse’s <cite>Run Configurations…</cite> dialog. They are inserted under the Maven Build category.</p>
+<p>To run the build inside Eclipse we provide a couple of launch configurations in project osate.releng. The launch configurations can be run from Eclipse’s <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Configurations...</span></code> dialog. They are inserted under the Maven Build category.</p>
 <p>The available launch configurations are</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p><strong>osate.build.local</strong> - build OSATE for the local operating system, e.g., build the windows version on a windows machine.</p></li>
 <li><p><strong>osate.build.local.tests</strong> - same as osate.build.local but also run all available tests</p></li>
 <li><p><strong>osate.build.full</strong> - build for all platforms, run all tests</p></li>
 </ul>
-</div></blockquote>
 <p>The build can be configured by modifying the launch configuration.</p>
-<p>![Local Build Launch Configurations](images/build-launch-configurations.png “Local Build Launch Configurations”)</p>
+<p><img alt="Local Build Launch Configurations" src="../_images/build-launch-configurations.png" /></p>
 <p>Available profiles <em>local</em> and <em>full</em> determine if the build is for the local operating system only or for all operating systems.</p>
 <p>Used parameters are</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p><strong>tycho.dirtyWorkingTree</strong> - Issue a <em>warning</em> or an <em>error</em> if there are files that uncommitted source files in the build.</p></li>
 <li><p><strong>pr.build</strong> - <em>true</em> build a pull request (no product archive created), <em>false</em> build the product(s)</p></li>
 <li><p><strong>tycho.localArtifacts</strong> - <em>ignore</em> only use artifacts from the current build and specified repositories to resolve dependencies.</p></li>
@@ -174,9 +184,9 @@
 <li><p><strong>spotbugs</strong> - <em>true</em> run spotbugs during the build, <em>false</em> don’t run spotbugs</p></li>
 <li><p><strong>codecoverage</strong> - <em>true</em> run jacoco to create a code coverage report, <em>false</em> don’t run jacoco</p></li>
 </ul>
-</div></blockquote>
-<p>The created archive file (<em>.zip and/or *.tar.gz) are created in project *org.osate.build.product</em> in subdirectory <em>target/products</em>.</p>
+<p>The created archive file (*.zip and/or *.tar.gz) are created in project <em>org.osate.build.product</em> in subdirectory <em>target/products</em>.</p>
 <p>Note that the very first build usually fails in project org.osate.reqtrace, but subsequent build should succeed.</p>
+</div>
 
 
            </div>
@@ -187,7 +197,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="writing-tests.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="writing-tests.html" class="btn btn-neutral float-left" title="Writing Tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -199,7 +209,7 @@
         
         &copy; Copyright 2016-2020, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Apr 15, 2020.
+        Last updated on Apr 16, 2020.
       </span>
 
     </p>

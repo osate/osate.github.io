@@ -26,17 +26,17 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="about-osate.html" /> 
+    <link rel="next" title="About OSATE" href="about-osate.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,13 +85,22 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to OSATE</a><ul>
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about-osate.html">About OSATE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional-components.html">Additional OSATE Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download-and-install.html">Download and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osate-releases.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osate-roadmap.html">OSATE Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-help.html">Getting Help</a></li>
 </ul>
-</li>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup-development.html">Setting up an OSATE development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/writing-tests.html">Writing Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/building-osate.html">Building OSATE</a></li>
 </ul>
-</div>
+
             
           
         </div>
@@ -163,8 +172,62 @@ Wiki</a> to here.</p>
 <li><p><a class="reference internal" href="#developer-docs"><span class="std std-ref">Developer Documentation</span></a></p></li>
 </ul>
 <div class="toctree-wrapper compound" id="user-docs">
+<p class="caption"><span class="caption-text">User Documentation</span><a class="headerlink" href="#user-docs" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about-osate.html">About OSATE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about-osate.html#osate-modeling-capabilities">OSATE Modeling Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-osate.html#osate-code-generation-capabilities">OSATE Code Generation Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-osate.html#osate-analysis-capabilities">OSATE Analysis Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about-osate.html#limited-distribution-tools">Limited Distribution Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="additional-components.html">Additional OSATE Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="additional-components.html#face-data-model-to-aadl-translator">FACE Data Model to AADL Translator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="additional-components.html#cheddar-plugin">Cheddar Plugin</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="download-and-install.html">Download and Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="download-and-install.html#new-installation">New Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download-and-install.html#installing-additional-osate-components">Installing Additional OSATE Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download-and-install.html#updating-osate">Updating OSATE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download-and-install.html#download-locations">Download Locations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="osate-releases.html">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="osate-releases.html#stable-releases">Stable Releases</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="osate-roadmap.html">OSATE Roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="osate-roadmap.html#planned-osate-releases">Planned OSATE Releases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="osate-roadmap.html#roadmap-for-aadl-language-support">Roadmap for AADL Language Support</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting-help.html">Getting Help</a></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound" id="developer-docs">
+<p class="caption"><span class="caption-text">Developer Documentation</span><a class="headerlink" href="#developer-docs" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup-development.html">Setting up an OSATE development environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#download-the-installer">1. Download the installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#run-the-installer">2. Run the installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#select-the-eclipse-platform">3. Select the Eclipse platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#add-the-osate-setup-file">4. Add the OSATE setup file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#set-required-variables">5. Set required variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#install-eclipse">6. Install Eclipse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#get-osate-sources">7. Get OSATE sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#updating-the-development-environment">8. Updating the development environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup-development.html#q-a-troubleshooting">Q &amp; A / Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev/writing-tests.html">Writing Tests</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/writing-tests.html#provided-helper-classes">Provided Helper Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/writing-tests.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/writing-tests.html#running-tests">Running tests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev/building-osate.html">Building OSATE</a></li>
+</ul>
 </div>
 </div>
 
@@ -176,7 +239,7 @@ Wiki</a> to here.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="about-osate.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="about-osate.html" class="btn btn-neutral float-right" title="About OSATE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
@@ -189,7 +252,7 @@ Wiki</a> to here.</p>
         
         &copy; Copyright 2016-2020, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Apr 15, 2020.
+        Last updated on Apr 16, 2020.
       </span>
 
     </p>

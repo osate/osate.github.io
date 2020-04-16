@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; OSATE 2.7.0 documentation</title>
+  <title>About OSATE &mdash; OSATE 2.7.0 documentation</title>
   
 
   
@@ -26,17 +26,17 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="additional-components.html" />
+    <link rel="next" title="Additional OSATE Components" href="additional-components.html" />
     <link rel="prev" title="Welcome to OSATE" href="index.html" /> 
 </head>
 
@@ -86,10 +86,33 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul class="simple">
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">About OSATE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#osate-modeling-capabilities">OSATE Modeling Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#osate-code-generation-capabilities">OSATE Code Generation Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#osate-analysis-capabilities">OSATE Analysis Capabilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limited-distribution-tools">Limited Distribution Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sei-tools-us-only">SEI Tools (US-Only)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adventium-tools">Adventium Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#osate-tools-currently-in-development">OSATE Tools Currently in Development</a></li>
 </ul>
-</div>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="additional-components.html">Additional OSATE Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download-and-install.html">Download and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osate-releases.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osate-roadmap.html">OSATE Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-help.html">Getting Help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="setup-development.html">Setting up an OSATE development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/writing-tests.html">Writing Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/building-osate.html">Building OSATE</a></li>
+</ul>
+
             
           
         </div>
@@ -134,7 +157,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>About OSATE</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -151,10 +174,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p># About OSATE</p>
-<p>## OSATE Modeling Capabilities</p>
+  <div class="section" id="about-osate">
+<h1>About OSATE<a class="headerlink" href="#about-osate" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="osate-modeling-capabilities">
+<h2>OSATE Modeling Capabilities<a class="headerlink" href="#osate-modeling-capabilities" title="Permalink to this headline">¶</a></h2>
 <p>OSATE (Open Source AADL Tool Environment) includes the capability to:</p>
-<ol class="arabic simple">
+<ol class="simple">
 <li><p>Create AADL models using a syntax-aware text editor and synchronized graphical editor. AADL models are organized in separate projects in a workspace.
 The tool supports validation of AADL models according to all naming and legality rules defined in the AADL standard. The text editor provides code templates,
 real-time syntax checking, code completion, and proposals to fix errors. In addition to the core language, models may contain elements from the
@@ -175,12 +200,14 @@ OSATE in version 2.2. The capability includes the ReqSpec requirements definitio
 execution, and certification plan execution. For documentation see the Alisa User Guide accessible from the OSATE Help Page.</p></li>
 <li><p>Provide basic repository support through the git perspective in OSATE.</p></li>
 </ol>
-<p>## OSATE Code Generation Capabilities</p>
+</div>
+<div class="section" id="osate-code-generation-capabilities">
+<h2>OSATE Code Generation Capabilities<a class="headerlink" href="#osate-code-generation-capabilities" title="Permalink to this headline">¶</a></h2>
 <p>Beyond the modeling and analysis of real-time computing systems in AADL, OSATE also currently supports automated generation and integration of the software
 specified in the AADL model (e.g., data, runtime behavior, code, partition scheduling, and partition memory configuration). The resulting auto-generated software,
 after being linked and compiled, can be loaded onto the processor operating system for execution of the system functionality.</p>
 <p>OSATE currently includes the following automated generation capabilities, dependent on the Ocarina plugin:</p>
-<ol class="arabic simple">
+<ol class="simple">
 <li><p>WindRiver® VxWorks™ and DDC-I® DeOS™ Configuration File Generator. This capability generates configuration files for WindRiver® VxWorks™ and
 DDC-I® DeOS™ ARINC653 Real-Time Operating System (RTOS) targets from verified AADL models with AADL Standard ARINC653 annex annotations.</p></li>
 <li><p>Runtime executive code generation for application functions. This capability utilizes Ocarina to generate C code that interfaces application functions
@@ -190,19 +217,24 @@ Ocarina to interface with an OSATE Ocarina Bridge plugin.</p></li>
 <li><p>Prototyping with a portable Partitioned Operating system Kernel (POK). This capability generates configurations of ARINC653 partitioned applications from
 AADL models for POK, a configurable portable partition RTOS for distributed platforms. This capability allows for early prototyping without access to the target platform.</p></li>
 <li><p>User-friendly code generation. The code generation is based on the user selecting the target OS. The process can be started by selecting a model implementation,
-going to the OSATE menu bar and finding Code Generation -&gt; Check semantics for (VxWorks, DeOS, POK). The code generation tool will:
-- Perform semantic checks based on a particular OS validation rules that will ensure the use of appropriate modeling patterns/properties before generating code
-- Guiding the system designer to check content of the model before generating code
-- Inform the user as to any missing or incorrect properties particular to the OS selected.</p></li>
+going to the OSATE menu bar and finding Code Generation -&gt; Check semantics for (VxWorks, DeOS, POK). The code generation tool will:</p>
+<ul class="simple">
+<li><p>Perform semantic checks based on a particular OS validation rules that will ensure the use of appropriate modeling patterns/properties before generating code</p></li>
+<li><p>Guiding the system designer to check content of the model before generating code</p></li>
+<li><p>Inform the user as to any missing or incorrect properties particular to the OS selected.</p></li>
+</ul>
+</li>
 </ol>
-<p>&lt;small&gt;Ocarina is a tool suite written in Ada to manipulate AADL models. Ocarina proposes AADL model manipulation, generation of
+<p><small>Ocarina is a tool suite written in Ada to manipulate AADL models. Ocarina proposes AADL model manipulation, generation of
 formal models, performs scheduling analysis and generates distributed applications. For more information on Ocarina, visit
-&lt;<a class="reference external" href="http://www.openaadl.org/ocarina.html">http://www.openaadl.org/ocarina.html</a>&gt;.&lt;/small&gt;</p>
-<p>## OSATE Analysis Capabilities</p>
+<a class="reference external" href="http://www.openaadl.org/ocarina.html">http://www.openaadl.org/ocarina.html</a>.</small></p>
+</div>
+<div class="section" id="osate-analysis-capabilities">
+<h2>OSATE Analysis Capabilities<a class="headerlink" href="#osate-analysis-capabilities" title="Permalink to this headline">¶</a></h2>
 <p>OSATE includes the capability to perform a variety of resource analyses. Online help for each analysis is available via SEI Validation Plugins within the AADL Workbench help area.</p>
 <p>The following summarizes the analyses that can be performed. Items 4-7 below include information on analyses that are supported by direct invocation of the analysis
 as well as by a workflow approach to executing the analyses.</p>
-<ol class="arabic">
+<ol class="simple">
 <li><p><em>End-to-end Latency Analysis</em> – This capability lets users determine the worst-case response time and latency jitter on an end-to-end flow specified in an AADL model.
 The analysis calculates the results with increasing fidelity as AADL models are refined. Latency may be calculated for functional architectures purely based on
 specified latency for components and connections, for sampling and queued task architectures with sampling, immediate (mid-frame), and (frame) delayed connections,
@@ -221,13 +253,11 @@ architectural layers. The analysis provides feedback on incompletely specified m
 <li><p><em>Electrical Power Analysis</em> – This capability allows users to specify the supply capacity of electrical power providers, the demands/budgets for electrical power consumers,
 as well as the capacity of the power distribution system. The distribution system can be connected to sub-distribution systems. The analysis identifies any mismatch
 between supply and demand. The analysis is intended for early electrical power budgeting and does not take into account any dynamics of a power distribution system.</p></li>
-<li><p><em>Computer Resource Budget Analysis</em> – This capability performs resource budget analysis for
-- processors with capacity expressed in MIPS and demands in terms of MIPS budgets and refined to threads with periods and execution time. The analysis can be applied</p>
-<blockquote>
-<div><p>to the system as a whole. It can also be applied to systems/abstract components in a functional architecture, or processes and threads in a task architecture once
-they are bound to processors, in processor specific form.</p>
-</div></blockquote>
+<li><p><em>Computer Resource Budget Analysis</em> – This capability performs resource budget analysis for</p>
 <ul class="simple">
+<li><p>processors with capacity expressed in MIPS and demands in terms of MIPS budgets and refined to threads with periods and execution time. The analysis can be applied
+to the system as a whole. It can also be applied to systems/abstract components in a functional architecture, or processes and threads in a task architecture once
+they are bound to processors, in processor specific form.</p></li>
 <li><p>memory budget with memory capacity and component budgets expressed in terms of bytes, Kbytes, or Mbytes. The analysis helps ensure that the memory provided is
 sufficient to address the memory demands of the Application components.</p></li>
 <li><p>network bandwidth analysis based on 1) inferred binding of connections to buses; and 2) analysis based on explicit binding of connections to buses. Each of the
@@ -241,20 +271,27 @@ Common Mode Analysis, and Reliability Block Diagrams (RBD)/Decision Diagrams (DD
 <li><p><em>Structural Model Verification</em> – The Resolute language for model checking/requirements verification is included in the current release of OSATE.</p></li>
 <li><p><em>Compositional Verification</em> OSATE currently uses AGREE for compositional verification of system and component behavior based on assumptions and guarantees.</p></li>
 </ol>
-<p>## Limited Distribution Tools</p>
+</div>
+<div class="section" id="limited-distribution-tools">
+<h2>Limited Distribution Tools<a class="headerlink" href="#limited-distribution-tools" title="Permalink to this headline">¶</a></h2>
 <p>The tools and analytical capabilities described in this section are only available for US contractors. They were developed using Government funding or a mix of Government
 and non-Government funding. These tools will be available for use by the developers during Capstone.</p>
-<p>### SEI Tools (US-Only)</p>
-<ol class="arabic simple">
+<div class="section" id="sei-tools-us-only">
+<h3>SEI Tools (US-Only)<a class="headerlink" href="#sei-tools-us-only" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
 <li><p>AADL Analysis Workflows for Items 4-6 above (User-friendly OSATE Interface). Provides workflow support for analysis of schedulability, processor throughput budgeting,
 safety analysis, bandwidth budgeting, weight budgeting, power budgeting, and memory budgeting.</p></li>
 </ol>
 <p>To receive the US-Only tools from the SEI please contact the respective Government Contracting Office to request them from the SEI.</p>
-<p>### Adventium Tools</p>
-<p>Tools developed by Adventium Labs are documented at their web site: &lt;<a class="reference external" href="https://www.adventiumlabs.com/our-work/products-services/model-based-engineering-mbe-tools">https://www.adventiumlabs.com/our-work/products-services/model-based-engineering-mbe-tools</a>&gt;</p>
-<p>### OSATE Tools Currently in Development</p>
+</div>
+<div class="section" id="adventium-tools">
+<h3>Adventium Tools<a class="headerlink" href="#adventium-tools" title="Permalink to this headline">¶</a></h3>
+<p>Tools developed by Adventium Labs are documented at their web site: <a class="reference external" href="https://www.adventiumlabs.com/our-work/products-services/model-based-engineering-mbe-tools">https://www.adventiumlabs.com/our-work/products-services/model-based-engineering-mbe-tools</a></p>
+</div>
+<div class="section" id="osate-tools-currently-in-development">
+<h3>OSATE Tools Currently in Development<a class="headerlink" href="#osate-tools-currently-in-development" title="Permalink to this headline">¶</a></h3>
 <p>The OSATE Roadmap provides plans for releases of new OSATE capabilities through 2018. Below are additional capabilities.</p>
-<ol class="arabic simple">
+<ol class="simple">
 <li><p><em>FACE-AADL Translator</em> – Enable the migration from FACE models to AADL models to take advantage of the integration analysis and generation capabilities available through
 AADL workbench support. The translation facilitates analysis of FACE compliant models through the AADL workbench as well as generation of runtime executive configurations
 for a specific target platform supporting partitioned architectures.</p></li>
@@ -265,6 +302,9 @@ workbench into Architecture Analysis &amp; Design Language (AADL) models. This i
 task-focused views of a model, and enhance support for collaborative model development</p></li>
 <li><p><em>Language extensions</em> – OSATE upgrades will address all AADL standard language updates prior to AADL 3 adoption.</p></li>
 </ol>
+</div>
+</div>
+</div>
 
 
            </div>
@@ -274,7 +314,7 @@ task-focused views of a model, and enhance support for collaborative model devel
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="additional-components.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="additional-components.html" class="btn btn-neutral float-right" title="Additional OSATE Components" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to OSATE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -289,7 +329,7 @@ task-focused views of a model, and enhance support for collaborative model devel
         
         &copy; Copyright 2016-2020, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Apr 15, 2020.
+        Last updated on Apr 16, 2020.
       </span>
 
     </p>
