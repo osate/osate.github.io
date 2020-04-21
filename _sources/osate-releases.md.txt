@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.7.1 (NOT YET RELEASED)
+### Version 2.7.1
 
 #### Release
 
   - **GIT tag**: 2.7.1-RELEASE
-  - **Release date**: TBD
+  - **Release date**: April 21, 2020
   - **Eclipse base version**: 2019-12
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.7.1/updates>
@@ -15,6 +15,9 @@
 
 #### SHA256 Hashes for the downloads
 ```
+6f898deb856e17096c37751603455d14557ebd0065506318bcfaaaf17cf4f16f  osate2-2.7.1-vfinal-linux.gtk.x86_64.tar.gz
+9b9b3d57e03834a0b288cbdfe9a139da81b05222c684d4d81531d3804600781c  osate2-2.7.1-vfinal-macosx.cocoa.x86_64.tar.gz
+bc0181249bef3e4c83864b41fa009cda8c485ac0c21d8f4f98919e73e0fe1864  osate2-2.7.1-vfinal-win32.win32.x86_64.zip
 ```
 
 #### Notable changes
@@ -23,8 +26,8 @@
  * The flow latency analysis now considers queuing latency for non-periodic buses.
  * The flow latency analysis can now processes user-supplied thread response times instead of the execution time.
  * Various bug fixes in the priority inversion checker.
- * Instantiation and re-instantiation are more flexible to use, and errors are reported to the user.  
- * We have implemented proper type checking for property constants. 
+ * Instantiation and re-instantiation are more flexible to use, and exceptions are reported to the user.  
+ * We have implemented proper type checking for property constants.
 
 #### Fixed issues
 
