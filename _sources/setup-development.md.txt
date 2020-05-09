@@ -28,7 +28,7 @@ On first use update the installer (A)
 
 If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.
 
-Select *Eclipse Modeling Tools* as the base product to install, and select *2019-12* as the product version. Choose 64bit as your Java version.
+Select **Eclipse IDE for Java Developers** as the base product to install, and select **2020-03* as the product version. Choose 64bit as your Java version.
 
 ## 4. Add the OSATE setup file
 
@@ -38,7 +38,7 @@ Add a user project by clicking on the + icon (A).
 
 Select the catalog *Github Projects* and enter the following URL as the *Resource URI*:
 
-https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2019-12.setup
+https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2020-03.setup
 
 Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>. Then select the master stream in right column of the table at the bottom.
 
@@ -48,11 +48,13 @@ Check the box next to the added OSATE2 Development entry in the tree under Githu
 
 Check *Show all variables* near the bottom of the dialog. Without this, only variables that do not have a value will be displayed. Oomph stores variable values between invocations, so nothing would be shown after the first run.
 
-The first group of variables determines the directory for the new eclipse installation. You can choose between (a) a root directory and a subdirectory within that root directory and (b) a full path to the installation directory.
+The first group of variables determines the directory for the new eclipse installation. In *Installation location rule* you can choose between (a) a root directory and a subdirectory within that root directory and (b) a full path to the installation directory. Depending on your choice you will need to fill in the installation path and directory name.
 
-The next group determines the location of the workspace. Do not reuse an existing workspace as that will likely lead to problems.
+The next group determines the location of the workspace. Do not reuse an existing workspace as that will likely lead to problems. 
 
-The git clone location is the root directory into which all git repositories are cloned. The tycho build requires that all git repositories share the same root directory. If you have (all or some) repositories cloned already you can re-use the clones. Make sure that all clones have the develop branch checked out (except osate2-ocarina, which has just a master branch). Also, make sure that they are up to date by issuing a _git pull_ command.
+The *Git clone location rule* determines how the path to the osate2 git repository clone is constructed. The osate2 git repository can be cloned in a directory in the installation location, workspace location, or elsewhere. Depending on the location a new field will be shown to enter a directory.
+
+The *API baseline location rule* determines how the path to store API baseline files is constructed. The API baseline(s) can be stored in a directory in the installation location, workspace location, or elsewhere. Depending on the location a new field will be shown to enter a directory. *Do not store API baseline files in a local git repository.*
 
 Finally, choose how to access the git repositories. The default choice uses ssh access and requires ssh credentials (click the key icon at the bottom to set this up), and your public key must be uploaded to github. The  *HTTPS (read-write)* option uses your Github username and password. When you choose https a variable for the user name will show up. Replace the default _anonymous_ with your github user name. 
 
