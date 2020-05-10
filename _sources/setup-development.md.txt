@@ -28,7 +28,7 @@ On first use update the installer (A)
 
 If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.
 
-Select **Eclipse IDE for Java Developers** as the base product to install, and select **2020-03* as the product version. Choose 64bit as your Java version.
+Select **Eclipse IDE for Java Developers** as the base product to install, and select **2020-03** as the product version. Choose 64bit as your Java version.
 
 ## 4. Add the OSATE setup file
 
