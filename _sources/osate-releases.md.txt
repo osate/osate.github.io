@@ -2,6 +2,77 @@
 
 ## Stable Releases
 
+### Version 2.8.0
+
+#### Release
+
+  - **GIT tag**: 2.8.0-RELEASE
+  - **Release date**: July 9, 2020
+  - **Eclipse base version**: 2020-03
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.8.0/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.8.0/products>
+
+#### SHA256 Hashes for the downloads
+```
+cc8f43a0bab18eec55afd9641c7aab424f3c8890b00f77b8cbfa1a8ca0c4fac7  osate2-2.8.0-vfinal-linux.gtk.x86_64.tar.gz
+6cd0eda26468bbf6aefc2fa374d81764e0e873c8d584ebb1bb51eac66c6510db  osate2-2.8.0-vfinal-macosx.cocoa.x86_64.tar.gz
+ee014c259fdda208bd08fb80c86eff147d4dc7f69c6a3bae0f05a9367e00c05e  osate2-2.8.0-vfinal-win32.win32.x86_64.zip
+```
+
+#### Notable changes
+ 
+ * Underlying Eclipse version updated to 2020-03
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Missing consistency checks for connection instances ([582](https://github.com/osate/osate2/issues/582))
+    1. Performance issue when editing AADL text ([1832](https://github.com/osate/osate2/issues/1832))
+    1. Missing validation for reference value with array indices ([2159](https://github.com/osate/osate2/issues/2159))
+    1. Connection properties are not inherited from containing component ([2264](https://github.com/osate/osate2/issues/2264))
+    1. Instantiate action should work on .aadl files in the AADL Navigator ([2272](https://github.com/osate/osate2/issues/2272))
+    1. Instantiation results dialog is annoying when instantiation is successful ([2274](https://github.com/osate/osate2/issues/2274))
+    1. Add dependency views to perspective ([2275](https://github.com/osate/osate2/issues/2275))
+    1. Stack overflow in validator for cyclic constants ([2282](https://github.com/osate/osate2/issues/2282))
+    1. Null pointer exception in end to end flow instantiation ([2287](https://github.com/osate/osate2/issues/2287))
+    1. Update docs for instantiation ([2294](https://github.com/osate/osate2/issues/2294))
+    1. 'in modes' clause on behavior specification stopped working in OSATE 2.7.1. ([2295](https://github.com/osate/osate2/issues/2295))
+    1. Annex instantiation invoked before properties and connection patterns ([2299](https://github.com/osate/osate2/issues/2299))
+    1. Problem serialization of event data PortSpecification instances ([2300](https://github.com/osate/osate2/issues/2300))
+    1. Upgrade to Eclipse 2020-03 ([2309](https://github.com/osate/osate2/issues/2309))
+    1. Refinement of abstract features allows removal of classifier ([2319](https://github.com/osate/osate2/issues/2319))
+    1. Aadl2JavaValidator doesn't check CLASSIFIER_MATCH correctly ([2344](https://github.com/osate/osate2/issues/2344))
+    1. Fan-in for data ports should be forbidden ([2356](https://github.com/osate/osate2/issues/2356))
+    1. Fix BLESS plugin installation as additional OSATE component ([2357](https://github.com/osate/osate2/issues/2357))
+    1. Flow latency analysis window is not sized based on content ([2039](https://github.com/osate/osate2/issues/2039))
+    1. ClassCastException when running codegen checker ([2054](https://github.com/osate/osate2/issues/2054))
+    1. Memory budget ignores Memory_Size on system and virtual processors and related issues ([2169](https://github.com/osate/osate2/issues/2169))
+    1. BusLoad analysis results should include the data overhead for each bus in the report ([2278](https://github.com/osate/osate2/issues/2278))
+    1. Flow latency report should include flow names in leaf components ([2289](https://github.com/osate/osate2/issues/2289))
+ * Error Model and Analysis Plugins
+    1. no changes
+ * Graphical Editor
+    1. DirtyState Issue / NPE When Refactoring ([1180](https://github.com/osate/osate2/issues/1180))
+    1. Improved validation in graphical flow creation tools ([1204](https://github.com/osate/osate2/issues/1204))
+    1. Add graphical editing support for prototypes ([1540](https://github.com/osate/osate2/issues/1540))
+    1. Adjust graphical editor tests to close all unnecessary views ([2293](https://github.com/osate/osate2/issues/2293))
+    1. Refined flow segments are not highlighted ([2304](https://github.com/osate/osate2/issues/2304))
+    1. Graphical editor AADL properties section of refined elements doesn't work ([2306](https://github.com/osate/osate2/issues/2306))
+    1. Improve layout capabilities for flow source and sink specifications. ([2317](https://github.com/osate/osate2/issues/2317))
+    1. Improve performance with the flow contribution item ([2328](https://github.com/osate/osate2/issues/2328))
+    1. Tags are incorrectly displayed in the graphical editor outline. ([2333](https://github.com/osate/osate2/issues/2333))
+ * Behavior Annex
+    1. Value constant not accepted for behavior annex ([2184](https://github.com/osate/osate2/issues/2184))
+    1. Memory leak when using the Behavior Annex ([2352](https://github.com/osate/osate2/issues/2352))
+    1. Null data access reference in SharedDataAction objects ([2372](https://github.com/osate/osate2/issues/2372))
+  
+#### Known issues
+
+ * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
+ * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.8.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+
 ### Version 2.7.1
 
 #### Release
