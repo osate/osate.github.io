@@ -6,7 +6,7 @@ Starting with OSATE 2.3, which is based on Eclipse 4.7.1 (Oxygen.1), the recomme
 
 ## 1. Download the installer
 
-The Eclipse Installer can be downloaded from the eclipse Web site. Follow this [link](https://www.eclipse.org/downloads/) to download the installer for your platform. 
+The Eclipse Installer can be downloaded from the Eclipse Web site. Follow this [link](https://www.eclipse.org/downloads/packages/installer) to download the installer for your platform. 
 
 On Mac OSX and Linux the installer is a compressed archive. Extract it to a directory of your choice.
 
