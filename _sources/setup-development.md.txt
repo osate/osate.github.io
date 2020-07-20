@@ -140,5 +140,5 @@ On the eclipse wiki: [Eclipse Oomph Authoring](https://wiki.eclipse.org/Eclipse_
 
 ### There are too man steps, is there a faster way?
 
-If you have already installed the Eclipse Installer on your computer try [this link](https://raw.githubusercontent.com/osate/osate2/master/setup/OSATEConfiguration.setup).
+If you have already installed the Eclipse Installer on your computer try [this link](eclipse+installer:https://raw.githubusercontent.com/osate/osate2/master/setup/OSATEConfiguration.setup).
 
