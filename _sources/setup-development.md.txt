@@ -137,3 +137,8 @@ This tends to happen on Windows when the Java version is updated. Oracle's insta
 ### Where can I find documentation about Oomph setups?
 
 On the eclipse wiki: [Eclipse Oomph Authoring](https://wiki.eclipse.org/Eclipse_Oomph_Authoring)
+
+### There are too man steps, is there a faster way?
+
+If you have already installed the Eclipse Installer on your computer try [this link](https://raw.githubusercontent.com/osate/osate2/master/setup/OSATEConfiguration.setup).
+
