@@ -138,7 +138,7 @@ This tends to happen on Windows when the Java version is updated. Oracle's insta
 
 On the eclipse wiki: [Eclipse Oomph Authoring](https://wiki.eclipse.org/Eclipse_Oomph_Authoring)
 
-### There are too man steps, is there a faster way?
+### There are too many steps, is there a faster way?
 
 If you have already installed the Eclipse Installer on your computer try [this link](eclipse+installer:https://raw.githubusercontent.com/osate/osate2/master/setup/OSATEConfiguration.setup).
 
