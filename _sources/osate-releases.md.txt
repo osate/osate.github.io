@@ -2,6 +2,77 @@
 
 ## Stable Releases
 
+### Version 2.9.0 (NOT YET RELEASED)
+
+#### Release
+
+  - **GIT tag**: 2.9.0-RELEASE
+  - **Release date**: TBD
+  - **Eclipse base version**: 2020-06
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.0/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.0/products>
+
+#### SHA256 Hashes for the downloads
+```
+```
+
+#### Notable changes
+ 
+ * New model statistics command
+ * Improved performance for very large AADL files by updating outline view in
+   a background thread
+ * New advanced feature to override contributed property sets for a workspace via an
+   OSATE preference setting (Warning: randomly changing contributed property sets this
+   way can break analysis plugins)
+ * Underlying Eclipse version updated to 2020-06
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Clean up examples repository on github and add examples to OSATE ([1016](https://github.com/osate/osate2/issues/1016))
+    1. Users need a way to override contributed property sets ([1134](https://github.com/osate/osate2/issues/1134))
+    1. Annex implementations cannot use new Xtext (>= 2.9) workflows ([1818](https://github.com/osate/osate2/issues/1818))
+    1. Feature direction is not checked when a feature group is refined to a specific feature group sub-feature in a flow implementation ([1991](https://github.com/osate/osate2/issues/1991))
+    1. Generate Java code for property types and constants ([2113](https://github.com/osate/osate2/issues/2113))
+    1. Move outline tree computation to background thread ([2320](https://github.com/osate/osate2/issues/2320))
+    1. AADL formatter exception when formatting annex without an EMF write transaction ([2349](https://github.com/osate/osate2/issues/2349))
+    1. Format annexes without parsing them again ([2402](https://github.com/osate/osate2/issues/2402))
+    1. Upgrade to new Xtext code generation workflows ([2405](https://github.com/osate/osate2/issues/2405))
+    1. Validation does not catch flow source/sink in the middle of a flow path ([2415](https://github.com/osate/osate2/issues/2415))
+    1. PropertyIsModalException in validator ([2417](https://github.com/osate/osate2/issues/2417))
+    1. NPE in classifier information view ([2429](https://github.com/osate/osate2/issues/2429))
+    1. The model statistics command disappeared ([1375](https://github.com/osate/osate2/issues/1375))
+    1. Codegen checker does not log exceptions ([2327](https://github.com/osate/osate2/issues/2327))
+    1. Latency analysis does not produce any result for certain end to end flows ([2423](https://github.com/osate/osate2/issues/2423))
+    1. Bad plugin information ([2331](https://github.com/osate/osate2/issues/2331))
+    1. Upgrade to Eclipse 2020-06 ([2377](https://github.com/osate/osate2/issues/2377))
+    1. Upgrade to ELK 0.7.0 ([2464](https://github.com/osate/osate2/issues/2464))
+ * Error Model and Analysis Plugins
+    1. Expand displayed probability in FTA table ([2359](https://github.com/osate/osate2/issues/2359))
+    1. Qualified names removed from EMV2 type aliases ([2398](https://github.com/osate/osate2/issues/2398))
+ * Graphical Editor
+    1. Additional flow editing capabilities ([1212](https://github.com/osate/osate2/issues/1212))
+    1. Experimental visualization and editing capability for EMV2 flow propagations ([1546](https://github.com/osate/osate2/issues/1546))
+    1. Remove support for Graphiti file format ([2324](https://github.com/osate/osate2/issues/2324))
+    1. Refactor, cleanup, and rework API for graphical editor ([2336](https://github.com/osate/osate2/issues/2336))
+    1. Stack overflow error when highlighting flows with cycles ([2350](https://github.com/osate/osate2/issues/2350))
+    1. Fix graphical flow editing issues ([2392](https://github.com/osate/osate2/issues/2392))
+    1. Fix renaming of refined elements ([2394](https://github.com/osate/osate2/issues/2394))
+    1. Cleanup flow tools ([2396](https://github.com/osate/osate2/issues/2396))
+    1. Copying and pasting of elements that have a source and/or destination cause exceptions ([2411](https://github.com/osate/osate2/issues/2411))
+    1. Created business objects not are not added to the diagram ([2424](https://github.com/osate/osate2/issues/2424))
+ * ALISA
+    1. Assurance View does not correctly render subclaims ([2381](https://github.com/osate/osate2/issues/2381))
+ * Behavior Annex
+    1. AADL file does not open in Editor when there is a Syntax error on subcomponent type and BA clause in Component ([2401](https://github.com/osate/osate2/issues/2401))
+  
+#### Known issues
+
+ * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
+ * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" prevents Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.9.0 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+
 ### Version 2.8.0
 
 #### Release
