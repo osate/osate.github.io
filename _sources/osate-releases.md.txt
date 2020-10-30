@@ -22,6 +22,7 @@ f53542361a04da3d5e2bf597490585a8086abaacdaab4286b7c8eecbc936d9fb  osate2-2.9.0-
 
 #### Notable changes
  
+ * New example wizard and new/updated AADL examples
  * New model statistics command
  * Improved performance for very large AADL files by updating outline view in
    a background thread
