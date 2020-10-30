@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.9.0 (NOT YET RELEASED)
+### Version 2.9.0
 
 #### Release
 
   - **GIT tag**: 2.9.0-RELEASE
-  - **Release date**: TBD
+  - **Release date**: October 30, 2020
   - **Eclipse base version**: 2020-06
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.0/updates>
@@ -15,6 +15,9 @@
 
 #### SHA256 Hashes for the downloads
 ```
+3e67b1b8b2230ace279d4cf6224e4bbd59a95b691eafb88fd8845388b58f0424  osate2-2.9.0-vfinal-linux.gtk.x86_64.tar.gz
+e2ada5b747ab042367fd88b198c12c58d00389f0f4720a7691eda95c58a508f8  osate2-2.9.0-vfinal-macosx.cocoa.x86_64.tar.gz
+f53542361a04da3d5e2bf597490585a8086abaacdaab4286b7c8eecbc936d9fb  osate2-2.9.0-vfinal-win32.win32.x86_64.zip
 ```
 
 #### Notable changes
@@ -23,7 +26,7 @@
  * Improved performance for very large AADL files by updating outline view in
    a background thread
  * New advanced feature to override contributed property sets for a workspace via an
-   OSATE preference setting (Warning: randomly changing contributed property sets this
+   OSATE preference setting (Warning: changing contributed property sets this
    way can break analysis plugins)
  * Underlying Eclipse version updated to 2020-06
 
