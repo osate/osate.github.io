@@ -12,7 +12,7 @@ On Mac OSX and Linux the installer is a compressed archive. Extract it to a dire
 
 The installer for Windows is a self-extracting archive. When running the executable you can choose to keep the extracted installer and select an installation directory. 
 
-<small>**Note:** On Windows the initial extraction is into a temporary directory, usually into a temporary directory in C:\User\Joe\AppData\Local\Temp\. The name of the temporary directory starts with the letters *eoi*. If your computer is subject to a restrictive security policy that does not allow execution of arbitrary programs from that directory you should copy the directory content to another place from where the installer can be executed.</small>
+<small>**Note:** On Windows the initial extraction is into a temporary directory, usually into a temporary directory in C:\User\Joe\AppData\Local\Temp\. The name of the temporary directory starts with the letters *eoi*. If your computer is subject to a restrictive security policy that does not allow execution of arbitrary programs from that directory you should copy the directory content to another place from where the installer can be executed. Alternatively you can download the windows installer as a zip file from [here](https://download.eclipse.org/oomph/products/eclipse-inst-jre-win64.zip)</small>
 
 ## 2. Run the installer
 
@@ -28,7 +28,7 @@ On first use update the installer (A)
 
 If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.
 
-Select **Eclipse IDE for Java Developers** as the base product to install, and select **2020-06** as the product version. Choose 64bit as your Java version.
+Select **Eclipse IDE for Java Developers** as the base product to install, and select **2020-06** as the product version. Select the **64 bit Java 8 JVM** installed on your system.
 
 ## 4. Add the OSATE setup file
 
