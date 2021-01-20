@@ -2,6 +2,91 @@
 
 ## Stable Releases
 
+### Version 2.9.1 (NOT YET RELEASED)
+
+#### Release
+
+  - **GIT tag**: 2.9.1-RELEASE
+  - **Release date**: TBD
+  - **Eclipse base version**: 2020-06
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.1/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.1/products>
+
+#### SHA256 Hashes for the downloads
+```
+```
+
+#### Notable changes
+
+ * Performance improvements when handling larger models
+   1. Expanding models in the navigator view is much faster
+   2. Creation of context menu items no longer parses AADL source files behind the scenes
+   3. OSATE no longer blocks the UI with a "Synchronizing EMF models" message during after instantiation
+ * Improved functionality of the classifier information view
+ * The graphical editor now has partial error model annex support 
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Add a keyboard shortcut for instantiation ([2074](https://github.com/osate/osate2/issues/2074))
+    1. Bidirectional feature group connection produces incorrect connection instance ([2318](https://github.com/osate/osate2/issues/2318))
+    1. Clean up the utility classes and methods ([2383](https://github.com/osate/osate2/issues/2383))
+    1. Can't instantiate reference to property with default value ([2387](https://github.com/osate/osate2/issues/2387))
+    1. Flow implementation validation doesn't check if the sequence is properly connected ([2416](https://github.com/osate/osate2/issues/2416))
+    1. Clean up plugin.xml "definition" extensions ([2418](https://github.com/osate/osate2/issues/2418))
+    1. Expanding AADL element in the AADL navigator is very slow ([2430](https://github.com/osate/osate2/issues/2430))
+    1. Rename refactoring of port misses references in flow implementations ([2434](https://github.com/osate/osate2/issues/2434))
+    1. Classifier information view is not updated when AADL text is edited and saved ([2435](https://github.com/osate/osate2/issues/2435))
+    1. Classifier information view should show subtype hierarchy ([2436](https://github.com/osate/osate2/issues/2436))
+    1. Open classifier information view from more places ([2439](https://github.com/osate/osate2/issues/2439))
+    1. No icons for flows in outline view ([2440](https://github.com/osate/osate2/issues/2440))
+    1. Missing flow implementation name in outline view ([2441](https://github.com/osate/osate2/issues/2441))
+    1. No distinction between flow source/path/sink in outline view ([2442](https://github.com/osate/osate2/issues/2442))
+    1. Implementation labels in outline view are too long ([2443](https://github.com/osate/osate2/issues/2443))
+    1. OSATE hangs with "Synchronizing EMF models" ([2448](https://github.com/osate/osate2/issues/2448))
+    1. Instantiation can be started while workspace is building ([2456](https://github.com/osate/osate2/issues/2456))
+    1. Classifier information view doesn't show unimplemented flow specifications ([2472](https://github.com/osate/osate2/issues/2472))
+    1. Connections are expandable in the outline view ([2485](https://github.com/osate/osate2/issues/2485))
+    1. Components without children are marked as having children in the outline ([2486](https://github.com/osate/osate2/issues/2486))
+    1. Classifier Info View should show the contents of the classifier selected in the hierarchy tree ([2491](https://github.com/osate/osate2/issues/2491))
+    1. Classifier Info View Leaves stray "goto" marker ([2496](https://github.com/osate/osate2/issues/2496))
+    1. Annex parser throws exception on BA block beginning with LF. ([2497](https://github.com/osate/osate2/issues/2497))
+    1. Import additional example models ([2536](https://github.com/osate/osate2/issues/2536))
+    1. Packages are linking to the wrong default property set resources ([2537](https://github.com/osate/osate2/issues/2537))
+    1. OSATE commands are hidden in the key bindings preferences ([2553](https://github.com/osate/osate2/issues/2553))
+    1. Run analysis on implementation ([841](https://github.com/osate/osate2/issues/841))
+    1. Formatting issues in flow latency analysis CSV report ([2427](https://github.com/osate/osate2/issues/2427))
+    1. Flow latency analysis Excel report generates invalid worksheet names ([2428](https://github.com/osate/osate2/issues/2428))
+    1. Checking binding constraints cannot be canceled  ([2461](https://github.com/osate/osate2/issues/2461))
+    1. Checking binding constraints doesn't give indication of progress ([2462](https://github.com/osate/osate2/issues/2462))
+ * Error Model and Analysis Plugins
+    1. EMV2 ErrorType qualified name is incomplete ([1634](https://github.com/osate/osate2/issues/1634))
+    1. Error propagation in feature group type result in errors. ([2408](https://github.com/osate/osate2/issues/2408))
+    1. Error Type cyclical extensions cause the text editor to lock up ([2455](https://github.com/osate/osate2/issues/2455))
+    1. Exception during EMV2 Serialization ([2483](https://github.com/osate/osate2/issues/2483))
+    1. Exception when serializing error model library which extends error model library ([2512](https://github.com/osate/osate2/issues/2512))
+    1. Error propagation name sometimes disappears when editing in the GE  ([2518](https://github.com/osate/osate2/issues/2518))
+ * Graphical Editor
+    1. Add partial EMV2 support to graphical editor ([2450](https://github.com/osate/osate2/issues/2450))
+    1. Graphical editor uses inefficient property tester ([2499](https://github.com/osate/osate2/issues/2499))
+    1. Graphical editor unnecessarily parses AADL file to enable handlers ([2500](https://github.com/osate/osate2/issues/2500))
+    1. Diagram elements without labels are being displayed in outline ([2542](https://github.com/osate/osate2/issues/2542))
+    1. Secondary labels of connections are treated as immovable. ([2544](https://github.com/osate/osate2/issues/2544))
+ * ALISA
+    1. Remove binpacker from ALISA ([2463](https://github.com/osate/osate2/issues/2463))
+ * Behavior Annex
+    1. Null data access reference in SharedDataAction objects ([2372](https://github.com/osate/osate2/issues/2372))
+    1. Support unparsing when behavior annex has resolution errors ([2459](https://github.com/osate/osate2/issues/2459))
+    1. In BA plugin, port dequeue actions are not resolved properly ([2523](https://github.com/osate/osate2/issues/2523))
+    1. In BA plugin, editor crashes when using a dequeue action on something that is not an event [data] port ([2525](https://github.com/osate/osate2/issues/2525))
+  
+#### Known issues
+
+ * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
+ * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" may prevent Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.9.1 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+
 ### Version 2.9.0
 
 #### Release
