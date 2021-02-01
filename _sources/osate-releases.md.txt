@@ -2,12 +2,12 @@
 
 ## Stable Releases
 
-### Version 2.9.1 (NOT YET RELEASED)
+### Version 2.9.1
 
 #### Release
 
   - **GIT tag**: 2.9.1-RELEASE
-  - **Release date**: TBD
+  - **Release date**: February 1, 2021
   - **Eclipse base version**: 2020-06
   - **Java version**: Java 8
   - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.1/updates>
@@ -15,6 +15,9 @@
 
 #### SHA256 Hashes for the downloads
 ```
+11941a75b931a350a4459ce4d5c3c2acce17e5f3b34195fb9e57f4f6cc249790  osate2-2.9.1-vfinal-linux.gtk.x86_64.tar.gz
+bc0672e175a8190ff6cd1db1900bca970709e97addff35afd7f6c6591e0c1a6d  osate2-2.9.1-vfinal-macosx.cocoa.x86_64.tar.gz
+0b45fb174af6386d739e17d7a21570b2b3807324a0b14cb4ae95be81848296f3  osate2-2.9.1-vfinal-win32.win32.x86_64.zip
 ```
 
 #### Notable changes
@@ -22,7 +25,7 @@
  * Performance improvements when handling larger models
    1. Expanding models in the navigator view is much faster
    2. Creation of context menu items no longer parses AADL source files behind the scenes
-   3. OSATE no longer blocks the UI with a "Synchronizing EMF models" message during after instantiation
+   3. OSATE no longer blocks the UI with a "Synchronizing EMF models" message after instantiation
  * Improved functionality of the classifier information view
  * The graphical editor now has partial error model annex support 
 
