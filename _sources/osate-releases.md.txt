@@ -89,6 +89,11 @@ bc0672e175a8190ff6cd1db1900bca970709e97addff35afd7f6c6591e0c1a6d  osate2-2.9.1-v
  * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
  * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" may prevent Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
  * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.9.1 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+ * There is a minor bug (#2569) in OSATE 2.9.1 that prevents setting the AADL perspective as the default perspective in a new workspace. The bug also prevents the application icon from being shown and puts an entry "Product osate2 could not be found" into the error log at each start.This can be fixed manually by adding the following line to the osate.ini file.
+
+```
+-Declipse.product=org.osate.branding.osate2
+```
 
 ### Version 2.9.0
 

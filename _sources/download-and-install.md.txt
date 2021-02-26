@@ -3,6 +3,8 @@
 The latest OSATE release can be downloaded from
 [here](http://osate-build.sei.cmu.edu/download/osate/stable/latest/products/).
 
+**See the release notes for known bugs and workarounds.**
+
 ## New Installation
 
 OSATE is available for Windows (64-bit), macOS (64-bit),

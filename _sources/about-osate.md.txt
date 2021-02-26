@@ -91,33 +91,7 @@ as well as by a workflow approach to executing the analyses.
 8. *Structural Model Verification* – The Resolute language for model checking/requirements verification is included in the current release of OSATE.
 9. *Compositional Verification* OSATE currently uses AGREE for compositional verification of system and component behavior based on assumptions and guarantees.
 
-## Limited Distribution Tools
-
-The tools and analytical capabilities described in this section are only available for US contractors. They were developed using Government funding or a mix of Government 
-and non-Government funding. These tools will be available for use by the developers during Capstone. 
-
-### SEI Tools (US-Only)
-
-1. AADL Analysis Workflows for Items 4-6 above (User-friendly OSATE Interface). Provides workflow support for analysis of schedulability, processor throughput budgeting, 
-   safety analysis, bandwidth budgeting, weight budgeting, power budgeting, and memory budgeting.
-
-To receive the US-Only tools from the SEI please contact the respective Government Contracting Office to request them from the SEI.
-
-### Adventium Tools
+## Adventium Tools
 
 Tools developed by Adventium Labs are documented at their web site: <https://www.adventiumlabs.com/our-work/products-services/model-based-engineering-mbe-tools>
-
-### OSATE Tools Currently in Development
-
-The OSATE Roadmap provides plans for releases of new OSATE capabilities through 2018. Below are additional capabilities.
-
-1. *FACE-AADL Translator* – Enable the migration from FACE models to AADL models to take advantage of the integration analysis and generation capabilities available through 
-   AADL workbench support. The translation facilitates analysis of FACE compliant models through the AADL workbench as well as generation of runtime executive configurations 
-   for a specific target platform supporting partitioned architectures.
-2. *SysML-AADL Translator* – Enable the migration from SysML models to AADL models to take advantage of the integration analysis and generation capabilities available through 
-   AADL workbench support. This includes a translator for System Modeling Language (SysML) models represented in Enterprise Architect (EA) and in the open source Papyrus SysML 
-   workbench into Architecture Analysis & Design Language (AADL) models. This includes translation of SysML with a profile representing specific AADL component concepts.
-3. *OSATE Scalability* – This capability extends OSATE to scale to larger mission system architectures. It will allow a user to get an overview of an unfamiliar model, provide 
-   task-focused views of a model, and enhance support for collaborative model development
-4. *Language extensions* – OSATE upgrades will address all AADL standard language updates prior to AADL 3 adoption.
 

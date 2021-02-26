@@ -570,7 +570,11 @@
 <li><p>MacOS users must run the command <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">xattr</span> <span class="pre">-rd</span> <span class="pre">com.apple.quarantine</span> <span class="pre">osate2.app/</span></code> to be able to run OSATE.</p></li>
 <li><p>Installing the OSATE plugins into “Eclipse for RCP and RAP Developers” may prevent Eclipse from starting. See <a class="reference external" href="https://github.com/osate/osate2/issues/2061">issue 2061</a>.</p></li>
 <li><p>Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.9.1 from <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates">http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates</a>.</p></li>
+<li><p>There is a minor bug (#2569) in OSATE 2.9.1 that prevents setting the AADL perspective as the default perspective in a new workspace. The bug also prevents the application icon from being shown and puts an entry “Product osate2 could not be found” into the error log at each start.This can be fixed manually by adding the following line to the osate.ini file.</p></li>
 </ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">Declipse</span><span class="o">.</span><span class="n">product</span><span class="o">=</span><span class="n">org</span><span class="o">.</span><span class="n">osate</span><span class="o">.</span><span class="n">branding</span><span class="o">.</span><span class="n">osate2</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="version-2-9-0">
@@ -3901,7 +3905,7 @@ Long</a>.</p>
         
         &copy; Copyright 2016-2020, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Feb 01, 2021.
+        Last updated on Feb 26, 2021.
       </span>
 
     </p>
