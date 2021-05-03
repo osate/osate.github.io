@@ -4,7 +4,8 @@
 <html lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Download and Installation &mdash; OSATE 2.9.1 documentation</title>
@@ -86,7 +87,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">User Documentation</span></p>
+              <p><span class="caption-text">User Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about-osate.html">About OSATE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="additional-components.html">Additional OSATE Components</a></li>
@@ -109,7 +110,7 @@
 <li class="toctree-l1"><a class="reference internal" href="osate-roadmap.html">OSATE Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting-help.html">Getting Help</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<p><span class="caption-text">Developer Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="setup-development.html">Setting up an OSATE development environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dev/writing-tests.html">Writing Tests</a></li>
@@ -177,12 +178,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="download-and-installation">
+  <section id="download-and-installation">
 <h1>Download and Installation<a class="headerlink" href="#download-and-installation" title="Permalink to this headline">¶</a></h1>
 <p>The latest OSATE release can be downloaded from
 <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/stable/latest/products/">here</a>.</p>
 <p><strong>See the release notes for known bugs and workarounds.</strong></p>
-<div class="section" id="new-installation">
+<section id="new-installation">
 <h2>New Installation<a class="headerlink" href="#new-installation" title="Permalink to this headline">¶</a></h2>
 <p>OSATE is available for Windows (64-bit), macOS (64-bit),
 and Linux (64-bit). As a prerequisite Java 8 is required; in the
@@ -195,7 +196,7 @@ OSATE download site (see below), choose an installation directory and
 unpack the archive file there. The installation directory contains a
 platform specific executable (osate.exe / osate.app / osate) that can be
 used to start the OSATE.</p>
-<div class="section" id="detailed-installation-for-windows">
+<section id="detailed-installation-for-windows">
 <h3>Detailed Installation for Windows<a class="headerlink" href="#detailed-installation-for-windows" title="Permalink to this headline">¶</a></h3>
 <p>On Windows 64-bit Java must be installed to use 64-bit OSATE. To test
 which one is installed, run <code class="docutils literal notranslate"><span class="pre">java</span> <span class="pre">-version</span></code> in cmd.exe. The following
@@ -213,17 +214,17 @@ C:\Tools\OSATE. After extraction the target directory will contain
 some sub-directories and files, including osate.exe:</p>
 <p><img alt="OSATE Directory Layout" src="_images/osate-directory-layout.png" /></p>
 <p>OSATE Directory Layout</p>
-</div>
-<div class="section" id="detailed-installation-for-macos">
+</section>
+<section id="detailed-installation-for-macos">
 <h3>Detailed Installation for macOS<a class="headerlink" href="#detailed-installation-for-macos" title="Permalink to this headline">¶</a></h3>
 <p>OSATE binary is not signed. This can result in an error message when starting OSATE.</p>
 <p>To correct this issue, run the following command to allow OSATE execution:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo xattr -rd com.apple.quarantine osate2.app/
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="installing-additional-osate-components">
+</section>
+</section>
+<section id="installing-additional-osate-components">
 <h2>Installing Additional OSATE Components<a class="headerlink" href="#installing-additional-osate-components" title="Permalink to this headline">¶</a></h2>
 <p>There are several optional components available for installation. OSATE provides
 a convenient way to discover the available components and install them via a
@@ -233,8 +234,8 @@ dialog that is available in the <code class="docutils literal notranslate"><span
 To install one or more components, select the component’s checkbox and click on
 <code class="docutils literal notranslate"><span class="pre">Finish</span></code> to start the installation.</p>
 <p><img alt="OSATE Help Menu" src="_images/install-components2.png" /></p>
-</div>
-<div class="section" id="updating-osate">
+</section>
+<section id="updating-osate">
 <h2>Updating OSATE<a class="headerlink" href="#updating-osate" title="Permalink to this headline">¶</a></h2>
 <p>An existing OSATE installation can be updated when a new maintenance release has been published. We support updates within
 the same OSATE version from the final release to a maintenance release and from one maintenance release to the next.
@@ -243,10 +244,10 @@ For example,</p>
 <p>To start the update process, use the check for updates entry in the help menu in OSATE and follow the instructions in
 the dialog.</p>
 <p><img alt="OSATE Update Menu" src="_images/osate-update.png" /></p>
-</div>
-<div class="section" id="download-locations">
+</section>
+<section id="download-locations">
 <h2>Download Locations<a class="headerlink" href="#download-locations" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="stable-versions">
+<section id="stable-versions">
 <h3>Stable Versions<a class="headerlink" href="#stable-versions" title="Permalink to this headline">¶</a></h3>
 <p>A new stable version is released every 2-3 months. You can install it from an
 existing Eclipse installation using the update site or just by
@@ -258,8 +259,8 @@ available for Windows, Linux and macOS.</p>
 <li><p><strong>Product</strong>: <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/stable/">http://osate-build.sei.cmu.edu/download/osate/stable/</a></p></li>
 <li><p><strong>Update sites</strong>: <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/stable/">http://osate-build.sei.cmu.edu/download/osate/stable/</a></p></li>
 </ul>
-</div>
-<div class="section" id="testing-version">
+</section>
+<section id="testing-version">
 <h3>Testing Version<a class="headerlink" href="#testing-version" title="Permalink to this headline">¶</a></h3>
 <p>The testing version is built on a nightly basis. It includes the latest
 fixes but also some unstable code related to features being developed.
@@ -269,9 +270,9 @@ using it for production purpose due to potential unstable features.</p>
 <li><p><strong>Product</strong>: <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/testing/products/">http://osate-build.sei.cmu.edu/download/osate/testing/products/</a></p></li>
 <li><p><strong>Update site</strong>: <a class="reference external" href="http://osate-build.sei.cmu.edu/download/osate/testing/updates/">http://osate-build.sei.cmu.edu/download/osate/testing/updates/</a></p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -296,7 +297,7 @@ using it for production purpose due to potential unstable features.</p>
         
         &copy; Copyright 2016-2020, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Feb 26, 2021.
+        Last updated on May 03, 2021.
       </span>
 
     </p>

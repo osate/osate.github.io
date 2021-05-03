@@ -4,7 +4,8 @@
 <html lang="en" >
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Setting up an OSATE development environment &mdash; OSATE 2.9.1 documentation</title>
@@ -86,7 +87,7 @@
               
             
             
-              <p class="caption"><span class="caption-text">User Documentation</span></p>
+              <p><span class="caption-text">User Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="about-osate.html">About OSATE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="additional-components.html">Additional OSATE Components</a></li>
@@ -95,7 +96,7 @@
 <li class="toctree-l1"><a class="reference internal" href="osate-roadmap.html">OSATE Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting-help.html">Getting Help</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<p><span class="caption-text">Developer Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up an OSATE development environment</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#download-the-installer">1. Download the installer</a></li>
@@ -185,38 +186,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="setting-up-an-osate-development-environment">
+  <section id="setting-up-an-osate-development-environment">
 <h1>Setting up an OSATE development environment<a class="headerlink" href="#setting-up-an-osate-development-environment" title="Permalink to this headline">¶</a></h1>
 <p>Starting with OSATE 2.3, which is based on Eclipse 4.7.1 (Oxygen.1), the recommended way to set up a development environment uses the Eclipse Installer.</p>
 <p><small><strong>Note:</strong> Java SDK 1.8 is recommended to compile OSATE sources.</small></p>
-<div class="section" id="download-the-installer">
+<section id="download-the-installer">
 <h2>1. Download the installer<a class="headerlink" href="#download-the-installer" title="Permalink to this headline">¶</a></h2>
 <p>The Eclipse Installer can be downloaded from the Eclipse Web site. Follow this <a class="reference external" href="https://www.eclipse.org/downloads/packages/installer">link</a> to download the installer for your platform.</p>
 <p>On Mac OSX and Linux the installer is a compressed archive. Extract it to a directory of your choice.</p>
 <p>The installer for Windows is a self-extracting archive. When running the executable you can choose to keep the extracted installer and select an installation directory.</p>
 <p><small><strong>Note:</strong> On Windows the initial extraction is into a temporary directory, usually into a temporary directory in C:\User\Joe\AppData\Local\Temp. The name of the temporary directory starts with the letters <em>eoi</em>. If your computer is subject to a restrictive security policy that does not allow execution of arbitrary programs from that directory you should copy the directory content to another place from where the installer can be executed. Alternatively you can download the windows installer as a zip file from <a class="reference external" href="https://download.eclipse.org/oomph/products/eclipse-inst-jre-win64.zip">here</a></small></p>
-</div>
-<div class="section" id="run-the-installer">
+</section>
+<section id="run-the-installer">
 <h2>2. Run the installer<a class="headerlink" href="#run-the-installer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Installer 1" src="_images/installer1.png" /></p>
 <p>Open the menu (A), bundle pools should be on (B), and switch to advanced mode (C)</p>
-</div>
-<div class="section" id="select-the-eclipse-platform">
+</section>
+<section id="select-the-eclipse-platform">
 <h2>3. Select the Eclipse platform<a class="headerlink" href="#select-the-eclipse-platform" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Installer 2" src="_images/installer2.png" /></p>
 <p>On first use update the installer (A)</p>
 <p>If necessary, configure proxy settings, and optionally enter ssh credentials (B). User the help (C) for more detailed information on these steps.</p>
 <p>Select <strong>Eclipse IDE for Java Developers</strong> as the base product to install, and select <strong>2020-06</strong> as the product version. Select the <strong>64 bit Java 8 JVM</strong> installed on your system.</p>
-</div>
-<div class="section" id="add-the-osate-setup-file">
+</section>
+<section id="add-the-osate-setup-file">
 <h2>4. Add the OSATE setup file<a class="headerlink" href="#add-the-osate-setup-file" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Installer 3" src="_images/installer3.png" /></p>
 <p>Add a user project by clicking on the + icon (A).</p>
 <p>Select the catalog <em>Github Projects</em> and enter the following URL as the <em>Resource URI</em>:</p>
 <p>https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2020-06.setup</p>
 <p>Check the box next to the added OSATE2 Development entry in the tree under Github Projects/<User>. Then select the master stream in right column of the table at the bottom.</p>
-</div>
-<div class="section" id="set-required-variables">
+</section>
+<section id="set-required-variables">
 <h2>5. Set required variables<a class="headerlink" href="#set-required-variables" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Installer 4" src="_images/installer4.png" /></p>
 <p>Check <em>Show all variables</em> near the bottom of the dialog. Without this, only variables that do not have a value will be displayed. Oomph stores variable values between invocations, so nothing would be shown after the first run.</p>
@@ -225,12 +226,12 @@
 <p>The <em>Git clone location rule</em> determines how the path to the osate2 git repository clone is constructed. The osate2 git repository can be cloned in a directory in the installation location, workspace location, or elsewhere. Depending on the location a new field will be shown to enter a directory.</p>
 <p>The <em>API baseline location rule</em> determines how the path to store API baseline files is constructed. The API baseline(s) can be stored in a directory in the installation location, workspace location, or elsewhere. Depending on the location a new field will be shown to enter a directory. <em>Do not store API baseline files in a local git repository.</em></p>
 <p>Finally, choose how to access the git repositories. The default choice uses ssh access and requires ssh credentials (click the key icon at the bottom to set this up), and your public key must be uploaded to github. The  <em>HTTPS (read-write)</em> option uses your Github username and password. When you choose https a variable for the user name will show up. Replace the default <em>anonymous</em> with your github user name.</p>
-</div>
-<div class="section" id="install-eclipse">
+</section>
+<section id="install-eclipse">
 <h2>6. Install Eclipse<a class="headerlink" href="#install-eclipse" title="Permalink to this headline">¶</a></h2>
 <p>The next screen shows the installation steps that will be executed. Click <em>Finish</em> to download eclipse and install it to the selected location. When run for the first time, it will download features and plugins into the bundle pool. The bundle pool is shared among eclipse installations such that subsequent installations are much faster.</p>
-</div>
-<div class="section" id="get-osate-sources">
+</section>
+<section id="get-osate-sources">
 <h2>7. Get OSATE sources<a class="headerlink" href="#get-osate-sources" title="Permalink to this headline">¶</a></h2>
 <p>Upon first start eclipse executes additional setup tasks to set preferences, clone git repositories if needed, import projects, and organize projects into working sets.</p>
 <p>The OSATE2 setup file sets the following preferences:</p>
@@ -243,15 +244,15 @@
 <li><p>An Xtend formatter profile <em>Osate</em> is created and enabled for the workspace.</p></li>
 </ul>
 <p>Cloning the git repositories takes some time. Progress can be viewed in a dialog. To show the progress dialog, click on the animated icon the eclipse status bar.</p>
-</div>
-<div class="section" id="updating-the-development-environment">
+</section>
+<section id="updating-the-development-environment">
 <h2>8. Updating the development environment<a class="headerlink" href="#updating-the-development-environment" title="Permalink to this headline">¶</a></h2>
 <p>Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the eclipse installation by re-executing the setup process. This happens every time eclipse is started (unless disabled in the preferences) or can be done manually via <em>Help</em> -&gt; <em>Perform Setup Tasks …</em></p>
 <p>Please report issues with the setup using the osate2 issue tracker on Github.</p>
-</div>
-<div class="section" id="q-a-troubleshooting">
+</section>
+<section id="q-a-troubleshooting">
 <h2>Q &amp; A / Troubleshooting<a class="headerlink" href="#q-a-troubleshooting" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb">
+<section id="the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb">
 <h3>The heap size is set to 1GB. How do I increase that to 2GB?<a class="headerlink" href="#the-heap-size-is-set-to-1gb-how-do-i-increase-that-to-2gb" title="Permalink to this headline">¶</a></h3>
 <p>The initial heap size is set to 1GB for 32bit environments with a process size limitation of 2GB, in particular 32-bit Windows.
 You <em>will</em> want to increase the heap size to a minimum of 2GB due to the Xtend environment.
@@ -272,43 +273,43 @@ You can edit the user setup to override the setting for all eclipse installation
 <li><p>Execute the setup: <em>Help</em> -&gt; <em>Perform Setup Tasks…</em></p></li>
 </ol>
 <p>You can also edit the installation setup to establish a maximum heap size just for this eclipse installation.</p>
-</div>
-<div class="section" id="can-i-add-the-osate2-project-setup-to-an-existing-workspace">
+</section>
+<section id="can-i-add-the-osate2-project-setup-to-an-existing-workspace">
 <h3>Can I add the OSATE2 project setup to an existing workspace?<a class="headerlink" href="#can-i-add-the-osate2-project-setup-to-an-existing-workspace" title="Permalink to this headline">¶</a></h3>
 <p>Yes, a project setup can be imported into a workspace: <em>File</em> -&gt; <em>Import…</em> -&gt; <em>Oomph</em> -&gt; <em>Projects into workspace</em></p>
 <p>You can also use the import to add additional project setups to a workspace.</p>
-</div>
-<div class="section" id="i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that">
+</section>
+<section id="i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that">
 <h3>I want to use the eclipse installation with a new workspace. Can I do that?<a class="headerlink" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that" title="Permalink to this headline">¶</a></h3>
 <p>No problem. Switch to the new workspace location and import the OSATE2 project setup.</p>
 <p>Alternatively, you can create a new eclipse installation for each new workspace. When using a bundle pool, an eclipse installation is comparatively lightweight, and quick to set up.</p>
-</div>
-<div class="section" id="how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">
+</section>
+<section id="how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">
 <h3>How do I add a feature to my eclipse installation and share it with others in my team?<a class="headerlink" href="#how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team" title="Permalink to this headline">¶</a></h3>
 <p>Create your own setup file and import it into eclipse. P2 Director tasks install features in eclipse. It is recommended to put setup files under version control.</p>
-</div>
-<div class="section" id="i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration">
+</section>
+<section id="i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration">
 <h3>I have installed a feature in my eclipse installation, but it’s not available when I start OSATE using a launch configuration.<a class="headerlink" href="#i-have-installed-a-feature-in-my-eclipse-installation-but-it-s-not-available-when-i-start-osate-using-a-launch-configuration" title="Permalink to this headline">¶</a></h3>
 <p>Installed features must be part of the target platform to be available to a runtime workbench. The OSATE2 setup uses a target platform <em>Modular Target</em>. To add to this target create a <em>Targlet</em> in your setup. See osate2.setup for an example.</p>
-</div>
-<div class="section" id="how-can-i-add-a-feature-to-the-osate2-development-setup">
+</section>
+<section id="how-can-i-add-a-feature-to-the-osate2-development-setup">
 <h3>How can I add a feature to the OSATE2 development setup?<a class="headerlink" href="#how-can-i-add-a-feature-to-the-osate2-development-setup" title="Permalink to this headline">¶</a></h3>
 <p>Edit the OSATE2 setup (add a P2 director task and/or a targlet) and submit a pull request. <strong>DO NOT push a modified <em>osate2.setup</em> file to the develop branch on github!</strong></p>
-</div>
-<div class="section" id="i-get-an-error-message-target-is-not-a-jdk-root-java-executable-was-not-found">
+</section>
+<section id="i-get-an-error-message-target-is-not-a-jdk-root-java-executable-was-not-found">
 <h3>I get an error message “Target is not a JDK Root. Java executable was not found”<a class="headerlink" href="#i-get-an-error-message-target-is-not-a-jdk-root-java-executable-was-not-found" title="Permalink to this headline">¶</a></h3>
 <p>This tends to happen on Windows when the Java version is updated. Oracle’s installer removes the old version and installs the new version into a new directory. Go back in the Oomph dialog to the variables page and change the <em>JRE 1.8 Location</em> variable to the new location.</p>
-</div>
-<div class="section" id="where-can-i-find-documentation-about-oomph-setups">
+</section>
+<section id="where-can-i-find-documentation-about-oomph-setups">
 <h3>Where can I find documentation about Oomph setups?<a class="headerlink" href="#where-can-i-find-documentation-about-oomph-setups" title="Permalink to this headline">¶</a></h3>
 <p>On the eclipse wiki: <a class="reference external" href="https://wiki.eclipse.org/Eclipse_Oomph_Authoring">Eclipse Oomph Authoring</a></p>
-</div>
-<div class="section" id="there-are-too-many-steps-is-there-a-faster-way">
+</section>
+<section id="there-are-too-many-steps-is-there-a-faster-way">
 <h3>There are too many steps, is there a faster way?<a class="headerlink" href="#there-are-too-many-steps-is-there-a-faster-way" title="Permalink to this headline">¶</a></h3>
 <p>If you have already installed the Eclipse Installer on your computer try <a class="reference external" href="eclipse+installer:https://raw.githubusercontent.com/osate/osate2/master/setup/OSATEConfiguration.setup">this link</a>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -333,7 +334,7 @@ You can edit the user setup to override the setting for all eclipse installation
         
         &copy; Copyright 2016-2020, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Feb 26, 2021.
+        Last updated on May 03, 2021.
       </span>
 
     </p>

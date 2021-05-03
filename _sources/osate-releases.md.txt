@@ -2,6 +2,67 @@
 
 ## Stable Releases
 
+### Version 2.9.2 (NOT YET RELEASED)
+
+#### Release
+
+  - **GIT tag**: 2.9.2-RELEASE
+  - **Release date**: TBD
+  - **Eclipse base version**: 2020-06
+  - **Java version**: Java 8
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.1/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.1/products>
+
+#### SHA256 Hashes for the downloads
+
+```
+```
+
+#### Notable changes
+
+ * There is a new preference setting to ignore an installed annex plugin.
+ * Another new preference setting allows ignoring errors that are caused by a missing property set, e.g., when a model
+   uses properties from a property set that is included in a plugin, but that plugin is not installed. 
+ * This is the last release that will work with Java 8. Starting with the next release OSATE will require Java 11. 
+
+#### Fixed issues
+
+ * OSATE Core and Analysis Plugins
+    1. Flows in Subprogram Groups ([1563](https://github.com/osate/osate2/issues/1563))
+    1. Configuration flag for deactivating an annex ([2288](https://github.com/osate/osate2/issues/2288))
+    1. Add option to suppress errors related to missing property sets ([2478](https://github.com/osate/osate2/issues/2478))
+    1. Error in flow precedence with refining/extends ([2533](https://github.com/osate/osate2/issues/2533))
+    1. New JUnit tests sometimes fail on Jenkins ([2567](https://github.com/osate/osate2/issues/2567))
+    1. Generate property set accessor code for org.osate.contribution.sei  ([2573](https://github.com/osate/osate2/issues/2573))
+    1. The warning squiggly line for "expected feature xxx to have classifier yyy" is placed under the wrong classifier ([2580](https://github.com/osate/osate2/issues/2580))
+    1. Example AADL Project label is missing ([2584](https://github.com/osate/osate2/issues/2584))
+    1. Mylyn is missing in the OSATE product build ([2585](https://github.com/osate/osate2/issues/2585))
+    1. Missing error/warning markers in AADL navigator view  ([2609](https://github.com/osate/osate2/issues/2609))
+    1. Missing error/warning markers on instance model elements ([2612](https://github.com/osate/osate2/issues/2612))
+    1. Update bus load analysis internal model to use ecore ([2555](https://github.com/osate/osate2/issues/2555))
+    1. Add RAMSES to the list of installable components ([2056](https://github.com/osate/osate2/issues/2056))
+ * Error Model and Analysis Plugins
+    1. Error transition same state causes stack overflow  ([2546](https://github.com/osate/osate2/issues/2546))
+    1. Typeset with target state of error transition not marked as error ([2579](https://github.com/osate/osate2/issues/2579))
+    1. Typeset used as target error type not marked as error ([2604](https://github.com/osate/osate2/issues/2604))
+ * Graphical Editor
+    1. Visualization and editing of behavior annex state automata ([2130](https://github.com/osate/osate2/issues/2130))
+    1. Allow editing of behavior annex dispatch conditions ([2131](https://github.com/osate/osate2/issues/2131))
+    1. Support for editing the behavior annex action language ([2132](https://github.com/osate/osate2/issues/2132))
+    1. Assign names to behavior transitions created in the graphical editor ([2640](https://github.com/osate/osate2/issues/2640))
+ * ALISA
+    1. Reqtrace plugin uses inefficient property tester ([2498](https://github.com/osate/osate2/issues/2498))
+ * Behavior Annex
+    1. In BA plugin, fail referencing fields of a subprogram data access or input parameter when calling another one  ([2466](https://github.com/osate/osate2/issues/2466))
+    1. In the BA plugin, BehaviorVariable's lose their DataClassifier's namespace reference after modification ([2550](https://github.com/osate/osate2/issues/2550))
+    1. In BA plugin, fail to open provided examples ([2583](https://github.com/osate/osate2/issues/2583))
+  
+#### Known issues
+
+ * MacOS users must run the command `sudo xattr -rd com.apple.quarantine osate2.app/` to be able to run OSATE.
+ * Installing the OSATE plugins into "Eclipse for RCP and RAP Developers" may prevent Eclipse from starting. See [issue 2061](https://github.com/osate/osate2/issues/2061).
+ * Resolute and AGREE are no longer integrated. The versions included in OSATE 2.3.7 can be installed into OSATE 2.9.1 from <http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates>.
+
 ### Version 2.9.1
 
 #### Release
