@@ -2,20 +2,23 @@
 
 ## Stable Releases
 
-### Version 2.9.2 (NOT YET RELEASED)
+### Version 2.9.2
 
 #### Release
 
   - **GIT tag**: 2.9.2-RELEASE
-  - **Release date**: TBD
+  - **Release date**: June 8, 2021
   - **Eclipse base version**: 2020-06
   - **Java version**: Java 8
-  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.1/updates>
-  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.1/products>
+  - **Eclipse Update-Site**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.2/updates>
+  - **Download URL**: <http://osate-build.sei.cmu.edu/download/osate/stable/2.9.2/products>
 
 #### SHA256 Hashes for the downloads
 
 ```
+2d34cc2bb6bef5296fa66b67e883aead2989cd5541254304fb4eedcb66750347  osate2-2.9.2-vfinal-linux.gtk.x86_64.tar.gz
+10ae6949046b21333c8bec251dd7d7e11892b5210652d880a410a3ac084f12f4  osate2-2.9.2-vfinal-macosx.cocoa.x86_64.tar.gz
+a74b0a6f8ed42900ddf23a4e3843e059733ea35a6bd931ad86ea4b3bbf2d4fd9  osate2-2.9.2-vfinal-win32.win32.x86_64.zip
 ```
 
 #### Notable changes
