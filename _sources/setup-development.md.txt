@@ -79,7 +79,17 @@ The OSATE2 setup file sets the following preferences:
 
 Cloning the git repositories takes some time. Progress can be viewed in a dialog. To show the progress dialog, click on the animated icon the Eclipse status bar.
 
-## 8. Updating the development environment
+## 8. Install the JavaFX SDK
+The JavaFX must be installed manually.
+
+* Download the SDK for your development platform from the [JavaFX website](https://openjfx.io/). For example: "JavaFX Windows SDK".
+* Extract the SDK to your preferred path.
+* Configure the development enivornment with the path to the SDK.
+    * Open Eclipse preferences: *Windows -> Preferences*
+	* Select *JavaFX*
+	* Set *JavaFX 11+ SDK* to the *lib* folder of the SDK.
+
+## 9. Updating the development environment
 
 Ideally the development environment is completely managed using the setup file. This implies that additional plugins or git repositories should not be added manually. Instead, the setup file should be updated. All developers can then update the Eclipse installation by re-executing the setup process. This happens every time Eclipse is started (unless disabled in the preferences) or can be done manually via *Help* -> *Perform Setup Tasks ...*
 
@@ -129,6 +139,10 @@ Installed features must be part of the target platform to be available to a runt
 ### How can I add a feature to the OSATE2 development setup?
 
 Edit the OSATE2 setup (add a P2 director task and/or a targlet) and submit a pull request. **DO NOT push a modified _osate2.setup_ file to the develop branch on GitHub!**
+
+### How can I prevent NoClassDefFoundError exceptions from being thrown when opening the graphical editor?
+
+Add "-Dosgi.framework.extensions=org.eclipse.fx.osgi" (without the quotes) to the VM arguments of your launch configuration.
 
 ### Where can I find documentation about Oomph setups?
 

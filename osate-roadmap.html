@@ -4,8 +4,7 @@
 <html lang="en" >
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>OSATE Roadmap &mdash; OSATE 2.9.2 documentation</title>
@@ -27,10 +26,9 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -87,7 +85,7 @@
               
             
             
-              <p><span class="caption-text">User Documentation</span></p>
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about-osate.html">About OSATE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="additional-components.html">Additional OSATE Components</a></li>
@@ -112,7 +110,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="getting-help.html">Getting Help</a></li>
 </ul>
-<p><span class="caption-text">Developer Documentation</span></p>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="setup-development.html">Setting up an OSATE development environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dev/writing-tests.html">Writing Tests</a></li>
@@ -180,11 +178,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="osate-roadmap">
+  <div class="tex2jax_ignore mathjax_ignore section" id="osate-roadmap">
 <h1>OSATE Roadmap<a class="headerlink" href="#osate-roadmap" title="Permalink to this headline">¶</a></h1>
-<section id="planned-osate-releases">
+<div class="section" id="planned-osate-releases">
 <h2>Planned OSATE Releases<a class="headerlink" href="#planned-osate-releases" title="Permalink to this headline">¶</a></h2>
-<section id="osate-2-5-0">
+<div class="section" id="osate-2-5-0">
 <h3>OSATE 2.5.0<a class="headerlink" href="#osate-2-5-0" title="Permalink to this headline">¶</a></h3>
 <p>Release: May 2019</p>
 <p><strong>Public release</strong></p>
@@ -199,8 +197,8 @@
 <ul class="simple">
 <li><p>TBD</p></li>
 </ul>
-</section>
-<section id="osate-2-5-1">
+</div>
+<div class="section" id="osate-2-5-1">
 <h3>OSATE 2.5.1<a class="headerlink" href="#osate-2-5-1" title="Permalink to this headline">¶</a></h3>
 <p>Release: June/July 2019</p>
 <p><strong>Public release</strong></p>
@@ -215,8 +213,8 @@
 <ul class="simple">
 <li><p>TBD</p></li>
 </ul>
-</section>
-<section id="osate-2-6-0">
+</div>
+<div class="section" id="osate-2-6-0">
 <h3>OSATE 2.6.0<a class="headerlink" href="#osate-2-6-0" title="Permalink to this headline">¶</a></h3>
 <p>Release: August 2019</p>
 <p><strong>Public release</strong></p>
@@ -231,18 +229,18 @@
 <ul class="simple">
 <li><p>TBD</p></li>
 </ul>
-</section>
-</section>
-<section id="roadmap-for-aadl-language-support">
+</div>
+</div>
+<div class="section" id="roadmap-for-aadl-language-support">
 <h2>Roadmap for AADL Language Support<a class="headerlink" href="#roadmap-for-aadl-language-support" title="Permalink to this headline">¶</a></h2>
-<section id="support-for-aadl-2-2">
+<div class="section" id="support-for-aadl-2-2">
 <h3>Support for AADL 2.2<a class="headerlink" href="#support-for-aadl-2-2" title="Permalink to this headline">¶</a></h3>
 <p>Support for the following AADL language constructs may be added in a future release</p>
 <ul class="simple">
 <li><p>Specification of partial end-to-end flows
 <a class="reference external" href="https://github.com/saeaadl/aadlv2.1/issues/7">(issue #7)</a></p></li>
 </ul>
-<section id="limitations">
+<div class="section" id="limitations">
 <h4>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h4>
 <p>There are a couple of rarely used language features that are not fully supported on OSATE. In general, these features are
 supported in the declarative model but models containing these features cannot be instantiated.</p>
@@ -265,14 +263,14 @@ and <code class="docutils literal notranslate"><span class="pre">Subset</span></
 <li><p><code class="docutils literal notranslate"><span class="pre">none</span></code> statement for <code class="docutils literal notranslate"><span class="pre">requires</span> <span class="pre">modes</span></code></p></li>
 <li><p>End to end flow specifications</p></li>
 </ul>
-</section>
-</section>
-<section id="support-for-aadl-3">
+</div>
+</div>
+<div class="section" id="support-for-aadl-3">
 <h3>Support for AADL 3<a class="headerlink" href="#support-for-aadl-3" title="Permalink to this headline">¶</a></h3>
 <p>We are planning to create experimental OSATE releases to prototype AADL 3 language features. Details are still tbd.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
@@ -297,7 +295,7 @@ and <code class="docutils literal notranslate"><span class="pre">Subset</span></
         
         &copy; Copyright 2016-2021, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Jun 08, 2021.
+        Last updated on Jul 12, 2021.
       </span>
 
     </p>

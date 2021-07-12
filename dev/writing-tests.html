@@ -4,8 +4,7 @@
 <html lang="en" >
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Writing Tests &mdash; OSATE 2.9.2 documentation</title>
@@ -27,10 +26,9 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -87,7 +85,7 @@
               
             
             
-              <p><span class="caption-text">User Documentation</span></p>
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../about-osate.html">About OSATE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../additional-components.html">Additional OSATE Components</a></li>
@@ -96,7 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../osate-roadmap.html">OSATE Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting-help.html">Getting Help</a></li>
 </ul>
-<p><span class="caption-text">Developer Documentation</span></p>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../setup-development.html">Setting up an OSATE development environment</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Writing Tests</a><ul>
@@ -174,7 +172,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="writing-tests">
+  <div class="tex2jax_ignore mathjax_ignore section" id="writing-tests">
 <h1>Writing Tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">¶</a></h1>
 <p>We use a stylized way of writing tests based on the xtext testing framework. The
 test class declaration must extend XtextTest and be annotated as follows:</p>
@@ -186,9 +184,9 @@ test class declaration must extend XtextTest and be annotated as follows:</p>
 <p>It is important to use the <code class="docutils literal notranslate"><span class="pre">Aadl2Injectorprovider</span></code> and not the UI injector
 provider as the UI injector requires the presence of files in an Eclipse
 workspace.</p>
-<section id="provided-helper-classes">
+<div class="section" id="provided-helper-classes">
 <h2>Provided Helper Classes<a class="headerlink" href="#provided-helper-classes" title="Permalink to this headline">¶</a></h2>
-<section id="class-testhelper">
+<div class="section" id="class-testhelper">
 <h3>Class TestHelper<a class="headerlink" href="#class-testhelper" title="Permalink to this headline">¶</a></h3>
 <p>This class provides access to the parser, linker, validator, etc. and can
 process AADL strings and AADL files. It must be injected into the test class:</p>
@@ -196,22 +194,22 @@ process AADL strings and AADL files. It must be injected into the test class:</p
 <span class="n">TestHelper</span><span class="o">&lt;</span><span class="n">AadlPackage</span><span class="o">&gt;</span> <span class="n">testHelper</span>
 </pre></div>
 </div>
-</section>
-<section id="class-testresourcesethelper">
+</div>
+<div class="section" id="class-testresourcesethelper">
 <h3>Class TestResourceSetHelper<a class="headerlink" href="#class-testresourcesethelper" title="Permalink to this headline">¶</a></h3>
 <p>This class provides a singleton resource set that can be reused across tests.
 The resource set is initialized on creation with all contributed AADL property
 sets and packages. It is mainly there for use in <code class="docutils literal notranslate"><span class="pre">TestHelper</span></code>. Note that each
 call to <code class="docutils literal notranslate"><span class="pre">getResourceSet()</span></code> returns the same resource set but removes all
 resources loaded since the previous call.</p>
-</section>
-<section id="class-asserthelper">
+</div>
+<div class="section" id="class-asserthelper">
 <h3>Class AssertHelper<a class="headerlink" href="#class-asserthelper" title="Permalink to this headline">¶</a></h3>
 <p>This class provides a couple of extension methods for working with the
 <code class="docutils literal notranslate"><span class="pre">FluentIssueCollection</span></code> and to test scoping.</p>
-</section>
-</section>
-<section id="examples">
+</div>
+</div>
+<div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <p>There are a couple of examples that show how tests can be written:</p>
 <ul class="simple">
@@ -233,16 +231,16 @@ and how to work with it.</p></li>
 </ul>
 </li>
 </ul>
-</section>
-<section id="running-tests">
+</div>
+<div class="section" id="running-tests">
 <h2>Running tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h2>
 <p>Tests can be run in the development environment using <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">as...</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">JUnit</span> <span class="pre">Plug-in</span> <span class="pre">Test</span></code>. Running a plain JUnit tests does not work because the test
 envoronment needs the eclipse plugin mechanism to load contributed AADL property
 sets and packages.</p>
 <p>In the tycho build, test plugins must run with the UI enabled because tests load
 plugins that depend on UI plugins even if they don’t use the UI during the test.</p>
-</section>
-</section>
+</div>
+</div>
 
 
            </div>
@@ -267,7 +265,7 @@ plugins that depend on UI plugins even if they don’t use the UI during the tes
         
         &copy; Copyright 2016-2021, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Jun 08, 2021.
+        Last updated on Jul 12, 2021.
       </span>
 
     </p>

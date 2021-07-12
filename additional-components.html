@@ -4,8 +4,7 @@
 <html lang="en" >
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Additional OSATE Components &mdash; OSATE 2.9.2 documentation</title>
@@ -27,10 +26,9 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -87,7 +85,7 @@
               
             
             
-              <p><span class="caption-text">User Documentation</span></p>
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about-osate.html">About OSATE</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Additional OSATE Components</a><ul>
@@ -108,7 +106,7 @@
 <li class="toctree-l1"><a class="reference internal" href="osate-roadmap.html">OSATE Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting-help.html">Getting Help</a></li>
 </ul>
-<p><span class="caption-text">Developer Documentation</span></p>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="setup-development.html">Setting up an OSATE development environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dev/writing-tests.html">Writing Tests</a></li>
@@ -176,14 +174,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="additional-osate-components">
+  <div class="tex2jax_ignore mathjax_ignore section" id="additional-osate-components">
 <h1>Additional OSATE Components<a class="headerlink" href="#additional-osate-components" title="Permalink to this headline">¶</a></h1>
 <p>The following additional OSATE components are not port of the base installation. They can be installed
 into OSATE via the dialog <code class="docutils literal notranslate"><span class="pre">Help</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">Additional</span> <span class="pre">OSATE</span> <span class="pre">Components...</span></code>. For detailed instructions
 click <a class="reference external" href="http://osate.org/download-and-install.html#installing-additional-osate-components">here</a>.</p>
-<section id="osate-components-by-the-software-engineering-institute">
+<div class="section" id="osate-components-by-the-software-engineering-institute">
 <h2>OSATE Components by the Software Engineering Institute<a class="headerlink" href="#osate-components-by-the-software-engineering-institute" title="Permalink to this headline">¶</a></h2>
-<section id="face-data-model-to-aadl-translator">
+<div class="section" id="face-data-model-to-aadl-translator">
 <h3>FACE Data Model to AADL Translator<a class="headerlink" href="#face-data-model-to-aadl-translator" title="Permalink to this headline">¶</a></h3>
 <p>The FACE Data Model to AADL Translator converts a FACE 3.0 “.face” file into an AADL 2.2 model. It
 translates the Data Model, UoP Model, and Integration Model. The translator produces data classifiers
@@ -197,34 +195,34 @@ then analyzed. The existence of the FACE Data Model to AADL Translator allows fo
 model to be quickly realized in the AADL model and then analyzed.</p>
 <p>The FACE Data Model to AADL Translator is a set of plugins to OSATE. The translator integrates with the
 OSATE modeling environment and is invoked from within OSATE.</p>
-</section>
-</section>
-<section id="osate-components-by-third-parties">
+</div>
+</div>
+<div class="section" id="osate-components-by-third-parties">
 <h2>OSATE Components by Third Parties<a class="headerlink" href="#osate-components-by-third-parties" title="Permalink to this headline">¶</a></h2>
-<section id="bless-plugin">
+<div class="section" id="bless-plugin">
 <h3>BLESS Plugin<a class="headerlink" href="#bless-plugin" title="Permalink to this headline">¶</a></h3>
 <p>The Behavior Language for Embedded Systems with Software (BLESS) is an annex sublanguage of AADL to
 express behavior of components with state-transition machines.</p>
 <p>The plugin is provided by Multitude Corporation. See <a class="reference external" href="http://www.multitude.net">their web site</a>
 for more information.</p>
-</section>
-<section id="cheddar-plugin">
+</div>
+<div class="section" id="cheddar-plugin">
 <h3>Cheddar Plugin<a class="headerlink" href="#cheddar-plugin" title="Permalink to this headline">¶</a></h3>
 <p>Cheddar is a real-time scheduling analysis tool composed of a scheduling simulator and a set of
 schedulability tests. The plugin allows to generate Cheddar models to verify schedulability of
 uniprocessor and multiprocessor real-time systems.</p>
 <p>The plugin is provided by the Université de Bretagne Occidentale. See
 <a class="reference external" href="http://beru.univ-brest.fr/cheddar/">their web site</a> for more information.</p>
-</section>
-<section id="ramses-plugin">
+</div>
+<div class="section" id="ramses-plugin">
 <h3>RAMSES Plugin<a class="headerlink" href="#ramses-plugin" title="Permalink to this headline">¶</a></h3>
 <p>RAMSES (Refinement of AADL Models for Synthesis of Embedded Systems) compiles AADL models into code
 for ARINC653, POSIX, and OSEK compliant operating systems.</p>
 <p>RAMSES is provided by TELECOM Paris. See <a class="reference external" href="https://mem4csd.telecom-paristech.fr">their web site</a>
 for more information.</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
@@ -249,7 +247,7 @@ for more information.</p>
         
         &copy; Copyright 2016-2021, Carnegie Mellon University
       <span class="lastupdated">
-        Last updated on Jun 08, 2021.
+        Last updated on Jul 12, 2021.
       </span>
 
     </p>
