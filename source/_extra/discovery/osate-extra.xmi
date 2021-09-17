@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<discovery:DiscoveryDefinition
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:discovery="http://www.eclipse.org/papyrus/discovery/1.0">
+  <categories
+      name="SEI Components"
+      description="Components provided by the Software Engineering Institute"
+      relevance="6"
+      image48="">
+    <components
+        name="AADL2AR"
+        provider="CMU/SEI"
+        description="AADL to AltaRica Translator"
+        license="EPL"
+        groups="//@filters.1"
+        image32=""
+        incubation="true">
+      <sitesURLS>https://osate-build.sei.cmu.edu/download/osate/experimental</sitesURLS>
+      <overview
+          summary="AADL to AltaRica Translator"
+          screenshot=""
+          url=""/>
+      <id>org.osate.altarica.sdk</id>
+    </components>
+    <components
+        name="FACE Data Model to AADL Translator"
+        provider="CMU/SEI"
+        description="The FACE Data Model to AADL Translator converts a FACE 3.0 &#x201c;.face&#x201d; file into an AADL 2.2 model. It translates the Data Model, UoP Model, and Integration Model."
+        license="EPL"
+        groups="//@filters.0">
+      <sitesURLS>https://osate-build.sei.cmu.edu/download/osate/components/face2aadl</sitesURLS>
+      <overview
+          summary=""
+          url=""/>
+      <id>org.osate.face2aadl.feature</id>
+    </components>
+  </categories>
+  <categories
+      name="Non SEI Components"
+      description="Components provided by various organizations">
+    <components
+        name="Cheddar Plugin"
+        provider=" Universit&#xe9; de Bretagne Occidentale"
+        description="Cheddar is a real-time scheduling analysis tool composed of a scheduling simulator and a set of schedulability tests."
+        license="GPL"
+        groups="//@filters.1"
+        image32="images/logo_cheddar.png"
+        incubation="true">
+      <sitesURLS>http://beru.univ-brest.fr/svn/CHEDDAR/trunk/src/osate/osate2-update-site</sitesURLS>
+      <overview
+          summary="Cheddar is a real-time scheduling analysis tool composed of a scheduling simulator and a set of schedulability tests. &#xA;&#xA;This plugin allows to generate Cheddar models to verify schedulability of uniprocessor and multiprocessor real-time systems."
+          screenshot="images/cheddar_screenshot.jpg"
+          url="http://beru.univ-brest.fr/~singhoff/cheddar/"/>
+      <id>cheddar_osate2_feature</id>
+    </components>
+    <components
+        name="BLESS Annex Support"
+        provider="KSU &amp; Multitude Corp."
+        description="The Behavior Language for Embedded Systems with Software (BLESS) is an annex sublanguage of AADL to express behavior of components with state-transition machines."
+        license="CC BY 4.0 / EULA"
+        groups="//@filters.1"
+        image32="images/bless-logo.png"
+        incubation="true">
+      <sitesURLS>http://santoslab.org/pub/bless/update/site2.xml</sitesURLS>
+      <overview
+          summary="The Behavior Language for Embedded Systems with Software (BLESS) is an annex sublanguage of AADL to express behavior of components with state-transition machines.  BLESS is a superset of BA adding non-executed assertions expressing what is true about the system when in a state, or a point during execution of an action during transition.&#xA;&#xA;The goal of the BLESS language and tools is to enable the construction of proofs for AADL models that their (operational) behavior upholds their (declarative) specification. Therefore all specifications, programs, and executions be precise, mathematical objects, about which propositions can be made, and proven correct.  Correctness of containing components can be proved from proved-correct subcomponents and their connections.&#xA;&#xA;Code generation from BLESS state machines to both Slang and ISOSCELES tool chains produces executables.&#xA;&#xA;Providers:&#xA;The BLESS editors and translators are provided by Kansas State University under a Creative Commons Attribution 4.0 international license. &#xA;&#xA;The BLESS proof tool which generates verification conditions and transforms them into deductive proofs is provided by Multitude Corporation under a simple End User License Agreement.&#xA;&#xA;Icon made by Freepik from www.flaticon.com; licensed under CC BY 3.0"
+          screenshot="images/bless-screenshot.png"
+          url="http://bless.santoslab.org"/>
+      <id>edu.ksu.bless.feature</id>
+      <id>com.multitude.bless.feature</id>
+    </components>
+  </categories>
+  <filters name="Stable"/>
+  <filters name="Experimental"/>
+</discovery:DiscoveryDefinition>
