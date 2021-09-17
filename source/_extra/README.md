@@ -1,5 +1,5 @@
-#OSATE Web Site
+# Important
 
-**The content of this repository is generated from repository osate/website**
+**The content of this generate from the master branch.**
 
-**Do not push to this repository - all changes will be lost.**
+**Do not push to this branch - all changes will be lost.**
