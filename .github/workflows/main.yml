@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    # Standard drop-in approach that should work for most people.
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "./"
+        name: Deploy to GitHub Pages
+        if: success()
+    - uses: crazy-max/ghaction-github-pages@v2
+      with:
+        target_branch: gh-pages
+        build_dir: build/html
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
