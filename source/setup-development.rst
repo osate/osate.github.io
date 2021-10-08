@@ -159,7 +159,7 @@ Eclipse status bar.
 
 The JavaFX must be installed manually.
 
--  Download the SDK for your development platform from the `JavaFX
+-  Download the JavaFX 17 SDK for your development platform from the `JavaFX
    website <https://openjfx.io/>`__. For example: “JavaFX Windows SDK”.
 -  Extract the SDK to your preferred path.
 -  Configure the development enivornment with the path to the SDK.

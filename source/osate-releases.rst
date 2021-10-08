@@ -4,6 +4,103 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.10.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.10.0-RELEASE
+-  **Release date**: October 8, 2021
+-  **Eclipse base version**: 2021-03
+-  **Java version**: Java 11
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.10.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.10.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   2d34cc2bb6bef5296fa66b67e883aead2989cd5541254304fb4eedcb66750347  osate2-2.9.2-vfinal-linux.gtk.x86_64.tar.gz
+   10ae6949046b21333c8bec251dd7d7e11892b5210652d880a410a3ac084f12f4  osate2-2.9.2-vfinal-macosx.cocoa.x86_64.tar.gz
+   a74b0a6f8ed42900ddf23a4e3843e059733ea35a6bd931ad86ea4b3bbf2d4fd9  osate2-2.9.2-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+-  Switched the underlying framework for the graphical editor, resulting
+   in better-looking diagrams, particularly at various zoom levels.
+-  This release requires Java 11. A Java 11 JDK is bundled with OSATE, so
+   there is no need to install Java 11 separately.
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  Upgrade to Eclipse 2021-03, Xtext 2.25, Xsemantics 1.20, Java 11
+       (`2310 <https://github.com/osate/osate2/issues/2310>`__)
+   2.  Wrong icons for calls and parameter connections
+       (`2605 <https://github.com/osate/osate2/issues/2605>`__)
+   3.  Update icons
+       (`2611 <https://github.com/osate/osate2/issues/2611>`__)
+   4.  Preference to ignore annex breaks standalone mode
+       (`2693 <https://github.com/osate/osate2/issues/2693>`__)
+   5.  Preference to ignore missing property set breaks standalone mode
+       (`2695 <https://github.com/osate/osate2/issues/2695>`__)
+   6.  Replace use of GetProperties with generated property getters in FlowAnalysis, and BusLoadAnalysis
+       (`2574 <https://github.com/osate/osate2/issues/2574>`__)
+   7.  Make NewAbstractAaxlHandler publicly visible
+       (`2705 <https://github.com/osate/osate2/issues/2705>`__)
+   8.  Latency CSV report cannot be written in standalone mode
+       (`2707 <https://github.com/osate/osate2/issues/2707>`__)
+   9.  Include JVM in OSATE download
+       (`2420 <https://github.com/osate/osate2/issues/2420>`__)
+ 
+-  Graphical Editor
+   1.  Implement GEF based graphical editor
+       (`1183 <https://github.com/osate/osate2/issues/1183>`__)
+   2.  Provide opaque or obscuring background for text labels
+       (`1184 <https://github.com/osate/osate2/issues/1184>`__)
+   3.  Allow arbitrary positioning of ports on component exteriors
+       (`1186 <https://github.com/osate/osate2/issues/1186>`__)
+   4.  Indicate illegal object positions with halted intermediary representation
+       (`1188 <https://github.com/osate/osate2/issues/1188>`__)
+   5.  GE SVG Export isn't editable / high quality
+       (`1461 <https://github.com/osate/osate2/issues/1461>`__)
+   6.  Text can be clipped when zooming
+       (`1547 <https://github.com/osate/osate2/issues/1547>`__)
+   7.  In GE, action to change the orientation of buses
+       (`2198 <https://github.com/osate/osate2/issues/2198>`__)
+   8.  NPE when exporting diagrams as SVG
+       (`2410 <https://github.com/osate/osate2/issues/2410>`__)
+   9.  Behavior annex action is incorrectly displayed in graphical editor
+       (`2655 <https://github.com/osate/osate2/issues/2655>`__)
+   10. Allow flow tools to be used when there are warnings in referenced packages
+       (`2663 <https://github.com/osate/osate2/issues/2663>`__)
+   11. Layout exception is thrown for self loops on the same side
+       (`2674 <https://github.com/osate/osate2/issues/2674>`__)
+   12. Diagram export results in an empty image.
+       (`2678 <https://github.com/osate/osate2/issues/2678>`__)
+   13. 2683 Add missing icons to graphical editor
+       (`2685 <https://github.com/osate/osate2/issues/2685>`__)
+       
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+-  Resolute and AGREE are no longer integrated. The versions included in
+   OSATE 2.3.7 can be installed into OSATE 2.9.1 from
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates.
+
 Version 2.9.2
 ~~~~~~~~~~~~~
 
