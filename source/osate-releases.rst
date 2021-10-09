@@ -24,15 +24,14 @@ SHA256 Hashes for the downloads
 
 ::
 
-   2d34cc2bb6bef5296fa66b67e883aead2989cd5541254304fb4eedcb66750347  osate2-2.9.2-vfinal-linux.gtk.x86_64.tar.gz
-   10ae6949046b21333c8bec251dd7d7e11892b5210652d880a410a3ac084f12f4  osate2-2.9.2-vfinal-macosx.cocoa.x86_64.tar.gz
-   a74b0a6f8ed42900ddf23a4e3843e059733ea35a6bd931ad86ea4b3bbf2d4fd9  osate2-2.9.2-vfinal-win32.win32.x86_64.zip
+   78312dd33458e0db5db0be039b561e9b26eb94e572ecfc9fc8ddf831f84405d9  osate2-2.10.0-vfinal-linux.gtk.x86_64.tar.gz
+   a5c2d1ba693b231316798e763628e5f393f19f371ce730dc7d50e6724b227ad7  osate2-2.10.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   19ae0a9b984cfba06be976f6c4d26036590adad18276c3e2eb9b2cd8529c94d1  osate2-2.10.0-vfinal-win32.win32.x86_64.zip
 
 Notable changes
 ^^^^^^^^^^^^^^^
 
--  Switched the underlying framework for the graphical editor, resulting
-   in better-looking diagrams, particularly at various zoom levels.
+-  Switched the underlying framework for the graphical editor.
 -  This release requires Java 11. A Java 11 JDK is bundled with OSATE, so
    there is no need to install Java 11 separately.
 
@@ -61,6 +60,7 @@ Fixed issues
        (`2420 <https://github.com/osate/osate2/issues/2420>`__)
  
 -  Graphical Editor
+
    1.  Implement GEF based graphical editor
        (`1183 <https://github.com/osate/osate2/issues/1183>`__)
    2.  Provide opaque or obscuring background for text labels
@@ -98,7 +98,7 @@ Known issues
    Developers” may prevent Eclipse from starting. See `issue
    2061 <https://github.com/osate/osate2/issues/2061>`__.
 -  Resolute and AGREE are no longer integrated. The versions included in
-   OSATE 2.3.7 can be installed into OSATE 2.9.1 from
+   OSATE 2.3.7 can be installed into OSATE 2.10.0 from
    http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates.
 
 Version 2.9.2
