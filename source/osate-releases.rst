@@ -32,7 +32,8 @@ SHA256 Hashes for the downloads
 Notable changes
 ^^^^^^^^^^^^^^^
 
--  Switched the underlying framework for the graphical editor.
+-  There are two new example projects
+-  We have added a new preference setting to disable processing of selected annexes
 
 Fixed issues
 ^^^^^^^^^^^^
@@ -57,19 +58,19 @@ Fixed issues
        (`2652 <https://github.com/osate/osate2/issues/2652>`__)
    9.  OSATE does not allow multiple call sequences in threads
        (`2718 <https://github.com/osate/osate2/issues/2718>`__)
-   10.  ConnectionInstances need to consider the modes of the endpoints
+   10. ConnectionInstances need to consider the modes of the endpoints
        (`2722 <https://github.com/osate/osate2/issues/2722>`__)
-   11.  OSATE doesn't support dropins directory to install plugins
+   11. OSATE doesn't support dropins directory to install plugins
        (`2727 <https://github.com/osate/osate2/issues/2727>`__)
-   12.  Generate Javadoc during build
+   12. Generate Javadoc during build
        (`2185 <https://github.com/osate/osate2/issues/2185>`__)
-   13.  Remove build dependency on jboss repository-utils maven plugin
+   13. Remove build dependency on jboss repository-utils maven plugin
        (`2710 <https://github.com/osate/osate2/issues/2710>`__)
-   14.  Update Java from 11.0.2 to 11.0.12
+   14. Update Java from 11.0.2 to 11.0.12
        (`2729 <https://github.com/osate/osate2/issues/2729>`__)
-   15.  Update to Java 11.0.13
+   15. Update to Java 11.0.13
        (`2745 <https://github.com/osate/osate2/issues/2745>`__)
-   16.  Bundled JVM has larger size than necessary
+   16. Bundled JVM has larger size than necessary
        (`2746 <https://github.com/osate/osate2/issues/2746>`__)
 
 -  Error Model and Analysis Plugins
