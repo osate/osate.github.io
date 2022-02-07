@@ -4,30 +4,29 @@ Release Notes
 Stable Releases
 ---------------
 
-
-Version 2.10.1
+Version 2.10.2
 ~~~~~~~~~~~~~~
 
 Release
 ^^^^^^^
 
--  **GIT tag**: 2.10.1-RELEASE
--  **Release date**: January 31, 2022
+-  **GIT tag**: 2.10.2-RELEASE
+-  **Release date**: February, 2022
 -  **Eclipse base version**: 2021-03
 -  **Java version**: Java 11
 -  **Eclipse Update-Site**:
-   http://osate-build.sei.cmu.edu/download/osate/stable/2.10.1/updates
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.10.2/updates
 -  **Download URL**:
-   http://osate-build.sei.cmu.edu/download/osate/stable/2.10.1/products
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.10.2/products
 
 SHA256 Hashes for the downloads
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
-   4caac65534f7f63af219c87f1b135a7e7688f5d5dd838f9a319aa4cf3d3a5c8e  osate2-2.10.1-vfinal-linux.gtk.x86_64.tar.gz
-   aa395063842abc0f0808440fb0425adda5d5000de4980cefccb4e322b84f63e5  osate2-2.10.1-vfinal-macosx.cocoa.x86_64.tar.gz
-   82fc3f92c2e736ea5ab3a34cdc13ab7c563495e552b604cf033311af15a0c233  osate2-2.10.1-vfinal-win32.win32.x86_64.zip
+   c7c1b21f58fde881a088ed11d9ac66186c96029884fa551fda4ea31742f4e2a1  osate2-2.10.2-vfinal-linux.gtk.x86_64.tar.gz
+   7a80741ab2a45ea74ef5d24ff7500350a20cb8f8879d5efa7af86e20b1c1adad  osate2-2.10.2-vfinal-macosx.cocoa.x86_64.tar.gz
+   31090f0571451f939c78c546b715fa02596ff10996358ae44f709942bb63b5de  osate2-2.10.2-vfinal-win32.win32.x86_64.zip
 
 Notable changes
 ^^^^^^^^^^^^^^^
@@ -42,35 +41,33 @@ Fixed issues
 
    1.  Add a way to disable unused contributed property sets and packages
        (`2474 <https://github.com/osate/osate2/issues/2474>`__)
-   2.  Add ACVIP Example
-       (`2586 <https://github.com/osate/osate2/issues/2586>`__)
-   3.  Generated property getter methods don't handle the case when the property doesn't apply
+   2.  Generated property getter methods don't handle the case when the property doesn't apply
        (`2593 <https://github.com/osate/osate2/issues/2593>`__)
-   4.  Missing icons for instance objects
+   3.  Missing icons for instance objects
        (`2596 <https://github.com/osate/osate2/issues/2596>`__)
-   5.  Use better icons for *.aadl and *.aaxl2 files
+   4.  Use better icons for *.aadl and *.aaxl2 files
        (`2598 <https://github.com/osate/osate2/issues/2598>`__)
-   6.  NPE when instantiating when file not saved
+   5.  NPE when instantiating when file not saved
        (`2613 <https://github.com/osate/osate2/issues/2613>`__)
-   7.  Generate Getters for Property Constants
+   6.  Generate Getters for Property Constants
        (`2632 <https://github.com/osate/osate2/issues/2632>`__)
-   8.  Missing validation for reserved thread ports
+   7.  Missing validation for reserved thread ports
        (`2652 <https://github.com/osate/osate2/issues/2652>`__)
-   9.  OSATE does not allow multiple call sequences in threads
+   8.  OSATE does not allow multiple call sequences in threads
        (`2718 <https://github.com/osate/osate2/issues/2718>`__)
-   10. ConnectionInstances need to consider the modes of the endpoints
+   9. ConnectionInstances need to consider the modes of the endpoints
        (`2722 <https://github.com/osate/osate2/issues/2722>`__)
-   11. OSATE doesn't support dropins directory to install plugins
+   10. OSATE doesn't support dropins directory to install plugins
        (`2727 <https://github.com/osate/osate2/issues/2727>`__)
-   12. Generate Javadoc during build
+   11. Generate Javadoc during build
        (`2185 <https://github.com/osate/osate2/issues/2185>`__)
-   13. Remove build dependency on jboss repository-utils maven plugin
+   12. Remove build dependency on jboss repository-utils maven plugin
        (`2710 <https://github.com/osate/osate2/issues/2710>`__)
-   14. Update Java from 11.0.2 to 11.0.12
+   13. Update Java from 11.0.2 to 11.0.12
        (`2729 <https://github.com/osate/osate2/issues/2729>`__)
-   15. Update to Java 11.0.13
+   14. Update to Java 11.0.13
        (`2745 <https://github.com/osate/osate2/issues/2745>`__)
-   16. Bundled JVM has larger size than necessary
+   15. Bundled JVM has larger size than necessary
        (`2746 <https://github.com/osate/osate2/issues/2746>`__)
 
 -  Error Model and Analysis Plugins
