@@ -54,7 +54,7 @@ Fixed issues
        (`2652 <https://github.com/osate/osate2/issues/2652>`__)
    8.  OSATE does not allow multiple call sequences in threads
        (`2718 <https://github.com/osate/osate2/issues/2718>`__)
-   9. ConnectionInstances need to consider the modes of the endpoints
+   9.  ConnectionInstances need to consider the modes of the endpoints
        (`2722 <https://github.com/osate/osate2/issues/2722>`__)
    10. OSATE doesn't support dropins directory to install plugins
        (`2727 <https://github.com/osate/osate2/issues/2727>`__)
