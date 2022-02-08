@@ -31,7 +31,6 @@ SHA256 Hashes for the downloads
 Notable changes
 ^^^^^^^^^^^^^^^
 
--  There are two new example projects
 -  We have added a new preference setting to disable processing of selected annexes
 
 Fixed issues
@@ -89,8 +88,14 @@ Known issues
    Developers” may prevent Eclipse from starting. See `issue
    2061 <https://github.com/osate/osate2/issues/2061>`__.
 -  Resolute and AGREE are no longer integrated. The versions included in
-   OSATE 2.3.7 can be installed into OSATE 2.10.0 from
+   OSATE 2.3.7 can be installed into OSATE 2.10.2 from
    http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates.
+
+Version 2.10.0
+~~~~~~~~~~~~~~
+
+OSATE 2.10.1 had a build issue. We have removed the download and re-released the
+corrected build as version 2.10.2.
 
 Version 2.10.0
 ~~~~~~~~~~~~~~

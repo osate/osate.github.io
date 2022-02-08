@@ -57,7 +57,7 @@ Select **Eclipse IDE for Java Developers** as the base product to
 install, and select **2021-03** as the product version. **DO NOT USE
 Latest Release (2021-03).**
 
-Select the **JRE 11.0.2 …** entry as the Java 11+ VM.
+Select the **JRE 11.0.x …** entry as the Java 11+ VM.
 
 4. Add the OSATE setup file
 ---------------------------
