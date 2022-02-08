@@ -91,7 +91,7 @@ Known issues
    OSATE 2.3.7 can be installed into OSATE 2.10.2 from
    http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates.
 
-Version 2.10.0
+Version 2.10.1
 ~~~~~~~~~~~~~~
 
 OSATE 2.10.1 had a build issue. We have removed the download and re-released the
