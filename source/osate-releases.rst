@@ -4,6 +4,96 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.11.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.11.0-RELEASE
+-  **Release date**: June 16, 2022
+-  **Eclipse base version**: 2022-03
+-  **Java version**: Java 17
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.11.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.11.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   f9764b7db6b923812a759b6190b0dec1ba06827fb2bdd808ee4f716d27a190e7  osate2-2.11.0-vfinal-linux.gtk.x86_64.tar.gz
+   825cda0c902d648a9130e4af456da85bfe894c7a34d2a98cb83125821c979141  osate2-2.11.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   780e842da13f083dc12467bf51cf275b26d57a6f5048665e30e935ea81c53e9c  osate2-2.11.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   9990f9d23605b773da33068d976505bb36f27f61fc3c132a0cb3d83f36c6945d  osate2-2.11.0-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+-  This version contains the first part of an instantiatior for error model annex subclauses. This functionality 
+   is experimental and can be enabled by adding a line ``-Dorg.osate.emv2.instance=true`` to the _osate.ini_ file.
+-  OSATE now requires Java 17. It comes with an embedded JVM version 17.0.3.
+-  We have added an OSATE build for Apple silicon
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  Add ACVIP Example
+       (`2586 <https://github.com/osate/osate2/issues/2586>`__)
+   2.  Generated property getter methods don't handle the case when the property doesn't apply
+       (`2593 <https://github.com/osate/osate2/issues/2593>`__)
+   3.  Annexes should be able to use a customized resource description strategy
+       (`2751 <https://github.com/osate/osate2/issues/2751>`__)
+   4.  Improve annex instantiation API
+       (`2769 <https://github.com/osate/osate2/issues/2769>`__)
+   5.  ConnectionReference not instantiated properly for reach down into feature groups
+       (`2773 <https://github.com/osate/osate2/issues/2773>`__)
+   6.  FTA fails on example model
+       (`2772 <https://github.com/osate/osate2/issues/2772>`__)
+   7.  Bound resource allocations analysis report not generated
+       (`2782 <https://github.com/osate/osate2/issues/2782>`__)
+   8.  Update to Eclipse 2022-03 and Xtext 2.26
+       (`2724 <https://github.com/osate/osate2/issues/2724>`__)
+   9.  Build uses outdated spotbugs version
+       (`2752 <https://github.com/osate/osate2/issues/2752>`__)
+   10. Add version for Apple silicon
+       (`2774 <https://github.com/osate/osate2/issues/2774>`__)
+   11. EASE dependency incorrect
+       (`2799 <https://github.com/osate/osate2/issues/2799>`__)
+
+-  Error Model and Analysis Plugins
+
+   1.  Incorrect global scope for error model
+       (`2750 <https://github.com/osate/osate2/issues/2750>`__)
+   2.  Instantiate basic EMV2 elements
+       (`2802 <https://github.com/osate/osate2/issues/2802>`__)
+
+- Graphical Editor
+
+   1.  Add API for building JavaFX scene graph for transient diagram views
+       (`2778 <https://github.com/osate/osate2/issues/2778>`__)
+   2.  Graphical editor can throw concurrent modification exception when laying out docked nodes
+       (`2795 <https://github.com/osate/osate2/issues/2795>`__)
+       
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+-  Resolute and AGREE are no longer integrated. The versions included in
+   OSATE 2.3.7 can be installed into OSATE 2.11.0 from
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.3.7/updates.
+
 Version 2.10.2
 ~~~~~~~~~~~~~~
 
