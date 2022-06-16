@@ -72,7 +72,7 @@ Fixed issues
    2.  Instantiate basic EMV2 elements
        (`2802 <https://github.com/osate/osate2/issues/2802>`__)
 
-- Graphical Editor
+-  Graphical Editor
 
    1.  Add API for building JavaFX scene graph for transient diagram views
        (`2778 <https://github.com/osate/osate2/issues/2778>`__)
