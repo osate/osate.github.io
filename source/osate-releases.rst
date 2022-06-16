@@ -33,7 +33,7 @@ Notable changes
 ^^^^^^^^^^^^^^^
 
 -  This version contains the first part of an instantiatior for error model annex subclauses. This functionality 
-   is experimental and can be enabled by adding a line ``-Dorg.osate.emv2.instance=true`` to the _osate.ini_ file.
+   is experimental and can be enabled by adding a line ``-Dorg.osate.emv2.instance=true`` to the *osate.ini* file.
 -  OSATE now requires Java 17. It comes with an embedded JVM version 17.0.3.
 -  We have added an OSATE build for Apple silicon
 
