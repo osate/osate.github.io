@@ -54,8 +54,8 @@ credentials (B). Use the help (C) for more detailed information on these
 steps.
 
 Select **Eclipse IDE for Java Developers** as the base product to
-install, and select **2022-03** as the product version. **DO NOT USE
-Latest Release (2022-03).**
+install, and select **2022-06** as the product version. **DO NOT USE
+Latest Release (2022-06).**
 
 Select the **JRE 17.0.x …** entry as the Java 11+ VM.
 
@@ -72,7 +72,7 @@ Add a user project by clicking on the + icon (A).
 Select the catalog *Github Projects* and enter the following URL as the
 *Resource URI*:
 
-**https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2022-03.setup**
+**https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2022-06.setup**
 
 Check the box next to the added OSATE2 Development entry in the tree
 under Github Projects/.
