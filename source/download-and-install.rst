@@ -4,19 +4,13 @@ Download and Installation
 The latest OSATE release can be downloaded from
 `here <http://osate-build.sei.cmu.edu/download/osate/stable/latest/products/>`__.
 
+Older releases can be downloaded from `this location <http://osate-build.sei.cmu.edu/download/osate/stable/>`__:
+Select the version and then download the archive from the products directory.
+
 **See the release notes for known bugs and workarounds.**
 
 New Installation
 ----------------
-
-OSATE is available for Windows (64-bit), macOS (64-bit), and Linux
-(64-bit). As a prerequisite Java 8 is required; in the following we
-assume that it is already installed. See
-`here <https://java.com/en/download/help/download_options.xml>`__ for
-help with installing Java.
-
-Note: Running OSATE under Java 9 or newer is not supported and may not
-work.
 
 To install OSATE, download the archive file for your platform from the
 OSATE download site (see below), choose an installation directory and
@@ -27,21 +21,8 @@ used to start the OSATE.
 Detailed Installation for Windows
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-On Windows 64-bit Java must be installed to use 64-bit OSATE. To test
-which one is installed, run ``java -version`` in cmd.exe. The following
-output indicates 32-bit Java.
-
-::
-
-   C:\Users\lwrage>java -version
-   java version "1.8.0_51"
-   Java(TM) SE Runtime Environment (build 1.8.0_51-b16)
-   Java HotSpot(TM) Client VM (build 25.51-b03, mixed mode, sharing)
-
-A 64-bit Java will output “64-bit Server VM” instead of “Client VM”.
-
 After downloading the appropriate zip file from the OSATE download site,
-extract the zip file to an empty target directory, e.g., C:\Tools\OSATE.
+extract the zip file to an empty target directory, e.g., C:\\Tools\\OSATE.
 After extraction the target directory will contain some sub-directories
 and files, including osate.exe:
 
