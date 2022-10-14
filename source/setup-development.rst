@@ -54,8 +54,8 @@ credentials (B). Use the help (C) for more detailed information on these
 steps.
 
 Select **Eclipse IDE for Java Developers** as the base product to
-install, and select **2022-06** as the product version. **DO NOT USE
-Latest Release (2022-06).**
+install, and select **2022-06** as the product version. DO NOT USE
+**Latest Release (2022-06)** if that is offered in the dialog.
 
 Select the **JRE 17.0.x …** entry as the Java 11+ VM.
 
@@ -160,13 +160,22 @@ Eclipse status bar.
 The JavaFX must be installed manually.
 
 -  Download the JavaFX 17 SDK for your development platform from the `JavaFX
-   website <https://openjfx.io/>`__. For example: “JavaFX Windows SDK”.
+   website <https://openjfx.io/>`__. For example: “JavaFX Windows SDK”
+   The download URLs are no longer reachable directly from the Web site, but are still accessible:
+   
+   - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-x64_bin-sdk.zip
+   - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-aarch64_bin-sdk.zip
+   - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-x64_bin-sdk.zip
+   - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_windows-x64_bin-sdk.zip
+   
+   Note that newer JavaFX versions should work, too.
+   
 -  Extract the SDK to your preferred path.
 -  Configure the development enivornment with the path to the SDK.
 
    -  Open Eclipse preferences: *Windows -> Preferences*
    -  Select *JavaFX*
-   -  Set *JavaFX 11+ SDK* to the *lib* folder of the SDK.
+   -  Set *JavaFX 11+ SDK* to the *lib* folder of the SDK
 
 9. Updating the development environment
 ---------------------------------------
