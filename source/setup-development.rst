@@ -164,7 +164,11 @@ The JavaFX must be installed manually.
 
 -  Download the JavaFX 17 SDK for your development platform from the `JavaFX
    website <https://openjfx.io/>`__. For example: “JavaFX Windows SDK”
-   The download URLs are no longer reachable directly from the Web site, but are still accessible:
+   
+   There's a checkbox "Include older versions" to show version 17 downloads on
+   the Web page.
+   
+   The download URLs are:
    
    - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-x64_bin-sdk.zip
    - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-aarch64_bin-sdk.zip
