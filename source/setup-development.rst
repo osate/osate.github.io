@@ -90,6 +90,9 @@ only variables that do not have a value will be displayed. Oomph stores
 variable values between invocations, so nothing would be shown after the
 first run.
 
+Note that the availabe variables may change depending on the selections
+you make in drop-down lists.
+
 The first group of variables determines the directory for the new
 Eclipse installation. In *Installation location rule* you can choose
 between (a) a root directory and a subdirectory within that root
