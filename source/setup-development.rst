@@ -195,8 +195,8 @@ the setup process. This happens every time Eclipse is started (unless
 disabled in the preferences) or can be done manually via *Help* ->
 *Perform Setup Tasks …*
 
-Please report issues with the setup using the osate2 issue tracker on
-GitHub.
+If you run into problems with setting up the develeopment environment, you
+can ask for help on our `Google group <https://groups.google.com/forum/#!forum/osate>`__.
 
 Q & A / Troubleshooting
 -----------------------
@@ -290,6 +290,6 @@ Authoring <https://wiki.eclipse.org/Eclipse_Oomph_Authoring>`__
 There are too many steps, is there a faster way?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you have already installed the Eclipse Installer on your computer try
+If you have already set up the Eclipse Installer on your computer try
 `this
 link <eclipse+installer:https://raw.githubusercontent.com/osate/osate2/master/setup/OSATEConfiguration.setup>`__.
