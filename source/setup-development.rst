@@ -180,7 +180,7 @@ The JavaFX must be installed manually.
 -  Extract the SDK to your preferred path.
 -  Configure the development enivornment with the path to the SDK.
 
-   -  Open Eclipse preferences: *Windows -> Preferences*
+   -  Open Eclipse preferences: *Window -> Preferences*
    -  Select *JavaFX*
    -  Set *JavaFX 11+ SDK* to the *lib* folder of the SDK
 
