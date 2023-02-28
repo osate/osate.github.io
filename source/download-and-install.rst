@@ -31,9 +31,7 @@ and files, including osate.exe:
 
    OSATE Directory Layout
 
-OSATE Directory Layout
-
-Detailed Installation for macOS
+Additional steps for macOS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 OSATE binary is not signed. This can result in an error message when
@@ -45,6 +43,21 @@ execution:
 ::
 
    $ sudo xattr -rd com.apple.quarantine osate2.app/
+
+Additional steps for Linux
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Newer Linux desktop environments, e.g., Ubuntu 22.04, use Wayland as 
+an underlying technology. The AADL diagram editor in OSATE is not 
+compatible with this technology, and trying to use it will result in 
+a crash of the JVM.
+
+As a workaround, run OSATE with the following command 
+(adapt if you are not using bash):
+
+::
+
+   $ GDK_BACKEND=x11 ./osate
 
 Installing Additional OSATE Components
 --------------------------------------
@@ -65,7 +78,7 @@ component’s checkbox and click on ``Finish`` to start the installation.
 .. figure:: images/install-components2.png
    :alt: Component Installation Dialog
 
-   OSATE Help Menu
+   Component Installation Dialog
 
 Updating OSATE
 --------------
