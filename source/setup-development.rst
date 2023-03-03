@@ -183,6 +183,7 @@ The JavaFX must be installed manually.
    -  Open Eclipse preferences: *Window -> Preferences*
    -  Select *JavaFX*
    -  Set *JavaFX 11+ SDK* to the *lib* folder of the SDK
+   -  Restart Eclipse
 
 9. Updating the development environment
 ---------------------------------------
