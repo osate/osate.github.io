@@ -4,6 +4,115 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.12.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.12.0-RELEASE
+-  **Release date**: March 31, 2023
+-  **Eclipse base version**: 2022-06
+-  **Java version**: Java 17
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.12.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.12.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   ff1a968b210887c754d8a2c135ef6a860c1f9459f1648dadd1a91e58d55f9444  osate2-2.12.0-vfinal-linux.gtk.aarch64.tar.gz
+   5eb8b53c42c46a18e4f7f55bfaae727f132374d7102714ff927a37c818bbc007  osate2-2.12.0-vfinal-linux.gtk.x86_64.tar.gz
+   9b3334bac8830be71906a7a24391298671d25d1b10be7b46b87ba01cfb229ef7  osate2-2.12.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   dd57ec908924a9f4ad165c9b5400d30b728d356eb986bed5cf8426b756d67624  osate2-2.12.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   2f4e02a228ce6f8d03dd9c59ed4e66af5ea45622cc03468e47762ad0556df22e  osate2-2.12.0-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+-  Implemented improvements to support AADL 2.3.
+-  Almost complete instantiation for error model annex subclauses. This functionality
+   is experimental and can be enabled by adding a line ``-Dorg.osate.emv2.instance=true`` to the *osate.ini* file.
+-  We have added an OSATE build for Linux on AARCH64.
+-  ALISA now works with the official Resolute release from Collins. 
+   (The old version from OSATE 2.3.7 is no longer supported.)
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  Data classifiers for ports are not instantiated
+       (`626 <https://github.com/osate/osate2/issues/626>`__)
+   2.  Call Resolute via a proper API
+       (`1889 <https://github.com/osate/osate2/issues/1889>`__)
+   3.  Subprogram access features should be allowed as flow specification ends
+       (`1936 <https://github.com/osate/osate2/issues/1936>`__)
+   4.  Missing validation for feature connections
+       (`2355 <https://github.com/osate/osate2/issues/2355>`__)
+   5.  Overly complicated code in end to end flow instantiation
+       (`2595 <https://github.com/osate/osate2/issues/2595>`__)
+   6.  Allow flow specification ends to reach down into feature groups
+       (`2780 <https://github.com/osate/osate2/issues/2780>`__)
+   7.  Allow data access of subprogram as flow end
+       (`2781 <https://github.com/osate/osate2/issues/2781>`__)
+   8.  Virtual bus should be allowed as a subcomponent in a memory implementation
+       (`2784 <https://github.com/osate/osate2/issues/2784>`__)
+   9.  Port connections should be allowed in bus and virtual bus implementations
+       (`2785 <https://github.com/osate/osate2/issues/2785>`__)
+   10.  Data and bus types can no longer have feature arrays
+       (`2786 <https://github.com/osate/osate2/issues/2786>`__)
+   11.  Update property sets for AADL 2.3
+       (`2790 <https://github.com/osate/osate2/issues/2790>`__)
+   12.  Classifier property of the root element in an Instance model is not populated during instantiation
+       (`2823 <https://github.com/osate/osate2/issues/2823>`__)
+   13.  Event data port prototype bindings created by graphical editor are not serialized correctly
+       (`2834 <https://github.com/osate/osate2/issues/2834>`__)
+   14.  Binding constraints check flags using implementation of allowed type as an error
+       (`2863 <https://github.com/osate/osate2/issues/2863>`__)
+   15.  Reachability query API / "Slicing" calculation
+       (`2865 <https://github.com/osate/osate2/issues/2865>`__)
+   16.  Switch log4j to reload4j
+       (`2754 <https://github.com/osate/osate2/issues/2754>`__)
+   17.  Update to Eclipse 2022-06 and Xtext 2.27
+       (`2818 <https://github.com/osate/osate2/issues/2818>`__)
+   19.  Add build for linux/aarch64
+       (`2871 <https://github.com/osate/osate2/issues/2871>`__)
+
+-  Error Model and Analysis Plugins
+
+   1.  Instantiate component error behavior
+       (`2803 <https://github.com/osate/osate2/issues/2803>`__)
+   2.  Instantiate EMV2 Properties
+       (`2852 <https://github.com/osate/osate2/issues/2852>`__)
+
+-  Graphical Editor
+
+   1.  Event data port prototype bindings created by graphical editor are not serialized correctly
+       (`2834 <https://github.com/osate/osate2/issues/2834>`__)
+   2.  Exception thrown when creating flow path with graphical editor.
+       (`2860 <https://github.com/osate/osate2/issues/2860>`__)
+
+-- ALISA
+
+   1.  BIRT dependencies are broken
+       (`2837 <https://github.com/osate/osate2/issues/2837>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
 Version 2.11.0
 ~~~~~~~~~~~~~~
 
@@ -32,7 +141,7 @@ SHA256 Hashes for the downloads
 Notable changes
 ^^^^^^^^^^^^^^^
 
--  This version contains the first part of an instantiatior for error model annex subclauses. This functionality 
+-  This version contains the first part of an instantiator for error model annex subclauses. This functionality 
    is experimental and can be enabled by adding a line ``-Dorg.osate.emv2.instance=true`` to the *osate.ini* file.
 -  OSATE now requires Java 17. It comes with an embedded JVM version 17.0.3.
 -  We have added an OSATE build for Apple silicon

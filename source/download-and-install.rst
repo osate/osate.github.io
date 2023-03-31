@@ -47,12 +47,12 @@ execution:
 Additional steps for Linux
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Newer Linux desktop environments, e.g., Ubuntu 22.04, use Wayland as 
-an underlying technology. The AADL diagram editor in OSATE is not 
-compatible with this technology, and trying to use it will result in 
+Newer Linux desktop environments, e.g., Ubuntu 22.04, use Wayland as
+an underlying technology. The AADL diagram editor in OSATE is not
+compatible with this technology, and trying to use it will result in
 a crash of the JVM.
 
-As a workaround, run OSATE with the following command 
+As a workaround, run OSATE with the following command
 (adapt if you are not using bash):
 
 ::
@@ -82,6 +82,8 @@ component’s checkbox and click on ``Finish`` to start the installation.
 
 Updating OSATE
 --------------
+
+**This was available only for OSATE 2.2.1.**
 
 An existing OSATE installation can be updated when a new maintenance
 release has been published. We support updates within the same OSATE
