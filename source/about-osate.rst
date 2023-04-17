@@ -15,27 +15,23 @@ OSATE (Open Source AADL Tool Environment) includes the capability to:
    language, models may contain elements from the AADL Standard Annexes
    (e.g., error model, requirements definition and analysis, ARINC653,
    and behavior annexes).
-2. Import Mathworks® MATLAB™ Simulink™ models into OSATE. The importer
-   translates the diagram structure and transforms SCADE and Simulink
-   blocks into AADL components.
-3. Support the SAE Standard Aerospace Recommended Practice (ARP) 4761,
+2. Support the SAE Standard Aerospace Recommended Practice (ARP) 4761,
    Guidelines and Methods for Conducting the Safety Assessment Process
    on Civil Airborne Systems and Equipment. The processes and techniques
    of the ARP4761 standard addressed by the tool are the Functional
-   Hazard Assessment, Fault Tree Analysis, Failure Modes and Effects
-   Analysis, and Dependence Diagrams, also referred to as Reliability
-   Block Diagrams.
-4. Perform structural verification of AADL models and of property values
+   Hazard Assessment, Fault Tree Analysis, and Failure Modes and Effects
+   Analysis.
+3. Perform structural verification of AADL models and of property values
    associated with model elements using the Resolute constraint language
    (developed by Rockwell Collins in the SMACCM research project).
    Example use of Resolute: verify OS specific constraints on ARINC653
    systems for code and configuration generation.
-5. Perform compositional verification of system and component behavior
+4. Perform compositional verification of system and component behavior
    using the AGREE language (developed by Rockwell Collins in the SMACCM
    research project). This supports reasoning about system behavior
    based on assume/guarantee contracts and the structure of the system’s
    architecture model.
-6. Architecture Led Integrated System Assurance (ALISA). ALISA provides
+5. Architecture Led Integrated System Assurance (ALISA). ALISA provides
    a Requirement Specification capability that allows users to express
    stakeholder requirements and system specifications in the context of
    an AADL model of a system. A requirements analysis will assess how
@@ -46,7 +42,7 @@ OSATE (Open Source AADL Tool Environment) includes the capability to:
    traceability, traceability reports, verification plan execution, and
    certification plan execution. For documentation see the Alisa User
    Guide accessible from the OSATE Help Page.
-7. Provide basic repository support through the git perspective in
+6. Provide basic repository support through the git perspective in
    OSATE.
 
 OSATE Code Generation Capabilities
@@ -179,8 +175,7 @@ executing the analyses.
 
 7. *Safety Analysis* – OSATE supports SAE ARP 4761 safety analysis for
    Functional Hazard Assessments (FHAs), Fault Tree Analysis (FTA),
-   Failure Modes Effects Analysis (FMEA), Common Mode Analysis, and
-   Reliability Block Diagrams (RBD)/Decision Diagrams (DD).
+   and Failure Modes Effects Analysis (FMEA).
 8. *Structural Model Verification* – The Resolute language for model
    checking/requirements verification is included in the current release
    of OSATE.
