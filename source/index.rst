@@ -31,7 +31,6 @@ Wiki`_ to here.
    additional-components
    download-and-install
    osate-releases
-   osate-roadmap
    getting-help
    
 .. _developer-docs:
