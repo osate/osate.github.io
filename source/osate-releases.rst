@@ -63,23 +63,23 @@ Fixed issues
        (`2784 <https://github.com/osate/osate2/issues/2784>`__)
    9.  Port connections should be allowed in bus and virtual bus implementations
        (`2785 <https://github.com/osate/osate2/issues/2785>`__)
-   10.  Data and bus types can no longer have feature arrays
+   10. Data and bus types can no longer have feature arrays
        (`2786 <https://github.com/osate/osate2/issues/2786>`__)
-   11.  Update property sets for AADL 2.3
+   11. Update property sets for AADL 2.3
        (`2790 <https://github.com/osate/osate2/issues/2790>`__)
-   12.  Classifier property of the root element in an Instance model is not populated during instantiation
+   12. Classifier property of the root element in an Instance model is not populated during instantiation
        (`2823 <https://github.com/osate/osate2/issues/2823>`__)
-   13.  Event data port prototype bindings created by graphical editor are not serialized correctly
+   13. Event data port prototype bindings created by graphical editor are not serialized correctly
        (`2834 <https://github.com/osate/osate2/issues/2834>`__)
-   14.  Binding constraints check flags using implementation of allowed type as an error
+   14. Binding constraints check flags using implementation of allowed type as an error
        (`2863 <https://github.com/osate/osate2/issues/2863>`__)
-   15.  Reachability query API / "Slicing" calculation
+   15. Reachability query API / "Slicing" calculation
        (`2865 <https://github.com/osate/osate2/issues/2865>`__)
-   16.  Switch log4j to reload4j
+   16. Switch log4j to reload4j
        (`2754 <https://github.com/osate/osate2/issues/2754>`__)
-   17.  Update to Eclipse 2022-06 and Xtext 2.27
+   17. Update to Eclipse 2022-06 and Xtext 2.27
        (`2818 <https://github.com/osate/osate2/issues/2818>`__)
-   19.  Add build for linux/aarch64
+   19. Add build for linux/aarch64
        (`2871 <https://github.com/osate/osate2/issues/2871>`__)
 
 -  Error Model and Analysis Plugins
