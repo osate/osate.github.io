@@ -157,6 +157,10 @@ Cloning the git repositories takes some time. Progress can be viewed in
 a dialog. To show the progress dialog, click on the animated icon the
 Eclipse status bar.
 
+\ **Note:** Once the sources are imported Eclipse will start a build. There
+will be compile errors because JavaFX is not yet installed. Ignore the 
+errors and continue.
+
 8. Install the JavaFX SDK
 -------------------------
 
