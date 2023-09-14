@@ -4,6 +4,62 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.13.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.13.0-RELEASE
+-  **Release date**: September 14, 2023
+-  **Eclipse base version**: 2023-03
+-  **Java version**: Java 17
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.13.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.13.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   fdb26877bd84d8982f05ffdecd5541e80252d97b21941dfc2d10464362af3d4c  osate2-2.13.0-vfinal-linux.gtk.aarch64.tar.gz
+   30d13c183bdf38e4fe670ea1c2cb4b74589fcf1161ece72029544517d5c10bcf  osate2-2.13.0-vfinal-linux.gtk.x86_64.tar.gz
+   274b5ef282aa955a4443ed4222d337a62e1fb0cf67d5a8434d21a26e6c2b3ece  osate2-2.13.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   7d63342a8e8aa9a418f42e8b2bd166096521255119d829d6eabac8d68511796c  osate2-2.13.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   0dc7f4a45972690e1a98638307843cbe841e94794ecc59b5a6ab7d443ea625ec  osate2-2.13.0-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+-  This is a maintenance release to update to a newer Eclipse platform.
+-  Error model instantiation is no longer experimental and enabled by default.
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  Switch to custim built py4j
+       (`2880 <https://github.com/osate/osate2/issues/2880>`__)
+   2.  Text hover doesn't work for cross references in annexes
+       (`2876 <https://github.com/osate/osate2/issues/2876>`__)
+   3.  Update to Eclipse 2023-03 and Xtext 2.30
+       (`2853 <https://github.com/osate/osate2/issues/2853>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
 Version 2.12.0
 ~~~~~~~~~~~~~~
 
