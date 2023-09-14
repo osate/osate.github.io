@@ -41,7 +41,7 @@ Fixed issues
 
 -  OSATE Core and Analysis Plugins
 
-   1.  Switch to custim built py4j
+   1.  Switch to custom built py4j
        (`2880 <https://github.com/osate/osate2/issues/2880>`__)
    2.  Text hover doesn't work for cross references in annexes
        (`2876 <https://github.com/osate/osate2/issues/2876>`__)
