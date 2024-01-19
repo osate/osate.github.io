@@ -54,8 +54,8 @@ credentials (B). Use the help (C) for more detailed information on these
 steps.
 
 Select **Eclipse IDE for Java Developers** as the base product to
-install, and select **2023-03** as the product version. DO NOT USE
-**Latest Release (2023-03)** if that is offered in the dialog.
+install, and select **2023-12** as the product version. DO NOT USE
+**Latest Release (2023-12)** if that is offered in the dialog.
 
 Select the **JRE 17.0.x …** entry as the Java 11+ VM.
 
@@ -72,7 +72,7 @@ Add a user project by clicking on the + icon (A).
 Select the catalog *Github Projects* and enter the following URL as the
 *Resource URI*:
 
-**https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2023-03.setup**
+**https://raw.githubusercontent.com/osate/osate2/master/setup/osate2_2023-12.setup**
 
 Check the box next to the added OSATE2 Development entry in the tree
 under Github Projects/.
@@ -158,7 +158,7 @@ a dialog. To show the progress dialog, click on the animated icon the
 Eclipse status bar.
 
 \ **Note:** Once the sources are imported Eclipse will start a build. There
-will be compile errors because JavaFX is not yet installed. Ignore the 
+will be compile errors because JavaFX is not yet installed. Ignore the
 errors and continue.
 
 8. Install the JavaFX SDK
@@ -168,19 +168,19 @@ The JavaFX must be installed manually.
 
 -  Download the JavaFX 17 SDK for your development platform from the `JavaFX
    website <https://openjfx.io/>`__. For example: “JavaFX Windows SDK”
-   
+
    There's a checkbox "Include older versions" to show version 17 downloads on
    the Web page.
-   
+
    The download URLs are:
-   
+
    - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-x64_bin-sdk.zip
    - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-aarch64_bin-sdk.zip
    - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-x64_bin-sdk.zip
    - https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_windows-x64_bin-sdk.zip
-   
+
    Note that newer JavaFX versions should work, too.
-   
+
 -  Extract the SDK to your preferred path.
 -  Configure the development environment with the path to the SDK.
 
