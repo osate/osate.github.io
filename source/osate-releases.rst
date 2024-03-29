@@ -10,6 +10,70 @@ Version 2.13.0
 Release
 ^^^^^^^
 
+-  **GIT tag**: 2.14.0-RELEASE
+-  **Release date**: March 29, 2024
+-  **Eclipse base version**: 2023-12
+-  **Java version**: Java 17
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.14.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.14.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   f4ede3a1c595042803610aa47cbf858b6110725c7b11b337498ede6bb6853675  osate2-2.14.0-vfinal-linux.gtk.aarch64.tar.gz
+   425420eed2516a9603b30b25801ac491b40647b27d32fcf563a368379e82a121  osate2-2.14.0-vfinal-linux.gtk.x86_64.tar.gz
+   5db89147d2bc07ce9287d8070152d4bcfafa57ad2ad2c46aa4138ca1e1e4da02  osate2-2.14.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   a850920e53b65221b65c0d57dde711c94a6be29bf80eb84c13af120b16d15f06  osate2-2.14.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   f412e91894a553a2c246b2c0d337a2008e322245a2b97b68440d87ad1cfe2327  osate2-2.14.0-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+-  This is a maintenance release to update to a newer Eclipse platform.
+-  FTA result files (``*.faulttree``) can be opened in a graph or table view. Select the faulttree file in the AADL navigator,
+   then click on Analyses > Safety > View Fault Tree Graph/Table.
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  Outline view does not display substring "Impl" in component implementation name
+       (`2829 <https://github.com/osate/osate2/issues/2829>`__)
+   2.  NPE in classifier info view
+       (`2884 <https://github.com/osate/osate2/issues/2884>`__)
+   3.  NPE in standalone application
+       (`2889 <https://github.com/osate/osate2/issues/2889>`__)
+   4.  Update to Eclipse 2023-12
+       (`2882 <https://github.com/osate/osate2/issues/2882>`__)
+
+-  Error Model and Analysis Plugins
+
+   1.  Should be able to open existing fault tree in editor without having to regenerate it
+       (`1627 <https://github.com/osate/osate2/issues/1627>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
+Version 2.13.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
 -  **GIT tag**: 2.13.0-RELEASE
 -  **Release date**: September 14, 2023
 -  **Eclipse base version**: 2023-03
@@ -93,7 +157,7 @@ Notable changes
 -  Almost complete instantiation for error model annex subclauses. This functionality
    is experimental and can be enabled by adding a line ``-Dorg.osate.emv2.instance=true`` to the *osate.ini* file.
 -  We have added an OSATE build for Linux on AARCH64.
--  ALISA now works with the official Resolute release from Collins. 
+-  ALISA now works with the official Resolute release from Collins.
    (The old version from OSATE 2.3.7 is no longer supported.)
 
 Fixed issues
@@ -197,7 +261,7 @@ SHA256 Hashes for the downloads
 Notable changes
 ^^^^^^^^^^^^^^^
 
--  This version contains the first part of an instantiator for error model annex subclauses. This functionality 
+-  This version contains the first part of an instantiator for error model annex subclauses. This functionality
    is experimental and can be enabled by adding a line ``-Dorg.osate.emv2.instance=true`` to the *osate.ini* file.
 -  OSATE now requires Java 17. It comes with an embedded JVM version 17.0.3.
 -  We have added an OSATE build for Apple silicon
@@ -243,7 +307,7 @@ Fixed issues
        (`2778 <https://github.com/osate/osate2/issues/2778>`__)
    2.  Graphical editor can throw concurrent modification exception when laying out docked nodes
        (`2795 <https://github.com/osate/osate2/issues/2795>`__)
-       
+
 Known issues
 ^^^^^^^^^^^^
 
@@ -330,7 +394,7 @@ Fixed issues
        (`2648 <https://github.com/osate/osate2/issues/2648>`__)
    2.  An exception occurs during EMV2 serialization
        (`2690 <https://github.com/osate/osate2/issues/2690>`__)
-       
+
 Known issues
 ^^^^^^^^^^^^
 
@@ -406,7 +470,7 @@ Fixed issues
        (`2707 <https://github.com/osate/osate2/issues/2707>`__)
    9.  Include JVM in OSATE download
        (`2420 <https://github.com/osate/osate2/issues/2420>`__)
- 
+
 -  Graphical Editor
 
    1.  Implement GEF based graphical editor
@@ -435,7 +499,7 @@ Fixed issues
        (`2678 <https://github.com/osate/osate2/issues/2678>`__)
    13. 2683 Add missing icons to graphical editor
        (`2685 <https://github.com/osate/osate2/issues/2685>`__)
-       
+
 Known issues
 ^^^^^^^^^^^^
 
