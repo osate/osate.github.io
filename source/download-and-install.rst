@@ -4,7 +4,7 @@ Download and Installation
 The latest OSATE release can be downloaded from
 `here <http://osate-build.sei.cmu.edu/download/osate/stable/latest/products/>`__.
 
-Nightly builds are available `here <http://osate-build.sei.cmu.edu/download/osate/testing/products/>`__.
+The latest nightly build is available `here <http://osate-build.sei.cmu.edu/download/osate/testing/products/>`__.
 
 Older releases can be downloaded from `this location <http://osate-build.sei.cmu.edu/download/osate/stable/>`__:
 Select the version and then download the archive from the products directory.
