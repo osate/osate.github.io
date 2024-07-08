@@ -126,7 +126,8 @@ Testing Version
 The testing version is built on a nightly basis. It includes the latest
 fixes but also some unstable code related to features being developed.
 While it might be useful to use it for some projects, please be cautious
-using it for production purposes due to potentially unstable features.
+about using it for production purposes due to potentially unstable
+features.
 
 -  **Product**:
    http://osate-build.sei.cmu.edu/download/osate/testing/products/
