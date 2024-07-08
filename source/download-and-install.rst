@@ -4,6 +4,8 @@ Download and Installation
 The latest OSATE release can be downloaded from
 `here <http://osate-build.sei.cmu.edu/download/osate/stable/latest/products/>`__.
 
+Nightly builds are available `here <http://osate-build.sei.cmu.edu/download/osate/testing/products/>`__.
+
 Older releases can be downloaded from `this location <http://osate-build.sei.cmu.edu/download/osate/stable/>`__:
 Select the version and then download the archive from the products directory.
 
@@ -106,8 +108,8 @@ Download Locations
 Stable Versions
 ~~~~~~~~~~~~~~~
 
-A new stable version is released every 2-3 months. You can install it
-from an existing Eclipse installation using the update site or just by
+A new stable version is released 2-3 times per year. You can install it
+into an existing Eclipse installation using the update site or just by
 installing the complete product. The product is a fully integrated and
 tailored Eclipse environment with all OSATE functions. The products are
 available for Windows, Linux and macOS.
@@ -123,8 +125,8 @@ Testing Version
 
 The testing version is built on a nightly basis. It includes the latest
 fixes but also some unstable code related to features being developed.
-While it might be useful to use it for some projects, please think about
-using it for production purpose due to potential unstable features.
+While it might be useful to use it for some projects, please be cautious
+using it for production purposes due to potentially unstable features.
 
 -  **Product**:
    http://osate-build.sei.cmu.edu/download/osate/testing/products/
