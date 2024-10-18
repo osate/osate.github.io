@@ -58,17 +58,17 @@ Fixed issues
        (`2901 <https://github.com/osate/osate2/issues/2901>`__)
    9.  Actual_Connection_Binding not properly instantiated in certain situations
        (`2913 <https://github.com/osate/osate2/issues/2913>`__)
-   10.  Derived modes break computation of initial SOM
+   10. Derived modes break computation of initial SOM
        (`2914 <https://github.com/osate/osate2/issues/2914>`__)
-   11.  Wrong validation of connection instances when connection end classifiers are prototypes
+   11. Wrong validation of connection instances when connection end classifiers are prototypes
        (`2915 <https://github.com/osate/osate2/issues/2915>`__)
-   12.  Check Flow Latency Analysis is not computed for feature group connections
+   12. Check Flow Latency Analysis is not computed for feature group connections
        (`2885 <https://github.com/osate/osate2/issues/2885>`__)
-   13.  Actual_Processor_Binding error when runing Check Codegen prerequisites for VxWorks in OSATE for Ubuntu
+   13. Actual_Processor_Binding error when runing Check Codegen prerequisites for VxWorks in OSATE for Ubuntu
        (`2910 <https://github.com/osate/osate2/issues/2910>`__)
-   14.  NPE in flow latency analysis
+   14. NPE in flow latency analysis
        (`2912 <https://github.com/osate/osate2/issues/2912>`__)
-   15.  Move eclipse projects related to building OSATE from core to releng 
+   15. Move eclipse projects related to building OSATE from core to releng 
        (`2711 <https://github.com/osate/osate2/issues/2711>`__)
 
 -  Error Model and Analysis Plugins
