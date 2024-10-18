@@ -4,6 +4,97 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.15.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.15.0-RELEASE
+-  **Release date**: October 18, 2024
+-  **Eclipse base version**: 2023-12
+-  **Java version**: Java 17
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.15.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.15.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   0cfcf4ac22be67845240dbec87cc6c00407b2638157f2f7b34d65943a2b509cf  osate2-2.15.0-vfinal-linux.gtk.aarch64.tar.gz
+   3cd2abe41b0af6a73203096705323a5b416656a8ee2d50a297b58c9ea5238f69  osate2-2.15.0-vfinal-linux.gtk.x86_64.tar.gz
+   f1a8c3a72f352be74aa2f43b6924abb94319e2eea4491d10c21d3fc23c142fdb  osate2-2.15.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   4b963b17fa0bf2a6a050ef90444b0cf5f7d5bd422392bb7c44b20e070d384426  osate2-2.15.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   698d97fef9b0d18aa29d60883c87d16e270bdb248502272d7ac567ed95017730  osate2-2.15.0-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+-  This is a bug fix release.
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  NPE when instantiating a system with unbound prototype
+       (`2631 <https://github.com/osate/osate2/issues/2631>`__)
+   2.  Insufficient validation of flow source and sink implementations
+       (`2835 <https://github.com/osate/osate2/issues/2835>`__)
+   3.  Cyclic containment of feature groups not detected
+       (`2836 <https://github.com/osate/osate2/issues/2836>`__)
+   4.  Wrong classifier instantiated for refined prototypes without binding
+       (`2839 <https://github.com/osate/osate2/issues/2839>`__)
+   5.  Remove unimplemented and unused method
+       (`2844 <https://github.com/osate/osate2/issues/2844>`__)
+   6.  Instantiator skips properties after encountering reference to an undefined property
+       (`2874 <https://github.com/osate/osate2/issues/2874>`__)
+   7.  Remove deprecated methods and classes
+       (`2899 <https://github.com/osate/osate2/issues/2899>`__)
+   8.  Potential NPE when processing instance model
+       (`2901 <https://github.com/osate/osate2/issues/2901>`__)
+   9.  Actual_Connection_Binding not properly instantiated in certain situations
+       (`2913 <https://github.com/osate/osate2/issues/2913>`__)
+   10.  Derived modes break computation of initial SOM
+       (`2914 <https://github.com/osate/osate2/issues/2914>`__)
+   11.  Wrong validation of connection instances when connection end classifiers are prototypes
+       (`2915 <https://github.com/osate/osate2/issues/2915>`__)
+   12.  Check Flow Latency Analysis is not computed for feature group connections
+       (`2885 <https://github.com/osate/osate2/issues/2885>`__)
+   13.  Actual_Processor_Binding error when runing Check Codegen prerequisites for VxWorks in OSATE for Ubuntu
+       (`2910 <https://github.com/osate/osate2/issues/2910>`__)
+   14.  NPE in flow latency analysis
+       (`2912 <https://github.com/osate/osate2/issues/2912>`__)
+   15.  Move eclipse projects related to building OSATE from core to releng 
+       (`2711 <https://github.com/osate/osate2/issues/2711>`__)
+
+-  Error Model and Analysis Plugins
+
+   1.  IllegalArgumentException when validating type libraries
+       (`2875 <https://github.com/osate/osate2/issues/2875>`__)
+   2.  Some EMV2 tests are not executed during maven build
+       (`2904 <https://github.com/osate/osate2/issues/2904>`__)
+
+-  Graphical Editor
+
+   1.  Dialog for creating flow implementation may be misleading
+       (`2896 <https://github.com/osate/osate2/issues/2896>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
 Version 2.14.0
 ~~~~~~~~~~~~~~
 
