@@ -4,6 +4,63 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.16.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.16.0-RELEASE
+-  **Release date**: June 4, 2025
+-  **Eclipse base version**: 2024-03
+-  **Java version**: Java 17
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.16.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.16.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   982645f33831bfd498b4780f8439cce0af1c997f019589e0776edc2249325a7f  osate2-2.16.0-vfinal-linux.gtk.aarch64.tar.gz
+   6abd905fb97d2f8ccc0c1858163864a56ad351667a1422031319bbe2622399db  osate2-2.16.0-vfinal-linux.gtk.x86_64.tar.gz
+   fb6e4a98f2cb68260131dd89324687fbb67b9d719256d2594dbecd296c748237  osate2-2.16.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   e30dba35ddcb1f3392b909c486eaff1ae05200176ddb03433b528e2ca670fca3  osate2-2.16.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   abe2ae7a7622dd7622eca28194b71ce1c51448fe0cb2d450cc2acd01c8b5255c  osate2-2.16.0-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+-  Update to Eclipse 2024-03 to improve compatibility with the SysMLv2 pilot implementation.
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  Update to Eclipse 2024-03
+       (`2894 <https://github.com/osate/osate2/issues/2894>`__)
+   2.  Declarative ReferenceValue in instance model
+       (`2160 <https://github.com/osate/osate2/issues/2160>`__)
+   3.  Instantiation fails for paramter connection in root
+       (`2918 <https://github.com/osate/osate2/issues/2918>`__)
+   4.  Memory leak in InstanceModelUtil
+       (`2924 <https://github.com/osate/osate2/issues/2924>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
 Version 2.15.0
 ~~~~~~~~~~~~~~
 
@@ -68,7 +125,7 @@ Fixed issues
        (`2910 <https://github.com/osate/osate2/issues/2910>`__)
    14. NPE in flow latency analysis
        (`2912 <https://github.com/osate/osate2/issues/2912>`__)
-   15. Move eclipse projects related to building OSATE from core to releng 
+   15. Move eclipse projects related to building OSATE from core to releng
        (`2711 <https://github.com/osate/osate2/issues/2711>`__)
 
 -  Error Model and Analysis Plugins
