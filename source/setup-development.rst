@@ -154,7 +154,7 @@ The OSATE2 setup file sets the following preferences:
    workspace.
 
 Cloning the git repositories takes some time. Progress can be viewed in
-a dialog. To show the progress dialog, click on the animated icon the
+a dialog. To show the progress dialog, click on the animated icon in the
 Eclipse status bar.
 
 \ **Note:** Once the sources are imported Eclipse will start a build. There
