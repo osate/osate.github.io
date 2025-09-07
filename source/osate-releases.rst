@@ -4,6 +4,96 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.17.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.17.0-RELEASE
+-  **Release date**: September 7, 2025
+-  **Eclipse base version**: 2025-03
+-  **Java version**: Java 21
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.17.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.17.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   e4399842580362f4431b7899815481a87aa647682b1225d4d075c8eff6831cd7  osate2-2.17.0-vfinal-linux.gtk.aarch64.tar.gz
+   0544240f121bea5792fec2f33117be050e59020f29181a817371745edcd67aef  osate2-2.17.0-vfinal-linux.gtk.x86_64.tar.gz
+   ecb204ccfddd195f6bac69f8ee7fd5fe9bec0481c15cb58889fbe685af313a87  osate2-2.17.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   bc41b7dc33a169b8b3213d137dd43cdf09db3470dc2c6ef9118fef5cb9269c8f  osate2-2.17.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   512f3bdfe28a9dbea460914ddbf3c231deb6ab74c699379391628d7023761314  osate2-2.17.0-vfinal-win32.win32.aarch64.zip
+   9b3265f009324680861aa9a2ae5668afcb7a2f19cd12a3c029abe277c34f6854  osate2-2.17.0-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+-  We have added a new analysis that checks the reachability of system operational modes.
+   See *Help* > *Help Contents* > *OSATE Core Documentation* > *Model Analyses* > *System Operation Mode Reachability Analysis*
+   for a description.
+-  Update to Eclipse 2025-03 to improve compatibility with the SysMLv2 pilot implementation.
+-  Added a build for Windows on arm
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  Text label for flow instance objects should show more information
+       (`2597 <https://github.com/osate/osate2/issues/2597>`__)
+   2.  Syntax highlighting for meta model elements in property definitions
+       (`2703 <https://github.com/osate/osate2/issues/2703>`__)
+   3.  Hot key binding conflict on MacOS (COMMAND+I)
+       (`2712 <https://github.com/osate/osate2/issues/2712>`__)
+   4.  OSATE 2.16 throws NPE when instantiating reference to refined subcomponent.
+       (`2929 <https://github.com/osate/osate2/issues/2929>`__)
+   5.  Simplify instance model element lookup by name
+       (`2932 <https://github.com/osate/osate2/issues/2932>`__)
+   6.  Mode transition names are ignored during instantiation
+       (`2933 <https://github.com/osate/osate2/issues/2933>`__)
+   7.  Update to Eclipse 2025-03
+       (`2939 <https://github.com/osate/osate2/issues/2939>`__)
+   8.  Add build for Windows on arm
+       (`2955 <https://github.com/osate/osate2/issues/2955>`__)
+   9.  Weight analysis shows too many warnings
+       (`2650 <https://github.com/osate/osate2/issues/2650>`__)
+   10. Weight analysis report should include component weight
+       (`2651 <https://github.com/osate/osate2/issues/2651>`__)
+   11. Mode selection dialog should take requires modes into account
+       (`2919 <https://github.com/osate/osate2/issues/2919>`__)
+   12. Add an analysis that checks reachability of SOMs
+       (`2931 <https://github.com/osate/osate2/issues/2931>`__)
+   13. Add preference dialog to SOM reachability analysis
+       (`2936 <https://github.com/osate/osate2/issues/2936>`__)
+   14. Update instance model after SOM reachability analysis
+       (`2937 <https://github.com/osate/osate2/issues/2937>`__)
+   15. SOM reachability analysis improvements
+       (`2941 <https://github.com/osate/osate2/issues/2941>`__)
+   16. SOM reachability analysis should report progress and be cancellable
+       (`2944 <https://github.com/osate/osate2/issues/2944>`__)
+   17. Enhance SOM reachability analysis to handle distributed systems
+       (`2945 <https://github.com/osate/osate2/issues/2945>`__)
+   18. SOM reachability analysis should create an analysis result structure
+       (`2947 <https://github.com/osate/osate2/issues/2947>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
 Version 2.16.0
 ~~~~~~~~~~~~~~
 
