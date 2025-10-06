@@ -72,7 +72,7 @@ Add a user project by clicking on the + icon (A).
 Select the catalog *Github Projects* and enter the following URL as the
 *Resource URI*:
 
-**https://raw.githubusercontent.com/osate/osate2/refs/heads/master/setup/osate2_2025-03.setup**
+**https://raw.githubusercontent.com/osate/osate2/refs/heads/master/setup/osate2_2025-06.setup**
 
 Check the box next to the added OSATE2 Development entry in the tree
 under Github Projects/.
