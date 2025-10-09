@@ -1,0 +1,497 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setting up an OSATE development environment &mdash; OSATE 2.17.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Writing Tests" href="dev/writing-tests.html" />
+    <link rel="prev" title="Getting Help" href="getting-help.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> OSATE
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.17
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about-osate.html">About OSATE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional-components.html">Additional OSATE Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download-and-install.html">Download and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="osate-releases.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-help.html">Getting Help</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up an OSATE development environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-the-installer">1. Download the installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-the-installer">2. Run the installer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#select-the-eclipse-platform">3. Select the Eclipse platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-the-osate-setup-file">4. Add the OSATE setup file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-required-variables">5. Set required variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-eclipse">6. Install Eclipse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-osate-sources">7. Get OSATE sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-the-javafx-sdk">8. Install the JavaFX SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-the-development-environment">9. Updating the development environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#q-a-troubleshooting">Q &amp; A / Troubleshooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-heap-size-is-set-to-4gb-how-do-i-change-that-to-2gb">The heap size is set to 4GB. How do I change that to 2GB?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#can-i-add-the-osate2-project-setup-to-an-existing-workspace">Can I add the OSATE2 project setup to an existing workspace?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that">I want to use the Eclipse installation with a new workspace. Can I do that?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">How do I add a feature to my Eclipse installation and share it with others in my team?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-have-installed-a-feature-in-my-eclipse-installation-but-its-not-available-when-i-start-osate-using-a-launch-configuration">I have installed a feature in my Eclipse installation, but it’s not available when I start OSATE using a launch configuration.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-add-a-feature-to-the-osate2-development-setup">How can I add a feature to the OSATE2 development setup?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-can-i-prevent-noclassdeffounderror-exceptions-from-being-thrown-when-opening-the-graphical-editor">How can I prevent NoClassDefFoundError exceptions from being thrown when opening the graphical editor?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#where-can-i-find-documentation-about-oomph-setups">Where can I find documentation about Oomph setups?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#there-are-too-many-steps-is-there-a-faster-way">There are too many steps, is there a faster way?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev/writing-tests.html">Writing Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev/building-osate.html">Building OSATE</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OSATE</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Setting up an OSATE development environment</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setting-up-an-osate-development-environment">
+<h1>Setting up an OSATE development environment<a class="headerlink" href="#setting-up-an-osate-development-environment" title="Permalink to this headline">¶</a></h1>
+<p>The recommended way to set up a development environment uses the Eclipse
+Installer.</p>
+<p><strong>Note:</strong> It is no longer necessary to install Java separately.</p>
+<div class="section" id="download-the-installer">
+<h2>1. Download the installer<a class="headerlink" href="#download-the-installer" title="Permalink to this headline">¶</a></h2>
+<p>The Eclipse Installer can be downloaded from the Eclipse Web site.
+Follow this
+<a class="reference external" href="https://www.eclipse.org/downloads/packages/installer">link</a> to
+download the installer for your platform.</p>
+<p>On macOS and Linux the installer is a compressed archive. Extract it to
+a directory of your choice.</p>
+<p>The installer for Windows is a self-extracting archive. When running the
+executable you can choose to keep the extracted installer and select an
+installation directory.</p>
+<p><strong>Note:</strong> On Windows the initial extraction is into a temporary
+directory. If your computer is subject to a restrictive security policy
+that does not allow execution of arbitrary programs from that directory
+you can download the windows installer as a zip file from
+<a class="reference external" href="https://download.eclipse.org/oomph/products/eclipse-inst-jre-win64.zip">here</a>
+and extract it to a directory that allows program execution.</p>
+</div>
+<div class="section" id="run-the-installer">
+<h2>2. Run the installer<a class="headerlink" href="#run-the-installer" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id1">
+<img alt="Installer 1" src="_images/installer1.png" />
+<p class="caption"><span class="caption-text">Installer 1</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Open the menu (A), bundle pools should be on (B), and switch to advanced
+mode (C)</p>
+</div>
+<div class="section" id="select-the-eclipse-platform">
+<h2>3. Select the Eclipse platform<a class="headerlink" href="#select-the-eclipse-platform" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id2">
+<img alt="Installer 2" src="_images/installer2.png" />
+<p class="caption"><span class="caption-text">Installer 2</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>On first use update the installer (A)</p>
+<p>If necessary, configure proxy settings, and optionally enter ssh
+credentials (B). Use the help (C) for more detailed information on these
+steps.</p>
+<p>Select <strong>Eclipse IDE for Java Developers</strong> as the base product to
+install, and select <strong>2025-06</strong> as the product version. DO NOT USE
+<strong>Latest Release (2025-06)</strong> if that is offered in the dialog.</p>
+<p>Select the <strong>JRE 21.0.x …</strong> entry as the Java 21+ VM.</p>
+</div>
+<div class="section" id="add-the-osate-setup-file">
+<h2>4. Add the OSATE setup file<a class="headerlink" href="#add-the-osate-setup-file" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id3">
+<img alt="Installer 3" src="_images/installer3.png" />
+<p class="caption"><span class="caption-text">Installer 3</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Add a user project by clicking on the + icon (A).</p>
+<p>Select the catalog <em>Github Projects</em> and enter the following URL as the
+<em>Resource URI</em>:</p>
+<p><strong>https://raw.githubusercontent.com/osate/osate2/refs/heads/master/setup/osate2_2025-06.setup</strong></p>
+<p>Check the box next to the added OSATE2 Development entry in the tree
+under Github Projects/.</p>
+</div>
+<div class="section" id="set-required-variables">
+<h2>5. Set required variables<a class="headerlink" href="#set-required-variables" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id4">
+<img alt="Installer 4" src="_images/installer4.png" />
+<p class="caption"><span class="caption-text">Installer 4</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Check <em>Show all variables</em> near the bottom of the dialog. Without this,
+only variables that do not have a value will be displayed. Oomph stores
+variable values between invocations, so nothing would be shown after the
+first run.</p>
+<p>Note that the availabe variables may change depending on the selections
+you make in drop-down lists.</p>
+<p>The first group of variables determines the directory for the new
+Eclipse installation. In <em>Installation location rule</em> you can choose
+between (a) a root directory and a subdirectory within that root
+directory and (b) a full path to the installation directory. Depending
+on your choice you will need to fill in the installation path and
+directory name.</p>
+<p>The next group determines the location of the workspace. Do not reuse an
+existing workspace as that will likely lead to problems.</p>
+<p>The <em>Git clone location rule</em> determines how the path to the osate2 git
+repository clone is constructed. The osate2 git repository can be cloned
+in a directory in the installation location, workspace location, or
+elsewhere. Depending on the location a new field will be shown to enter
+a directory.</p>
+<p>The <em>API baseline location rule</em> determines how the path to store API
+baseline files is constructed. The API baseline(s) can be stored in a
+directory in the installation location, workspace location, or
+elsewhere. Depending on the location a new field will be shown to enter
+a directory. <em>Do not store API baseline files in a local git
+repository.</em></p>
+<p>Finally, choose how to access the git repositories. The default choice
+uses ssh access and requires ssh credentials (click the key icon at the
+bottom to set this up), and your public key must be uploaded to GitHub.
+The <em>HTTPS (read-write)</em> option uses your GitHub username and password.
+When you choose https, a variable for the user name will show up.
+Replace the default <em>anonymous</em> with your GitHub user name.</p>
+</div>
+<div class="section" id="install-eclipse">
+<h2>6. Install Eclipse<a class="headerlink" href="#install-eclipse" title="Permalink to this headline">¶</a></h2>
+<p>The next screen shows the installation steps that will be executed.
+Click <em>Finish</em> to download Eclipse and install it to the selected
+location. When run for the first time, it will download features and
+plugins into the bundle pool. The bundle pool is shared among Eclipse
+installations such that subsequent installations are much faster.</p>
+</div>
+<div class="section" id="get-osate-sources">
+<h2>7. Get OSATE sources<a class="headerlink" href="#get-osate-sources" title="Permalink to this headline">¶</a></h2>
+<p>Upon first start Eclipse executes additional setup tasks to set
+preferences, clone git repositories if needed, import projects, and
+organize projects into working sets.</p>
+<p>The OSATE2 setup file sets the following preferences:</p>
+<ul class="simple">
+<li><p>The Java perspective is set as the default and Eclipse is configured
+to start with this perspective.</p></li>
+<li><p>The default file encoding is set to UTF-8.</p></li>
+<li><p>A source cleanup profile <em>Osate</em> is created and enabled for the
+workspace.</p></li>
+<li><p>Java formatter profiles <em>Osate</em> is created and enabled for the
+workspace.</p></li>
+<li><p>Java code cleanup actions on save are configured and enabled for the
+workspace.</p></li>
+<li><p>An Xtend formatter profile <em>Osate</em> is created and enabled for the
+workspace.</p></li>
+</ul>
+<p>Cloning the git repositories takes some time. Progress can be viewed in
+a dialog. To show the progress dialog, click on the animated icon in the
+Eclipse status bar.</p>
+<p><strong>Note:</strong> Once the sources are imported Eclipse will start a build. There
+will be compile errors because JavaFX is not yet installed. Ignore the
+errors and continue.</p>
+</div>
+<div class="section" id="install-the-javafx-sdk">
+<h2>8. Install the JavaFX SDK<a class="headerlink" href="#install-the-javafx-sdk" title="Permalink to this headline">¶</a></h2>
+<p>The JavaFX must be installed manually.</p>
+<ul>
+<li><p>Download the JavaFX 17 SDK for your development platform from the <a class="reference external" href="https://openjfx.io/">JavaFX
+website</a>. For example: “JavaFX Windows SDK”</p>
+<p>There’s a checkbox “Include older versions” to show version 17 downloads on
+the Web page.</p>
+<p>The download URLs are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-x64_bin-sdk.zip">https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_linux-x64_bin-sdk.zip</a></p></li>
+<li><p><a class="reference external" href="https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-aarch64_bin-sdk.zip">https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-aarch64_bin-sdk.zip</a></p></li>
+<li><p><a class="reference external" href="https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-x64_bin-sdk.zip">https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_osx-x64_bin-sdk.zip</a></p></li>
+<li><p><a class="reference external" href="https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_windows-x64_bin-sdk.zip">https://download2.gluonhq.com/openjfx/17.0.2/openjfx-17.0.2_windows-x64_bin-sdk.zip</a></p></li>
+</ul>
+<p>Note that newer JavaFX versions should work, too.</p>
+</li>
+<li><p>Extract the SDK to your preferred path.</p></li>
+<li><p>Configure the development environment with the path to the SDK.</p>
+<ul class="simple">
+<li><p>Open Eclipse preferences: <em>Window -&gt; Preferences</em></p></li>
+<li><p>Select <em>JavaFX</em></p></li>
+<li><p>Set <em>JavaFX 11+ SDK</em> to the <em>lib</em> folder of the SDK</p></li>
+<li><p>Restart Eclipse</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="updating-the-development-environment">
+<h2>9. Updating the development environment<a class="headerlink" href="#updating-the-development-environment" title="Permalink to this headline">¶</a></h2>
+<p>Ideally the development environment is completely managed using the
+setup file. This implies that additional plugins or git repositories
+should not be added manually. Instead, the setup file should be updated.
+All developers can then update the Eclipse installation by re-executing
+the setup process. This happens every time Eclipse is started (unless
+disabled in the preferences) or can be done manually via <em>Help</em> -&gt;
+<em>Perform Setup Tasks …</em></p>
+<p>If you run into problems with setting up the develeopment environment, you
+can ask for help on our <a class="reference external" href="https://groups.google.com/forum/#!forum/osate">Google group</a>.</p>
+</div>
+<div class="section" id="q-a-troubleshooting">
+<h2>Q &amp; A / Troubleshooting<a class="headerlink" href="#q-a-troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-heap-size-is-set-to-4gb-how-do-i-change-that-to-2gb">
+<h3>The heap size is set to 4GB. How do I change that to 2GB?<a class="headerlink" href="#the-heap-size-is-set-to-4gb-how-do-i-change-that-to-2gb" title="Permalink to this headline">¶</a></h3>
+<p>You can edit the user setup to override the setting for all Eclipse
+installations. Follow these steps in Eclipse:</p>
+<ol class="arabic">
+<li><p>Open the user setup: <em>Navigate</em> -&gt; <em>Open Setup</em> -&gt; <em>User</em></p></li>
+<li><p>Add an Eclipse Ini task: In the setup editor right click on <em>User</em>
+and select <em>New Child</em> -&gt; <em>Eclipse Ini</em></p></li>
+<li><p>Edit the task properties: Right click on the new <em>Eclipse Ini</em> task
+and select <em>Show Properties View</em></p></li>
+<li><p>Set the maximum heap size value: In the <em>Properties</em> view</p>
+<ol class="arabic simple">
+<li><p>Set <em>Option</em> to “-Xmx” (without the quotes)</p></li>
+<li><p>Set <em>Value</em> “2g” or “2048m” (without the quotes) to set the heap
+size to 2GB</p></li>
+<li><p>Set <em>VM</em> to “true”.</p></li>
+</ol>
+<div class="figure align-default" id="id5">
+<img alt="Properties View" src="_images/heapsize.png" />
+<p class="caption"><span class="caption-text">Properties View Screenshot</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Save the user setup</p></li>
+<li><p>Execute the setup: <em>Help</em> -&gt; <em>Perform Setup Tasks…</em></p></li>
+</ol>
+<p>You can also edit the installation setup to establish a maximum heap
+size just for this Eclipse installation.</p>
+</div>
+<div class="section" id="can-i-add-the-osate2-project-setup-to-an-existing-workspace">
+<h3>Can I add the OSATE2 project setup to an existing workspace?<a class="headerlink" href="#can-i-add-the-osate2-project-setup-to-an-existing-workspace" title="Permalink to this headline">¶</a></h3>
+<p>Yes, a project setup can be imported into a workspace: <em>File</em> -&gt;
+<em>Import…</em> -&gt; <em>Oomph</em> -&gt; <em>Projects into workspace</em></p>
+<p>You can also use the import to add additional project setups to a
+workspace.</p>
+</div>
+<div class="section" id="i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that">
+<h3>I want to use the Eclipse installation with a new workspace. Can I do that?<a class="headerlink" href="#i-want-to-use-the-eclipse-installation-with-a-new-workspace-can-i-do-that" title="Permalink to this headline">¶</a></h3>
+<p>No problem. Switch to the new workspace location and import the OSATE2
+project setup.</p>
+<p>Alternatively, you can create a new Eclipse installation for each new
+workspace. When using a bundle pool, an Eclipse installation is
+comparatively lightweight, and quick to set up.</p>
+</div>
+<div class="section" id="how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team">
+<h3>How do I add a feature to my Eclipse installation and share it with others in my team?<a class="headerlink" href="#how-do-i-add-a-feature-to-my-eclipse-installation-and-share-it-with-others-in-my-team" title="Permalink to this headline">¶</a></h3>
+<p>Create your own setup file and import it into Eclipse. P2 Director tasks
+install features in Eclipse. It is recommended to put setup files under
+version control.</p>
+</div>
+<div class="section" id="i-have-installed-a-feature-in-my-eclipse-installation-but-its-not-available-when-i-start-osate-using-a-launch-configuration">
+<h3>I have installed a feature in my Eclipse installation, but it’s not available when I start OSATE using a launch configuration.<a class="headerlink" href="#i-have-installed-a-feature-in-my-eclipse-installation-but-its-not-available-when-i-start-osate-using-a-launch-configuration" title="Permalink to this headline">¶</a></h3>
+<p>Installed features must be part of the target platform to be available
+to a runtime workbench. The OSATE2 setup uses a target platform <em>Modular
+Target</em>. To add to this target create a <em>Targlet</em> in your setup. See
+osate2.setup for an example.</p>
+</div>
+<div class="section" id="how-can-i-add-a-feature-to-the-osate2-development-setup">
+<h3>How can I add a feature to the OSATE2 development setup?<a class="headerlink" href="#how-can-i-add-a-feature-to-the-osate2-development-setup" title="Permalink to this headline">¶</a></h3>
+<p>Edit the OSATE2 setup (add a P2 director task and/or a targlet) and
+submit a pull request. <strong>DO NOT push a modified osate2.setup file to the
+develop branch on GitHub!</strong></p>
+</div>
+<div class="section" id="how-can-i-prevent-noclassdeffounderror-exceptions-from-being-thrown-when-opening-the-graphical-editor">
+<h3>How can I prevent NoClassDefFoundError exceptions from being thrown when opening the graphical editor?<a class="headerlink" href="#how-can-i-prevent-noclassdeffounderror-exceptions-from-being-thrown-when-opening-the-graphical-editor" title="Permalink to this headline">¶</a></h3>
+<p>Add “-Dosgi.framework.extensions=org.eclipse.fx.osgi” (without the
+quotes) to the VM arguments of your launch configuration.</p>
+</div>
+<div class="section" id="where-can-i-find-documentation-about-oomph-setups">
+<h3>Where can I find documentation about Oomph setups?<a class="headerlink" href="#where-can-i-find-documentation-about-oomph-setups" title="Permalink to this headline">¶</a></h3>
+<p>On the Eclipse wiki: <a class="reference external" href="https://wiki.eclipse.org/Eclipse_Oomph_Authoring">Eclipse Oomph
+Authoring</a></p>
+</div>
+<div class="section" id="there-are-too-many-steps-is-there-a-faster-way">
+<h3>There are too many steps, is there a faster way?<a class="headerlink" href="#there-are-too-many-steps-is-there-a-faster-way" title="Permalink to this headline">¶</a></h3>
+<p>If you have already set up the Eclipse Installer on your computer try
+<a class="reference external" href="eclipse+installer:https://raw.githubusercontent.com/osate/osate2/master/setup/OSATEConfiguration.setup">this
+link</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dev/writing-tests.html" class="btn btn-neutral float-right" title="Writing Tests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="getting-help.html" class="btn btn-neutral float-left" title="Getting Help" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2016-2025, Carnegie Mellon University
+      <span class="lastupdated">
+        Last updated on Oct 09, 2025.
+      </span>
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
