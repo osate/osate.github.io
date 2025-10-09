@@ -54,8 +54,8 @@ credentials (B). Use the help (C) for more detailed information on these
 steps.
 
 Select **Eclipse IDE for Java Developers** as the base product to
-install, and select **2025-03** as the product version. DO NOT USE
-**Latest Release (2025-03)** if that is offered in the dialog.
+install, and select **2025-06** as the product version. DO NOT USE
+**Latest Release (2025-06)** if that is offered in the dialog.
 
 Select the **JRE 21.0.x …** entry as the Java 21+ VM.
 
