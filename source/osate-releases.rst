@@ -36,6 +36,7 @@ Notable changes
 
 - This is a maintenance release with no new features.
 - This version of OSATE is based on Eclipse 2025-12 to make the text editor usable on macOS 26.
+- The OSATE plugin jar files are no longer digitally signed.
 
 Fixed issues
 ^^^^^^^^^^^^
