@@ -11,7 +11,7 @@ Release
 ^^^^^^^
 
 -  **GIT tag**: 2.18.0-RELEASE
--  **Release date**: March 6, 2026
+-  **Release date**: March 5, 2026
 -  **Eclipse base version**: 2025-12
 -  **Java version**: Java 21
 -  **Eclipse Update-Site**:
@@ -43,7 +43,6 @@ Fixed issues
 
 -  OSATE Core and Analysis Plugins
 
- * core
    1.  AbstractAnalysisHandler cannot write result report files in standalone mode
        (`2716 <https://github.com/osate/osate2/issues/2716>`__)
    2.  Line selection in text editor is not highlighted on macos Tahoe
