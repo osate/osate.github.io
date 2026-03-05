@@ -9,7 +9,7 @@ Installer.
 1. Download the installer
 -------------------------
 
-The Eclipse Installer can be downloaded from the Eclipse Web site.
+The Eclipse Installer can be downloaded from the Eclipse Website.
 Follow this
 `link <https://www.eclipse.org/downloads/packages/installer>`__ to
 download the installer for your platform.
@@ -24,7 +24,7 @@ installation directory.
 \ **Note:** On Windows the initial extraction is into a temporary
 directory. If your computer is subject to a restrictive security policy
 that does not allow execution of arbitrary programs from that directory
-you can download the windows installer as a zip file from
+you can download the Windows installer as a zip file from
 `here <https://download.eclipse.org/oomph/products/eclipse-inst-jre-win64.zip>`__
 and extract it to a directory that allows program execution.
 
@@ -54,8 +54,8 @@ credentials (B). Use the help (C) for more detailed information on these
 steps.
 
 Select **Eclipse IDE for Java Developers** as the base product to
-install, and select **2025-06** as the product version. DO NOT USE
-**Latest Release (2025-06)** if that is offered in the dialog.
+install, and select **2025-12** as the product version. DO NOT USE
+**Latest Release (2025-12)** if that is offered in the dialog.
 
 Select the **JRE 21.0.x …** entry as the Java 21+ VM.
 
@@ -72,10 +72,10 @@ Add a user project by clicking on the + icon (A).
 Select the catalog *Github Projects* and enter the following URL as the
 *Resource URI*:
 
-**https://raw.githubusercontent.com/osate/osate2/refs/heads/master/setup/osate2_2025-06.setup**
+**https://raw.githubusercontent.com/osate/osate2/refs/heads/master/setup/osate2_2025-12.setup**
 
 Check the box next to the added OSATE2 Development entry in the tree
-under Github Projects/.
+under GitHub Projects/.
 
 5. Set required variables
 -------------------------
@@ -90,7 +90,7 @@ only variables that do not have a value will be displayed. Oomph stores
 variable values between invocations, so nothing would be shown after the
 first run.
 
-Note that the availabe variables may change depending on the selections
+Note that the available variables may change depending on the selections
 you make in drop-down lists.
 
 The first group of variables determines the directory for the new
@@ -120,8 +120,8 @@ Finally, choose how to access the git repositories. The default choice
 uses ssh access and requires ssh credentials (click the key icon at the
 bottom to set this up), and your public key must be uploaded to GitHub.
 The *HTTPS (read-write)* option uses your GitHub username and password.
-When you choose https, a variable for the user name will show up.
-Replace the default *anonymous* with your GitHub user name.
+When you choose HTTPS, a variable for the username will show up.
+Replace the default *anonymous* with your GitHub username.
 
 6. Install Eclipse
 ------------------
@@ -158,7 +158,7 @@ a dialog. To show the progress dialog, click on the animated icon in the
 Eclipse status bar.
 
 \ **Note:** Once the sources are imported Eclipse will start a build. There
-will be compile errors because JavaFX is not yet installed. Ignore the
+will be compilation errors because JavaFX is not yet installed. Ignore the
 errors and continue.
 
 8. Install the JavaFX SDK
@@ -200,7 +200,7 @@ the setup process. This happens every time Eclipse is started (unless
 disabled in the preferences) or can be done manually via *Help* ->
 *Perform Setup Tasks …*
 
-If you run into problems with setting up the develeopment environment, you
+If you run into problems with setting up the development environment, you
 can ask for help on our `Google group <https://groups.google.com/forum/#!forum/osate>`__.
 
 Q & A / Troubleshooting
@@ -217,7 +217,7 @@ installations. Follow these steps in Eclipse:
 2. Add an Eclipse Ini task: In the setup editor right click on *User*
    and select *New Child* -> *Eclipse Ini*
 
-3. Edit the task properties: Right click on the new *Eclipse Ini* task
+3. Edit the task properties: Right-click on the new *Eclipse Ini* task
    and select *Show Properties View*
 
 4. Set the maximum heap size value: In the *Properties* view
