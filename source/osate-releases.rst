@@ -4,6 +4,64 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.18.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.18.0-RELEASE
+-  **Release date**: March 6, 2026
+-  **Eclipse base version**: 2025-12
+-  **Java version**: Java 21
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.18.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.18.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   5cc12d04d9f14cbd0e4910e354529291f64ab317ab3bfee8788cb763ed85c537  osate2-2.18.0-vfinal-linux.gtk.aarch64.tar.gz
+   03c7b51cb5dfc350bbe815da57cc1337c4b7a895b19f42521f901478adc5490c  osate2-2.18.0-vfinal-linux.gtk.x86_64.tar.gz
+   dea52c1da299c75e660a89c15d6325a1a519715c75df482bb833f5715a86f8db  osate2-2.18.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   ce32f98445c338efd09172cf800f7e4648de0b4317437452b560306880c18fdb  osate2-2.18.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   826ca6ca8bb5223f0e57950bfb33d52ccfeda07a350562ce04d84a0ac5051f91  osate2-2.18.0-vfinal-win32.win32.aarch64.zip
+   e7c02864f051cb4f74a50ef3bebca14e14bb9b6315046fa954bba9d66c530669  osate2-2.18.0-vfinal-win32.win32.x86_64.zip
+
+Notable changes
+^^^^^^^^^^^^^^^
+
+- This is a maintenance release with no new features.
+- This version of OSATE is based on Eclipse 2025-12 to make the text editor usable on macOS 26.
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+ * core
+   1.  AbstractAnalysisHandler cannot write result report files in standalone mode
+       (`2716 <https://github.com/osate/osate2/issues/2716>`__)
+   2.  Line selection in text editor is not highlighted on macos Tahoe
+       (`2969 <https://github.com/osate/osate2/issues/2969>`__)
+   3.  Update to Eclipse 2025-12
+       (`2971 <https://github.com/osate/osate2/issues/2971>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
 Version 2.17.0
 ~~~~~~~~~~~~~~
 
