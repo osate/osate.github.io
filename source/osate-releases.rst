@@ -4,6 +4,149 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.19.0 (not yet released)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.19.0-RELEASE
+-  **Release date**: TBD
+-  **Eclipse base version**: 2025-12
+-  **Java version**: Java 21
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.19.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.19.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   8c99432cba9143b994790bcfad313fef016d6af754dde9bec182ba6fa217dbe7  osate2-2.19.0-vfinal-linux.gtk.aarch64.tar.gz
+   09134ad583fc4b916ee4ff9a4a1f5757532f2b00455397246d40194ae3af4a50  osate2-2.19.0-vfinal-linux.gtk.x86_64.tar.gz
+   c6c4af3f7c965c51811e19db33ed164494a431db0a6a972bfd00cc12be03f9e9  osate2-2.19.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   363c6bbe7dd0e82116f2e0e59ba987bd8e86c0f095160dcc67e10edede0fde6b  osate2-2.19.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   9d071ab3f26ff4f9969b9af1a122ddf16851a64244d08a5b8f0cb03476af6590  osate2-2.19.0-vfinal-win32.win32.aarch64.zip
+   9057496eac372b7231685f6e04e91430d6710e915c895afa7c6559d4374baa2e  osate2-2.19.0-vfinal-win32.win32.x86_64.zip
+   
+Notable changes
+^^^^^^^^^^^^^^^
+
+- This is a bug fix release.
+- It also contains some internal changes to support use in a language server.
+- We have started to use AI coding agents for development.
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  End to end flow instantiation continues after error
+       (`612 <https://github.com/osate/osate2/issues/612>`__)
+   2.  Incorrect end to end flow created
+       (`2606 <https://github.com/osate/osate2/issues/2606>`__)
+   3.  Validation errors/warnings are attached to connection instead of connection ends
+       (`2625 <https://github.com/osate/osate2/issues/2625>`__)
+   4.  Flow instantiation silently fails when subcomponents have connections but not flow implementations
+       (`2872 <https://github.com/osate/osate2/issues/2872>`__)
+   5.  Project and package dependency view don't show content
+       (`2978 <https://github.com/osate/osate2/issues/2978>`__)
+   6.  End-to-end flow instantiation fails for multiple access connection candidates
+       (`2984 <https://github.com/osate/osate2/issues/2984>`__)
+   7.  Forward-referenced nested end-to-end flows bypass cleanup and clone naming
+       (`2985 <https://github.com/osate/osate2/issues/2985>`__)
+   8.  Nested end-to-end flow composition combines incompatible path variants
+       (`2986 <https://github.com/osate/osate2/issues/2986>`__)
+   9.  Cyclic nested end-to-end flows create cyclic instance graphs
+       (`2987 <https://github.com/osate/osate2/issues/2987>`__)
+   10.  End-to-end flow connection matching ignores declarative connection context
+       (`2988 <https://github.com/osate/osate2/issues/2988>`__)
+   11.  Instantiation error handling requires AbstractUIPlugin in headless environments
+       (`2989 <https://github.com/osate/osate2/issues/2989>`__)
+   12.  Nested end-to-end flow followed by connection causes ClassCastException
+       (`2991 <https://github.com/osate/osate2/issues/2991>`__)
+   13.  Reject unresolved connection instance endpoints
+       (`3017 <https://github.com/osate/osate2/issues/3017>`__)
+   14.  Correct feature-group endpoint mapping
+       (`3019 <https://github.com/osate/osate2/issues/3019>`__)
+   15.  Index short access connections by destination
+       (`3021 <https://github.com/osate/osate2/issues/3021>`__)
+   16.  Clear rejected short access connections
+       (`3023 <https://github.com/osate/osate2/issues/3023>`__)
+   17.  Stop instantiating mode-transition connections
+       (`3025 <https://github.com/osate/osate2/issues/3025>`__)
+   18.  Instantiation fails for a connection to an internal feature
+       (`3027 <https://github.com/osate/osate2/issues/3027>`__)
+   19.  Missing validation that a connection does not end with an internal feature
+       (`3028 <https://github.com/osate/osate2/issues/3028>`__)
+   20.  Instantiation crashes for a connection into an empty subcomponent array
+       (`3030 <https://github.com/osate/osate2/issues/3030>`__)
+   21.  Finalize connections before validation and flows
+       (`3032 <https://github.com/osate/osate2/issues/3032>`__)
+   22.  Replicated array connection instances keep the first element as reference context
+       (`3034 <https://github.com/osate/osate2/issues/3034>`__)
+   23.  Instantiation crashes for a connection into a nested boundary feature group member
+       (`3038 <https://github.com/osate/osate2/issues/3038>`__)
+   24.  Nested boundary feature group loses the inward connection instance
+       (`3040 <https://github.com/osate/osate2/issues/3040>`__)
+   25.  Report a connection with no valid direction on the connection instance
+       (`3042 <https://github.com/osate/osate2/issues/3042>`__)
+   26.  A port sharing a feature group with a connected access feature gets no connection instance
+       (`3044 <https://github.com/osate/osate2/issues/3044>`__)
+   27.  A feature declared with a feature prototype is instantiated as an abstract feature
+       (`3067 <https://github.com/osate/osate2/issues/3067>`__)
+   28.  An unsupported Connection_Pattern literal deletes the connection instance silently
+       (`3068 <https://github.com/osate/osate2/issues/3068>`__)
+   29.  Separate UI from core flow latency analysis
+       (`2974 <https://github.com/osate/osate2/issues/2974>`__)
+   30.  Extract analysis reporting into separate plugin
+       (`2976 <https://github.com/osate/osate2/issues/2976>`__)
+   31.  SOM reachability analysis hangs for distinct equal-length trigger paths from the same source
+       (`2980 <https://github.com/osate/osate2/issues/2980>`__)
+   32.  Canceling the SOM reachability settings dialog still runs the analysis
+       (`2981 <https://github.com/osate/osate2/issues/2981>`__)
+   33.  SOM reachability analysis does not handle progress cancellation consistently
+       (`2982 <https://github.com/osate/osate2/issues/2982>`__)
+   34.  Bus load drops virtual buses from multi-bus binding paths
+       (`3009 <https://github.com/osate/osate2/issues/3009>`__)
+   35.  Broadcast budget mismatch warning depends on connection order
+       (`3010 <https://github.com/osate/osate2/issues/3010>`__)
+   36.  Specified bus latency is omitted from asynchronous queue waits
+       (`3011 <https://github.com/osate/osate2/issues/3011>`__)
+   37.  Asynchronous bus queueing mixes mutually exclusive modes
+       (`3012 <https://github.com/osate/osate2/issues/3012>`__)
+   38.  Nested required virtual bus overhead is double counted
+       (`3013 <https://github.com/osate/osate2/issues/3013>`__)
+   39.  Nested required virtual bus sampling latency is ignored
+       (`3014 <https://github.com/osate/osate2/issues/3014>`__)
+   40.  Direct connection latency is omitted from specified totals
+       (`3015 <https://github.com/osate/osate2/issues/3015>`__)
+   41.  Split Xtext generated UI plugins
+       (`2972 <https://github.com/osate/osate2/issues/2972>`__)
+   42.  Remove unavailable Yakindu p2 dependency
+       (`3064 <https://github.com/osate/osate2/issues/3064>`__)
+
+-  Error Model and Analysis Plugins
+
+   1.  Bug in ormore FTA probability math
+       (`2927 <https://github.com/osate/osate2/issues/2927>`__)
+   2.  Incorrect construction of the minimal cut set in EMV2
+       (`2970 <https://github.com/osate/osate2/issues/2970>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
 Version 2.18.0
 ~~~~~~~~~~~~~~
 
