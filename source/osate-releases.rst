@@ -4,14 +4,14 @@ Release Notes
 Stable Releases
 ---------------
 
-Version 2.19.0 (not yet released)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Version 2.19.0
+~~~~~~~~~~~~~~
 
 Release
 ^^^^^^^
 
 -  **GIT tag**: 2.19.0-RELEASE
--  **Release date**: TBD
+-  **Release date**: August 21, 2026
 -  **Eclipse base version**: 2025-12
 -  **Java version**: Java 21
 -  **Eclipse Update-Site**:
@@ -34,8 +34,8 @@ SHA256 Hashes for the downloads
 Notable changes
 ^^^^^^^^^^^^^^^
 
-- This is a bug fix release.
-- It also contains some internal changes to support use in a language server.
+- This is a bug fix release without new features. Note that the fixes in analyses may change analysis results.
+- There are some internal changes to support use of OSATE plugins in a language server.
 - We have started to use AI coding agents for development.
 
 Fixed issues
