@@ -35,7 +35,7 @@ Notable changes
 ^^^^^^^^^^^^^^^
 
 - This release contains a complete rewrite of the connection and flow instantiation.
-- The bahavior annex implementation has been ported to Xtext for better IDE support.
+- The behavior annex implementation has been ported to Xtext for better IDE support.
 - The BA now supports type checking and should support the full standard. Note that type checking is underspecified
   in the standard, so we had to make assumptions in a couple of places about type comformance.
 - Most of the modifiead and new code was written using AI coding agents.
