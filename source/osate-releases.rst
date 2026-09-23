@@ -4,6 +4,333 @@ Release Notes
 Stable Releases
 ---------------
 
+Version 2.20.0
+~~~~~~~~~~~~~~
+
+Release
+^^^^^^^
+
+-  **GIT tag**: 2.20.0-RELEASE
+-  **Release date**: September 23, 2026
+-  **Eclipse base version**: 2025-12
+-  **Java version**: Java 21
+-  **Eclipse Update-Site**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.20.0/updates
+-  **Download URL**:
+   http://osate-build.sei.cmu.edu/download/osate/stable/2.20.0/products
+
+SHA256 Hashes for the downloads
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   cd237f9fabe17a03bff5ca932d1291f79a009a90f2717b3c4a2074f4f93845f3  osate2-2.20.0-vfinal-linux.gtk.aarch64.tar.gz
+   23ed6ea19b1a8c649f39fac7ef4d012dc46d16eee587bcc23865110980d6c219  osate2-2.20.0-vfinal-linux.gtk.x86_64.tar.gz
+   812e285a14c2c3d61aa3c4eaa03757d7c0fab73c37109bd570e633a0e506899b  osate2-2.20.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   b6104adcf47c01d78702910dab21f67947ffb51626d218ddeb0a06fd34ef8a16  osate2-2.20.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   40f886c1094745578260996af0fa9a5c32ea5c30374093b10a6dbc95e8feff2f  osate2-2.20.0-vfinal-win32.win32.aarch64.zip
+   1a89d04696c6e21c004d1ea3d38439be7c8b1bfd5b72a164d228a9a3ccc35d28  osate2-2.20.0-vfinal-win32.win32.x86_64.zip
+   
+Notable changes
+^^^^^^^^^^^^^^^
+
+- This release contains a complete rewrite of the connection and flow instantiation.
+- The bahavior annex implementation has been ported to Xtext for better IDE support.
+- The BA now supports type checking and should support the full standard. Note that type checking is underspecified
+  in the standard, so we had to make assumptions in a couple of places about type comformance.
+- Most of the modifiead and new code was written using AI coding agents.
+
+Fixed issues
+^^^^^^^^^^^^
+
+-  OSATE Core and Analysis Plugins
+
+   1.  Required_Connection property not recognized
+       (`602 <https://github.com/osate/osate2/issues/602>`__)
+   2.  Reference property value to array not expanded to list
+       (`721 <https://github.com/osate/osate2/issues/721>`__)
+   3.  String constants in OSATE don't conform to the standard
+       (`809 <https://github.com/osate/osate2/issues/809>`__)
+   4.  Latency analysis does not compute bus latency when using array of components
+       (`1741 <https://github.com/osate/osate2/issues/1741>`__)
+   5.  Array ports and connections do not appear in flow instances
+       (`1833 <https://github.com/osate/osate2/issues/1833>`__)
+   6.  AADL name resolution implementation violates linking service contract
+       (`1836 <https://github.com/osate/osate2/issues/1836>`__)
+   7.  Remove multiple consecutive keyword grammar rules
+       (`2557 <https://github.com/osate/osate2/issues/2557>`__)
+   8.  Add AADL-specific component rename behavior to LSP
+       (`2697 <https://github.com/osate/osate2/issues/2697>`__)
+   9.  Missing validation on record field names
+       (`2733 <https://github.com/osate/osate2/issues/2733>`__)
+   10. Flow specifications need to be able to reference features in a feature array
+       (`2787 <https://github.com/osate/osate2/issues/2787>`__)
+   11. Stepper Motor Example errors
+       (`2806 <https://github.com/osate/osate2/issues/2806>`__)
+   12. Make end-to-end flow instantiation atomic and maintainable
+       (`3005 <https://github.com/osate/osate2/issues/3005>`__)
+   13. Document connection instance bidirectionality policy
+       (`3016 <https://github.com/osate/osate2/issues/3016>`__)
+   14. Connections in a referenced classifier root fail mode resolution
+       (`3033 <https://github.com/osate/osate2/issues/3033>`__)
+   15. Use across-first connection traversal
+       (`3037 <https://github.com/osate/osate2/issues/3037>`__)
+   16. Report where a connection instance ends, or decide not to, from connection validation
+       (`3047 <https://github.com/osate/osate2/issues/3047>`__)
+   17. An array loses all but its first element when the connection crosses a pivot
+       (`3048 <https://github.com/osate/osate2/issues/3048>`__)
+   18. Replicated connection references name the wrong array element
+       (`3049 <https://github.com/osate/osate2/issues/3049>`__)
+   19. Report an upward path the level above does not continue, or decide not to
+       (`3050 <https://github.com/osate/osate2/issues/3050>`__)
+   20. A connection pattern with fewer dimensions than its arrays leaves two identical connections
+       (`3052 <https://github.com/osate/osate2/issues/3052>`__)
+   21. Refactor CreateEndToEndFlowsSwitch into focused collaborators
+       (`3055 <https://github.com/osate/osate2/issues/3055>`__)
+   22. Refactor and modernize InstantiateModel
+       (`3066 <https://github.com/osate/osate2/issues/3066>`__)
+   23. The two copies of analyzePath disagree on where the upward walk stops
+       (`3069 <https://github.com/osate/osate2/issues/3069>`__)
+   24. Instantiation crashes for a feature group typed with an unbound feature group prototype
+       (`3074 <https://github.com/osate/osate2/issues/3074>`__)
+   25. Bound feature group prototype is reported as not bound yet
+       (`3075 <https://github.com/osate/osate2/issues/3075>`__)
+   26. Replicated connection instance resolves its ends against the wrong array index
+       (`3076 <https://github.com/osate/osate2/issues/3076>`__)
+   27. Cyclic_Next_Next and Cyclic_Previous_Previous connect the wrong array elements
+       (`3085 <https://github.com/osate/osate2/issues/3085>`__)
+   28. Instance model file name truncates the source file name at the first dot
+       (`3086 <https://github.com/osate/osate2/issues/3086>`__)
+   29. Speed up model instantiation by eliminating redundant recomputation
+       (`3095 <https://github.com/osate/osate2/issues/3095>`__)
+   30. Modernize the property caching code in model instantiation
+       (`3101 <https://github.com/osate/osate2/issues/3101>`__)
+   31. Appended list elements are lost for every modal value but the first
+       (`3103 <https://github.com/osate/osate2/issues/3103>`__)
+   32. A reference value in a connection property association is instantiated twice
+       (`3104 <https://github.com/osate/osate2/issues/3104>`__)
+   33. Only one of the three reference value passes skips values that are already instantiated
+       (`3105 <https://github.com/osate/osate2/issues/3105>`__)
+   34. A broken reference in a contained property association on a connection is not reported
+       (`3106 <https://github.com/osate/osate2/issues/3106>`__)
+   35. Dead code in declarative-model property lookup
+       (`3107 <https://github.com/osate/osate2/issues/3107>`__)
+   36. Declarative property lookup dispatches on type instead of using overriding
+       (`3108 <https://github.com/osate/osate2/issues/3108>`__)
+   37. Port connection property lookup is inconsistent with other connection kinds
+       (`3109 <https://github.com/osate/osate2/issues/3109>`__)
+   38. Flow specifications are not expanded over an array of feature groups
+       (`3113 <https://github.com/osate/osate2/issues/3113>`__)
+   39. Qualified reference cache reuses results across linking contexts
+       (`3118 <https://github.com/osate/osate2/issues/3118>`__)
+   40. Persisted-index linking behavior is not covered by tests
+       (`3119 <https://github.com/osate/osate2/issues/3119>`__)
+   41. Concurrent index lookups share mutable reference text
+       (`3120 <https://github.com/osate/osate2/issues/3120>`__)
+   42. AADL Property Values view hides workspace property sets once a property set filter is applied
+       (`3234 <https://github.com/osate/osate2/issues/3234>`__)
+   43. Remove in the AADL Property Values view deletes a shared contained property value from other elements
+       (`3235 <https://github.com/osate/osate2/issues/3235>`__)
+   44. Modernize property code generation and add Maven validation
+       (`3237 <https://github.com/osate/osate2/issues/3237>`__)
+   45. Mark Occurrences misses symbolic references in Behavior Annexes
+       (`3293 <https://github.com/osate/osate2/issues/3293>`__)
+   46. Find References misses symbolic Behavior Annex uses
+       (`3295 <https://github.com/osate/osate2/issues/3295>`__)
+   47. Rename cannot locate Behavior Annex language services
+       (`3298 <https://github.com/osate/osate2/issues/3298>`__)
+   48. Rename rejects symbolic Behavior Annex references
+       (`3300 <https://github.com/osate/osate2/issues/3300>`__)
+   49. Core feature rename fails to update EMV2 propagations and uses
+       (`3302 <https://github.com/osate/osate2/issues/3302>`__)
+   50. Inline rename crashes on symbolic Behavior Annex references
+       (`3304 <https://github.com/osate/osate2/issues/3304>`__)
+   51. Selecting BA transition states misses declarations and references
+       (`3306 <https://github.com/osate/osate2/issues/3306>`__)
+   52. Core feature highlighting and searches miss EMV2 error-flow references
+       (`3308 <https://github.com/osate/osate2/issues/3308>`__)
+   53. Update Sirius to newer version
+       (`3072 <https://github.com/osate/osate2/issues/3072>`__)
+   54. Convert Xtend source files to Java
+       (`3157 <https://github.com/osate/osate2/issues/3157>`__)
+   55. Preserve Xsemantics generated Java across Maven builds
+       (`3258 <https://github.com/osate/osate2/issues/3258>`__)
+
+-  Error Model and Analysis Plugins
+
+   1.  Renaming a propagation point doesn't adjust references
+       (`2409 <https://github.com/osate/osate2/issues/2409>`__)
+   2.  Incomplete validation on reference from type product to type set
+       (`2743 <https://github.com/osate/osate2/issues/2743>`__)
+   3.  Missing validation for initial error behavior states
+       (`2804 <https://github.com/osate/osate2/issues/2804>`__)
+   4.  Repair event initiators not type checked
+       (`2807 <https://github.com/osate/osate2/issues/2807>`__)
+   5.  Missing validation for TransitionBranch.targetToken
+       (`2814 <https://github.com/osate/osate2/issues/2814>`__)
+   6.  Missing validation for noerror on events
+       (`2817 <https://github.com/osate/osate2/issues/2817>`__)
+   7.  Sum of probabilities is inaccurate when using a property
+       (`2820 <https://github.com/osate/osate2/issues/2820>`__)
+   8.  Validator should not check branch probabilities when a probability property is undefined
+       (`2821 <https://github.com/osate/osate2/issues/2821>`__)
+   9.  Missing validation for ErrorStateToModeMapping.mappedModes
+       (`2832 <https://github.com/osate/osate2/issues/2832>`__)
+   10. Missing validation for CompositeState.typedToken
+       (`2858 <https://github.com/osate/osate2/issues/2858>`__)
+   11. Core feature rename fails to update EMV2 propagations and uses
+       (`3302 <https://github.com/osate/osate2/issues/3302>`__)
+   12. Core feature highlighting and searches miss EMV2 error-flow references
+       (`3308 <https://github.com/osate/osate2/issues/3308>`__)
+
+-  ALISA
+
+   1.  Preserve Xsemantics generated Java across Maven builds
+       (`3258 <https://github.com/osate/osate2/issues/3258>`__)
+
+-  Behavior Annex
+
+   1.  Behavior Annex legality, consistency, and type diagnostics never reach the user
+       (`3153 <https://github.com/osate/osate2/issues/3153>`__)
+   2.  Multi-source-state Behavior Annex transitions lose their condition after the first source state
+       (`3154 <https://github.com/osate/osate2/issues/3154>`__)
+   3.  Behavior Annex transition rules report diagnostics on the source state instead of the transition
+       (`3155 <https://github.com/osate/osate2/issues/3155>`__)
+   4.  Annex source text is no longer syntax colored in the AADL editor
+       (`3162 <https://github.com/osate/osate2/issues/3162>`__)
+   5.  Support Behavior Annex internal transition conditions
+       (`3165 <https://github.com/osate/osate2/issues/3165>`__)
+   6.  Support all Behavior Annex external-condition logical expressions
+       (`3166 <https://github.com/osate/osate2/issues/3166>`__)
+   7.  Require standard parentheses around frozen ports in Behavior Annex dispatch conditions
+       (`3167 <https://github.com/osate/osate2/issues/3167>`__)
+   8.  Support timeout reset ports in Behavior Annex completion-relative timeouts
+       (`3168 <https://github.com/osate/osate2/issues/3168>`__)
+   9.  Support Behavior Annex short-circuit logical operators
+       (`3169 <https://github.com/osate/osate2/issues/3169>`__)
+   10. Reject unary plus in Behavior Annex expressions
+       (`3170 <https://github.com/osate/osate2/issues/3170>`__)
+   11. Support the Behavior Annex port updated value
+       (`3171 <https://github.com/osate/osate2/issues/3171>`__)
+   12. Preserve self property references in translated Behavior Annex models
+       (`3172 <https://github.com/osate/osate2/issues/3172>`__)
+   13. Allow omitted classifiers in Behavior Annex for and forall loops
+       (`3173 <https://github.com/osate/osate2/issues/3173>`__)
+   14. Represent Behavior Annex internal port actions correctly
+       (`3174 <https://github.com/osate/osate2/issues/3174>`__)
+   15. Preserve Behavior Annex numeric literal values during translation
+       (`3175 <https://github.com/osate/osate2/issues/3175>`__)
+   16. Preserve Behavior Annex behavior-variable array extents during translation
+       (`3176 <https://github.com/osate/osate2/issues/3176>`__)
+   17. Conform Behavior Annex expression precedence and grouping to AS5506/3
+       (`3177 <https://github.com/osate/osate2/issues/3177>`__)
+   18. Bind Behavior Annex complete states to corresponding AADL modes
+       (`3178 <https://github.com/osate/osate2/issues/3178>`__)
+   19. Allow multiple final states in Behavior Annex subprogram specifications
+       (`3179 <https://github.com/osate/osate2/issues/3179>`__)
+   20. Reject assignments to Behavior Annex loop variables
+       (`3180 <https://github.com/osate/osate2/issues/3180>`__)
+   21. Validate Behavior Annex communication actions and subprogram call signatures
+       (`3181 <https://github.com/osate/osate2/issues/3181>`__)
+   22. Enforce Behavior Annex declaration naming and uniqueness rules
+       (`3182 <https://github.com/osate/osate2/issues/3182>`__)
+   23. Enforce Behavior Annex otherwise-transition legality rules
+       (`3183 <https://github.com/osate/osate2/issues/3183>`__)
+   24. Enforce Behavior Annex action timeout legality rules
+       (`3184 <https://github.com/osate/osate2/issues/3184>`__)
+   25. Detect Behavior Annex execution states that can remain blocked
+       (`3185 <https://github.com/osate/osate2/issues/3185>`__)
+   26. Enforce Behavior Annex condition restrictions across component categories and modes
+       (`3186 <https://github.com/osate/osate2/issues/3186>`__)
+   27. Detect Behavior Annex paths that reach complete states while resources remain locked
+       (`3189 <https://github.com/osate/osate2/issues/3189>`__)
+   28. Enforce Behavior Annex variable initialization rules
+       (`3190 <https://github.com/osate/osate2/issues/3190>`__)
+   29. Restrict Behavior Annex property references to allowed unit types
+       (`3191 <https://github.com/osate/osate2/issues/3191>`__)
+   30. Behavior Annex bare `on dispatch` loses its condition unless exactly one space separates the keywords
+       (`3195 <https://github.com/osate/osate2/issues/3195>`__)
+   31. Behavior Annex type conformance is disabled, so no type mismatch is reported
+       (`3199 <https://github.com/osate/osate2/issues/3199>`__)
+   32. Behavior Annex dequeue into a loop variable is silently accepted
+       (`3205 <https://github.com/osate/osate2/issues/3205>`__)
+   33. Behavior Annex accepts a behavior variable array size that is not an integer value constant
+       (`3208 <https://github.com/osate/osate2/issues/3208>`__)
+   34. Behavior Annex loses a behavior-variable array extent written as a property reference
+       (`3210 <https://github.com/osate/osate2/issues/3210>`__)
+   35. Behavior Annex accepts a property reference to a property that has no value
+       (`3211 <https://github.com/osate/osate2/issues/3211>`__)
+   36. Behavior Annex accepts p'count, p'fresh, and p'updated on an outgoing port
+       (`3217 <https://github.com/osate/osate2/issues/3217>`__)
+   37. Keep prefixed Behavior Annex property references symbolic for instance lookup
+       (`3222 <https://github.com/osate/osate2/issues/3222>`__)
+   38. Behavior Annex for and forall crash when the iterated values name a loop iterator
+       (`3226 <https://github.com/osate/osate2/issues/3226>`__)
+   39. External condition triggers that are not incoming event ports are silently dropped or accepted
+       (`3232 <https://github.com/osate/osate2/issues/3232>`__)
+   40. Avoid repeated model traversals during Behavior Annex validation
+       (`3244 <https://github.com/osate/osate2/issues/3244>`__)
+   41. Allow compatible data type extensions in Behavior Annex expressions
+       (`3261 <https://github.com/osate/osate2/issues/3261>`__)
+   42. Report invalid Behavior Annex frozen ports without a ClassCastException
+       (`3263 <https://github.com/osate/osate2/issues/3263>`__)
+   43. Preserve frozen ports on Behavior Annex subprogram dispatch triggers
+       (`3264 <https://github.com/osate/osate2/issues/3264>`__)
+   44. Use standard logical precedence in Behavior Annex external conditions
+       (`3265 <https://github.com/osate/osate2/issues/3265>`__)
+   45. Reject multiple Behavior Annex completion-relative timeouts from one state
+       (`3266 <https://github.com/osate/osate2/issues/3266>`__)
+   46. Check timeout uniqueness for every Behavior Annex transition source
+       (`3267 <https://github.com/osate/osate2/issues/3267>`__)
+   47. Reject Behavior Annex assignments to incoming ports
+       (`3268 <https://github.com/osate/osate2/issues/3268>`__)
+   48. Reject noninteger values in Behavior Annex times
+       (`3269 <https://github.com/osate/osate2/issues/3269>`__)
+   49. Reject noninteger indices in Behavior Annex array references
+       (`3270 <https://github.com/osate/osate2/issues/3270>`__)
+   50. Reject nonprocessor bindings in Behavior Annex computation actions
+       (`3271 <https://github.com/osate/osate2/issues/3271>`__)
+   51. Detect implicit-write conflicts in Behavior Annex action sets
+       (`3272 <https://github.com/osate/osate2/issues/3272>`__)
+   52. Restrict Behavior Annex transition priorities to numeral syntax
+       (`3273 <https://github.com/osate/osate2/issues/3273>`__)
+   53. Behavior Annex cannot name a Data Model Annex enumeration literal
+       (`3282 <https://github.com/osate/osate2/issues/3282>`__)
+   54. Let a universal integer conform to fixed and floating point data representations
+       (`3284 <https://github.com/osate/osate2/issues/3284>`__)
+   55. Behavior Annex ignores Data Model properties on a data subcomponent declared without a classifier
+       (`3288 <https://github.com/osate/osate2/issues/3288>`__)
+   56. Behavior Annex silently discards a dispatch trigger that is not an event port
+       (`3290 <https://github.com/osate/osate2/issues/3290>`__)
+   57. Mark Occurrences misses symbolic references in Behavior Annexes
+       (`3293 <https://github.com/osate/osate2/issues/3293>`__)
+   58. Find References misses symbolic Behavior Annex uses
+       (`3295 <https://github.com/osate/osate2/issues/3295>`__)
+   59. Rename cannot locate Behavior Annex language services
+       (`3298 <https://github.com/osate/osate2/issues/3298>`__)
+   60. Rename rejects symbolic Behavior Annex references
+       (`3300 <https://github.com/osate/osate2/issues/3300>`__)
+   61. Inline rename crashes on symbolic Behavior Annex references
+       (`3304 <https://github.com/osate/osate2/issues/3304>`__)
+   62. Selecting BA transition states misses declarations and references
+       (`3306 <https://github.com/osate/osate2/issues/3306>`__)
+   63. AADL/BA validation issues
+       (`2347 <https://github.com/osate/osate2/issues/2347>`__)
+   64. Port behavior annex implementation to Xtext
+       (`2445 <https://github.com/osate/osate2/issues/2445>`__)
+
+Known issues
+^^^^^^^^^^^^
+
+-  MacOS users must run the command
+   ``sudo xattr -rd com.apple.quarantine osate2.app/`` to be able to run
+   OSATE.
+-  Installing from the update site into an existing Eclipse requires additional
+   steps (see https://groups.google.com/g/osate/c/Hpw6wX_GND4)
+-  Installing the OSATE plugins into “Eclipse for RCP and RAP
+   Developers” may prevent Eclipse from starting. See `issue
+   2061 <https://github.com/osate/osate2/issues/2061>`__.
+
 Version 2.19.0
 ~~~~~~~~~~~~~~
 
