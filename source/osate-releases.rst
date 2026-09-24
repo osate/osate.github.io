@@ -4,14 +4,14 @@ Release Notes
 Stable Releases
 ---------------
 
-Version 2.20.0
+Version 2.20.0 (not yet released)
 ~~~~~~~~~~~~~~
 
 Release
 ^^^^^^^
 
 -  **GIT tag**: 2.20.0-RELEASE
--  **Release date**: September 23, 2026
+-  **Release date**: September 30, 2026
 -  **Eclipse base version**: 2025-12
 -  **Java version**: Java 21
 -  **Eclipse Update-Site**:
