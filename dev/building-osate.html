@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building OSATE &mdash; OSATE 2.20.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=c26bd487" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=50d84e18"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Writing Tests" href="writing-tests.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            OSATE
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">OSATE User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user/about-osate.html">About OSATE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/additional-components.html">Additional OSATE Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/download-and-install.html">Download and Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/osate-releases.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/getting-help.html">Getting Help</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AADL Tooling for AI agents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tooling/about-tooling.html">About the AADL tooling</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="setup-development.html">Setting up an OSATE development environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing-tests.html">Writing Tests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Building OSATE</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OSATE</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Building OSATE</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="building-osate">
+<h1>Building OSATE<a class="headerlink" href="#building-osate" title="Link to this heading">¶</a></h1>
+<p>OSATE is built using maven with the tycho plugin. Maven can be run
+inside Eclipse or from the command line.</p>
+<p>To run the build inside Eclipse we provide a couple of launch
+configurations in project osate.releng. The launch configurations can be
+run from Eclipse’s <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Configurations...</span></code> dialog. They are inserted
+under the Maven Build category.</p>
+<p>The available launch configurations are</p>
+<ul class="simple">
+<li><p><strong>osate.build.local</strong> - build OSATE for the local operating system,
+e.g., build the windows version on a windows machine.</p></li>
+<li><p><strong>osate.build.local.tests</strong> - same as osate.build.local but also run
+all available tests</p></li>
+<li><p><strong>osate.build.full</strong> - build for all platforms, run all tests</p></li>
+</ul>
+<p>The build can be configured by modifying the launch configuration.</p>
+<figure class="align-default" id="id1">
+<img alt="Local Build Launch Configurations" src="../_images/build-launch-configurations.png" />
+<figcaption>
+<p><span class="caption-text">Local Build Launch Configurations</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Available profiles <em>local</em> and <em>full</em> determine if the build is for the
+local operating system only or for all operating systems.</p>
+<p>Used parameters are</p>
+<ul class="simple">
+<li><p><strong>tycho.dirtyWorkingTree</strong> - Issue a <em>warning</em> or an <em>error</em> if there
+are files that uncommitted source files in the build.</p></li>
+<li><p><strong>pr.build</strong> - <em>true</em> build a pull request (no product archive
+created), <em>false</em> build the product(s)</p></li>
+<li><p><strong>tycho.localArtifacts</strong> - <em>ignore</em> only use artifacts from the
+current build and specified repositories to resolve dependencies.</p></li>
+<li><p><strong>sign</strong> - <em>true</em> perform jar signing during the build, <em>false</em> don’t
+sign jars</p></li>
+<li><p><strong>spotbugs</strong> - <em>true</em> run spotbugs during the build, <em>false</em> don’t
+run spotbugs</p></li>
+<li><p><strong>codecoverage</strong> - <em>true</em> run jacoco to create a code coverage
+report, <em>false</em> don’t run jacoco</p></li>
+</ul>
+<p>The created archive file (<em>.zip and/or</em>.tar.gz) are created in project
+<em>org.osate.build.product</em> in subdirectory <em>target/products</em>.</p>
+<p>Note that the very first build usually fails in project
+org.osate.reqtrace, but subsequent build should succeed.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="writing-tests.html" class="btn btn-neutral float-left" title="Writing Tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2016-2026, Carnegie Mellon University.
+      <span class="lastupdated">Last updated on Sep 25, 2026.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
