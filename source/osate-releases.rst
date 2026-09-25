@@ -4,14 +4,14 @@ Release Notes
 Stable Releases
 ---------------
 
-Version 2.20.0 (not yet released)
+Version 2.20.0
 ~~~~~~~~~~~~~~
 
 Release
 ^^^^^^^
 
 -  **GIT tag**: 2.20.0-RELEASE
--  **Release date**: September 30, 2026
+-  **Release date**: September 25, 2026
 -  **Eclipse base version**: 2025-12
 -  **Java version**: Java 21
 -  **Eclipse Update-Site**:
@@ -24,12 +24,12 @@ SHA256 Hashes for the downloads
 
 ::
 
-   cd237f9fabe17a03bff5ca932d1291f79a009a90f2717b3c4a2074f4f93845f3  osate2-2.20.0-vfinal-linux.gtk.aarch64.tar.gz
-   23ed6ea19b1a8c649f39fac7ef4d012dc46d16eee587bcc23865110980d6c219  osate2-2.20.0-vfinal-linux.gtk.x86_64.tar.gz
-   812e285a14c2c3d61aa3c4eaa03757d7c0fab73c37109bd570e633a0e506899b  osate2-2.20.0-vfinal-macosx.cocoa.aarch64.tar.gz
-   b6104adcf47c01d78702910dab21f67947ffb51626d218ddeb0a06fd34ef8a16  osate2-2.20.0-vfinal-macosx.cocoa.x86_64.tar.gz
-   40f886c1094745578260996af0fa9a5c32ea5c30374093b10a6dbc95e8feff2f  osate2-2.20.0-vfinal-win32.win32.aarch64.zip
-   1a89d04696c6e21c004d1ea3d38439be7c8b1bfd5b72a164d228a9a3ccc35d28  osate2-2.20.0-vfinal-win32.win32.x86_64.zip
+   d7d50fe739d987354dae7d6627c578b0ea88f9d4eeddd8ee7d66db8f77482b4c  osate2-2.20.0-vfinal-linux.gtk.aarch64.tar.gz
+   d47f9e9ceb59768ddff2fe80b43f4c21afdc929cff7f5ab1eabb6522b08d28d7  osate2-2.20.0-vfinal-linux.gtk.x86_64.tar.gz
+   4f80e7b801a8d7badb625fac9145445d8dfbbea9fee50c836da3a24935f7c5fb  osate2-2.20.0-vfinal-macosx.cocoa.aarch64.tar.gz
+   907a43ab9977a0b3d5d5ab1cb5210d988508447d28c20d3c1e5e53043efa706f  osate2-2.20.0-vfinal-macosx.cocoa.x86_64.tar.gz
+   b3e7ac84779c897ede60bde2d31794cd1477088bd52d5a44bd0b1af32e746668  osate2-2.20.0-vfinal-win32.win32.aarch64.zip
+   6cfa0fb3f55b7942a42adab562087cfd103d1ecaed4f5f5d39a162d6a939ef74  osate2-2.20.0-vfinal-win32.win32.x86_64.zip
    
 Notable changes
 ^^^^^^^^^^^^^^^
@@ -318,6 +318,10 @@ Fixed issues
        (`2347 <https://github.com/osate/osate2/issues/2347>`__)
    64. Port behavior annex implementation to Xtext
        (`2445 <https://github.com/osate/osate2/issues/2445>`__)
+   65. Behavior Annex formatter stops at the first whitespace rule conflict and discards it
+       (`3310 <https://github.com/osate/osate2/issues/3310>`__)
+   66. Incomplete Behavior Annex expressions crash reference services
+       (`3312 <https://github.com/osate/osate2/issues/3312>`__)
 
 Known issues
 ^^^^^^^^^^^^
