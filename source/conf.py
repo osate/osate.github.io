@@ -33,6 +33,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
+    'sphinxcontrib.jquery',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -70,7 +71,7 @@ release = u'2.20.0'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -81,7 +82,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = ['_themes']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -123,7 +124,7 @@ html_theme = 'sphinx_rtd_theme'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['_themes']
+html_theme_path = ['_themes/sphinx_rtd_theme']
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
@@ -145,6 +146,7 @@ html_theme_path = ['_themes']
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_css_files = ['custom.css']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied

@@ -5,7 +5,7 @@ The following additional OSATE components are not port of the base
 installation. They can be installed into OSATE via the dialog ``Help``
 -> ``Install Additional OSATE Components...``. For detailed instructions
 click
-`here <http://osate.org/download-and-install.html#installing-additional-osate-components>`__.
+`here <download-and-install.html#installing-additional-osate-components>`__.
 
 OSATE Components by the Software Engineering Institute
 ------------------------------------------------------

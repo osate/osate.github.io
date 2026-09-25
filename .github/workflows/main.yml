@@ -11,14 +11,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    # Standard drop-in approach that should work for most people.
-    - uses: ammaraskar/sphinx-action@master
+    - uses: actions/checkout@v4
       with:
-        docs-folder: "./"
-        name: Deploy to GitHub Pages
-        if: success()
-    - uses: crazy-max/ghaction-github-pages@v2
+        submodules: true
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - name: Build HTML
+      run: |
+        pip install -r requirements.txt
+        make html
+    - name: Deploy to GitHub Pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v2
       with:
         target_branch: gh-pages
         build_dir: build/html

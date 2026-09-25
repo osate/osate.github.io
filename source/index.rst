@@ -10,6 +10,7 @@ Wiki`_ to here.
 .. The main documentation for the site is organized into a couple sections:
 
 * :ref:`user-docs`
+* :ref:`ai-tooling`
 * :ref:`developer-docs`
 
 .. * :ref:`feature-docs`
@@ -25,21 +26,29 @@ Wiki`_ to here.
 
 .. toctree::
    :maxdepth: 2
-   :caption: User Documentation
+   :caption: OSATE User Documentation
 
-   about-osate
-   additional-components
-   download-and-install
-   osate-releases
-   getting-help
-   
+   user/about-osate
+   user/additional-components
+   user/download-and-install
+   user/osate-releases
+   user/getting-help
+
+.. _ai-tooling:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: AADL Tooling for AI agents
+
+   tooling/about-tooling
+
 .. _developer-docs:
 
 .. toctree::
    :maxdepth: 2
    :caption: Developer Documentation
    
-   setup-development
+   dev/setup-development
    dev/writing-tests
    dev/building-osate
    

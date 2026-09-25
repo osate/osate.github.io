@@ -1,0 +1,2 @@
+sphinx>=6,<10
+sphinxcontrib-jquery>=4,<5
